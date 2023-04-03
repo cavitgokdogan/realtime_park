@@ -1,0 +1,193 @@
+{
+  "build": "py39h2bbff1b_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/win-64",
+  "constrains": [],
+  "depends": [
+    "python >=3.9,<3.10.0a0",
+    "vc >=14.1,<15.0a0",
+    "vs2015_runtime >=14.16.27012,<15.0a0"
+  ],
+  "extracted_package_dir": "C:\\Users\\kosee\\anaconda3\\pkgs\\jellyfish-0.9.0-py39h2bbff1b_0",
+  "features": "",
+  "files": [
+    "Lib/site-packages/jellyfish-0.9.0.dist-info/INSTALLER",
+    "Lib/site-packages/jellyfish-0.9.0.dist-info/LICENSE",
+    "Lib/site-packages/jellyfish-0.9.0.dist-info/METADATA",
+    "Lib/site-packages/jellyfish-0.9.0.dist-info/RECORD",
+    "Lib/site-packages/jellyfish-0.9.0.dist-info/REQUESTED",
+    "Lib/site-packages/jellyfish-0.9.0.dist-info/WHEEL",
+    "Lib/site-packages/jellyfish-0.9.0.dist-info/direct_url.json",
+    "Lib/site-packages/jellyfish-0.9.0.dist-info/top_level.txt",
+    "Lib/site-packages/jellyfish/__init__.py",
+    "Lib/site-packages/jellyfish/__init__.pyi",
+    "Lib/site-packages/jellyfish/__pycache__/__init__.cpython-39.pyc",
+    "Lib/site-packages/jellyfish/__pycache__/_jellyfish.cpython-39.pyc",
+    "Lib/site-packages/jellyfish/__pycache__/porter.cpython-39.pyc",
+    "Lib/site-packages/jellyfish/__pycache__/test.cpython-39.pyc",
+    "Lib/site-packages/jellyfish/_jellyfish.py",
+    "Lib/site-packages/jellyfish/cjellyfish.cp39-win_amd64.pyd",
+    "Lib/site-packages/jellyfish/porter.py",
+    "Lib/site-packages/jellyfish/py.typed",
+    "Lib/site-packages/jellyfish/test.py",
+    ".nonadmin"
+  ],
+  "fn": "jellyfish-0.9.0-py39h2bbff1b_0.conda",
+  "legacy_bz2_md5": "02f9db8a93f8dd4601565a9ea84c0ba3",
+  "legacy_bz2_size": 49705,
+  "license": "BSD-2-Clause",
+  "license_family": "BSD",
+  "link": {
+    "source": "C:\\Users\\kosee\\anaconda3\\pkgs\\jellyfish-0.9.0-py39h2bbff1b_0",
+    "type": 1
+  },
+  "md5": "0905b421e5a03b0f8f2de61d626a9207",
+  "name": "jellyfish",
+  "package_tarball_full_path": "C:\\Users\\kosee\\anaconda3\\pkgs\\jellyfish-0.9.0-py39h2bbff1b_0.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "Lib/site-packages/jellyfish-0.9.0.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "Lib/site-packages/jellyfish-0.9.0.dist-info/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "150c73743a040c72d31b04fd7f0a3f8fb43d27efd9148bf76c2b7aaa2ea9448f",
+        "sha256_in_prefix": "150c73743a040c72d31b04fd7f0a3f8fb43d27efd9148bf76c2b7aaa2ea9448f",
+        "size_in_bytes": 1377
+      },
+      {
+        "_path": "Lib/site-packages/jellyfish-0.9.0.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "c2b9fa7947aff6b0c08cec0199acd63705859083b543d569ea2e8b37249cddf5",
+        "sha256_in_prefix": "c2b9fa7947aff6b0c08cec0199acd63705859083b543d569ea2e8b37249cddf5",
+        "size_in_bytes": 2341
+      },
+      {
+        "_path": "Lib/site-packages/jellyfish-0.9.0.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "48a1176c4d1969cf1461456046a8ee43e4372b75294bf80cac7c4f7aea55d433",
+        "sha256_in_prefix": "48a1176c4d1969cf1461456046a8ee43e4372b75294bf80cac7c4f7aea55d433",
+        "size_in_bytes": 1433
+      },
+      {
+        "_path": "Lib/site-packages/jellyfish-0.9.0.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "Lib/site-packages/jellyfish-0.9.0.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "7d571594bce2f021a2fd497cbe331d9fc804476e5d9f918183d13a93dcf8d7e6",
+        "sha256_in_prefix": "7d571594bce2f021a2fd497cbe331d9fc804476e5d9f918183d13a93dcf8d7e6",
+        "size_in_bytes": 100
+      },
+      {
+        "_path": "Lib/site-packages/jellyfish-0.9.0.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "f3253f2cd5d25f692f7ecb9626a4094a71b6431060de0fa93731a04da2e7e5b9",
+        "sha256_in_prefix": "f3253f2cd5d25f692f7ecb9626a4094a71b6431060de0fa93731a04da2e7e5b9",
+        "size_in_bytes": 69
+      },
+      {
+        "_path": "Lib/site-packages/jellyfish-0.9.0.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "d916d7ab0a93ee0eea7f3344f2695815599d0ce23d49d93b210541f7a5683519",
+        "sha256_in_prefix": "d916d7ab0a93ee0eea7f3344f2695815599d0ce23d49d93b210541f7a5683519",
+        "size_in_bytes": 10
+      },
+      {
+        "_path": "Lib/site-packages/jellyfish/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "10847255bc438519a999068318476e9def07e14f67b9cd2145978f2c0c3a4074",
+        "sha256_in_prefix": "10847255bc438519a999068318476e9def07e14f67b9cd2145978f2c0c3a4074",
+        "size_in_bytes": 785
+      },
+      {
+        "_path": "Lib/site-packages/jellyfish/__init__.pyi",
+        "path_type": "hardlink",
+        "sha256": "fecf4733ef673dba67b1ade8d71dd2326186837ce8e14c196805834959bd9988",
+        "sha256_in_prefix": "fecf4733ef673dba67b1ade8d71dd2326186837ce8e14c196805834959bd9988",
+        "size_in_bytes": 555
+      },
+      {
+        "_path": "Lib/site-packages/jellyfish/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "d7037662bab495202c921b78e5a0b245cd5fd6b70423c31871bf99394b18a1b0",
+        "sha256_in_prefix": "d7037662bab495202c921b78e5a0b245cd5fd6b70423c31871bf99394b18a1b0",
+        "size_in_bytes": 921
+      },
+      {
+        "_path": "Lib/site-packages/jellyfish/__pycache__/_jellyfish.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "b8188bdc63f9c0d3bbee3d0d86a325d78c057d441d947ed9dbbbc6e7a948cdaf",
+        "sha256_in_prefix": "b8188bdc63f9c0d3bbee3d0d86a325d78c057d441d947ed9dbbbc6e7a948cdaf",
+        "size_in_bytes": 8436
+      },
+      {
+        "_path": "Lib/site-packages/jellyfish/__pycache__/porter.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "a936ec177857280b8495c2c06824bf9d82f4b628a76e51b65eb452a173331e5e",
+        "sha256_in_prefix": "a936ec177857280b8495c2c06824bf9d82f4b628a76e51b65eb452a173331e5e",
+        "size_in_bytes": 6658
+      },
+      {
+        "_path": "Lib/site-packages/jellyfish/__pycache__/test.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "26d4f6b275430e8f4573006e5061586cb8a7ed6133ebbc7eff0e0ee6661755ff",
+        "sha256_in_prefix": "26d4f6b275430e8f4573006e5061586cb8a7ed6133ebbc7eff0e0ee6661755ff",
+        "size_in_bytes": 8350
+      },
+      {
+        "_path": "Lib/site-packages/jellyfish/_jellyfish.py",
+        "path_type": "hardlink",
+        "sha256": "1b0e3debbd4ec9a80b0e956f3c0e3ed09faa97178fa9719e9f6663bf4611d4d1",
+        "sha256_in_prefix": "1b0e3debbd4ec9a80b0e956f3c0e3ed09faa97178fa9719e9f6663bf4611d4d1",
+        "size_in_bytes": 13524
+      },
+      {
+        "_path": "Lib/site-packages/jellyfish/cjellyfish.cp39-win_amd64.pyd",
+        "path_type": "hardlink",
+        "sha256": "ff651b07228ce26ab251775c00130ac89e08826db9c2acde2c504934320029e2",
+        "sha256_in_prefix": "ff651b07228ce26ab251775c00130ac89e08826db9c2acde2c504934320029e2",
+        "size_in_bytes": 35840
+      },
+      {
+        "_path": "Lib/site-packages/jellyfish/porter.py",
+        "path_type": "hardlink",
+        "sha256": "0e6f533b0dde99c538cca0332c26aa8d23dcb552aaeda3f0eff901014f022404",
+        "sha256_in_prefix": "0e6f533b0dde99c538cca0332c26aa8d23dcb552aaeda3f0eff901014f022404",
+        "size_in_bytes": 7218
+      },
+      {
+        "_path": "Lib/site-packages/jellyfish/py.typed",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "Lib/site-packages/jellyfish/test.py",
+        "path_type": "hardlink",
+        "sha256": "d1377b33357f6720b530b8c97044d052d7ca58bd89ea6bdd79abd34e6e17eaa7",
+        "sha256_in_prefix": "d1377b33357f6720b530b8c97044d052d7ca58bd89ea6bdd79abd34e6e17eaa7",
+        "size_in_bytes": 7394
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "5dbb7d99e45345ed3176d8521c725c74b1ae01e388d266d0ab9a7f6f031c8812",
+  "size": 46756,
+  "subdir": "win-64",
+  "timestamp": 1647962864018,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/jellyfish-0.9.0-py39h2bbff1b_0.conda",
+  "version": "0.9.0"
+}

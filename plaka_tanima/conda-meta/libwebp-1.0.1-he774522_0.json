@@ -1,0 +1,94 @@
+{
+  "build": "he774522_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/win-64",
+  "constrains": [],
+  "depends": [
+    "vc >=14.1,<15.0a0"
+  ],
+  "extracted_package_dir": "C:\\Users\\kosee\\anaconda3\\pkgs\\libwebp-1.0.1-he774522_0",
+  "features": "",
+  "files": [
+    "Library/bin/cwebp.exe",
+    "Library/bin/dwebp.exe",
+    "Library/include/webp/decode.h",
+    "Library/include/webp/encode.h",
+    "Library/include/webp/types.h",
+    "Library/lib/libwebp.lib",
+    "Library/lib/libwebpdecoder.lib",
+    ".nonadmin"
+  ],
+  "fn": "libwebp-1.0.1-he774522_0.conda",
+  "legacy_bz2_md5": "c7827c9a0442ffbed6d661e78ea8e369",
+  "legacy_bz2_size": 1576817,
+  "license": "Google",
+  "link": {
+    "source": "C:\\Users\\kosee\\anaconda3\\pkgs\\libwebp-1.0.1-he774522_0",
+    "type": 1
+  },
+  "md5": "b6cab1c6c200bd60e496c34dd800d1b0",
+  "name": "libwebp",
+  "package_tarball_full_path": "C:\\Users\\kosee\\anaconda3\\pkgs\\libwebp-1.0.1-he774522_0.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "Library/bin/cwebp.exe",
+        "path_type": "hardlink",
+        "sha256": "d6c23b2889a357a2a757a9634659b748692a3d4f8fe0599767676126577605ea",
+        "sha256_in_prefix": "d6c23b2889a357a2a757a9634659b748692a3d4f8fe0599767676126577605ea",
+        "size_in_bytes": 696320
+      },
+      {
+        "_path": "Library/bin/dwebp.exe",
+        "path_type": "hardlink",
+        "sha256": "0aec72e0bf5c1c94e6c839cdfdc9a964dc4c43915999c8e086994942e760427f",
+        "sha256_in_prefix": "0aec72e0bf5c1c94e6c839cdfdc9a964dc4c43915999c8e086994942e760427f",
+        "size_in_bytes": 473088
+      },
+      {
+        "_path": "Library/include/webp/decode.h",
+        "path_type": "hardlink",
+        "sha256": "820200b6c68adc9e64eefce0871b853cbb0a70d92748b7bc555a2f7ff1f6b360",
+        "sha256_in_prefix": "820200b6c68adc9e64eefce0871b853cbb0a70d92748b7bc555a2f7ff1f6b360",
+        "size_in_bytes": 23147
+      },
+      {
+        "_path": "Library/include/webp/encode.h",
+        "path_type": "hardlink",
+        "sha256": "39b04299c91eeecc7d5b822c6d8a4d2ed4169c5dfb481c7f49a0414f19601d1a",
+        "sha256_in_prefix": "39b04299c91eeecc7d5b822c6d8a4d2ed4169c5dfb481c7f49a0414f19601d1a",
+        "size_in_bytes": 27478
+      },
+      {
+        "_path": "Library/include/webp/types.h",
+        "path_type": "hardlink",
+        "sha256": "c0a3c46ad233e765a2f72ccda668c47a726dba7c479671f0bd70a3e57d5b3290",
+        "sha256_in_prefix": "c0a3c46ad233e765a2f72ccda668c47a726dba7c479671f0bd70a3e57d5b3290",
+        "size_in_bytes": 1662
+      },
+      {
+        "_path": "Library/lib/libwebp.lib",
+        "path_type": "hardlink",
+        "sha256": "d79541a9e7ad31a93e6e3a1a5270b30e984064c2e101035747197d23e29feeb6",
+        "sha256_in_prefix": "d79541a9e7ad31a93e6e3a1a5270b30e984064c2e101035747197d23e29feeb6",
+        "size_in_bytes": 1655180
+      },
+      {
+        "_path": "Library/lib/libwebpdecoder.lib",
+        "path_type": "hardlink",
+        "sha256": "d79541a9e7ad31a93e6e3a1a5270b30e984064c2e101035747197d23e29feeb6",
+        "sha256_in_prefix": "d79541a9e7ad31a93e6e3a1a5270b30e984064c2e101035747197d23e29feeb6",
+        "size_in_bytes": 1655180
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "8a3e4077522aa5ad1b0174e6288deb9e04c000ff9cf111d18c71a055b58d9953",
+  "size": 657648,
+  "subdir": "win-64",
+  "timestamp": 1542640538211,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/libwebp-1.0.1-he774522_0.conda",
+  "version": "1.0.1"
+}

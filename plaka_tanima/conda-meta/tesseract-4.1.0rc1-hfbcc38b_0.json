@@ -1,0 +1,691 @@
+{
+  "arch": "x86_64",
+  "build": "hfbcc38b_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/mcs07/win-64",
+  "constrains": [],
+  "depends": [
+    "jpeg >=9c,<10a",
+    "leptonica >=1.77.0,<1.78.0a0",
+    "libpng >=1.6.35,<1.7.0a0",
+    "libtiff >=4.0.9,<5.0a0",
+    "libwebp >=1.0.0,<1.1.0a0",
+    "openjpeg >=2.3.0,<2.4.0a0",
+    "vc >=14,<15.0a0",
+    "zlib >=1.2.11,<1.3.0a0"
+  ],
+  "extracted_package_dir": "C:\\Users\\kosee\\anaconda3\\pkgs\\tesseract-4.1.0rc1-hfbcc38b_0",
+  "features": "",
+  "files": [
+    "Library/bin/ambiguous_words.exe",
+    "Library/bin/classifier_tester.exe",
+    "Library/bin/cntraining.exe",
+    "Library/bin/combine_lang_model.exe",
+    "Library/bin/combine_tessdata.exe",
+    "Library/bin/dawg2wordlist.exe",
+    "Library/bin/lstmeval.exe",
+    "Library/bin/lstmtraining.exe",
+    "Library/bin/mftraining.exe",
+    "Library/bin/set_unicharset_properties.exe",
+    "Library/bin/shapeclustering.exe",
+    "Library/bin/tessdata/eng.traineddata",
+    "Library/bin/tessdata/osd.traineddata",
+    "Library/bin/tesseract.exe",
+    "Library/bin/tesseract41.dll",
+    "Library/bin/unicharset_extractor.exe",
+    "Library/bin/wordlist2dawg.exe",
+    "Library/cmake/TesseractConfig-version.cmake",
+    "Library/cmake/TesseractConfig.cmake",
+    "Library/cmake/TesseractTargets-release.cmake",
+    "Library/cmake/TesseractTargets.cmake",
+    "Library/include/tesseract/apitypes.h",
+    "Library/include/tesseract/baseapi.h",
+    "Library/include/tesseract/basedir.h",
+    "Library/include/tesseract/capi.h",
+    "Library/include/tesseract/convolve.h",
+    "Library/include/tesseract/ctc.h",
+    "Library/include/tesseract/dotproductavx.h",
+    "Library/include/tesseract/dotproductsse.h",
+    "Library/include/tesseract/errcode.h",
+    "Library/include/tesseract/fileerr.h",
+    "Library/include/tesseract/fullyconnected.h",
+    "Library/include/tesseract/functions.h",
+    "Library/include/tesseract/genericvector.h",
+    "Library/include/tesseract/helpers.h",
+    "Library/include/tesseract/host.h",
+    "Library/include/tesseract/input.h",
+    "Library/include/tesseract/intsimdmatrix.h",
+    "Library/include/tesseract/lstm.h",
+    "Library/include/tesseract/lstmrecognizer.h",
+    "Library/include/tesseract/lstmtrainer.h",
+    "Library/include/tesseract/ltrresultiterator.h",
+    "Library/include/tesseract/maxpool.h",
+    "Library/include/tesseract/network.h",
+    "Library/include/tesseract/networkbuilder.h",
+    "Library/include/tesseract/networkio.h",
+    "Library/include/tesseract/networkscratch.h",
+    "Library/include/tesseract/ocrclass.h",
+    "Library/include/tesseract/osdetect.h",
+    "Library/include/tesseract/pageiterator.h",
+    "Library/include/tesseract/parallel.h",
+    "Library/include/tesseract/params.h",
+    "Library/include/tesseract/platform.h",
+    "Library/include/tesseract/plumbing.h",
+    "Library/include/tesseract/publictypes.h",
+    "Library/include/tesseract/recodebeam.h",
+    "Library/include/tesseract/reconfig.h",
+    "Library/include/tesseract/renderer.h",
+    "Library/include/tesseract/resultiterator.h",
+    "Library/include/tesseract/reversed.h",
+    "Library/include/tesseract/serialis.h",
+    "Library/include/tesseract/series.h",
+    "Library/include/tesseract/simddetect.h",
+    "Library/include/tesseract/static_shape.h",
+    "Library/include/tesseract/stridemap.h",
+    "Library/include/tesseract/strngs.h",
+    "Library/include/tesseract/tess_version.h",
+    "Library/include/tesseract/tesscallback.h",
+    "Library/include/tesseract/tfnetwork.h",
+    "Library/include/tesseract/thresholder.h",
+    "Library/include/tesseract/unichar.h",
+    "Library/include/tesseract/unicharcompress.h",
+    "Library/include/tesseract/unicharmap.h",
+    "Library/include/tesseract/unicharset.h",
+    "Library/include/tesseract/weightmatrix.h",
+    "Library/lib/pkgconfig/tesseract.pc",
+    "Library/lib/tesseract.lib",
+    "Library/lib/tesseract41.lib",
+    "tessdata/eng.traineddata",
+    "tessdata/osd.traineddata",
+    ".nonadmin"
+  ],
+  "fn": "tesseract-4.1.0rc1-hfbcc38b_0.tar.bz2",
+  "license": "Apache-2.0",
+  "license_family": "Apache",
+  "link": {
+    "source": "C:\\Users\\kosee\\anaconda3\\pkgs\\tesseract-4.1.0rc1-hfbcc38b_0",
+    "type": 1
+  },
+  "md5": "0eb401055f47863e7493bf1e750cb695",
+  "name": "tesseract",
+  "package_tarball_full_path": "C:\\Users\\kosee\\anaconda3\\pkgs\\tesseract-4.1.0rc1-hfbcc38b_0.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "Library/bin/ambiguous_words.exe",
+        "path_type": "hardlink",
+        "sha256": "bb83f5dd6fef3023a2453cd2fd753ebabc828acf244558ce969ed7a8f7a41541",
+        "sha256_in_prefix": "bb83f5dd6fef3023a2453cd2fd753ebabc828acf244558ce969ed7a8f7a41541",
+        "size_in_bytes": 18944
+      },
+      {
+        "_path": "Library/bin/classifier_tester.exe",
+        "path_type": "hardlink",
+        "sha256": "2ced25ec11b71dbf4c59eb82336e1013aff6ee298f76b06c45fad2b294353651",
+        "sha256_in_prefix": "2ced25ec11b71dbf4c59eb82336e1013aff6ee298f76b06c45fad2b294353651",
+        "size_in_bytes": 45056
+      },
+      {
+        "_path": "Library/bin/cntraining.exe",
+        "path_type": "hardlink",
+        "sha256": "a2725e962260a6a3cb0b86c894464dd121288f5b9ed47415bdad253f9a92a70f",
+        "sha256_in_prefix": "a2725e962260a6a3cb0b86c894464dd121288f5b9ed47415bdad253f9a92a70f",
+        "size_in_bytes": 38400
+      },
+      {
+        "_path": "Library/bin/combine_lang_model.exe",
+        "path_type": "hardlink",
+        "sha256": "d9c26c393c0cb4e18c711053bd2dfeba58c26f22a1a60250f88a6c87467418bf",
+        "sha256_in_prefix": "d9c26c393c0cb4e18c711053bd2dfeba58c26f22a1a60250f88a6c87467418bf",
+        "size_in_bytes": 95744
+      },
+      {
+        "_path": "Library/bin/combine_tessdata.exe",
+        "path_type": "hardlink",
+        "sha256": "5b3342d20de1ea5a2454acfa2493c7f918dbe51a0e3446f7238abec945d357ca",
+        "sha256_in_prefix": "5b3342d20de1ea5a2454acfa2493c7f918dbe51a0e3446f7238abec945d357ca",
+        "size_in_bytes": 21504
+      },
+      {
+        "_path": "Library/bin/dawg2wordlist.exe",
+        "path_type": "hardlink",
+        "sha256": "b302aa06f37727937193c6220f9cf9174c208e2ebe4e2bb2db72456dca8ef5e5",
+        "sha256_in_prefix": "b302aa06f37727937193c6220f9cf9174c208e2ebe4e2bb2db72456dca8ef5e5",
+        "size_in_bytes": 17920
+      },
+      {
+        "_path": "Library/bin/lstmeval.exe",
+        "path_type": "hardlink",
+        "sha256": "a12e9fab8ed6d66b57e260740429f9ffd91a3517ac0cf33e64bf68d50550c60d",
+        "sha256_in_prefix": "a12e9fab8ed6d66b57e260740429f9ffd91a3517ac0cf33e64bf68d50550c60d",
+        "size_in_bytes": 48128
+      },
+      {
+        "_path": "Library/bin/lstmtraining.exe",
+        "path_type": "hardlink",
+        "sha256": "081c12e999fad3ec4ae3ad466eb8c2aca3017af25755b5cb77872cbf190855d4",
+        "sha256_in_prefix": "081c12e999fad3ec4ae3ad466eb8c2aca3017af25755b5cb77872cbf190855d4",
+        "size_in_bytes": 64512
+      },
+      {
+        "_path": "Library/bin/mftraining.exe",
+        "path_type": "hardlink",
+        "sha256": "58fcdd01eb9c8c9a205591ede0ed58876601b40e53328d8824638b79c65c5f12",
+        "sha256_in_prefix": "58fcdd01eb9c8c9a205591ede0ed58876601b40e53328d8824638b79c65c5f12",
+        "size_in_bytes": 58880
+      },
+      {
+        "_path": "Library/bin/set_unicharset_properties.exe",
+        "path_type": "hardlink",
+        "sha256": "157960b4bd1eaae480c2116fab7b9c045b61eb9d9a95796dac7b6b89c7331826",
+        "sha256_in_prefix": "157960b4bd1eaae480c2116fab7b9c045b61eb9d9a95796dac7b6b89c7331826",
+        "size_in_bytes": 81920
+      },
+      {
+        "_path": "Library/bin/shapeclustering.exe",
+        "path_type": "hardlink",
+        "sha256": "a13898fb8ddf48bd58bdc7e0b2a6166ac019eae949d59b7c9e388446599f2bdc",
+        "sha256_in_prefix": "a13898fb8ddf48bd58bdc7e0b2a6166ac019eae949d59b7c9e388446599f2bdc",
+        "size_in_bytes": 43008
+      },
+      {
+        "_path": "Library/bin/tessdata/eng.traineddata",
+        "path_type": "hardlink",
+        "sha256": "7d4322bd2a7749724879683fc3912cb542f19906c83bcc1a52132556427170b2",
+        "sha256_in_prefix": "7d4322bd2a7749724879683fc3912cb542f19906c83bcc1a52132556427170b2",
+        "size_in_bytes": 4113088
+      },
+      {
+        "_path": "Library/bin/tessdata/osd.traineddata",
+        "path_type": "hardlink",
+        "sha256": "9cf5d576fcc47564f11265841e5ca839001e7e6f38ff7f7aacf46d15a96b00ff",
+        "sha256_in_prefix": "9cf5d576fcc47564f11265841e5ca839001e7e6f38ff7f7aacf46d15a96b00ff",
+        "size_in_bytes": 10562727
+      },
+      {
+        "_path": "Library/bin/tesseract.exe",
+        "path_type": "hardlink",
+        "sha256": "1cc34d92f19db6ef763d7b998aa5d457ddd9f77b76ac1fb250bfa92d07823687",
+        "sha256_in_prefix": "1cc34d92f19db6ef763d7b998aa5d457ddd9f77b76ac1fb250bfa92d07823687",
+        "size_in_bytes": 41472
+      },
+      {
+        "_path": "Library/bin/tesseract41.dll",
+        "path_type": "hardlink",
+        "sha256": "b05104c4d1adeec6397a651b3ffaa0f15057d4f4c99070e5308db069684162c7",
+        "sha256_in_prefix": "b05104c4d1adeec6397a651b3ffaa0f15057d4f4c99070e5308db069684162c7",
+        "size_in_bytes": 3239936
+      },
+      {
+        "_path": "Library/bin/unicharset_extractor.exe",
+        "path_type": "hardlink",
+        "sha256": "5638144ae34681ae136bda36636ff5a19b10d7c81f3869ceb5afe455f59b7e67",
+        "sha256_in_prefix": "5638144ae34681ae136bda36636ff5a19b10d7c81f3869ceb5afe455f59b7e67",
+        "size_in_bytes": 78848
+      },
+      {
+        "_path": "Library/bin/wordlist2dawg.exe",
+        "path_type": "hardlink",
+        "sha256": "81d115fc47ba729c8a547ef9222f38b4b378c9ad3be75480d57d698e4fd99e44",
+        "sha256_in_prefix": "81d115fc47ba729c8a547ef9222f38b4b378c9ad3be75480d57d698e4fd99e44",
+        "size_in_bytes": 23040
+      },
+      {
+        "_path": "Library/cmake/TesseractConfig-version.cmake",
+        "path_type": "hardlink",
+        "sha256": "8964ced3b4ae9d4ca92e127528334a19141409db2a733ad1ceb866ffa4c930a4",
+        "sha256_in_prefix": "8964ced3b4ae9d4ca92e127528334a19141409db2a733ad1ceb866ffa4c930a4",
+        "size_in_bytes": 400
+      },
+      {
+        "_path": "Library/cmake/TesseractConfig.cmake",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "C:/bld/tesseract_1552215192217/_h_env",
+        "sha256": "d2405a0073b1a1c91fbf8c8aa315a2ae0071808d7edb4643ad30c6f6c84c57dd",
+        "sha256_in_prefix": "e985341f460f1b4ff4c41d17ab39d2ed89dd29b14016651e35786b9c9a8d4a26",
+        "size_in_bytes": 1968
+      },
+      {
+        "_path": "Library/cmake/TesseractTargets-release.cmake",
+        "path_type": "hardlink",
+        "sha256": "b58b69ea5d34daca160c6c7bf637902c2ba741c1a3dbb6baf4b07615f8af13fb",
+        "sha256_in_prefix": "b58b69ea5d34daca160c6c7bf637902c2ba741c1a3dbb6baf4b07615f8af13fb",
+        "size_in_bytes": 904
+      },
+      {
+        "_path": "Library/cmake/TesseractTargets.cmake",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "C:/bld/tesseract_1552215192217/_h_env",
+        "sha256": "50f78c54011649f35f4adfb71f9c7545af4989b3a9b234a984a281b01e2d79be",
+        "sha256_in_prefix": "7067daa3ef5090fc3e07d990479d2076b2d5c4fee7880310edd31cdc4f7afd21",
+        "size_in_bytes": 3442
+      },
+      {
+        "_path": "Library/include/tesseract/apitypes.h",
+        "path_type": "hardlink",
+        "sha256": "844d358b33a5c10983389182854457f4f6a7874de89f734bde6a4263934d5d54",
+        "sha256_in_prefix": "844d358b33a5c10983389182854457f4f6a7874de89f734bde6a4263934d5d54",
+        "size_in_bytes": 1356
+      },
+      {
+        "_path": "Library/include/tesseract/baseapi.h",
+        "path_type": "hardlink",
+        "sha256": "f0b461f7cb60e0645f921f4b1e7d2b33407e7b926221773a9a4b1cdf6d2158ca",
+        "sha256_in_prefix": "f0b461f7cb60e0645f921f4b1e7d2b33407e7b926221773a9a4b1cdf6d2158ca",
+        "size_in_bytes": 37681
+      },
+      {
+        "_path": "Library/include/tesseract/basedir.h",
+        "path_type": "hardlink",
+        "sha256": "6c2cc763059f741c5314a35afcf886cb775cbf998643ce9e13e6b02f0365ab0f",
+        "sha256_in_prefix": "6c2cc763059f741c5314a35afcf886cb775cbf998643ce9e13e6b02f0365ab0f",
+        "size_in_bytes": 1288
+      },
+      {
+        "_path": "Library/include/tesseract/capi.h",
+        "path_type": "hardlink",
+        "sha256": "a5737044b11443c49397122602d1e7717753b32833ce01902e0f92eb91c1ab52",
+        "sha256_in_prefix": "a5737044b11443c49397122602d1e7717753b32833ce01902e0f92eb91c1ab52",
+        "size_in_bytes": 23693
+      },
+      {
+        "_path": "Library/include/tesseract/convolve.h",
+        "path_type": "hardlink",
+        "sha256": "0ef45161acee4b1b54ad01ad79db38552c5780b2dc1a7a64467bed88b5e8491a",
+        "sha256_in_prefix": "0ef45161acee4b1b54ad01ad79db38552c5780b2dc1a7a64467bed88b5e8491a",
+        "size_in_bytes": 2751
+      },
+      {
+        "_path": "Library/include/tesseract/ctc.h",
+        "path_type": "hardlink",
+        "sha256": "4d588dafab39ccf30e24ccad1f1e55f4fcc6d22741f32d4e7c6b7afbbe7824dc",
+        "sha256_in_prefix": "4d588dafab39ccf30e24ccad1f1e55f4fcc6d22741f32d4e7c6b7afbbe7824dc",
+        "size_in_bytes": 5855
+      },
+      {
+        "_path": "Library/include/tesseract/dotproductavx.h",
+        "path_type": "hardlink",
+        "sha256": "f6c0a4ef6e7064581a5f1ce5777d92eedb7407fdb1ea1a5d5822030a5bfe61b0",
+        "sha256_in_prefix": "f6c0a4ef6e7064581a5f1ce5777d92eedb7407fdb1ea1a5d5822030a5bfe61b0",
+        "size_in_bytes": 1261
+      },
+      {
+        "_path": "Library/include/tesseract/dotproductsse.h",
+        "path_type": "hardlink",
+        "sha256": "119b82ff8d12dd237d0f4df4f7b1d3746a9dea620f4736582d7982842286362e",
+        "sha256_in_prefix": "119b82ff8d12dd237d0f4df4f7b1d3746a9dea620f4736582d7982842286362e",
+        "size_in_bytes": 1216
+      },
+      {
+        "_path": "Library/include/tesseract/errcode.h",
+        "path_type": "hardlink",
+        "sha256": "224b903c45614f33134ca6a5d9ca4051aa50730cd8b069687743754d1094b7dc",
+        "sha256_in_prefix": "224b903c45614f33134ca6a5d9ca4051aa50730cd8b069687743754d1094b7dc",
+        "size_in_bytes": 3682
+      },
+      {
+        "_path": "Library/include/tesseract/fileerr.h",
+        "path_type": "hardlink",
+        "sha256": "b30822f4bc9708fef8ef0a9f966fe749edf563f74330a4420fdf6af40355b8ee",
+        "sha256_in_prefix": "b30822f4bc9708fef8ef0a9f966fe749edf563f74330a4420fdf6af40355b8ee",
+        "size_in_bytes": 1435
+      },
+      {
+        "_path": "Library/include/tesseract/fullyconnected.h",
+        "path_type": "hardlink",
+        "sha256": "87e9a45de72e9509b18f1219c898a3c574f1913e0749d1ce7b69d33a6d4c8317",
+        "sha256_in_prefix": "87e9a45de72e9509b18f1219c898a3c574f1913e0749d1ce7b69d33a6d4c8317",
+        "size_in_bytes": 5703
+      },
+      {
+        "_path": "Library/include/tesseract/functions.h",
+        "path_type": "hardlink",
+        "sha256": "5d686aa29bf248553c4dcbe02f7fbf0db127b9c96aea9e8fe4ea1a57daf1f35d",
+        "sha256_in_prefix": "5d686aa29bf248553c4dcbe02f7fbf0db127b9c96aea9e8fe4ea1a57daf1f35d",
+        "size_in_bytes": 7606
+      },
+      {
+        "_path": "Library/include/tesseract/genericvector.h",
+        "path_type": "hardlink",
+        "sha256": "69bbdb540ed520353895e11f6a233270bbe8543bac02a6c1300e71a41641ded2",
+        "sha256_in_prefix": "69bbdb540ed520353895e11f6a233270bbe8543bac02a6c1300e71a41641ded2",
+        "size_in_bytes": 37580
+      },
+      {
+        "_path": "Library/include/tesseract/helpers.h",
+        "path_type": "hardlink",
+        "sha256": "ad52f291e27e3ef4aee66abcb22ce566e00650d7ac7754660dfe11862222747a",
+        "sha256_in_prefix": "ad52f291e27e3ef4aee66abcb22ce566e00650d7ac7754660dfe11862222747a",
+        "size_in_bytes": 6445
+      },
+      {
+        "_path": "Library/include/tesseract/host.h",
+        "path_type": "hardlink",
+        "sha256": "a3bd5b52e7607a8b26b56afcf5a263f561b2f37804141582dcfe33e46ddcd904",
+        "sha256_in_prefix": "a3bd5b52e7607a8b26b56afcf5a263f561b2f37804141582dcfe33e46ddcd904",
+        "size_in_bytes": 1711
+      },
+      {
+        "_path": "Library/include/tesseract/input.h",
+        "path_type": "hardlink",
+        "sha256": "5a5ec042636227dfb035c9ff388076b9e1fab6f198a037934244370e9fd64357",
+        "sha256_in_prefix": "5a5ec042636227dfb035c9ff388076b9e1fab6f198a037934244370e9fd64357",
+        "size_in_bytes": 4444
+      },
+      {
+        "_path": "Library/include/tesseract/intsimdmatrix.h",
+        "path_type": "hardlink",
+        "sha256": "a7c9cc91e70ace32149402c721b6567472855774cc9eeb6d8f5b3c6ebe13758c",
+        "sha256_in_prefix": "a7c9cc91e70ace32149402c721b6567472855774cc9eeb6d8f5b3c6ebe13758c",
+        "size_in_bytes": 5784
+      },
+      {
+        "_path": "Library/include/tesseract/lstm.h",
+        "path_type": "hardlink",
+        "sha256": "813e65902727583f2d1e43d95535c7c46f4c760b56416c8738376a614d1302c6",
+        "sha256_in_prefix": "813e65902727583f2d1e43d95535c7c46f4c760b56416c8738376a614d1302c6",
+        "size_in_bytes": 6779
+      },
+      {
+        "_path": "Library/include/tesseract/lstmrecognizer.h",
+        "path_type": "hardlink",
+        "sha256": "c0492ea45f11b3b93e88577336f60a05b71339a133bd0466bd319613fd3fb81d",
+        "sha256_in_prefix": "c0492ea45f11b3b93e88577336f60a05b71339a133bd0466bd319613fd3fb81d",
+        "size_in_bytes": 13072
+      },
+      {
+        "_path": "Library/include/tesseract/lstmtrainer.h",
+        "path_type": "hardlink",
+        "sha256": "206e060d5c9ec2234c56efc8c63794009ba99caa54e311f8bdf2361a0b1cd6a4",
+        "sha256_in_prefix": "206e060d5c9ec2234c56efc8c63794009ba99caa54e311f8bdf2361a0b1cd6a4",
+        "size_in_bytes": 22640
+      },
+      {
+        "_path": "Library/include/tesseract/ltrresultiterator.h",
+        "path_type": "hardlink",
+        "sha256": "4369903a55337577ee2f257e79abd4281db7fc991c0977d449ea1c9e98d042f9",
+        "sha256_in_prefix": "4369903a55337577ee2f257e79abd4281db7fc991c0977d449ea1c9e98d042f9",
+        "size_in_bytes": 9633
+      },
+      {
+        "_path": "Library/include/tesseract/maxpool.h",
+        "path_type": "hardlink",
+        "sha256": "46791d4ac723762bdaec1f53259657c1c2d8ef1bc40f1d800a85587f0e07078f",
+        "sha256_in_prefix": "46791d4ac723762bdaec1f53259657c1c2d8ef1bc40f1d800a85587f0e07078f",
+        "size_in_bytes": 2308
+      },
+      {
+        "_path": "Library/include/tesseract/network.h",
+        "path_type": "hardlink",
+        "sha256": "40127a75655b94cd99284ca0ec1384818f3d6cf030b942e75eade2e9d897dedd",
+        "sha256_in_prefix": "40127a75655b94cd99284ca0ec1384818f3d6cf030b942e75eade2e9d897dedd",
+        "size_in_bytes": 14505
+      },
+      {
+        "_path": "Library/include/tesseract/networkbuilder.h",
+        "path_type": "hardlink",
+        "sha256": "f504ad235077c1c94ac36910e9e533f4acfde109d62bf2217716adcffd954a38",
+        "sha256_in_prefix": "f504ad235077c1c94ac36910e9e533f4acfde109d62bf2217716adcffd954a38",
+        "size_in_bytes": 8038
+      },
+      {
+        "_path": "Library/include/tesseract/networkio.h",
+        "path_type": "hardlink",
+        "sha256": "c030ab441fe88409d4ed9d17edaadbdceecd1b2af23d781ff45a7426c064b328",
+        "sha256_in_prefix": "c030ab441fe88409d4ed9d17edaadbdceecd1b2af23d781ff45a7426c064b328",
+        "size_in_bytes": 15569
+      },
+      {
+        "_path": "Library/include/tesseract/networkscratch.h",
+        "path_type": "hardlink",
+        "sha256": "2a097379e1a98fdc604db129558eb465a6c72454b73f51d852116d53fb9f68bf",
+        "sha256_in_prefix": "2a097379e1a98fdc604db129558eb465a6c72454b73f51d852116d53fb9f68bf",
+        "size_in_bytes": 9884
+      },
+      {
+        "_path": "Library/include/tesseract/ocrclass.h",
+        "path_type": "hardlink",
+        "sha256": "3ff8ee622d77dd763cc949a96278306cc7c2ba6badd1ccca388fbba78b937d7c",
+        "sha256_in_prefix": "3ff8ee622d77dd763cc949a96278306cc7c2ba6badd1ccca388fbba78b937d7c",
+        "size_in_bytes": 7630
+      },
+      {
+        "_path": "Library/include/tesseract/osdetect.h",
+        "path_type": "hardlink",
+        "sha256": "3026cf8873e6278ab59b737c4c97e0e793f25a8a549a29c8649df34eae370f10",
+        "sha256_in_prefix": "3026cf8873e6278ab59b737c4c97e0e793f25a8a549a29c8649df34eae370f10",
+        "size_in_bytes": 4710
+      },
+      {
+        "_path": "Library/include/tesseract/pageiterator.h",
+        "path_type": "hardlink",
+        "sha256": "a1059b4aa420b1676782077120b38d3061ba47befc9b55040ca9d2679a5af40a",
+        "sha256_in_prefix": "a1059b4aa420b1676782077120b38d3061ba47befc9b55040ca9d2679a5af40a",
+        "size_in_bytes": 15187
+      },
+      {
+        "_path": "Library/include/tesseract/parallel.h",
+        "path_type": "hardlink",
+        "sha256": "7a25ae26ce3e11d67072f6e74af3aca99f741a14de32f15b937d8a4a1bdcbee4",
+        "sha256_in_prefix": "7a25ae26ce3e11d67072f6e74af3aca99f741a14de32f15b937d8a4a1bdcbee4",
+        "size_in_bytes": 3318
+      },
+      {
+        "_path": "Library/include/tesseract/params.h",
+        "path_type": "hardlink",
+        "sha256": "4bd80dc9fc604768ddfc16b2d80064295ea14079ab55ec6c7fd249f8bca0e451",
+        "sha256_in_prefix": "4bd80dc9fc604768ddfc16b2d80064295ea14079ab55ec6c7fd249f8bca0e451",
+        "size_in_bytes": 10682
+      },
+      {
+        "_path": "Library/include/tesseract/platform.h",
+        "path_type": "hardlink",
+        "sha256": "86fc4b8a53ddd05b92f6a212aaeee6cfc7ba3bf02d2977c639375057cdd83d1c",
+        "sha256_in_prefix": "86fc4b8a53ddd05b92f6a212aaeee6cfc7ba3bf02d2977c639375057cdd83d1c",
+        "size_in_bytes": 2121
+      },
+      {
+        "_path": "Library/include/tesseract/plumbing.h",
+        "path_type": "hardlink",
+        "sha256": "828e88eac9ce4cfcd2489aa84cd072b41bb8ff17355178ff8006217f671671b8",
+        "sha256_in_prefix": "828e88eac9ce4cfcd2489aa84cd072b41bb8ff17355178ff8006217f671671b8",
+        "size_in_bytes": 6216
+      },
+      {
+        "_path": "Library/include/tesseract/publictypes.h",
+        "path_type": "hardlink",
+        "sha256": "a217a1cc15ae06411efb265e8ce7cca6356811dc769f6fda2ffa4fb4a109e52f",
+        "sha256_in_prefix": "a217a1cc15ae06411efb265e8ce7cca6356811dc769f6fda2ffa4fb4a109e52f",
+        "size_in_bytes": 12379
+      },
+      {
+        "_path": "Library/include/tesseract/recodebeam.h",
+        "path_type": "hardlink",
+        "sha256": "a06719e6ca8af0a75be83682e66c5fc9371a846e970338f68b84d4895a220bf6",
+        "sha256_in_prefix": "a06719e6ca8af0a75be83682e66c5fc9371a846e970338f68b84d4895a220bf6",
+        "size_in_bytes": 19950
+      },
+      {
+        "_path": "Library/include/tesseract/reconfig.h",
+        "path_type": "hardlink",
+        "sha256": "eed0e8040a138b7a40cb7010850aa4bb1cfe740fa0a4665dbcbd87febd73398a",
+        "sha256_in_prefix": "eed0e8040a138b7a40cb7010850aa4bb1cfe740fa0a4665dbcbd87febd73398a",
+        "size_in_bytes": 3321
+      },
+      {
+        "_path": "Library/include/tesseract/renderer.h",
+        "path_type": "hardlink",
+        "sha256": "9e004151273b22599ab0d93ac70318a71a1baa9e6b7942c9b331694a715a1c68",
+        "sha256_in_prefix": "9e004151273b22599ab0d93ac70318a71a1baa9e6b7942c9b331694a715a1c68",
+        "size_in_bytes": 10181
+      },
+      {
+        "_path": "Library/include/tesseract/resultiterator.h",
+        "path_type": "hardlink",
+        "sha256": "555de42493787a66d032eb54e00f7494280fb4d307cc065af62c12ad8dbed1e9",
+        "sha256_in_prefix": "555de42493787a66d032eb54e00f7494280fb4d307cc065af62c12ad8dbed1e9",
+        "size_in_bytes": 9688
+      },
+      {
+        "_path": "Library/include/tesseract/reversed.h",
+        "path_type": "hardlink",
+        "sha256": "3a3f664ff80330c1c99194ef78e614f5c8717f5aca2b232059a49ce78bcc73fd",
+        "sha256_in_prefix": "3a3f664ff80330c1c99194ef78e614f5c8717f5aca2b232059a49ce78bcc73fd",
+        "size_in_bytes": 3530
+      },
+      {
+        "_path": "Library/include/tesseract/serialis.h",
+        "path_type": "hardlink",
+        "sha256": "e6f2fc33e636f23d0b036c0ef48fa4d07de9f9a5e008175cb7d60cad6b1647d8",
+        "sha256_in_prefix": "e6f2fc33e636f23d0b036c0ef48fa4d07de9f9a5e008175cb7d60cad6b1647d8",
+        "size_in_bytes": 6573
+      },
+      {
+        "_path": "Library/include/tesseract/series.h",
+        "path_type": "hardlink",
+        "sha256": "9e48feb36e37d90e933fb6ac34dbbc67c9327e8fc6c1a5db4163bf8ad9c34bcf",
+        "sha256_in_prefix": "9e48feb36e37d90e933fb6ac34dbbc67c9327e8fc6c1a5db4163bf8ad9c34bcf",
+        "size_in_bytes": 4001
+      },
+      {
+        "_path": "Library/include/tesseract/simddetect.h",
+        "path_type": "hardlink",
+        "sha256": "f32baf33cdb303c0e2d4aeb20b44822fced00e4d11ca7b0e4ee74c8a5c54894a",
+        "sha256_in_prefix": "f32baf33cdb303c0e2d4aeb20b44822fced00e4d11ca7b0e4ee74c8a5c54894a",
+        "size_in_bytes": 2697
+      },
+      {
+        "_path": "Library/include/tesseract/static_shape.h",
+        "path_type": "hardlink",
+        "sha256": "3f9a3acdd4f97113569eaf8b8b796013af99c8c5f3bd0c21bf1993d828879b78",
+        "sha256_in_prefix": "3f9a3acdd4f97113569eaf8b8b796013af99c8c5f3bd0c21bf1993d828879b78",
+        "size_in_bytes": 3564
+      },
+      {
+        "_path": "Library/include/tesseract/stridemap.h",
+        "path_type": "hardlink",
+        "sha256": "09b9ee197e5e70b624abeceba89c11e360f3acea3bba8ea31677c3ab0f4648da",
+        "sha256_in_prefix": "09b9ee197e5e70b624abeceba89c11e360f3acea3bba8ea31677c3ab0f4648da",
+        "size_in_bytes": 5525
+      },
+      {
+        "_path": "Library/include/tesseract/strngs.h",
+        "path_type": "hardlink",
+        "sha256": "ef4b5d9e65d576c0803f6a3147daae54e1f4b9dc90518dcb619409071ee3e90c",
+        "sha256_in_prefix": "ef4b5d9e65d576c0803f6a3147daae54e1f4b9dc90518dcb619409071ee3e90c",
+        "size_in_bytes": 6807
+      },
+      {
+        "_path": "Library/include/tesseract/tess_version.h",
+        "path_type": "hardlink",
+        "sha256": "63328a981691b55617e3159bef4397341e149a77c33b2e7a0c0cc33a38c45119",
+        "sha256_in_prefix": "63328a981691b55617e3159bef4397341e149a77c33b2e7a0c0cc33a38c45119",
+        "size_in_bytes": 1200
+      },
+      {
+        "_path": "Library/include/tesseract/tesscallback.h",
+        "path_type": "hardlink",
+        "sha256": "47463b0f7227923432307e8d0c05817afd7fc013dec1ac554ed781fb2f666e03",
+        "sha256_in_prefix": "47463b0f7227923432307e8d0c05817afd7fc013dec1ac554ed781fb2f666e03",
+        "size_in_bytes": 360089
+      },
+      {
+        "_path": "Library/include/tesseract/tfnetwork.h",
+        "path_type": "hardlink",
+        "sha256": "655b47c56de83efa837c4ef7f22249a8ffd42f54c4822c52437c86747a2c1d16",
+        "sha256_in_prefix": "655b47c56de83efa837c4ef7f22249a8ffd42f54c4822c52437c86747a2c1d16",
+        "size_in_bytes": 3344
+      },
+      {
+        "_path": "Library/include/tesseract/thresholder.h",
+        "path_type": "hardlink",
+        "sha256": "6fef9b9c52a9832c9f6bad0d32fa45594dd8374994a364962e5eb93aedc8e2c3",
+        "sha256_in_prefix": "6fef9b9c52a9832c9f6bad0d32fa45594dd8374994a364962e5eb93aedc8e2c3",
+        "size_in_bytes": 7877
+      },
+      {
+        "_path": "Library/include/tesseract/unichar.h",
+        "path_type": "hardlink",
+        "sha256": "de32b056721f18281916092794cbc72c8f480d48c8a1be8caeaf76cb7a68cd94",
+        "sha256_in_prefix": "de32b056721f18281916092794cbc72c8f480d48c8a1be8caeaf76cb7a68cd94",
+        "size_in_bytes": 6508
+      },
+      {
+        "_path": "Library/include/tesseract/unicharcompress.h",
+        "path_type": "hardlink",
+        "sha256": "52d6f0cce3275e645204b192cbd403314b190bc8978611ea30391bb96d982d7f",
+        "sha256_in_prefix": "52d6f0cce3275e645204b192cbd403314b190bc8978611ea30391bb96d982d7f",
+        "size_in_bytes": 10224
+      },
+      {
+        "_path": "Library/include/tesseract/unicharmap.h",
+        "path_type": "hardlink",
+        "sha256": "cf8d23fb85454f125437b2e5126cb20bb048fc5ac2ed2bfec446b5e1e141a26a",
+        "sha256_in_prefix": "cf8d23fb85454f125437b2e5126cb20bb048fc5ac2ed2bfec446b5e1e141a26a",
+        "size_in_bytes": 2534
+      },
+      {
+        "_path": "Library/include/tesseract/unicharset.h",
+        "path_type": "hardlink",
+        "sha256": "5c2f8580b7a2b68cc4a54b3db085c50d76c6e6d607f6b234c76aeac997135b5a",
+        "sha256_in_prefix": "5c2f8580b7a2b68cc4a54b3db085c50d76c6e6d607f6b234c76aeac997135b5a",
+        "size_in_bytes": 43284
+      },
+      {
+        "_path": "Library/include/tesseract/weightmatrix.h",
+        "path_type": "hardlink",
+        "sha256": "b5341a7b1f314d89010500c4f00a0c87c598f6dcb4275bfeac616c37b891f59c",
+        "sha256_in_prefix": "b5341a7b1f314d89010500c4f00a0c87c598f6dcb4275bfeac616c37b891f59c",
+        "size_in_bytes": 8243
+      },
+      {
+        "_path": "Library/lib/pkgconfig/tesseract.pc",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "C:/bld/tesseract_1552215192217/_h_env",
+        "sha256": "d53181b9375897243b6a1f5417b10318627ee943881863984e54297ffdad244c",
+        "sha256_in_prefix": "f1f004f274594093165dafab901a20740c1b8fee7281add57665eccde90cd844",
+        "size_in_bytes": 395
+      },
+      {
+        "_path": "Library/lib/tesseract.lib",
+        "path_type": "hardlink",
+        "sha256": "6ebf90e14f61abc362c5ddd6e62b99587d6ba1fb9d42e46141b30b9eef743b33",
+        "sha256_in_prefix": "6ebf90e14f61abc362c5ddd6e62b99587d6ba1fb9d42e46141b30b9eef743b33",
+        "size_in_bytes": 2977726
+      },
+      {
+        "_path": "Library/lib/tesseract41.lib",
+        "path_type": "hardlink",
+        "sha256": "6ebf90e14f61abc362c5ddd6e62b99587d6ba1fb9d42e46141b30b9eef743b33",
+        "sha256_in_prefix": "6ebf90e14f61abc362c5ddd6e62b99587d6ba1fb9d42e46141b30b9eef743b33",
+        "size_in_bytes": 2977726
+      },
+      {
+        "_path": "tessdata/eng.traineddata",
+        "path_type": "hardlink",
+        "sha256": "7d4322bd2a7749724879683fc3912cb542f19906c83bcc1a52132556427170b2",
+        "sha256_in_prefix": "7d4322bd2a7749724879683fc3912cb542f19906c83bcc1a52132556427170b2",
+        "size_in_bytes": 4113088
+      },
+      {
+        "_path": "tessdata/osd.traineddata",
+        "path_type": "hardlink",
+        "sha256": "9cf5d576fcc47564f11265841e5ca839001e7e6f38ff7f7aacf46d15a96b00ff",
+        "sha256_in_prefix": "9cf5d576fcc47564f11265841e5ca839001e7e6f38ff7f7aacf46d15a96b00ff",
+        "size_in_bytes": 10562727
+      }
+    ],
+    "paths_version": 1
+  },
+  "platform": "win32",
+  "requested_spec": "tesseract",
+  "size": 15465063,
+  "subdir": "win-64",
+  "timestamp": 1552215683768,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/mcs07/win-64/tesseract-4.1.0rc1-hfbcc38b_0.tar.bz2",
+  "version": "4.1.0rc1"
+}
