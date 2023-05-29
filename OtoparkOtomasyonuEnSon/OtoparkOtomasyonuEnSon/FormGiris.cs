@@ -91,7 +91,9 @@ namespace OtoparkOtomasyonuEnSon
 
         private void button8_Click(object sender, EventArgs e)
         {
-
+            FiyatTarifeForm fiyatTarifeForm = new FiyatTarifeForm();
+            this.Hide();
+            fiyatTarifeForm.ShowDialog();
         }
     }
 }

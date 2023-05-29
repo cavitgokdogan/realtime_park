@@ -170,6 +170,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="dbo_arabalar.cs" />
+    <Compile Include="FiyatTarifeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FiyatTarifeForm.Designer.cs">
+      <DependentUpon>FiyatTarifeForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
