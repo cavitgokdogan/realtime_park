@@ -73,5 +73,25 @@ namespace OtoparkOtomasyonuEnSon
             this.Hide();
             form1.ShowDialog();
         }
+        private void button7_Click(object sender, EventArgs e)
+        {
+            string komut = "cd C:\\Users\\kosee\\anaconda3\\envs\\plaka_tanima python cam_plaka.py";
+            try
+            {
+                Process.Start("cmd.exe", "/c" + "cd C:\\Users\\kosee\\anaconda3\\envs\\plaka_tanima &python cam_plaka.py");
+
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Tekrar Deneyiniz !");
+            }
+
+            // Plaka Okuma Programını CMD üzerinden çalıştırıyoruz
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
