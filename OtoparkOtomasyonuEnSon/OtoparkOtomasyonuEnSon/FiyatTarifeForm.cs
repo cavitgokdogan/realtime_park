@@ -16,5 +16,12 @@ namespace OtoparkOtomasyonuEnSon
         {
             InitializeComponent();
         }
+
+        public void AnaMenuButtonClick(object sender,EventArgs e)
+        {
+            FormGiris formGiris = new FormGiris();
+            this.Hide();
+            formGiris.ShowDialog();
+        }
     }
 }

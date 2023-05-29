@@ -301,3 +301,4 @@ D:\Github\realtime_park\OtoparkOtomasyonuEnSon\OtoparkOtomasyonuEnSon\obj\Debug\
 D:\Github\realtime_park\OtoparkOtomasyonuEnSon\OtoparkOtomasyonuEnSon\obj\Debug\OtoparkOtomasyonuEnSon.csproj.CopyComplete
 D:\Github\realtime_park\OtoparkOtomasyonuEnSon\OtoparkOtomasyonuEnSon\obj\Debug\OtoparkOtomasyonuEnSon.exe
 D:\Github\realtime_park\OtoparkOtomasyonuEnSon\OtoparkOtomasyonuEnSon\obj\Debug\OtoparkOtomasyonuEnSon.pdb
+D:\Github\realtime_park\OtoparkOtomasyonuEnSon\OtoparkOtomasyonuEnSon\obj\Debug\OtoparkOtomasyonuEnSon.FiyatTarifeForm.resources
