@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Windows.Forms;
 
 namespace OtoparkOtomasyonuEnSon
@@ -35,9 +35,6 @@ namespace OtoparkOtomasyonuEnSon
                     break;
             }
         }
-                    FormGiris formGiris = new FormGiris();
-                    this.Hide();
-                    formGiris.Show();
 
         private void TxtKullaniciAdi_TextChanged(object sender, EventArgs e)
         {
@@ -50,12 +47,23 @@ namespace OtoparkOtomasyonuEnSon
             if (lblHata.Visible)
                 lblHata.Visible = false;
         }
-                
-            }
-            catch (Exception) 
-                {
-                    MessageBox.Show("Hatalı Bilgi Girdiniz!");
-                }
+
+        private void FormGirisYap_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+                PicGirisYap_Click(sender, e);
+        }
+
+        private void TxtKullaniciAdi_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+                PicGirisYap_Click(sender, e);
+        }
+
+        private void TxtParola_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+                PicGirisYap_Click(sender, e);
         }
     }
 }
