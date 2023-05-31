@@ -10,7 +10,10 @@ namespace OtoparkOtomasyonuEnSon
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            var splash = new FormSplash(5000);
+            var mainForm = new Form1();
+            splash.ShowDialog();
+            Application.Run(mainForm);
         }
     }
 }
