@@ -31,16 +31,16 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormNoAdmin));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.otoparkDataSet7 = new OtoparkOtomasyonuEnSon.otoparkDataSet7();
-            this.arabalarBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.arabalarTableAdapter = new OtoparkOtomasyonuEnSon.otoparkDataSet7TableAdapters.arabalarTableAdapter();
             this.plakaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.telefonnoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.girissaatiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.arabalarBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.otoparkDataSet7 = new OtoparkOtomasyonuEnSon.otoparkDataSet7();
+            this.arabalarTableAdapter = new OtoparkOtomasyonuEnSon.otoparkDataSet7TableAdapters.arabalarTableAdapter();
             this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.otoparkDataSet7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arabalarBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.otoparkDataSet7)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -56,20 +56,6 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(373, 305);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // otoparkDataSet7
-            // 
-            this.otoparkDataSet7.DataSetName = "otoparkDataSet7";
-            this.otoparkDataSet7.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // arabalarBindingSource
-            // 
-            this.arabalarBindingSource.DataMember = "arabalar";
-            this.arabalarBindingSource.DataSource = this.otoparkDataSet7;
-            // 
-            // arabalarTableAdapter
-            // 
-            this.arabalarTableAdapter.ClearBeforeFill = true;
             // 
             // plakaDataGridViewTextBoxColumn
             // 
@@ -88,6 +74,20 @@
             this.girissaatiDataGridViewTextBoxColumn.DataPropertyName = "giris_saati";
             this.girissaatiDataGridViewTextBoxColumn.HeaderText = "giris_saati";
             this.girissaatiDataGridViewTextBoxColumn.Name = "girissaatiDataGridViewTextBoxColumn";
+            // 
+            // arabalarBindingSource
+            // 
+            this.arabalarBindingSource.DataMember = "arabalar";
+            this.arabalarBindingSource.DataSource = this.otoparkDataSet7;
+            // 
+            // otoparkDataSet7
+            // 
+            this.otoparkDataSet7.DataSetName = "otoparkDataSet7";
+            this.otoparkDataSet7.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // arabalarTableAdapter
+            // 
+            this.arabalarTableAdapter.ClearBeforeFill = true;
             // 
             // button1
             // 
@@ -112,8 +112,8 @@
             this.Text = "FormNoAdmin";
             this.Load += new System.EventHandler(this.FormNoAdmin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.otoparkDataSet7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.arabalarBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.otoparkDataSet7)).EndInit();
             this.ResumeLayout(false);
 
         }

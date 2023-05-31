@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormSplash));
             this.splashTimer = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
@@ -43,6 +44,7 @@
             this.BackgroundImage = global::OtoparkOtomasyonuEnSon.Properties.Resources.Splash;
             this.ClientSize = new System.Drawing.Size(640, 400);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormSplash";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormSplash";

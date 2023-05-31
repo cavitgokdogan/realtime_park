@@ -29,7 +29,13 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormKayitlar));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.plakaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.telefonnoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.girissaatiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.arabalarBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
+            this.otoparkDataSet5 = new OtoparkOtomasyonuEnSon.otoparkDataSet5();
             this.arabalarBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.otoparkDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.otoparkDataSet = new OtoparkOtomasyonuEnSon.otoparkDataSet();
@@ -51,13 +57,10 @@
             this.otoparkDataSet4 = new OtoparkOtomasyonuEnSon.otoparkDataSet4();
             this.arabalarBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.arabalarTableAdapter1 = new OtoparkOtomasyonuEnSon.otoparkDataSet4TableAdapters.arabalarTableAdapter();
-            this.otoparkDataSet5 = new OtoparkOtomasyonuEnSon.otoparkDataSet5();
-            this.arabalarBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
             this.arabalarTableAdapter2 = new OtoparkOtomasyonuEnSon.otoparkDataSet5TableAdapters.arabalarTableAdapter();
-            this.plakaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.telefonnoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.girissaatiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.arabalarBindingSource4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.otoparkDataSet5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arabalarBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.otoparkDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.otoparkDataSet)).BeginInit();
@@ -66,8 +69,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.arabalarBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.otoparkDataSet4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arabalarBindingSource3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.otoparkDataSet5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.arabalarBindingSource4)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -92,6 +93,37 @@
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
+            // 
+            // plakaDataGridViewTextBoxColumn
+            // 
+            this.plakaDataGridViewTextBoxColumn.DataPropertyName = "plaka";
+            this.plakaDataGridViewTextBoxColumn.HeaderText = "plaka";
+            this.plakaDataGridViewTextBoxColumn.Name = "plakaDataGridViewTextBoxColumn";
+            this.plakaDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // telefonnoDataGridViewTextBoxColumn
+            // 
+            this.telefonnoDataGridViewTextBoxColumn.DataPropertyName = "telefon_no";
+            this.telefonnoDataGridViewTextBoxColumn.HeaderText = "telefon_no";
+            this.telefonnoDataGridViewTextBoxColumn.Name = "telefonnoDataGridViewTextBoxColumn";
+            this.telefonnoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // girissaatiDataGridViewTextBoxColumn
+            // 
+            this.girissaatiDataGridViewTextBoxColumn.DataPropertyName = "giris_saati";
+            this.girissaatiDataGridViewTextBoxColumn.HeaderText = "giris_saati";
+            this.girissaatiDataGridViewTextBoxColumn.Name = "girissaatiDataGridViewTextBoxColumn";
+            this.girissaatiDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // arabalarBindingSource4
+            // 
+            this.arabalarBindingSource4.DataMember = "arabalar";
+            this.arabalarBindingSource4.DataSource = this.otoparkDataSet5;
+            // 
+            // otoparkDataSet5
+            // 
+            this.otoparkDataSet5.DataSetName = "otoparkDataSet5";
+            this.otoparkDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // arabalarBindingSource1
             // 
@@ -135,8 +167,6 @@
             // 
             // fillByToolStrip
             // 
-            this.fillByToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fillByToolStripButton});
             this.fillByToolStrip.Location = new System.Drawing.Point(0, 0);
             this.fillByToolStrip.Name = "fillByToolStrip";
             this.fillByToolStrip.Size = new System.Drawing.Size(800, 25);
@@ -250,40 +280,9 @@
             // 
             this.arabalarTableAdapter1.ClearBeforeFill = true;
             // 
-            // otoparkDataSet5
-            // 
-            this.otoparkDataSet5.DataSetName = "otoparkDataSet5";
-            this.otoparkDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // arabalarBindingSource4
-            // 
-            this.arabalarBindingSource4.DataMember = "arabalar";
-            this.arabalarBindingSource4.DataSource = this.otoparkDataSet5;
-            // 
             // arabalarTableAdapter2
             // 
             this.arabalarTableAdapter2.ClearBeforeFill = true;
-            // 
-            // plakaDataGridViewTextBoxColumn
-            // 
-            this.plakaDataGridViewTextBoxColumn.DataPropertyName = "plaka";
-            this.plakaDataGridViewTextBoxColumn.HeaderText = "plaka";
-            this.plakaDataGridViewTextBoxColumn.Name = "plakaDataGridViewTextBoxColumn";
-            this.plakaDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // telefonnoDataGridViewTextBoxColumn
-            // 
-            this.telefonnoDataGridViewTextBoxColumn.DataPropertyName = "telefon_no";
-            this.telefonnoDataGridViewTextBoxColumn.HeaderText = "telefon_no";
-            this.telefonnoDataGridViewTextBoxColumn.Name = "telefonnoDataGridViewTextBoxColumn";
-            this.telefonnoDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // girissaatiDataGridViewTextBoxColumn
-            // 
-            this.girissaatiDataGridViewTextBoxColumn.DataPropertyName = "giris_saati";
-            this.girissaatiDataGridViewTextBoxColumn.HeaderText = "giris_saati";
-            this.girissaatiDataGridViewTextBoxColumn.Name = "girissaatiDataGridViewTextBoxColumn";
-            this.girissaatiDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // FormKayitlar
             // 
@@ -302,11 +301,14 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.dataGridView1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormKayitlar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormKayitlar";
             this.Load += new System.EventHandler(this.FormKayitlar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.arabalarBindingSource4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.otoparkDataSet5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.arabalarBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.otoparkDataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.otoparkDataSet)).EndInit();
@@ -316,8 +318,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.arabalarBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.otoparkDataSet4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.arabalarBindingSource3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.otoparkDataSet5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.arabalarBindingSource4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

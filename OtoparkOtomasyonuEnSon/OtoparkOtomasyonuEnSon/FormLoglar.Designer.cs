@@ -31,11 +31,11 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormLoglar));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.logDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.logBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.otoparkDataSet6 = new OtoparkOtomasyonuEnSon.otoparkDataSet6();
             this.logTableAdapter = new OtoparkOtomasyonuEnSon.otoparkDataSet6TableAdapters.logTableAdapter();
             this.button2 = new System.Windows.Forms.Button();
-            this.logDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.otoparkDataSet6)).BeginInit();
@@ -53,6 +53,13 @@
             this.dataGridView1.Size = new System.Drawing.Size(654, 307);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // logDataGridViewTextBoxColumn
+            // 
+            this.logDataGridViewTextBoxColumn.DataPropertyName = "log";
+            this.logDataGridViewTextBoxColumn.HeaderText = "log";
+            this.logDataGridViewTextBoxColumn.Name = "logDataGridViewTextBoxColumn";
+            this.logDataGridViewTextBoxColumn.Width = 611;
             // 
             // logBindingSource
             // 
@@ -77,13 +84,6 @@
             this.button2.Text = "Geri Dön";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // logDataGridViewTextBoxColumn
-            // 
-            this.logDataGridViewTextBoxColumn.DataPropertyName = "log";
-            this.logDataGridViewTextBoxColumn.HeaderText = "log";
-            this.logDataGridViewTextBoxColumn.Name = "logDataGridViewTextBoxColumn";
-            this.logDataGridViewTextBoxColumn.Width = 611;
             // 
             // FormLoglar
             // 
