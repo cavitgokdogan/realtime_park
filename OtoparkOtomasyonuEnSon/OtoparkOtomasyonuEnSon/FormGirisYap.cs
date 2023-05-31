@@ -10,10 +10,6 @@ namespace OtoparkOtomasyonuEnSon
             InitializeComponent();
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-        }
-
         public void button1_Click(object sender, EventArgs e)
         {
             try
@@ -38,34 +34,6 @@ namespace OtoparkOtomasyonuEnSon
                 {
                     MessageBox.Show("Hatalı Bilgi Girdiniz!");
                 }
-            
-                
-            
-        }
-
-        private  void textBox1_TextChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
