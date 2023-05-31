@@ -39,14 +39,17 @@ namespace OtoparkOtomasyonuEnSon
                     this.Hide();
                     formGiris.Show();
 
-                }
-                
-                if(txtKullaniciAdi.Text == "kullanıcı" && txtParola.Text == "kullanıcı")
-                {
-                    FormNoAdmin formNoAdmin = new FormNoAdmin();
-                    this.Hide();
-                    formNoAdmin.ShowDialog();
-                }
+        private void TxtKullaniciAdi_TextChanged(object sender, EventArgs e)
+        {
+            if (lblHata.Visible)
+                lblHata.Visible = false;
+        }
+
+        private void TxtParola_TextChanged(object sender, EventArgs e)
+        {
+            if (lblHata.Visible)
+                lblHata.Visible = false;
+        }
                 
             }
             catch (Exception) 
