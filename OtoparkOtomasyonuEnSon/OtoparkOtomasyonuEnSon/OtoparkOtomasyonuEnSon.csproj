@@ -404,9 +404,6 @@
     <None Include="Resources\parklogo2.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Splash.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\logo.png" />
   </ItemGroup>
   <ItemGroup>
