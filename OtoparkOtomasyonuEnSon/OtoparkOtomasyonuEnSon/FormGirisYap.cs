@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Windows.Forms;
 
 namespace OtoparkOtomasyonuEnSon
@@ -10,12 +10,31 @@ namespace OtoparkOtomasyonuEnSon
             InitializeComponent();
         }
 
-        public void button1_Click(object sender, EventArgs e)
+        private void PicGirisYap_Click(object sender, EventArgs e)
         {
-            try
+            string kullaniciAdi = txtKullaniciAdi.Text.Trim();
+            string parola = txtParola.Text.Trim();
+
+            switch (kullaniciAdi)
             {
-                if (txtKullaniciAdi.Text == "admin" && txtParola.Text == "admin")
-                {
+                case "admin" when parola == "1234":
+                    FormGiris form0 = new FormGiris();
+                    form0.Show();
+                    Hide();
+                    break;
+                   
+
+                case "kullanici" when parola == "1234":
+                    FormNoAdmin form1 = new FormNoAdmin();
+                    form1.Show();
+                    Hide();
+                    break;
+
+                default:
+                    lblHata.Visible = true;
+                    break;
+            }
+        }
                     FormGiris formGiris = new FormGiris();
                     this.Hide();
                     formGiris.Show();
