@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormGirisYap));
             this.@__panel1 = new System.Windows.Forms.Panel();
+            this.lblHata = new System.Windows.Forms.Label();
             this.@__label2 = new System.Windows.Forms.Label();
             this.@__label1 = new System.Windows.Forms.Label();
             this.picGirisYap = new System.Windows.Forms.PictureBox();
@@ -40,7 +41,6 @@
             this.txtKullaniciAdi = new System.Windows.Forms.TextBox();
             this.@__panel2 = new System.Windows.Forms.Panel();
             this.@__pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.lblHata = new System.Windows.Forms.Label();
             this.@__panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picGirisYap)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.@__pictureBox3)).BeginInit();
@@ -67,6 +67,18 @@
             this.@__panel1.Name = "__panel1";
             this.@__panel1.Size = new System.Drawing.Size(302, 436);
             this.@__panel1.TabIndex = 0;
+            // 
+            // lblHata
+            // 
+            this.lblHata.AutoSize = true;
+            this.lblHata.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblHata.ForeColor = System.Drawing.Color.White;
+            this.lblHata.Location = new System.Drawing.Point(55, 311);
+            this.lblHata.Name = "lblHata";
+            this.lblHata.Size = new System.Drawing.Size(192, 18);
+            this.lblHata.TabIndex = 20;
+            this.lblHata.Text = "Kullanıcı adı veya şifre hatalı!";
+            this.lblHata.Visible = false;
             // 
             // __label2
             // 
@@ -136,6 +148,7 @@
             this.txtParola.Size = new System.Drawing.Size(246, 22);
             this.txtParola.TabIndex = 9;
             this.txtParola.UseSystemPasswordChar = true;
+            this.txtParola.TextChanged += new System.EventHandler(this.TxtParola_TextChanged);
             // 
             // __panel3
             // 
@@ -156,6 +169,7 @@
             this.txtKullaniciAdi.Name = "txtKullaniciAdi";
             this.txtKullaniciAdi.Size = new System.Drawing.Size(246, 22);
             this.txtKullaniciAdi.TabIndex = 8;
+            this.txtKullaniciAdi.TextChanged += new System.EventHandler(this.TxtKullaniciAdi_TextChanged);
             // 
             // __panel2
             // 
@@ -175,17 +189,6 @@
             this.@__pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.@__pictureBox2.TabIndex = 12;
             this.@__pictureBox2.TabStop = false;
-            // 
-            // lblHata
-            // 
-            this.lblHata.AutoSize = true;
-            this.lblHata.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblHata.ForeColor = System.Drawing.Color.White;
-            this.lblHata.Location = new System.Drawing.Point(55, 311);
-            this.lblHata.Name = "lblHata";
-            this.lblHata.Size = new System.Drawing.Size(192, 18);
-            this.lblHata.TabIndex = 20;
-            this.lblHata.Text = "Kullanıcı adı veya şifre hatalı!";
             // 
             // FormGirisYap
             // 
