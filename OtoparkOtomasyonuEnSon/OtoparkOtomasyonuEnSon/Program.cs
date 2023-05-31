@@ -11,7 +11,7 @@ namespace OtoparkOtomasyonuEnSon
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             var splash = new FormSplash(5000);
-            var mainForm = new Form1();
+            var mainForm = new FormGirisYap();
             splash.ShowDialog();
             Application.Run(mainForm);
         }
