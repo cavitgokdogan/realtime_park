@@ -14,7 +14,7 @@ namespace OtoparkOtomasyonuEnSon
         {
             try
             {
-                if (textBox1.Text == "admin" && textBox2.Text == "admin")
+                if (txtKullaniciAdi.Text == "admin" && txtParola.Text == "admin")
                 {
                     FormGiris formGiris = new FormGiris();
                     this.Hide();
@@ -22,7 +22,7 @@ namespace OtoparkOtomasyonuEnSon
 
                 }
                 
-                if(textBox1.Text == "kullanıcı" && textBox2.Text == "kullanıcı")
+                if(txtKullaniciAdi.Text == "kullanıcı" && txtParola.Text == "kullanıcı")
                 {
                     FormNoAdmin formNoAdmin = new FormNoAdmin();
                     this.Hide();
