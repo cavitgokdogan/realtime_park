@@ -36,6 +36,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>OtoparkOtomasyonuEnSon.Program</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
@@ -170,7 +173,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="dbo_arabalar.cs" />
+    <Compile Include="ArabaDBObje.cs" />
     <Compile Include="FiyatTarifeForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -194,12 +197,6 @@
     </Compile>
     <Compile Include="FormKayitlar.Designer.cs">
       <DependentUpon>FormKayitlar.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormLoglar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormLoglar.Designer.cs">
-      <DependentUpon>FormLoglar.cs</DependentUpon>
     </Compile>
     <Compile Include="FormManuel.cs">
       <SubType>Form</SubType>
@@ -252,11 +249,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>otoparkDataSet5.xsd</DependentUpon>
     </Compile>
-    <Compile Include="otoparkDataSet6.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>otoparkDataSet6.xsd</DependentUpon>
-    </Compile>
     <Compile Include="otoparkDataSet7.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -275,9 +267,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormKayitlar.resx">
       <DependentUpon>FormKayitlar.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormLoglar.resx">
-      <DependentUpon>FormLoglar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormManuel.resx">
       <DependentUpon>FormManuel.cs</DependentUpon>
@@ -363,17 +352,6 @@
     </None>
     <None Include="otoparkDataSet5.xss">
       <DependentUpon>otoparkDataSet5.xsd</DependentUpon>
-    </None>
-    <None Include="otoparkDataSet6.xsc">
-      <DependentUpon>otoparkDataSet6.xsd</DependentUpon>
-    </None>
-    <None Include="otoparkDataSet6.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>otoparkDataSet6.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="otoparkDataSet6.xss">
-      <DependentUpon>otoparkDataSet6.xsd</DependentUpon>
     </None>
     <None Include="otoparkDataSet7.xsc">
       <DependentUpon>otoparkDataSet7.xsd</DependentUpon>
