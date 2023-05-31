@@ -40,6 +40,7 @@
             this.txtKullaniciAdi = new System.Windows.Forms.TextBox();
             this.@__panel2 = new System.Windows.Forms.Panel();
             this.@__pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.lblHata = new System.Windows.Forms.Label();
             this.@__panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picGirisYap)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.@__pictureBox3)).BeginInit();
@@ -50,6 +51,7 @@
             // __panel1
             // 
             this.@__panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(33)))), ((int)(((byte)(184)))));
+            this.@__panel1.Controls.Add(this.lblHata);
             this.@__panel1.Controls.Add(this.@__label2);
             this.@__panel1.Controls.Add(this.@__label1);
             this.@__panel1.Controls.Add(this.picGirisYap);
@@ -98,6 +100,7 @@
             this.picGirisYap.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picGirisYap.TabIndex = 17;
             this.picGirisYap.TabStop = false;
+            this.picGirisYap.Click += new System.EventHandler(this.PicGirisYap_Click);
             // 
             // __pictureBox3
             // 
@@ -173,6 +176,17 @@
             this.@__pictureBox2.TabIndex = 12;
             this.@__pictureBox2.TabStop = false;
             // 
+            // lblHata
+            // 
+            this.lblHata.AutoSize = true;
+            this.lblHata.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblHata.ForeColor = System.Drawing.Color.White;
+            this.lblHata.Location = new System.Drawing.Point(55, 311);
+            this.lblHata.Name = "lblHata";
+            this.lblHata.Size = new System.Drawing.Size(192, 18);
+            this.lblHata.TabIndex = 20;
+            this.lblHata.Text = "Kullanıcı adı veya şifre hatalı!";
+            // 
             // FormGirisYap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -209,5 +223,6 @@
         private System.Windows.Forms.PictureBox picGirisYap;
         private System.Windows.Forms.Label __label1;
         private System.Windows.Forms.Label __label2;
+        private System.Windows.Forms.Label lblHata;
     }
 }
