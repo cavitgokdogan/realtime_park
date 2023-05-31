@@ -149,6 +149,7 @@
             this.txtParola.TabIndex = 9;
             this.txtParola.UseSystemPasswordChar = true;
             this.txtParola.TextChanged += new System.EventHandler(this.TxtParola_TextChanged);
+            this.txtParola.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtParola_KeyPress);
             // 
             // __panel3
             // 
@@ -170,6 +171,7 @@
             this.txtKullaniciAdi.Size = new System.Drawing.Size(246, 22);
             this.txtKullaniciAdi.TabIndex = 8;
             this.txtKullaniciAdi.TextChanged += new System.EventHandler(this.TxtKullaniciAdi_TextChanged);
+            this.txtKullaniciAdi.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtKullaniciAdi_KeyPress);
             // 
             // __panel2
             // 
@@ -203,6 +205,7 @@
             this.Name = "FormGirisYap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormGirisYap";
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.FormGirisYap_KeyPress);
             this.@__panel1.ResumeLayout(false);
             this.@__panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picGirisYap)).EndInit();
