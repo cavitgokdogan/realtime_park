@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Diagnostics;
 
@@ -57,15 +50,6 @@ namespace OtoparkOtomasyonuEnSon
             //Kayıtlar Sayfasına Geçiş
         }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-            FormLoglar formloglar = new FormLoglar();
-            this.Hide();
-            formloglar.ShowDialog();
-            //Loglar Sayfasına Geçiş
-
-
-        }
 
         private void button5_Click(object sender, EventArgs e)
         {
