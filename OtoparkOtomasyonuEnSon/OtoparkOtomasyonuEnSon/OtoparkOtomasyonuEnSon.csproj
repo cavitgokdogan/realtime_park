@@ -198,11 +198,11 @@
     <Compile Include="FormKayitlar.Designer.cs">
       <DependentUpon>FormKayitlar.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormManuel.cs">
+    <Compile Include="ManualForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormManuel.Designer.cs">
-      <DependentUpon>FormManuel.cs</DependentUpon>
+    <Compile Include="ManualForm.Designer.cs">
+      <DependentUpon>ManualForm.cs</DependentUpon>
     </Compile>
     <Compile Include="FormNoAdmin.cs">
       <SubType>Form</SubType>
@@ -268,8 +268,8 @@
     <EmbeddedResource Include="FormKayitlar.resx">
       <DependentUpon>FormKayitlar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormManuel.resx">
-      <DependentUpon>FormManuel.cs</DependentUpon>
+    <EmbeddedResource Include="ManualForm.resx">
+      <DependentUpon>ManualForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormNoAdmin.resx">
       <DependentUpon>FormNoAdmin.cs</DependentUpon>

@@ -29,7 +29,7 @@ namespace OtoparkOtomasyonuEnSon
 
         private void button2_Click(object sender, EventArgs e)
         {
-            FormManuel formManuel = new FormManuel();
+            ManualForm formManuel = new ManualForm();
             this.Hide();
             formManuel.ShowDialog();
         }
@@ -109,12 +109,12 @@ namespace OtoparkOtomasyonuEnSon
             //TextBoxları DataGridViewde tıklanılan kısma eşitliyoruz (verileri oradan silmek için)
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void numberPlateTextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
+        private void telNoTextChanged(object sender, EventArgs e)
         {
 
         }

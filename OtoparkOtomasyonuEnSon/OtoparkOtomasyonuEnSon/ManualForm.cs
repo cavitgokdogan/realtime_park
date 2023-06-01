@@ -4,12 +4,12 @@ using System.Data.SqlClient;
 
 namespace OtoparkOtomasyonuEnSon
 {
-    public partial class FormManuel : Form
+    public partial class ManualForm : Form
     {
 
         private const string ConnectionString = "Data Source=EMIR;Initial Catalog=otopark;Integrated Security=True";
 
-        public FormManuel()
+        public ManualForm()
         {
             InitializeComponent();
         }
@@ -75,7 +75,7 @@ namespace OtoparkOtomasyonuEnSon
             //Form Kayıtlar Sayfasına Geçiş
         }
 
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        private void entranceDateValueChanged(object sender, EventArgs e)
         {
             dateTimePicker1.Format = DateTimePickerFormat.Custom;
             dateTimePicker1.CustomFormat = "MM/dd/yyyy hh:mm:ss";
@@ -83,22 +83,17 @@ namespace OtoparkOtomasyonuEnSon
             // Date Time Picker üzerinden Alınan Verinin Tarih ve Saat Formatına Çevrilmesi
         }
 
-        private void FormManuel_Load(object sender, EventArgs e)
+        private void ManualForm_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void numberPlateTextChanged(object sender, EventArgs e)
         {
            
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
+        private void telNoTextChanged(object sender, EventArgs e)
         {
 
         }

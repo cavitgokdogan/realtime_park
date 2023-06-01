@@ -18,9 +18,9 @@ namespace OtoparkOtomasyonuEnSon
 
         private void button1_Click(object sender, EventArgs e)
         {
-            FormManuel formManuel = new FormManuel();
+            ManualForm ManualForm = new ManualForm();
             this.Hide();
-            formManuel.ShowDialog();
+            ManualForm.ShowDialog();
             //Manuel Giriş Sayfasına Geçiş
         }
 
