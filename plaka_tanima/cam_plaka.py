@@ -67,21 +67,11 @@ while(True):
 
     text = pytesseract.image_to_string(cropped, lang = "eng")
 
-    if len(text) > 6 and len(text) < 14:
-        db = pypyodbc.connect('Driver={SQL Server};''Server=EMIR;''Database=otopark;''Trusted_Connection=True;')
-        giris_tarihi = datetime.datetime.now()
-        komut = db.cursor()
-
-
-        sorgu = 'INSERT INTO arabalar (plaka,giris_saati) VALUES(?,?)'
-        veriler = (text,giris_tarihi)
-
-        sonuc = komut.execute(sorgu,veriler)
-        db.commit()
-        db.close()
+    if len(text) > 8 and len(text) < 14:
+        print(text)
         break
-
-    cv2.imshow("WebCam", goruntu)
+    
+    cv2.imshow("WebCam", cropped)
 
     if cv2.waitKey(10) & 0xFF == ord('q'):
         break

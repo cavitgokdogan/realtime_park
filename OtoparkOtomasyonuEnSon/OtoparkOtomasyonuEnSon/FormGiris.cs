@@ -26,20 +26,35 @@ namespace OtoparkOtomasyonuEnSon
 
         private void button2_Click(object sender, EventArgs e)
         {
-            string komut = "cd C:\\Users\\kosee\\anaconda3\\envs\\plaka_tanima python cam_plaka.py";
-            try
+            // Start a new process
+            var process = new Process
             {
-                Process.Start("cmd.exe", "/c" + "cd C:\\Users\\kosee\\anaconda3\\envs\\plaka_tanima &python cam_plaka.py");
+                StartInfo = new ProcessStartInfo
+                {
+                    FileName = "python",
+                    // Replace with your python script path
+                    Arguments = "D:\\projects\\realtime_park\\plaka_tanima\\cam_plaka.py",
+                    UseShellExecute = false,
+                    RedirectStandardOutput = true,
+                    CreateNoWindow = true
+                }
+            };
+            process.Start();
 
-            }
-            catch (Exception) 
+            // Read the python script output
+            while (!process.StandardOutput.EndOfStream)
             {
-                MessageBox.Show("Tekrar Deneyiniz !");
+                var line = process.StandardOutput.ReadLine();
+                if (!string.IsNullOrEmpty(line))
+                {
+                    // Store the detected text
+                    string detectedText = line;
+                    MessageBox.Show(detectedText);
+                    // Now you can use the 'detectedText' variable to insert into your SQL Server in Windows Forms.
+                    // Here, you would typically call a method which executes the SQL insert operation using the SqlConnection, SqlCommand and SqlParameter classes.
+                    // For example: InsertIntoSqlServer(detectedText);
+                }
             }
-
-           // Plaka Okuma Programını CMD üzerinden çalıştırıyoruz
-
-
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -59,10 +74,10 @@ namespace OtoparkOtomasyonuEnSon
         }
         private void button7_Click(object sender, EventArgs e)
         {
-            string komut = "cd C:\\Users\\kosee\\anaconda3\\envs\\plaka_tanima python cam_plaka.py";
+            string komut = "cd D:\\projects\\realtime_park\\plaka_tanima python cam_plaka.py";
             try
             {
-                Process.Start("cmd.exe", "/c" + "cd C:\\Users\\kosee\\anaconda3\\envs\\plaka_tanima &python cam_plaka.py");
+                Process.Start("cmd.exe", "/c" + "cd D:\\projects\\realtime_park\\plaka_tanima &python cam_plaka.py");
 
             }
             catch (Exception)
