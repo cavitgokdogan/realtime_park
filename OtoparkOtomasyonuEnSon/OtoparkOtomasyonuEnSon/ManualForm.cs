@@ -19,8 +19,6 @@ namespace OtoparkOtomasyonuEnSon
             DateTime secilenZaman = dateTimePicker1.Value;
             TimeSpan secilenVakit = secilenZaman.TimeOfDay;
 
-            string log = $"{secilenZaman.Date.ToString("yyyy-MM-dd") + " " + secilenVakit} Saatinde Otoparka {textBox1.Text} Tarafından Giriş Yapıldı";
-
             try
             {
                 using (SqlConnection baglanti = new SqlConnection(ConnectionString))
@@ -35,20 +33,13 @@ namespace OtoparkOtomasyonuEnSon
                         komut.Parameters.AddWithValue("@p3", secilenZaman.Date.ToString("yyyy-MM-dd") + " " + secilenVakit);
                         komut.ExecuteNonQuery();
                     }
-
-                    string insertLog = "insert into dbo.log (log) values (@k1)";
-                    using (SqlCommand logkomut = new SqlCommand(insertLog, baglanti))
-                    {
-                        logkomut.Parameters.AddWithValue("@k1", log);
-                        logkomut.ExecuteNonQuery();
-                    }
                 }
                 MessageBox.Show("Kayıt Oluşturuldu!");
             }
             catch (Exception ex)
             {
                 // anlamsız - exception log'lanabilir - (en azından başarısız olduğu kullanıcıya bildirilmiş)
-                MessageBox.Show("Bağlantı Kurulamadı !");
+                MessageBox.Show("Bağlantı Kurulamadı !\n" + ex.Message);
             }
         }
 
