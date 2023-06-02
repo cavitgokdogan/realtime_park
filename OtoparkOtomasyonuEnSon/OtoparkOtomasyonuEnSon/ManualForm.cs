@@ -82,21 +82,5 @@ namespace OtoparkOtomasyonuEnSon
 
             // Date Time Picker üzerinden Alınan Verinin Tarih ve Saat Formatına Çevrilmesi
         }
-
-        private void ManualForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void numberPlateTextChanged(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void telNoTextChanged(object sender, EventArgs e)
-        {
-
-        }
-
     }
 }
