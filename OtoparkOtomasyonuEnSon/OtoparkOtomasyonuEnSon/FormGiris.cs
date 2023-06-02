@@ -11,11 +11,6 @@ namespace OtoparkOtomasyonuEnSon
             InitializeComponent();
         }
 
-        private void FormGiris_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             ManualForm ManualForm = new ManualForm();
@@ -112,6 +107,11 @@ namespace OtoparkOtomasyonuEnSon
             FiyatTarifeForm fiyatTarifeForm = new FiyatTarifeForm();
             this.Hide();
             fiyatTarifeForm.ShowDialog();
+        }
+
+        private void FormGiris_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Program.mainForm.Show();
         }
     }
 }
