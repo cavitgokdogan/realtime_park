@@ -50,8 +50,7 @@ namespace OtoparkOtomasyonuEnSon
                 this.Hide();
                 formGiris.ShowDialog();
             }
-            this.Show();
-            //Form Giriş Sayfasına Geçiş
+            //Form Girişo Sayfasına Geçiş
         }
 
         private void registryPageButton_Click(object sender, EventArgs e)
@@ -61,8 +60,6 @@ namespace OtoparkOtomasyonuEnSon
                 this.Hide();
                 formKayitlar.ShowDialog();
             }
-            this.Show();
-
             //Form Kayıtlar Sayfasına Geçiş
         }
 

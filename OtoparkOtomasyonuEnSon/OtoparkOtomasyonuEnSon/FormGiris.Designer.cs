@@ -29,105 +29,111 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormGiris));
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
+            this.manualFormButton = new System.Windows.Forms.Button();
+            this.automaticEntranceButton = new System.Windows.Forms.Button();
+            this.registriesButton = new System.Windows.Forms.Button();
+            this.loginPageButton = new System.Windows.Forms.Button();
+            this.automaticExitButton = new System.Windows.Forms.Button();
+            this.costManagerButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // manualFormButton
             // 
-            this.button1.Location = new System.Drawing.Point(195, 195);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(352, 63);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Manuel Giriş";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.manualFormButton.Location = new System.Drawing.Point(260, 240);
+            this.manualFormButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.manualFormButton.Name = "manualFormButton";
+            this.manualFormButton.Size = new System.Drawing.Size(469, 78);
+            this.manualFormButton.TabIndex = 0;
+            this.manualFormButton.Text = "Manuel Giriş";
+            this.manualFormButton.UseVisualStyleBackColor = true;
+            this.manualFormButton.Click += new System.EventHandler(this.manualFormButton_Click);
             // 
-            // button2
+            // automaticEntranceButton
             // 
-            this.button2.Location = new System.Drawing.Point(195, 124);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(161, 63);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Otomatik Giriş";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.automaticEntranceButton.Location = new System.Drawing.Point(260, 153);
+            this.automaticEntranceButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.automaticEntranceButton.Name = "automaticEntranceButton";
+            this.automaticEntranceButton.Size = new System.Drawing.Size(215, 78);
+            this.automaticEntranceButton.TabIndex = 1;
+            this.automaticEntranceButton.Text = "Otomatik Giriş";
+            this.automaticEntranceButton.UseVisualStyleBackColor = true;
+            this.automaticEntranceButton.Click += new System.EventHandler(this.automaticEntranceButton_Click);
             // 
-            // button3
+            // registriesButton
             // 
-            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.registriesButton.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button3.Location = new System.Drawing.Point(195, 264);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(352, 63);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Kayıtlar";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.registriesButton.Location = new System.Drawing.Point(260, 325);
+            this.registriesButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.registriesButton.Name = "registriesButton";
+            this.registriesButton.Size = new System.Drawing.Size(469, 78);
+            this.registriesButton.TabIndex = 2;
+            this.registriesButton.Text = "Kayıtlar";
+            this.registriesButton.UseVisualStyleBackColor = true;
+            this.registriesButton.Click += new System.EventHandler(this.registriesButton_Click);
             // 
-            // button5
+            // loginPageButton
             // 
-            this.button5.Location = new System.Drawing.Point(93, 415);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "Giriş Sayfası";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.loginPageButton.Location = new System.Drawing.Point(124, 511);
+            this.loginPageButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.loginPageButton.Name = "loginPageButton";
+            this.loginPageButton.Size = new System.Drawing.Size(100, 28);
+            this.loginPageButton.TabIndex = 4;
+            this.loginPageButton.Text = "Giriş Sayfası";
+            this.loginPageButton.UseVisualStyleBackColor = true;
+            this.loginPageButton.Click += new System.EventHandler(this.loginPageButton_Click);
             // 
-            // button7
+            // automaticExitButton
             // 
-            this.button7.Location = new System.Drawing.Point(391, 124);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(156, 63);
-            this.button7.TabIndex = 5;
-            this.button7.Text = "Otomatik Çıkış";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
+            this.automaticExitButton.Location = new System.Drawing.Point(521, 153);
+            this.automaticExitButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.automaticExitButton.Name = "automaticExitButton";
+            this.automaticExitButton.Size = new System.Drawing.Size(208, 78);
+            this.automaticExitButton.TabIndex = 5;
+            this.automaticExitButton.Text = "Otomatik Çıkış";
+            this.automaticExitButton.UseVisualStyleBackColor = true;
+            this.automaticExitButton.Click += new System.EventHandler(this.automaticExitButton_Click);
             // 
-            // button8
+            // costManagerButton
             // 
-            this.button8.Location = new System.Drawing.Point(175, 415);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(75, 23);
-            this.button8.TabIndex = 6;
-            this.button8.Text = "Fiyat Tarifesi";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
+            this.costManagerButton.Location = new System.Drawing.Point(233, 511);
+            this.costManagerButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.costManagerButton.Name = "costManagerButton";
+            this.costManagerButton.Size = new System.Drawing.Size(100, 28);
+            this.costManagerButton.TabIndex = 6;
+            this.costManagerButton.Text = "Fiyat Tarifesi";
+            this.costManagerButton.UseVisualStyleBackColor = true;
+            this.costManagerButton.Click += new System.EventHandler(this.costManagerButton_Click);
             // 
             // FormGiris
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.costManagerButton);
+            this.Controls.Add(this.automaticExitButton);
+            this.Controls.Add(this.loginPageButton);
+            this.Controls.Add(this.registriesButton);
+            this.Controls.Add(this.automaticEntranceButton);
+            this.Controls.Add(this.manualFormButton);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormGiris";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormGiris";
-            this.Load += new System.EventHandler(this.FormGiris_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button manualFormButton;
+        private System.Windows.Forms.Button automaticEntranceButton;
+        private System.Windows.Forms.Button registriesButton;
+        private System.Windows.Forms.Button loginPageButton;
+        private System.Windows.Forms.Button automaticExitButton;
+        private System.Windows.Forms.Button costManagerButton;
     }
 }

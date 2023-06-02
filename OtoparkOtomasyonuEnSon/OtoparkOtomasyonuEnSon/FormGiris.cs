@@ -10,13 +10,8 @@ namespace OtoparkOtomasyonuEnSon
         {
             InitializeComponent();
         }
-
-        private void FormGiris_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
+        
+        private void manualFormButton_Click(object sender, EventArgs e)
         {
             ManualForm ManualForm = new ManualForm();
             this.Hide();
@@ -24,7 +19,7 @@ namespace OtoparkOtomasyonuEnSon
             //Manuel Giriş Sayfasına Geçiş
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void automaticEntranceButton_Click(object sender, EventArgs e)
         {
             // Start a new process
             var process = new Process
@@ -58,7 +53,7 @@ namespace OtoparkOtomasyonuEnSon
             }
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void registriesButton_Click(object sender, EventArgs e)
         {
             FormKayitlar formKayitlar = new FormKayitlar();
             this.Hide();
@@ -67,13 +62,13 @@ namespace OtoparkOtomasyonuEnSon
         }
 
 
-        private void button5_Click(object sender, EventArgs e)
+        private void loginPageButton_Click(object sender, EventArgs e)
         {
             FormGirisYap form1 = new FormGirisYap();
             this.Hide();
             form1.ShowDialog();
         }
-        private void button7_Click(object sender, EventArgs e)
+        private void automaticExitButton_Click(object sender, EventArgs e)
         {
             // Start a new process
             var process = new Process
@@ -107,7 +102,7 @@ namespace OtoparkOtomasyonuEnSon
             }
         }
 
-        private void button8_Click(object sender, EventArgs e)
+        private void costManagerButton_Click(object sender, EventArgs e)
         {
             FiyatTarifeForm fiyatTarifeForm = new FiyatTarifeForm();
             this.Hide();
