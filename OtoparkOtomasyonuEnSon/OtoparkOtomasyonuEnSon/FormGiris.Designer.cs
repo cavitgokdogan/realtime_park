@@ -1,4 +1,4 @@
-﻿namespace OtoparkOtomasyonuEnSon
+namespace OtoparkOtomasyonuEnSon
 {
     partial class FormGiris
     {
@@ -29,111 +29,94 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormGiris));
-            this.manualFormButton = new System.Windows.Forms.Button();
-            this.automaticEntranceButton = new System.Windows.Forms.Button();
-            this.registriesButton = new System.Windows.Forms.Button();
-            this.loginPageButton = new System.Windows.Forms.Button();
-            this.automaticExitButton = new System.Windows.Forms.Button();
-            this.costManagerButton = new System.Windows.Forms.Button();
+            this.panCikisYap = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.statusStrip = new System.Windows.Forms.StatusStrip();
+            this.stripSaat = new System.Windows.Forms.ToolStripStatusLabel();
+            this.panCikisYap.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.statusStrip.SuspendLayout();
             this.SuspendLayout();
             // 
-            // manualFormButton
+            // panCikisYap
             // 
-            this.manualFormButton.Location = new System.Drawing.Point(260, 240);
-            this.manualFormButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.manualFormButton.Name = "manualFormButton";
-            this.manualFormButton.Size = new System.Drawing.Size(469, 78);
-            this.manualFormButton.TabIndex = 0;
-            this.manualFormButton.Text = "Manuel Giriş";
-            this.manualFormButton.UseVisualStyleBackColor = true;
-            this.manualFormButton.Click += new System.EventHandler(this.manualFormButton_Click);
+            this.panCikisYap.Controls.Add(this.label1);
+            this.panCikisYap.Controls.Add(this.pictureBox1);
+            this.panCikisYap.Location = new System.Drawing.Point(12, 12);
+            this.panCikisYap.Name = "panCikisYap";
+            this.panCikisYap.Size = new System.Drawing.Size(133, 56);
+            this.panCikisYap.TabIndex = 7;
             // 
-            // automaticEntranceButton
+            // pictureBox1
             // 
-            this.automaticEntranceButton.Location = new System.Drawing.Point(260, 153);
-            this.automaticEntranceButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.automaticEntranceButton.Name = "automaticEntranceButton";
-            this.automaticEntranceButton.Size = new System.Drawing.Size(215, 78);
-            this.automaticEntranceButton.TabIndex = 1;
-            this.automaticEntranceButton.Text = "Otomatik Giriş";
-            this.automaticEntranceButton.UseVisualStyleBackColor = true;
-            this.automaticEntranceButton.Click += new System.EventHandler(this.automaticEntranceButton_Click);
+            this.pictureBox1.Image = global::OtoparkOtomasyonuEnSon.Properties.Resources.icon_logout;
+            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
-            // registriesButton
+            // label1
             // 
-            this.registriesButton.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.registriesButton.Location = new System.Drawing.Point(260, 325);
-            this.registriesButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.registriesButton.Name = "registriesButton";
-            this.registriesButton.Size = new System.Drawing.Size(469, 78);
-            this.registriesButton.TabIndex = 2;
-            this.registriesButton.Text = "Kayıtlar";
-            this.registriesButton.UseVisualStyleBackColor = true;
-            this.registriesButton.Click += new System.EventHandler(this.registriesButton_Click);
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(59, 18);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(70, 18);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Çıkış Yap";
             // 
-            // loginPageButton
+            // statusStrip
             // 
-            this.loginPageButton.Location = new System.Drawing.Point(124, 511);
-            this.loginPageButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.loginPageButton.Name = "loginPageButton";
-            this.loginPageButton.Size = new System.Drawing.Size(100, 28);
-            this.loginPageButton.TabIndex = 4;
-            this.loginPageButton.Text = "Giriş Sayfası";
-            this.loginPageButton.UseVisualStyleBackColor = true;
-            this.loginPageButton.Click += new System.EventHandler(this.loginPageButton_Click);
+            this.statusStrip.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(28)))), ((int)(((byte)(158)))));
+            this.statusStrip.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.stripSaat});
+            this.statusStrip.Location = new System.Drawing.Point(0, 421);
+            this.statusStrip.Name = "statusStrip";
+            this.statusStrip.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.statusStrip.Size = new System.Drawing.Size(800, 29);
+            this.statusStrip.SizingGrip = false;
+            this.statusStrip.TabIndex = 8;
             // 
-            // automaticExitButton
+            // stripSaat
             // 
-            this.automaticExitButton.Location = new System.Drawing.Point(521, 153);
-            this.automaticExitButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.automaticExitButton.Name = "automaticExitButton";
-            this.automaticExitButton.Size = new System.Drawing.Size(208, 78);
-            this.automaticExitButton.TabIndex = 5;
-            this.automaticExitButton.Text = "Otomatik Çıkış";
-            this.automaticExitButton.UseVisualStyleBackColor = true;
-            this.automaticExitButton.Click += new System.EventHandler(this.automaticExitButton_Click);
-            // 
-            // costManagerButton
-            // 
-            this.costManagerButton.Location = new System.Drawing.Point(233, 511);
-            this.costManagerButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.costManagerButton.Name = "costManagerButton";
-            this.costManagerButton.Size = new System.Drawing.Size(100, 28);
-            this.costManagerButton.TabIndex = 6;
-            this.costManagerButton.Text = "Fiyat Tarifesi";
-            this.costManagerButton.UseVisualStyleBackColor = true;
-            this.costManagerButton.Click += new System.EventHandler(this.costManagerButton_Click);
+            this.stripSaat.BackColor = System.Drawing.Color.Transparent;
+            this.stripSaat.BorderSides = System.Windows.Forms.ToolStripStatusLabelBorderSides.Bottom;
+            this.stripSaat.BorderStyle = System.Windows.Forms.Border3DStyle.SunkenOuter;
+            this.stripSaat.ForeColor = System.Drawing.Color.White;
+            this.stripSaat.Name = "stripSaat";
+            this.stripSaat.Size = new System.Drawing.Size(84, 24);
+            this.stripSaat.Text = "Saat: 12.00";
             // 
             // FormGiris
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
-            this.Controls.Add(this.costManagerButton);
-            this.Controls.Add(this.automaticExitButton);
-            this.Controls.Add(this.loginPageButton);
-            this.Controls.Add(this.registriesButton);
-            this.Controls.Add(this.automaticEntranceButton);
-            this.Controls.Add(this.manualFormButton);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(33)))), ((int)(((byte)(184)))));
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.statusStrip);
+            this.Controls.Add(this.panCikisYap);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormGiris";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormGiris";
-            this.ResumeLayout(false);
-
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormGiris_FormClosed);
+            this.panCikisYap.ResumeLayout(false);
+            this.panCikisYap.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.statusStrip.ResumeLayout(false);
+            this.statusStrip.PerformLayout();
         }
-
-        #endregion
-
-        private System.Windows.Forms.Button manualFormButton;
-        private System.Windows.Forms.Button automaticEntranceButton;
-        private System.Windows.Forms.Button registriesButton;
-        private System.Windows.Forms.Button loginPageButton;
-        private System.Windows.Forms.Button automaticExitButton;
-        private System.Windows.Forms.Button costManagerButton;
+ 
+        private System.Windows.Forms.Panel panCikisYap;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.StatusStrip statusStrip;
+        private System.Windows.Forms.ToolStripStatusLabel stripSaat;
     }
 }

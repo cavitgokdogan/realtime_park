@@ -125,5 +125,10 @@ namespace OtoparkOtomasyonuEnSon
             this.Hide();
             fiyatTarifeForm.ShowDialog();
         }
+
+        private void FormGiris_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Program.mainForm.Show();
+        }
     }
 }
