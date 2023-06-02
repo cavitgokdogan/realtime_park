@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormKayitlar));
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.registryGridView = new System.Windows.Forms.DataGridView();
             this.plakaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.telefonnoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.girissaatiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -40,80 +40,86 @@
             this.otoparkDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.otoparkDataSet = new OtoparkOtomasyonuEnSon.otoparkDataSet();
             this.arabalarBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.manualFormButton = new System.Windows.Forms.Button();
+            this.goBackButton = new System.Windows.Forms.Button();
             this.fillByToolStrip = new System.Windows.Forms.ToolStrip();
             this.fillByToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.arabalarTableAdapter = new OtoparkOtomasyonuEnSon.otoparkDataSetTableAdapters.arabalarTableAdapter();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.refreshButton = new System.Windows.Forms.Button();
+            this.carExitButton = new System.Windows.Forms.Button();
+            this.numberPlateLabel = new System.Windows.Forms.Label();
+            this.telNoLabel = new System.Windows.Forms.Label();
+            this.entranceDateLabel = new System.Windows.Forms.Label();
+            this.numberPlateTextBox = new System.Windows.Forms.TextBox();
+            this.telNoTextBox = new System.Windows.Forms.TextBox();
+            this.entranceDateTextBox = new System.Windows.Forms.TextBox();
             this.arabalarBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.otoparkDataSet4 = new OtoparkOtomasyonuEnSon.otoparkDataSet4();
             this.arabalarBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.arabalarTableAdapter1 = new OtoparkOtomasyonuEnSon.otoparkDataSet4TableAdapters.arabalarTableAdapter();
             this.arabalarTableAdapter2 = new OtoparkOtomasyonuEnSon.otoparkDataSet5TableAdapters.arabalarTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.registryGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arabalarBindingSource4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.otoparkDataSet5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arabalarBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.otoparkDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.otoparkDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arabalarBindingSource)).BeginInit();
-            this.fillByToolStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.arabalarBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.otoparkDataSet4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arabalarBindingSource3)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // registryGridView
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AllowUserToOrderColumns = true;
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.registryGridView.AllowUserToAddRows = false;
+            this.registryGridView.AllowUserToDeleteRows = false;
+            this.registryGridView.AllowUserToOrderColumns = true;
+            this.registryGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.registryGridView.AutoGenerateColumns = false;
+            this.registryGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.registryGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.plakaDataGridViewTextBoxColumn,
             this.telefonnoDataGridViewTextBoxColumn,
             this.girissaatiDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.arabalarBindingSource4;
-            this.dataGridView1.Location = new System.Drawing.Point(183, 28);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(373, 334);
-            this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
+            this.registryGridView.DataSource = this.arabalarBindingSource4;
+            this.registryGridView.Location = new System.Drawing.Point(244, 34);
+            this.registryGridView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.registryGridView.Name = "registryGridView";
+            this.registryGridView.ReadOnly = true;
+            this.registryGridView.RowHeadersWidth = 51;
+            this.registryGridView.Size = new System.Drawing.Size(497, 411);
+            this.registryGridView.TabIndex = 0;
+            this.registryGridView.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.registryGridView_CellDoubleClick);
             // 
             // plakaDataGridViewTextBoxColumn
             // 
             this.plakaDataGridViewTextBoxColumn.DataPropertyName = "plaka";
             this.plakaDataGridViewTextBoxColumn.HeaderText = "plaka";
+            this.plakaDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.plakaDataGridViewTextBoxColumn.Name = "plakaDataGridViewTextBoxColumn";
             this.plakaDataGridViewTextBoxColumn.ReadOnly = true;
+            this.plakaDataGridViewTextBoxColumn.Width = 125;
             // 
             // telefonnoDataGridViewTextBoxColumn
             // 
             this.telefonnoDataGridViewTextBoxColumn.DataPropertyName = "telefon_no";
             this.telefonnoDataGridViewTextBoxColumn.HeaderText = "telefon_no";
+            this.telefonnoDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.telefonnoDataGridViewTextBoxColumn.Name = "telefonnoDataGridViewTextBoxColumn";
             this.telefonnoDataGridViewTextBoxColumn.ReadOnly = true;
+            this.telefonnoDataGridViewTextBoxColumn.Width = 125;
             // 
             // girissaatiDataGridViewTextBoxColumn
             // 
             this.girissaatiDataGridViewTextBoxColumn.DataPropertyName = "giris_saati";
             this.girissaatiDataGridViewTextBoxColumn.HeaderText = "giris_saati";
+            this.girissaatiDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.girissaatiDataGridViewTextBoxColumn.Name = "girissaatiDataGridViewTextBoxColumn";
             this.girissaatiDataGridViewTextBoxColumn.ReadOnly = true;
+            this.girissaatiDataGridViewTextBoxColumn.Width = 125;
             // 
             // arabalarBindingSource4
             // 
@@ -145,31 +151,34 @@
             this.arabalarBindingSource.DataMember = "arabalar";
             this.arabalarBindingSource.DataSource = this.otoparkDataSet;
             // 
-            // button2
+            // manualFormButton
             // 
-            this.button2.Location = new System.Drawing.Point(114, 387);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(125, 44);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Manuel Giriş Sayfası";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.manualFormButton.Location = new System.Drawing.Point(152, 476);
+            this.manualFormButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.manualFormButton.Name = "manualFormButton";
+            this.manualFormButton.Size = new System.Drawing.Size(167, 54);
+            this.manualFormButton.TabIndex = 2;
+            this.manualFormButton.Text = "Manuel Giriş Sayfası";
+            this.manualFormButton.UseVisualStyleBackColor = true;
+            this.manualFormButton.Click += new System.EventHandler(this.manualFormButton_Click);
             // 
-            // button1
+            // goBackButton
             // 
-            this.button1.Location = new System.Drawing.Point(245, 387);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(125, 44);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Geri Dön";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.goBackButton.Location = new System.Drawing.Point(327, 476);
+            this.goBackButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.goBackButton.Name = "goBackButton";
+            this.goBackButton.Size = new System.Drawing.Size(167, 54);
+            this.goBackButton.TabIndex = 3;
+            this.goBackButton.Text = "Geri Dön";
+            this.goBackButton.UseVisualStyleBackColor = true;
+            this.goBackButton.Click += new System.EventHandler(this.goBackButton_Click);
             // 
             // fillByToolStrip
             // 
+            this.fillByToolStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.fillByToolStrip.Location = new System.Drawing.Point(0, 0);
             this.fillByToolStrip.Name = "fillByToolStrip";
-            this.fillByToolStrip.Size = new System.Drawing.Size(800, 25);
+            this.fillByToolStrip.Size = new System.Drawing.Size(1067, 31);
             this.fillByToolStrip.TabIndex = 4;
             this.fillByToolStrip.Text = "fillByToolStrip";
             // 
@@ -185,81 +194,84 @@
             // 
             this.arabalarTableAdapter.ClearBeforeFill = true;
             // 
-            // button3
+            // refreshButton
             // 
-            this.button3.Location = new System.Drawing.Point(376, 387);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(125, 44);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "Kayıtları Yenile";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.refreshButton.Location = new System.Drawing.Point(501, 476);
+            this.refreshButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.refreshButton.Name = "refreshButton";
+            this.refreshButton.Size = new System.Drawing.Size(167, 54);
+            this.refreshButton.TabIndex = 5;
+            this.refreshButton.Text = "Kayıtları Yenile";
+            this.refreshButton.UseVisualStyleBackColor = true;
+            this.refreshButton.Click += new System.EventHandler(this.refreshButton_Click);
             // 
-            // button4
+            // carExitButton
             // 
-            this.button4.Location = new System.Drawing.Point(507, 387);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(125, 44);
-            this.button4.TabIndex = 6;
-            this.button4.Text = "Araç Çıkış Yap";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.carExitButton.Location = new System.Drawing.Point(676, 476);
+            this.carExitButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.carExitButton.Name = "carExitButton";
+            this.carExitButton.Size = new System.Drawing.Size(167, 54);
+            this.carExitButton.TabIndex = 6;
+            this.carExitButton.Text = "Araç Çıkış Yap";
+            this.carExitButton.UseVisualStyleBackColor = true;
+            this.carExitButton.Click += new System.EventHandler(this.carExitButton_Click);
             // 
-            // label1
+            // numberPlateLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(608, 54);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(85, 29);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Plaka: ";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.numberPlateLabel.AutoSize = true;
+            this.numberPlateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.numberPlateLabel.Location = new System.Drawing.Point(811, 66);
+            this.numberPlateLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.numberPlateLabel.Name = "numberPlateLabel";
+            this.numberPlateLabel.Size = new System.Drawing.Size(105, 36);
+            this.numberPlateLabel.TabIndex = 7;
+            this.numberPlateLabel.Text = "Plaka: ";
             // 
-            // label2
+            // telNoLabel
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(594, 126);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(99, 29);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "Tel No: ";
+            this.telNoLabel.AutoSize = true;
+            this.telNoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.telNoLabel.Location = new System.Drawing.Point(792, 155);
+            this.telNoLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.telNoLabel.Name = "telNoLabel";
+            this.telNoLabel.Size = new System.Drawing.Size(119, 36);
+            this.telNoLabel.TabIndex = 8;
+            this.telNoLabel.Text = "Tel No: ";
             // 
-            // label3
+            // entranceDateLabel
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(558, 194);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(135, 29);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "Giriş Saati: ";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+            this.entranceDateLabel.AutoSize = true;
+            this.entranceDateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.entranceDateLabel.Location = new System.Drawing.Point(744, 239);
+            this.entranceDateLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.entranceDateLabel.Name = "entranceDateLabel";
+            this.entranceDateLabel.Size = new System.Drawing.Size(168, 36);
+            this.entranceDateLabel.TabIndex = 9;
+            this.entranceDateLabel.Text = "Giriş Saati: ";
             // 
-            // textBox1
+            // numberPlateTextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(688, 63);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 10;
-            this.textBox1.TextChanged += new System.EventHandler(this.numberPlateTextChanged);
+            this.numberPlateTextBox.Location = new System.Drawing.Point(917, 78);
+            this.numberPlateTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numberPlateTextBox.Name = "numberPlateTextBox";
+            this.numberPlateTextBox.Size = new System.Drawing.Size(132, 22);
+            this.numberPlateTextBox.TabIndex = 10;
             // 
-            // textBox2
+            // telNoTextBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(688, 135);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 11;
-            this.textBox2.TextChanged += new System.EventHandler(this.telNoTextChanged);
+            this.telNoTextBox.Location = new System.Drawing.Point(917, 166);
+            this.telNoTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.telNoTextBox.Name = "telNoTextBox";
+            this.telNoTextBox.Size = new System.Drawing.Size(132, 22);
+            this.telNoTextBox.TabIndex = 11;
             // 
-            // textBox3
+            // entranceDateTextBox
             // 
-            this.textBox3.Location = new System.Drawing.Point(688, 203);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 12;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.entranceDateTextBox.Location = new System.Drawing.Point(917, 250);
+            this.entranceDateTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.entranceDateTextBox.Name = "entranceDateTextBox";
+            this.entranceDateTextBox.Size = new System.Drawing.Size(132, 22);
+            this.entranceDateTextBox.TabIndex = 12;
             // 
             // arabalarBindingSource2
             // 
@@ -286,35 +298,34 @@
             // 
             // FormKayitlar
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 451);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
+            this.ClientSize = new System.Drawing.Size(1067, 555);
+            this.Controls.Add(this.entranceDateTextBox);
+            this.Controls.Add(this.telNoTextBox);
+            this.Controls.Add(this.numberPlateTextBox);
+            this.Controls.Add(this.entranceDateLabel);
+            this.Controls.Add(this.telNoLabel);
+            this.Controls.Add(this.numberPlateLabel);
+            this.Controls.Add(this.carExitButton);
+            this.Controls.Add(this.refreshButton);
             this.Controls.Add(this.fillByToolStrip);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.goBackButton);
+            this.Controls.Add(this.manualFormButton);
+            this.Controls.Add(this.registryGridView);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormKayitlar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormKayitlar";
-            this.Load += new System.EventHandler(this.FormKayitlar_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.loadRegistryForm);
+            ((System.ComponentModel.ISupportInitialize)(this.registryGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.arabalarBindingSource4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.otoparkDataSet5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.arabalarBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.otoparkDataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.otoparkDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.arabalarBindingSource)).EndInit();
-            this.fillByToolStrip.ResumeLayout(false);
-            this.fillByToolStrip.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.arabalarBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.otoparkDataSet4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.arabalarBindingSource3)).EndInit();
@@ -325,24 +336,24 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridView registryGridView;
+        private System.Windows.Forms.Button manualFormButton;
+        private System.Windows.Forms.Button goBackButton;
         private otoparkDataSet otoparkDataSet;
         private System.Windows.Forms.BindingSource arabalarBindingSource;
         private otoparkDataSetTableAdapters.arabalarTableAdapter arabalarTableAdapter;
         private System.Windows.Forms.ToolStrip fillByToolStrip;
         private System.Windows.Forms.ToolStripButton fillByToolStripButton;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button refreshButton;
         private System.Windows.Forms.BindingSource arabalarBindingSource1;
         private System.Windows.Forms.BindingSource otoparkDataSetBindingSource;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Button carExitButton;
+        private System.Windows.Forms.Label numberPlateLabel;
+        private System.Windows.Forms.Label telNoLabel;
+        private System.Windows.Forms.Label entranceDateLabel;
+        private System.Windows.Forms.TextBox numberPlateTextBox;
+        private System.Windows.Forms.TextBox telNoTextBox;
+        private System.Windows.Forms.TextBox entranceDateTextBox;
         private System.Windows.Forms.BindingSource arabalarBindingSource2;
         private otoparkDataSet4 otoparkDataSet4;
         private System.Windows.Forms.BindingSource arabalarBindingSource3;
