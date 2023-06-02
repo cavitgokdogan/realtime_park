@@ -14,7 +14,7 @@ namespace OtoparkOtomasyonuEnSon
             InitializeComponent();
         }
 
-        private void createRegistryButtonClick(object sender, EventArgs e)
+        private void createRegistryButton_Click(object sender, EventArgs e)
         {
             DateTime chosenTime = entranceDatePicker.Value;
             TimeSpan chosenTimeSpan = chosenTime.TimeOfDay;
@@ -43,7 +43,7 @@ namespace OtoparkOtomasyonuEnSon
             }
         }
 
-        private void goBackButtonClick(object sender, EventArgs e)
+        private void goBackButton_Click(object sender, EventArgs e)
         {
             using (FormGiris formGiris = new FormGiris())
             {
@@ -54,7 +54,7 @@ namespace OtoparkOtomasyonuEnSon
             //Form Giriş Sayfasına Geçiş
         }
 
-        private void registryPageButtonClick(object sender, EventArgs e)
+        private void registryPageButton_Click(object sender, EventArgs e)
         {
             using (FormKayitlar formKayitlar = new FormKayitlar())
             {
@@ -66,7 +66,7 @@ namespace OtoparkOtomasyonuEnSon
             //Form Kayıtlar Sayfasına Geçiş
         }
 
-        private void entranceDateValueChanged(object sender, EventArgs e)
+        private void entranceDate_ValueChanged(object sender, EventArgs e)
         {
             entranceDatePicker.Format = DateTimePickerFormat.Custom;
             entranceDatePicker.CustomFormat = "MM/dd/yyyy hh:mm:ss";
