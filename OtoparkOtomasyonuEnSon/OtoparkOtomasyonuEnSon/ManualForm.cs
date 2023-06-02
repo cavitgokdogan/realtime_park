@@ -56,7 +56,7 @@ namespace OtoparkOtomasyonuEnSon
 
         private void registryPageButton_Click(object sender, EventArgs e)
         {
-            using (RegistriesForm formKayitlar = new RegistriesForm())
+            using (FormKayitlar formKayitlar = new FormKayitlar())
             {
                 this.Hide();
                 formKayitlar.ShowDialog();

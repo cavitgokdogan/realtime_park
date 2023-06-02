@@ -4,12 +4,12 @@ using System.Data.SqlClient;
 
 namespace OtoparkOtomasyonuEnSon
 {
-    public partial class RegistriesForm : Form
+    public partial class FormKayitlar : Form
     {
 
         private const string ConnectionString = "Data Source=DESKTOP-UNTJT3U;Initial Catalog=otopark;Integrated Security=True";
 
-        public RegistriesForm()
+        public FormKayitlar()
         {
             InitializeComponent();
         }
@@ -18,22 +18,24 @@ namespace OtoparkOtomasyonuEnSon
 
         private void manualFormButton_Click(object sender, EventArgs e)
         {
-            ManualForm manualForm = new ManualForm();
+            ManualForm formManuel = new ManualForm();
             this.Hide();
-            manualForm.ShowDialog();
+            formManuel.ShowDialog();
         }
 
         private void goBackButton_Click(object sender, EventArgs e)
         {
-            FormGiris entranceForm = new FormGiris();
+            FormGiris formGiris = new FormGiris();
             this.Hide();
-            entranceForm.ShowDialog();
+            formGiris.ShowDialog();
         }
 
         private void loadRegistryForm(object sender, EventArgs e)
         {
             // DataGridView içerisine veri çekme
             this.arabalarTableAdapter2.Fill(this.otoparkDataSet5.arabalar);
+  
+
         }
 
         private void fillByToolStripButton_Click(object sender, EventArgs e)
@@ -46,11 +48,13 @@ namespace OtoparkOtomasyonuEnSon
             {
                 System.Windows.Forms.MessageBox.Show(ex.Message);
             }
+             
         }
 
         private void refreshButton_Click(object sender, EventArgs e)
         {
             this.arabalarTableAdapter2.Fill(this.otoparkDataSet5.arabalar);
+
         }
 
         private void carExitButton_Click(object sender, EventArgs e)
