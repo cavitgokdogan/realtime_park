@@ -7,11 +7,13 @@ namespace OtoparkOtomasyonuEnSon
     public partial class FormKayitlar : Form
     {
 
+        private const string ConnectionString = "Data Source=DESKTOP-UNTJT3U;Initial Catalog=otopark;Integrated Security=True";
+
         public FormKayitlar()
         {
             InitializeComponent();
         }
-        SqlConnection baglanti = new SqlConnection("Data Source=DESKTOP-UNTJT3U;Initial Catalog=otopark;Integrated Security=True");
+        SqlConnection connection = new SqlConnection(ConnectionString);
         //Server Bağlantısı
 
         private void manualFormButton_Click(object sender, EventArgs e)
@@ -60,23 +62,19 @@ namespace OtoparkOtomasyonuEnSon
 
             try
             {
-                baglanti.Open();  //Server Bağlantısı Açıldı
+                connection.Open();  //Server Bağlantısı Açıldı
             }
             catch (Exception)
             {
                 MessageBox.Show("Bağlantı Kurulamadı !");
             }  
-            string log = $"Araç Çıkışı Yapıldı: {numberPlateTextBox.Text}";
 
-            SqlCommand komut = new SqlCommand("delete from arabalar where plaka = @selected", baglanti);  // Veritabanından veri silme komutu (Araç Çıkışı)
-            SqlCommand logkomut = new SqlCommand("insert into dbo.log (log) values (@k1)", baglanti);     // Araç Çıkışı log kaydı
-               
-            komut.Parameters.AddWithValue("@selected",numberPlateTextBox.Text);
-            logkomut.Parameters.AddWithValue("@k1", log);
-            komut.ExecuteNonQuery(); // sql sorgusu çalıştırıldı
+            SqlCommand command = new SqlCommand("delete from arabalar where plaka = @selected", connection);  // Veritabanından veri silme komutu (Araç Çıkışı)
+
+            command.Parameters.AddWithValue("@selected",numberPlateTextBox.Text);
+            command.ExecuteNonQuery(); // sql sorgusu çalıştırıldı
             
-            logkomut.ExecuteNonQuery(); // log tablosunda sql sorgusu çalıştırıldı
-            baglanti.Close(); // Server Bağlantısı Kapandı
+            connection.Close(); // Server Bağlantısı Kapandı
             MessageBox.Show("Araç Çıkışı Yapıldı!");
 
             //Araç Çıkışı İçin Yazılan Kodlar
