@@ -1,11 +1,15 @@
 ﻿using System;
 using System.Windows.Forms;
 using System.Diagnostics;
+using System.Data.SqlClient;
 
 namespace OtoparkOtomasyonuEnSon
 {
     public partial class FormGiris : Form
     {
+
+        private const string ConnectionString = "Data Source=DESKTOP-UNTJT3U;Initial Catalog=otopark;Integrated Security=True";
+
         public FormGiris()
         {
             InitializeComponent();
@@ -45,10 +49,26 @@ namespace OtoparkOtomasyonuEnSon
                 {
                     // Store the detected text
                     string detectedText = line;
-                    MessageBox.Show(detectedText);
-                    // Now you can use the 'detectedText' variable to insert into your SQL Server in Windows Forms.
-                    // Here, you would typically call a method which executes the SQL insert operation using the SqlConnection, SqlCommand and SqlParameter classes.
-                    // For example: InsertIntoSqlServer(detectedText);
+                    MessageBox.Show(detectedText + " plakalı cihaz kaydedildi");
+                    try
+                    {
+                        using (SqlConnection connection = new SqlConnection(ConnectionString))
+                        {
+                            connection.Open();
+                            string insertArabalar = "insert into dbo.arabalar (plaka, telefon_no,giris_saati) values (@p1,@p2,@p3)";
+                            using (SqlCommand command = new SqlCommand(insertArabalar, connection))
+                            {
+                                command.Parameters.AddWithValue("@p1", detectedText);
+                                command.Parameters.AddWithValue("@p2", "-");
+                                command.Parameters.AddWithValue("@p3", DateTime.Now);
+                                command.ExecuteNonQuery();
+                            }
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Bağlantı Kurulamadı !\n" + ex.Message);
+                    }
                 }
             }
         }
@@ -92,12 +112,9 @@ namespace OtoparkOtomasyonuEnSon
                 var line = process.StandardOutput.ReadLine();
                 if (!string.IsNullOrEmpty(line))
                 {
-                    // Store the detected text
                     string detectedText = line;
                     MessageBox.Show(detectedText);
-                    // Now you can use the 'detectedText' variable to insert into your SQL Server in Windows Forms.
-                    // Here, you would typically call a method which executes the SQL insert operation using the SqlConnection, SqlCommand and SqlParameter classes.
-                    // For example: InsertIntoSqlServer(detectedText);
+                    
                 }
             }
         }

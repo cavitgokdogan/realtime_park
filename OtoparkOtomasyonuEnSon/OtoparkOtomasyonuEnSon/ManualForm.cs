@@ -38,7 +38,6 @@ namespace OtoparkOtomasyonuEnSon
             }
             catch (Exception ex)
             {
-                // anlamsız - exception log'lanabilir - (en azından başarısız olduğu kullanıcıya bildirilmiş)
                 MessageBox.Show("Bağlantı Kurulamadı !\n" + ex.Message);
             }
         }
