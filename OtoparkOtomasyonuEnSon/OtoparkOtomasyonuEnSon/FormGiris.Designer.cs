@@ -118,5 +118,7 @@ namespace OtoparkOtomasyonuEnSon
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.StatusStrip statusStrip;
         private System.Windows.Forms.ToolStripStatusLabel stripSaat;
+
+        #endregion
     }
 }
