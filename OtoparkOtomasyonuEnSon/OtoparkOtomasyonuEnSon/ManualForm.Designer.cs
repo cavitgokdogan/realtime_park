@@ -98,7 +98,7 @@
             this.createRegistryButton.TabIndex = 6;
             this.createRegistryButton.Text = "Kayıt Oluştur";
             this.createRegistryButton.UseVisualStyleBackColor = true;
-            this.createRegistryButton.Click += new System.EventHandler(this.createRegistryButtonClick);
+            this.createRegistryButton.Click += new System.EventHandler(this.createRegistryButton_Click);
             // 
             // goBackButton
             // 
@@ -109,7 +109,7 @@
             this.goBackButton.TabIndex = 11;
             this.goBackButton.Text = "Geri Dön";
             this.goBackButton.UseVisualStyleBackColor = true;
-            this.goBackButton.Click += new System.EventHandler(this.goBackButtonClick);
+            this.goBackButton.Click += new System.EventHandler(this.goBackButton_Click);
             // 
             // registryPageButton
             // 
@@ -120,7 +120,7 @@
             this.registryPageButton.TabIndex = 12;
             this.registryPageButton.Text = "Kayıtlar Sayfası";
             this.registryPageButton.UseVisualStyleBackColor = true;
-            this.registryPageButton.Click += new System.EventHandler(this.registryPageButtonClick);
+            this.registryPageButton.Click += new System.EventHandler(this.registryPageButton_Click);
             // 
             // entranceDatePicker
             // 
@@ -129,7 +129,7 @@
             this.entranceDatePicker.Name = "entranceDatePicker";
             this.entranceDatePicker.Size = new System.Drawing.Size(265, 22);
             this.entranceDatePicker.TabIndex = 13;
-            this.entranceDatePicker.ValueChanged += new System.EventHandler(this.entranceDateValueChanged);
+            this.entranceDatePicker.ValueChanged += new System.EventHandler(this.entranceDate_ValueChanged);
             // 
             // ManualForm
             // 
