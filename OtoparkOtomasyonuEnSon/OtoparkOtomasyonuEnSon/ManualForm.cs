@@ -7,7 +7,7 @@ namespace OtoparkOtomasyonuEnSon
     public partial class ManualForm : Form
     {
 
-        private const string ConnectionString = "Data Source=EMIR;Initial Catalog=otopark;Integrated Security=True";
+        private const string ConnectionString = "Data Source=DESKTOP-UNTJT3U;Initial Catalog=otopark;Integrated Security=True";
 
         public ManualForm()
         {
