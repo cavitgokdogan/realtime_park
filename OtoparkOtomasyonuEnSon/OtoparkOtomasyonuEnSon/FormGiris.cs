@@ -1,17 +1,21 @@
 ﻿using System;
 using System.Windows.Forms;
 using System.Diagnostics;
+using System.Data.SqlClient;
 
 namespace OtoparkOtomasyonuEnSon
 {
     public partial class FormGiris : Form
     {
+
+        private const string ConnectionString = "Data Source=DESKTOP-UNTJT3U;Initial Catalog=otopark;Integrated Security=True";
+
         public FormGiris()
         {
             InitializeComponent();
         }
-
-        private void button1_Click(object sender, EventArgs e)
+        
+        private void manualFormButton_Click(object sender, EventArgs e)
         {
             ManualForm ManualForm = new ManualForm();
             this.Hide();
@@ -19,7 +23,7 @@ namespace OtoparkOtomasyonuEnSon
             //Manuel Giriş Sayfasına Geçiş
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void automaticEntranceButton_Click(object sender, EventArgs e)
         {
             // Start a new process
             var process = new Process
@@ -45,15 +49,31 @@ namespace OtoparkOtomasyonuEnSon
                 {
                     // Store the detected text
                     string detectedText = line;
-                    MessageBox.Show(detectedText);
-                    // Now you can use the 'detectedText' variable to insert into your SQL Server in Windows Forms.
-                    // Here, you would typically call a method which executes the SQL insert operation using the SqlConnection, SqlCommand and SqlParameter classes.
-                    // For example: InsertIntoSqlServer(detectedText);
+                    MessageBox.Show(detectedText + " plakalı cihaz kaydedildi");
+                    try
+                    {
+                        using (SqlConnection connection = new SqlConnection(ConnectionString))
+                        {
+                            connection.Open();
+                            string insertArabalar = "insert into dbo.arabalar (plaka, telefon_no,giris_saati) values (@p1,@p2,@p3)";
+                            using (SqlCommand command = new SqlCommand(insertArabalar, connection))
+                            {
+                                command.Parameters.AddWithValue("@p1", detectedText);
+                                command.Parameters.AddWithValue("@p2", "-");
+                                command.Parameters.AddWithValue("@p3", DateTime.Now);
+                                command.ExecuteNonQuery();
+                            }
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Bağlantı Kurulamadı !\n" + ex.Message);
+                    }
                 }
             }
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void registriesButton_Click(object sender, EventArgs e)
         {
             FormKayitlar formKayitlar = new FormKayitlar();
             this.Hide();
@@ -62,13 +82,13 @@ namespace OtoparkOtomasyonuEnSon
         }
 
 
-        private void button5_Click(object sender, EventArgs e)
+        private void loginPageButton_Click(object sender, EventArgs e)
         {
             FormGirisYap form1 = new FormGirisYap();
             this.Hide();
             form1.ShowDialog();
         }
-        private void button7_Click(object sender, EventArgs e)
+        private void automaticExitButton_Click(object sender, EventArgs e)
         {
             // Start a new process
             var process = new Process
@@ -92,17 +112,14 @@ namespace OtoparkOtomasyonuEnSon
                 var line = process.StandardOutput.ReadLine();
                 if (!string.IsNullOrEmpty(line))
                 {
-                    // Store the detected text
                     string detectedText = line;
                     MessageBox.Show(detectedText);
-                    // Now you can use the 'detectedText' variable to insert into your SQL Server in Windows Forms.
-                    // Here, you would typically call a method which executes the SQL insert operation using the SqlConnection, SqlCommand and SqlParameter classes.
-                    // For example: InsertIntoSqlServer(detectedText);
+                    
                 }
             }
         }
 
-        private void button8_Click(object sender, EventArgs e)
+        private void costManagerButton_Click(object sender, EventArgs e)
         {
             FiyatTarifeForm fiyatTarifeForm = new FiyatTarifeForm();
             this.Hide();

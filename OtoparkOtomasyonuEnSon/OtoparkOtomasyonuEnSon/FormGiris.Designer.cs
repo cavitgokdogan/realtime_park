@@ -1,4 +1,4 @@
-﻿namespace OtoparkOtomasyonuEnSon
+namespace OtoparkOtomasyonuEnSon
 {
     partial class FormGiris
     {
@@ -94,13 +94,14 @@
             // 
             // FormGiris
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(33)))), ((int)(((byte)(184)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.panCikisYap);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormGiris";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormGiris";
@@ -110,12 +111,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.statusStrip.ResumeLayout(false);
             this.statusStrip.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
         }
-
-        #endregion
+ 
         private System.Windows.Forms.Panel panCikisYap;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
