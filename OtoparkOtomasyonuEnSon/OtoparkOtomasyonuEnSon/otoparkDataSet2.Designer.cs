@@ -370,13 +370,6 @@ namespace OtoparkOtomasyonuEnSon {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public arabalarRow FindByplaka(string plaka) {
-                return ((arabalarRow)(this.Rows.Find(new object[] {
-                            plaka})));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public override global::System.Data.DataTable Clone() {
                 arabalarDataTable cln = ((arabalarDataTable)(base.Clone()));
                 cln.InitVars();
@@ -400,10 +393,7 @@ namespace OtoparkOtomasyonuEnSon {
             private void InitClass() {
                 this.columnplaka = new global::System.Data.DataColumn("plaka", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnplaka);
-                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columnplaka}, true));
                 this.columnplaka.AllowDBNull = false;
-                this.columnplaka.Unique = true;
                 this.columnplaka.MaxLength = 55;
             }
             
@@ -893,14 +883,6 @@ namespace OtoparkOtomasyonuEnSon.otoparkDataSet2TableAdapters {
                     this.Adapter.UpdateCommand.Connection.Close();
                 }
             }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string Original_plaka) {
-            return this.Update(Original_plaka, Original_plaka);
         }
     }
     

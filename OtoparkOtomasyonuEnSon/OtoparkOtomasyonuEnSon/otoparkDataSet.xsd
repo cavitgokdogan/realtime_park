@@ -120,9 +120,5 @@ SELECT plaka, telefon_no, giris_saati, cikis_saati, tutar FROM arabalar WHERE (p
         </xs:element>
       </xs:choice>
     </xs:complexType>
-    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
-      <xs:selector xpath=".//mstns:arabalar" />
-      <xs:field xpath="mstns:plaka" />
-    </xs:unique>
   </xs:element>
 </xs:schema>
