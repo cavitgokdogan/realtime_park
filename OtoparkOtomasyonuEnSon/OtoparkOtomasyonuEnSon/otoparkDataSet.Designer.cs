@@ -414,13 +414,6 @@ namespace OtoparkOtomasyonuEnSon {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public arabalarRow FindByplaka(string plaka) {
-                return ((arabalarRow)(this.Rows.Find(new object[] {
-                            plaka})));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public override global::System.Data.DataTable Clone() {
                 arabalarDataTable cln = ((arabalarDataTable)(base.Clone()));
                 cln.InitVars();
@@ -456,10 +449,7 @@ namespace OtoparkOtomasyonuEnSon {
                 base.Columns.Add(this.columncikis_saati);
                 this.columntutar = new global::System.Data.DataColumn("tutar", typeof(double), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columntutar);
-                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columnplaka}, true));
                 this.columnplaka.AllowDBNull = false;
-                this.columnplaka.Unique = true;
                 this.columnplaka.MaxLength = 55;
                 this.columntelefon_no.MaxLength = 20;
             }
@@ -1221,14 +1211,6 @@ SELECT plaka, telefon_no, giris_saati, cikis_saati, tutar FROM arabalar WHERE (p
                     this.Adapter.UpdateCommand.Connection.Close();
                 }
             }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string telefon_no, global::System.Nullable<global::System.DateTime> giris_saati, global::System.Nullable<global::System.DateTime> cikis_saati, global::System.Nullable<double> tutar, string Original_plaka, string Original_telefon_no, global::System.Nullable<global::System.DateTime> Original_giris_saati, global::System.Nullable<global::System.DateTime> Original_cikis_saati, global::System.Nullable<double> Original_tutar) {
-            return this.Update(Original_plaka, telefon_no, giris_saati, cikis_saati, tutar, Original_plaka, Original_telefon_no, Original_giris_saati, Original_cikis_saati, Original_tutar);
         }
     }
     
