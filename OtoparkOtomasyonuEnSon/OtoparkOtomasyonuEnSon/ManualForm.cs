@@ -16,22 +16,22 @@ namespace OtoparkOtomasyonuEnSon
 
         private void createRegistryButtonClick(object sender, EventArgs e)
         {
-            DateTime secilenZaman = dateTimePicker1.Value;
-            TimeSpan secilenVakit = secilenZaman.TimeOfDay;
+            DateTime chosenTime = entranceDatePicker.Value;
+            TimeSpan chosenTimeSpan = chosenTime.TimeOfDay;
 
             try
             {
-                using (SqlConnection baglanti = new SqlConnection(ConnectionString))
+                using (SqlConnection connection = new SqlConnection(ConnectionString))
                 {
-                    baglanti.Open();
+                    connection.Open();
 
                     string insertArabalar = "insert into dbo.arabalar (plaka, telefon_no,giris_saati) values (@p1,@p2,@p3)";
-                    using (SqlCommand komut = new SqlCommand(insertArabalar, baglanti))
+                    using (SqlCommand command = new SqlCommand(insertArabalar, connection))
                     {
-                        komut.Parameters.AddWithValue("@p1", textBox1.Text);
-                        komut.Parameters.AddWithValue("@p2", textBox2.Text);
-                        komut.Parameters.AddWithValue("@p3", secilenZaman.Date.ToString("yyyy-MM-dd") + " " + secilenVakit);
-                        komut.ExecuteNonQuery();
+                        command.Parameters.AddWithValue("@p1", numberPlateTextBox.Text);
+                        command.Parameters.AddWithValue("@p2", telNoTextBox.Text);
+                        command.Parameters.AddWithValue("@p3", chosenTime.Date.ToString("yyyy-MM-dd") + " " + chosenTimeSpan);
+                        command.ExecuteNonQuery();
                     }
                 }
                 MessageBox.Show("Kayıt Oluşturuldu!");
@@ -68,8 +68,8 @@ namespace OtoparkOtomasyonuEnSon
 
         private void entranceDateValueChanged(object sender, EventArgs e)
         {
-            dateTimePicker1.Format = DateTimePickerFormat.Custom;
-            dateTimePicker1.CustomFormat = "MM/dd/yyyy hh:mm:ss";
+            entranceDatePicker.Format = DateTimePickerFormat.Custom;
+            entranceDatePicker.CustomFormat = "MM/dd/yyyy hh:mm:ss";
 
             // Date Time Picker üzerinden Alınan Verinin Tarih ve Saat Formatına Çevrilmesi
         }
