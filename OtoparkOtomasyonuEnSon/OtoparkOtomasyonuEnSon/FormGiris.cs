@@ -44,7 +44,7 @@ namespace OtoparkOtomasyonuEnSon
 
         private void button3_Click(object sender, EventArgs e)
         {
-            FormKayitlar formKayitlar = new FormKayitlar();
+            RegistriesForm formKayitlar = new RegistriesForm();
             this.Hide();
             formKayitlar.ShowDialog();
             //Kayıtlar Sayfasına Geçiş
