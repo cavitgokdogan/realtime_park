@@ -33,7 +33,7 @@ namespace OtoparkOtomasyonuEnSon
         private void loadRegistryForm(object sender, EventArgs e)
         {
             // DataGridView içerisine veri çekme
-            this.arabalarTableAdapter2.Fill(this.otoparkDataSet5.arabalar);
+            this.arabalarTableAdapter1.Fill(this.otoparkDataSet4.arabalar);
   
 
         }
@@ -53,7 +53,7 @@ namespace OtoparkOtomasyonuEnSon
 
         private void refreshButton_Click(object sender, EventArgs e)
         {
-            this.arabalarTableAdapter2.Fill(this.otoparkDataSet5.arabalar);
+            this.arabalarTableAdapter1.Fill(this.otoparkDataSet4.arabalar);
 
         }
 

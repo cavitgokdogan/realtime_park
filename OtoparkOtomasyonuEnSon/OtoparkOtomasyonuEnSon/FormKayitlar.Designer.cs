@@ -35,7 +35,7 @@
             this.telefonnoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.girissaatiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.arabalarBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
-            this.otoparkDataSet5 = new OtoparkOtomasyonuEnSon.otoparkDataSet5();
+            this.otoparkDataSet4 = new OtoparkOtomasyonuEnSon.otoparkDataSet4();
             this.arabalarBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.otoparkDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.otoparkDataSet = new OtoparkOtomasyonuEnSon.otoparkDataSet();
@@ -57,10 +57,8 @@
             this.otoparkDataSet4 = new OtoparkOtomasyonuEnSon.otoparkDataSet4();
             this.arabalarBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.arabalarTableAdapter1 = new OtoparkOtomasyonuEnSon.otoparkDataSet4TableAdapters.arabalarTableAdapter();
-            this.arabalarTableAdapter2 = new OtoparkOtomasyonuEnSon.otoparkDataSet5TableAdapters.arabalarTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.registryGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arabalarBindingSource4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.otoparkDataSet5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arabalarBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.otoparkDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.otoparkDataSet)).BeginInit();
@@ -124,12 +122,12 @@
             // arabalarBindingSource4
             // 
             this.arabalarBindingSource4.DataMember = "arabalar";
-            this.arabalarBindingSource4.DataSource = this.otoparkDataSet5;
+            this.arabalarBindingSource4.DataSource = this.otoparkDataSet4;
             // 
             // otoparkDataSet5
             // 
-            this.otoparkDataSet5.DataSetName = "otoparkDataSet5";
-            this.otoparkDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.otoparkDataSet4.DataSetName = "otoparkDataSet4";
+            this.otoparkDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // arabalarBindingSource1
             // 
@@ -292,10 +290,6 @@
             // 
             this.arabalarTableAdapter1.ClearBeforeFill = true;
             // 
-            // arabalarTableAdapter2
-            // 
-            this.arabalarTableAdapter2.ClearBeforeFill = true;
-            // 
             // FormKayitlar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -321,7 +315,6 @@
             this.Load += new System.EventHandler(this.loadRegistryForm);
             ((System.ComponentModel.ISupportInitialize)(this.registryGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.arabalarBindingSource4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.otoparkDataSet5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.arabalarBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.otoparkDataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.otoparkDataSet)).EndInit();
@@ -358,9 +351,7 @@
         private otoparkDataSet4 otoparkDataSet4;
         private System.Windows.Forms.BindingSource arabalarBindingSource3;
         private otoparkDataSet4TableAdapters.arabalarTableAdapter arabalarTableAdapter1;
-        private otoparkDataSet5 otoparkDataSet5;
         private System.Windows.Forms.BindingSource arabalarBindingSource4;
-        private otoparkDataSet5TableAdapters.arabalarTableAdapter arabalarTableAdapter2;
         private System.Windows.Forms.DataGridViewTextBoxColumn plakaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn telefonnoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn girissaatiDataGridViewTextBoxColumn;
