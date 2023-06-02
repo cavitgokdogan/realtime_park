@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Windows.Forms;
 
 namespace OtoparkOtomasyonuEnSon
@@ -14,7 +14,9 @@ namespace OtoparkOtomasyonuEnSon
             Application.SetCompatibleTextRenderingDefault(false);
             var splash = new FormSplash(5000);
             mainForm = new FormGirisYap();
+#if !DEBUG
             splash.ShowDialog();
+#endif
             Application.Run(mainForm);
         }
     }
