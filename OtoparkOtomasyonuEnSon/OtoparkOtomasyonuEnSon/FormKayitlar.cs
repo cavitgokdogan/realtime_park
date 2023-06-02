@@ -19,7 +19,7 @@ namespace OtoparkOtomasyonuEnSon
         {
             InitializeComponent();
         }
-        SqlConnection baglanti = new SqlConnection("Data Source=EMIR;Initial Catalog=otopark;Integrated Security=True");
+        SqlConnection baglanti = new SqlConnection("Data Source=DESKTOP-UNTJT3U;Initial Catalog=otopark;Integrated Security=True");
         //Server Bağlantısı
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
