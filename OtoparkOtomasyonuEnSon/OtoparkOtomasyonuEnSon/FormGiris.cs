@@ -157,9 +157,9 @@ namespace OtoparkOtomasyonuEnSon
 
         private void HoverBitti(Control kontrol) => kontrol.BackColor = Color.FromArgb(74, 33, 184);
 
-        private void PanCikisYap_MouseEnter(object sender, EventArgs e) => HoverOldu(panCikisYap);
+        private void PanCikisYap_MouseEnter(object sender, EventArgs e) => HoverOldu(pnlCikisYap);
 
-        private void PanCikisYap_MouseLeave(object sender, EventArgs e) => HoverBitti(panCikisYap);
+        private void PanCikisYap_MouseLeave(object sender, EventArgs e) => HoverBitti(pnlCikisYap);
 
         private void LblFiyatTarifesi_MouseEnter(object sender, EventArgs e) => HoverOldu(pnlFiyatTarifesi);
 
@@ -173,5 +173,25 @@ namespace OtoparkOtomasyonuEnSon
 
         private void PnlFiyatTarifesi_MouseLeave(object sender, EventArgs e) => HoverBitti(pnlFiyatTarifesi);
         #endregion
+
+        private void LblCikisYap_MouseEnter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LblCikisYap_MouseLeave(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PicCikisYap_MouseEnter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PicCikisYap_MouseLeave(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -29,7 +29,7 @@ namespace OtoparkOtomasyonuEnSon
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormGiris));
-            this.panCikisYap = new System.Windows.Forms.Panel();
+            this.pnlCikisYap = new System.Windows.Forms.Panel();
             this.lblCikisYap = new System.Windows.Forms.Label();
             this.picCikisYap = new System.Windows.Forms.PictureBox();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
@@ -40,7 +40,7 @@ namespace OtoparkOtomasyonuEnSon
             this.picFiyatTarifesi = new System.Windows.Forms.PictureBox();
             this.@__label2 = new System.Windows.Forms.Label();
             this.@__label1 = new System.Windows.Forms.Label();
-            this.panCikisYap.SuspendLayout();
+            this.pnlCikisYap.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picCikisYap)).BeginInit();
             this.statusStrip.SuspendLayout();
             this.@__groupBox1.SuspendLayout();
@@ -48,17 +48,17 @@ namespace OtoparkOtomasyonuEnSon
             ((System.ComponentModel.ISupportInitialize)(this.picFiyatTarifesi)).BeginInit();
             this.SuspendLayout();
             // 
-            // panCikisYap
+            // pnlCikisYap
             // 
-            this.panCikisYap.Controls.Add(this.lblCikisYap);
-            this.panCikisYap.Controls.Add(this.picCikisYap);
-            this.panCikisYap.Location = new System.Drawing.Point(6, 12);
-            this.panCikisYap.Name = "panCikisYap";
-            this.panCikisYap.Size = new System.Drawing.Size(133, 56);
-            this.panCikisYap.TabIndex = 7;
-            this.panCikisYap.Click += new System.EventHandler(this.PanCikisYap_Click);
-            this.panCikisYap.MouseEnter += new System.EventHandler(this.PanCikisYap_MouseEnter);
-            this.panCikisYap.MouseLeave += new System.EventHandler(this.PanCikisYap_MouseLeave);
+            this.pnlCikisYap.Controls.Add(this.lblCikisYap);
+            this.pnlCikisYap.Controls.Add(this.picCikisYap);
+            this.pnlCikisYap.Location = new System.Drawing.Point(6, 12);
+            this.pnlCikisYap.Name = "pnlCikisYap";
+            this.pnlCikisYap.Size = new System.Drawing.Size(133, 56);
+            this.pnlCikisYap.TabIndex = 7;
+            this.pnlCikisYap.Click += new System.EventHandler(this.PnlFiyatTarifesi_MouseLeave);
+            this.pnlCikisYap.MouseEnter += new System.EventHandler(this.PanCikisYap_MouseEnter);
+            this.pnlCikisYap.MouseLeave += new System.EventHandler(this.PanCikisYap_MouseLeave);
             // 
             // lblCikisYap
             // 
@@ -71,6 +71,8 @@ namespace OtoparkOtomasyonuEnSon
             this.lblCikisYap.TabIndex = 1;
             this.lblCikisYap.Text = "Çıkış Yap";
             this.lblCikisYap.Click += new System.EventHandler(this.LblCikisYap_Click);
+            this.lblCikisYap.MouseEnter += new System.EventHandler(this.LblCikisYap_MouseEnter);
+            this.lblCikisYap.MouseLeave += new System.EventHandler(this.LblCikisYap_MouseLeave);
             // 
             // picCikisYap
             // 
@@ -82,6 +84,8 @@ namespace OtoparkOtomasyonuEnSon
             this.picCikisYap.TabIndex = 0;
             this.picCikisYap.TabStop = false;
             this.picCikisYap.Click += new System.EventHandler(this.PicCikisYap_Click);
+            this.picCikisYap.MouseEnter += new System.EventHandler(this.PicCikisYap_MouseEnter);
+            this.picCikisYap.MouseLeave += new System.EventHandler(this.PicCikisYap_MouseLeave);
             // 
             // statusStrip
             // 
@@ -111,7 +115,7 @@ namespace OtoparkOtomasyonuEnSon
             this.@__groupBox1.Controls.Add(this.pnlFiyatTarifesi);
             this.@__groupBox1.Controls.Add(this.@__label2);
             this.@__groupBox1.Controls.Add(this.@__label1);
-            this.@__groupBox1.Controls.Add(this.panCikisYap);
+            this.@__groupBox1.Controls.Add(this.pnlCikisYap);
             this.@__groupBox1.Location = new System.Drawing.Point(12, 12);
             this.@__groupBox1.Name = "__groupBox1";
             this.@__groupBox1.Size = new System.Drawing.Size(776, 76);
@@ -193,8 +197,8 @@ namespace OtoparkOtomasyonuEnSon
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormGiris";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormGiris_FormClosed);
-            this.panCikisYap.ResumeLayout(false);
-            this.panCikisYap.PerformLayout();
+            this.pnlCikisYap.ResumeLayout(false);
+            this.pnlCikisYap.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picCikisYap)).EndInit();
             this.statusStrip.ResumeLayout(false);
             this.statusStrip.PerformLayout();
@@ -208,7 +212,7 @@ namespace OtoparkOtomasyonuEnSon
 
         }
  
-        private System.Windows.Forms.Panel panCikisYap;
+        private System.Windows.Forms.Panel pnlCikisYap;
         private System.Windows.Forms.PictureBox picCikisYap;
         private System.Windows.Forms.Label lblCikisYap;
         private System.Windows.Forms.StatusStrip statusStrip;
