@@ -126,9 +126,14 @@ namespace OtoparkOtomasyonuEnSon
             fiyatTarifeForm.ShowDialog();
         }
 
-        private void FormGiris_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            Program.mainForm.Show();
-        }
+        #region Çıkışla Alakalı Metot ve Olaylar
+        private void FormGiris_FormClosed(object sender, FormClosedEventArgs e) => Program.mainForm.Show();
+
+        private void LblCikisYap_Click(object sender, EventArgs e) => Close();
+
+        private void PicCikisYap_Click(object sender, EventArgs e) => Close();
+
+        private void PanCikisYap_Paint(object sender, PaintEventArgs e) => Close();
+        #endregion
     }
 }
