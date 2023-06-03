@@ -103,6 +103,16 @@ namespace OtoparkOtomasyonuEnSon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icon_price {
+            get {
+                object obj = ResourceManager.GetObject("icon_price", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icon_user {
             get {
                 object obj = ResourceManager.GetObject("icon_user", resourceCulture);
