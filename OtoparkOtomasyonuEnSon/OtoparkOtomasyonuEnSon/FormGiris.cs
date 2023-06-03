@@ -178,6 +178,8 @@ namespace OtoparkOtomasyonuEnSon
 
         private void PnlKayitlar_Click(object sender, EventArgs e) => FormKayitlarAc();
 
+        private void LblKayitlar_Click(object sender, EventArgs e) => FormKayitlarAc();
+
         #endregion
 
         #region Eyecandy Sağlayan Metotlar ve Olaylar
