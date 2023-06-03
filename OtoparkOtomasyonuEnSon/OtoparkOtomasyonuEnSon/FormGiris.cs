@@ -19,14 +19,6 @@ namespace OtoparkOtomasyonuEnSon
         {
             InitializeComponent();
         }
-        
-        private void manualFormButton_Click(object sender, EventArgs e)
-        {
-            ManualForm ManualForm = new ManualForm();
-            this.Hide();
-            ManualForm.ShowDialog();
-            //Manuel Giriş Sayfasına Geçiş
-        }
 
         private void registriesButton_Click(object sender, EventArgs e)
         {
