@@ -176,6 +176,8 @@ namespace OtoparkOtomasyonuEnSon
             form.ShowDialog();
         }
 
+        private void PnlKayitlar_Click(object sender, EventArgs e) => FormKayitlarAc();
+
         #endregion
 
         #region Eyecandy Sağlayan Metotlar ve Olaylar
