@@ -1,6 +1,6 @@
 ﻿namespace OtoparkOtomasyonuEnSon
 {
-    partial class ManualForm
+    partial class FormManual
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ManualForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormManual));
             this.numberPlateTextBox = new System.Windows.Forms.TextBox();
             this.telNoTextBox = new System.Windows.Forms.TextBox();
             this.numberPlateLabel = new System.Windows.Forms.Label();

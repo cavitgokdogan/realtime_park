@@ -4,12 +4,12 @@ using System.Data.SqlClient;
 
 namespace OtoparkOtomasyonuEnSon
 {
-    public partial class ManualForm : Form
+    public partial class FormManual : Form
     {
 
         private const string ConnectionString = "Data Source=DESKTOP-UNTJT3U;Initial Catalog=otopark;Integrated Security=True";
 
-        public ManualForm()
+        public FormManual()
         {
             InitializeComponent();
         }
