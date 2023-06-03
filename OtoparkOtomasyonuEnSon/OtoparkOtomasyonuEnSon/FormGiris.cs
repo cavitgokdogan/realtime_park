@@ -168,6 +168,16 @@ namespace OtoparkOtomasyonuEnSon
         private void PicManuelGiris_Click(object sender, EventArgs e) => FormManualAc();
         #endregion
 
+        #region FormKayitlar Formuna Geçiş
+        private void FormKayitlarAc()
+        {
+            Hide();
+            FormKayitlar form = new FormKayitlar();
+            form.ShowDialog();
+        }
+
+        #endregion
+
         #region Eyecandy Sağlayan Metotlar ve Olaylar
         private void HoverOldu(Control kontrol) => kontrol.BackColor = Color.FromArgb(63, 28, 158);
 
