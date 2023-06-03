@@ -38,6 +38,9 @@ namespace OtoparkOtomasyonuEnSon
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.stripSaat = new System.Windows.Forms.ToolStripStatusLabel();
             this.@__groupBox1 = new System.Windows.Forms.GroupBox();
+            this.pnlKayitlar = new System.Windows.Forms.Panel();
+            this.lblKayitlar = new System.Windows.Forms.Label();
+            this.picKayitlar = new System.Windows.Forms.PictureBox();
             this.pnlFiyatTarifesi = new System.Windows.Forms.Panel();
             this.lblFiyatTarifesi = new System.Windows.Forms.Label();
             this.picFiyatTarifesi = new System.Windows.Forms.PictureBox();
@@ -56,13 +59,12 @@ namespace OtoparkOtomasyonuEnSon
             this.lblOtomatikGiris = new System.Windows.Forms.Label();
             this.picOtomatikGiris = new System.Windows.Forms.PictureBox();
             this.timer = new System.Windows.Forms.Timer(this.components);
-            this.pnlKayitlar = new System.Windows.Forms.Panel();
-            this.lblKayitlar = new System.Windows.Forms.Label();
-            this.picKayitlar = new System.Windows.Forms.PictureBox();
             this.pnlCikisYap.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picCikisYap)).BeginInit();
             this.statusStrip.SuspendLayout();
             this.@__groupBox1.SuspendLayout();
+            this.pnlKayitlar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picKayitlar)).BeginInit();
             this.pnlFiyatTarifesi.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picFiyatTarifesi)).BeginInit();
             this.@__groupBox2.SuspendLayout();
@@ -73,8 +75,6 @@ namespace OtoparkOtomasyonuEnSon
             ((System.ComponentModel.ISupportInitialize)(this.@__pictureBox1)).BeginInit();
             this.pnlOtomatikGiris.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picOtomatikGiris)).BeginInit();
-            this.pnlKayitlar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picKayitlar)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlCikisYap
@@ -141,7 +141,7 @@ namespace OtoparkOtomasyonuEnSon
             // toolStripStatusLabel1
             // 
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(585, 24);
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(616, 24);
             this.toolStripStatusLabel1.Spring = true;
             // 
             // stripSaat
@@ -167,6 +167,39 @@ namespace OtoparkOtomasyonuEnSon
             this.@__groupBox1.Size = new System.Drawing.Size(776, 76);
             this.@__groupBox1.TabIndex = 9;
             this.@__groupBox1.TabStop = false;
+            // 
+            // pnlKayitlar
+            // 
+            this.pnlKayitlar.Controls.Add(this.lblKayitlar);
+            this.pnlKayitlar.Controls.Add(this.picKayitlar);
+            this.pnlKayitlar.Location = new System.Drawing.Point(302, 12);
+            this.pnlKayitlar.Name = "pnlKayitlar";
+            this.pnlKayitlar.Size = new System.Drawing.Size(120, 56);
+            this.pnlKayitlar.TabIndex = 9;
+            this.pnlKayitlar.Click += new System.EventHandler(this.PnlKayitlar_Click);
+            // 
+            // lblKayitlar
+            // 
+            this.lblKayitlar.AutoSize = true;
+            this.lblKayitlar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblKayitlar.ForeColor = System.Drawing.Color.White;
+            this.lblKayitlar.Location = new System.Drawing.Point(59, 18);
+            this.lblKayitlar.Name = "lblKayitlar";
+            this.lblKayitlar.Size = new System.Drawing.Size(56, 18);
+            this.lblKayitlar.TabIndex = 1;
+            this.lblKayitlar.Text = "Kayıtlar";
+            this.lblKayitlar.Click += new System.EventHandler(this.LblKayitlar_Click);
+            // 
+            // picKayitlar
+            // 
+            this.picKayitlar.Image = global::OtoparkOtomasyonuEnSon.Properties.Resources.icon_ledger;
+            this.picKayitlar.Location = new System.Drawing.Point(3, 3);
+            this.picKayitlar.Name = "picKayitlar";
+            this.picKayitlar.Size = new System.Drawing.Size(50, 50);
+            this.picKayitlar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picKayitlar.TabIndex = 0;
+            this.picKayitlar.TabStop = false;
+            this.picKayitlar.Click += new System.EventHandler(this.PicKayitlar_Click);
             // 
             // pnlFiyatTarifesi
             // 
@@ -385,36 +418,6 @@ namespace OtoparkOtomasyonuEnSon
             this.timer.Interval = 60000;
             this.timer.Tick += new System.EventHandler(this.Timer_Tick);
             // 
-            // pnlKayitlar
-            // 
-            this.pnlKayitlar.Controls.Add(this.lblKayitlar);
-            this.pnlKayitlar.Controls.Add(this.picKayitlar);
-            this.pnlKayitlar.Location = new System.Drawing.Point(302, 12);
-            this.pnlKayitlar.Name = "pnlKayitlar";
-            this.pnlKayitlar.Size = new System.Drawing.Size(120, 56);
-            this.pnlKayitlar.TabIndex = 9;
-            // 
-            // lblKayitlar
-            // 
-            this.lblKayitlar.AutoSize = true;
-            this.lblKayitlar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblKayitlar.ForeColor = System.Drawing.Color.White;
-            this.lblKayitlar.Location = new System.Drawing.Point(59, 18);
-            this.lblKayitlar.Name = "lblKayitlar";
-            this.lblKayitlar.Size = new System.Drawing.Size(56, 18);
-            this.lblKayitlar.TabIndex = 1;
-            this.lblKayitlar.Text = "Kayıtlar";
-            // 
-            // picKayitlar
-            // 
-            this.picKayitlar.Image = global::OtoparkOtomasyonuEnSon.Properties.Resources.icon_ledger;
-            this.picKayitlar.Location = new System.Drawing.Point(3, 3);
-            this.picKayitlar.Name = "picKayitlar";
-            this.picKayitlar.Size = new System.Drawing.Size(50, 50);
-            this.picKayitlar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picKayitlar.TabIndex = 0;
-            this.picKayitlar.TabStop = false;
-            // 
             // FormGiris
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -440,6 +443,9 @@ namespace OtoparkOtomasyonuEnSon
             this.statusStrip.PerformLayout();
             this.@__groupBox1.ResumeLayout(false);
             this.@__groupBox1.PerformLayout();
+            this.pnlKayitlar.ResumeLayout(false);
+            this.pnlKayitlar.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picKayitlar)).EndInit();
             this.pnlFiyatTarifesi.ResumeLayout(false);
             this.pnlFiyatTarifesi.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picFiyatTarifesi)).EndInit();
@@ -455,9 +461,6 @@ namespace OtoparkOtomasyonuEnSon
             this.pnlOtomatikGiris.ResumeLayout(false);
             this.pnlOtomatikGiris.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picOtomatikGiris)).EndInit();
-            this.pnlKayitlar.ResumeLayout(false);
-            this.pnlKayitlar.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picKayitlar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
