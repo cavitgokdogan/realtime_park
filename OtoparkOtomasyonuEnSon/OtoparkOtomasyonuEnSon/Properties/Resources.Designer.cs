@@ -83,9 +83,49 @@ namespace OtoparkOtomasyonuEnSon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icon_car {
+            get {
+                object obj = ResourceManager.GetObject("icon-car", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icon_logout {
             get {
                 object obj = ResourceManager.GetObject("icon_logout", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icon_mancar {
+            get {
+                object obj = ResourceManager.GetObject("icon-mancar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icon_otocar {
+            get {
+                object obj = ResourceManager.GetObject("icon-otocar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icon_otolev {
+            get {
+                object obj = ResourceManager.GetObject("icon-otolev", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
