@@ -154,10 +154,13 @@
   <data name="Splash" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Splash.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="icon-ledger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon-ledger.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icon-admin" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon-admin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icon-ledger" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon-ledger.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icon-clock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon-clock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
