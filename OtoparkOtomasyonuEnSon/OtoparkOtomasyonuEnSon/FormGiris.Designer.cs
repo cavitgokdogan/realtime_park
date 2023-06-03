@@ -263,6 +263,7 @@ namespace OtoparkOtomasyonuEnSon
             this.pnlOtomatikCikis.Name = "pnlOtomatikCikis";
             this.pnlOtomatikCikis.Size = new System.Drawing.Size(170, 56);
             this.pnlOtomatikCikis.TabIndex = 11;
+            this.pnlOtomatikCikis.Click += new System.EventHandler(this.PnlOtomatikCikis_Click);
             this.pnlOtomatikCikis.MouseEnter += new System.EventHandler(this.PnlOtomatikCikis_MouseEnter);
             this.pnlOtomatikCikis.MouseLeave += new System.EventHandler(this.PnlOtomatikCikis_MouseLeave);
             // 
@@ -276,6 +277,7 @@ namespace OtoparkOtomasyonuEnSon
             this.lblOtomatikCikis.Size = new System.Drawing.Size(106, 18);
             this.lblOtomatikCikis.TabIndex = 1;
             this.lblOtomatikCikis.Text = "Otomatik Çıkış";
+            this.lblOtomatikCikis.Click += new System.EventHandler(this.LblOtomatikCikis_Click);
             this.lblOtomatikCikis.MouseEnter += new System.EventHandler(this.LblOtomatikCikis_MouseEnter);
             this.lblOtomatikCikis.MouseLeave += new System.EventHandler(this.LblOtomatikCikis_MouseLeave);
             // 
@@ -288,6 +290,7 @@ namespace OtoparkOtomasyonuEnSon
             this.picOtomatikCikis.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picOtomatikCikis.TabIndex = 0;
             this.picOtomatikCikis.TabStop = false;
+            this.picOtomatikCikis.Click += new System.EventHandler(this.PicOtomatikCikis_Click);
             this.picOtomatikCikis.MouseEnter += new System.EventHandler(this.PicOtomatikCikis_MouseEnter);
             this.picOtomatikCikis.MouseLeave += new System.EventHandler(this.PicOtomatikCikis_MouseLeave);
             // 
