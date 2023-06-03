@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Windows.Forms;
 using System.Diagnostics;
 using System.Data.SqlClient;
@@ -133,7 +133,7 @@ namespace OtoparkOtomasyonuEnSon
 
         private void PicCikisYap_Click(object sender, EventArgs e) => Close();
 
-        private void PanCikisYap_Paint(object sender, PaintEventArgs e) => Close();
+        private void PanCikisYap_Click(object sender, EventArgs e) => Close();
         #endregion
 
         #region FormFiyatTarife Formuna Geçiş
@@ -148,7 +148,7 @@ namespace OtoparkOtomasyonuEnSon
 
         private void LblFiyatTarifesi_Click(object sender, EventArgs e) => FormFiyatTarifeAc();
 
-        private void PnlFiyatTarifesi_Paint(object sender, PaintEventArgs e) => FormFiyatTarifeAc();
+        private void PnlFiyatTarifesi_Click(object sender, EventArgs e) => FormFiyatTarifeAc();
         #endregion
     }
 }
