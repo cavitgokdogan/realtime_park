@@ -19,66 +19,16 @@ namespace OtoparkOtomasyonuEnSon
         {
             InitializeComponent();
         }
-        
-        private void manualFormButton_Click(object sender, EventArgs e)
+
+        private void FormGiris_Load(object sender, EventArgs e)
         {
-            ManualForm ManualForm = new ManualForm();
-            this.Hide();
-            ManualForm.ShowDialog();
-            //Manuel Giriş Sayfasına Geçiş
+            Timer_Tick(this, EventArgs.Empty);
+            timer.Start();
         }
 
-        private void registriesButton_Click(object sender, EventArgs e)
+        private void Timer_Tick(object sender, EventArgs e)
         {
-            FormKayitlar formKayitlar = new FormKayitlar();
-            this.Hide();
-            formKayitlar.ShowDialog();
-            //Kayıtlar Sayfasına Geçiş
-        }
-
-
-        private void loginPageButton_Click(object sender, EventArgs e)
-        {
-            FormGirisYap form1 = new FormGirisYap();
-            this.Hide();
-            form1.ShowDialog();
-        }
-        private void automaticExitButton_Click(object sender, EventArgs e)
-        {
-            // Start a new process
-            var process = new Process
-            {
-                StartInfo = new ProcessStartInfo
-                {
-                    FileName = "python",
-                    // Replace with your python script path
-                    Arguments = "..\\..\\..\\..\\plaka_tanima\\cam_plaka.py",
-                    UseShellExecute = false,
-                    RedirectStandardOutput = true,
-                    CreateNoWindow = true,
-                    WorkingDirectory = AppDomain.CurrentDomain.BaseDirectory
-                }
-            };
-            process.Start();
-
-            // Read the python script output
-            while (!process.StandardOutput.EndOfStream)
-            {
-                var line = process.StandardOutput.ReadLine();
-                if (!string.IsNullOrEmpty(line))
-                {
-                    string detectedText = line;
-                    MessageBox.Show(detectedText);
-                    
-                }
-            }
-        }
-
-        private void costManagerButton_Click(object sender, EventArgs e)
-        {
-            FormFiyatTarife fiyatTarifeForm = new FormFiyatTarife();
-            this.Hide();
-            fiyatTarifeForm.ShowDialog();
+            stripSaat.Text = $"{DateTime.Now:HH:mm}";
         }
 
         #region Çıkışla Alakalı Metot ve Olaylar
@@ -156,6 +106,81 @@ namespace OtoparkOtomasyonuEnSon
                 }
             }
         }
+
+        private void PnlOtomatikGiris_Click(object sender, EventArgs e) => OtomatikGiris();
+
+        private void LblOtomatikGiris_Click(object sender, EventArgs e) => OtomatikGiris();
+
+        private void PicOtomatikGiris_Click(object sender, EventArgs e) => OtomatikGiris();
+        #endregion
+
+        #region Otomatik Çıkış Özelliği
+        private void OtomatikCikis()
+        {
+            // Start a new process
+            var process = new Process
+            {
+                StartInfo = new ProcessStartInfo
+                {
+                    FileName = "python",
+                    // Replace with your python script path
+                    Arguments = "..\\..\\..\\..\\plaka_tanima\\cam_plaka.py",
+                    UseShellExecute = false,
+                    RedirectStandardOutput = true,
+                    CreateNoWindow = true,
+                    WorkingDirectory = AppDomain.CurrentDomain.BaseDirectory
+                }
+            };
+            process.Start();
+
+            // Read the python script output
+            while (!process.StandardOutput.EndOfStream)
+            {
+                var line = process.StandardOutput.ReadLine();
+                if (!string.IsNullOrEmpty(line))
+                {
+                    string detectedText = line;
+                    MessageBox.Show(detectedText);
+
+                }
+            }
+        }
+
+        private void PnlOtomatikCikis_Click(object sender, EventArgs e) => OtomatikCikis();
+
+        private void LblOtomatikCikis_Click(object sender, EventArgs e) => OtomatikCikis();
+
+        private void PicOtomatikCikis_Click(object sender, EventArgs e) => OtomatikCikis();
+        #endregion
+
+        #region Manuel Giriş Özelliği
+        private void FormManualAc()
+        {
+            Hide();
+            FormManual form = new FormManual();
+            form.ShowDialog();
+        }
+
+        private void PnlManuelGiris_Click(object sender, EventArgs e) => FormManualAc();
+
+        private void LblManuelGiris_Click(object sender, EventArgs e) => FormManualAc();
+
+        private void PicManuelGiris_Click(object sender, EventArgs e) => FormManualAc();
+        #endregion
+
+        #region FormKayitlar Formuna Geçiş
+        private void FormKayitlarAc()
+        {
+            Hide();
+            FormKayitlar form = new FormKayitlar();
+            form.ShowDialog();
+        }
+
+        private void PnlKayitlar_Click(object sender, EventArgs e) => FormKayitlarAc();
+
+        private void LblKayitlar_Click(object sender, EventArgs e) => FormKayitlarAc();
+
+        private void PicKayitlar_Click(object sender, EventArgs e) => FormKayitlarAc();
         #endregion
 
         #region Eyecandy Sağlayan Metotlar ve Olaylar

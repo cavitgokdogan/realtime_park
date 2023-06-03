@@ -198,11 +198,11 @@
     <Compile Include="FormKayitlar.Designer.cs">
       <DependentUpon>FormKayitlar.cs</DependentUpon>
     </Compile>
-    <Compile Include="ManualForm.cs">
+    <Compile Include="FormManual.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ManualForm.Designer.cs">
-      <DependentUpon>ManualForm.cs</DependentUpon>
+    <Compile Include="FormManual.Designer.cs">
+      <DependentUpon>FormManual.cs</DependentUpon>
     </Compile>
     <Compile Include="FormNoAdmin.cs">
       <SubType>Form</SubType>
@@ -263,8 +263,8 @@
     <EmbeddedResource Include="FormKayitlar.resx">
       <DependentUpon>FormKayitlar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ManualForm.resx">
-      <DependentUpon>ManualForm.cs</DependentUpon>
+    <EmbeddedResource Include="FormManual.resx">
+      <DependentUpon>FormManual.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormNoAdmin.resx">
       <DependentUpon>FormNoAdmin.cs</DependentUpon>
@@ -394,6 +394,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icon-otolev.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-admin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-ledger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-clock.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
