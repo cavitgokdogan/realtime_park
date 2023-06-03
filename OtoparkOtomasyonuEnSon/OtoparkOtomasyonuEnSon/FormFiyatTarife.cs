@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace OtoparkOtomasyonuEnSon
 {
-    public partial class FiyatTarifeForm : Form
+    public partial class FormFiyatTarife : Form
     {
-        public FiyatTarifeForm()
+        public FormFiyatTarife()
         {
             InitializeComponent();
         }
