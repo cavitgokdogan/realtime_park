@@ -35,12 +35,12 @@
             this.telefonnoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.girissaatiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.arabalarBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.otoparkDataSet7 = new OtoparkOtomasyonuEnSon.otoparkDataSet7();
-            this.arabalarTableAdapter = new OtoparkOtomasyonuEnSon.otoparkDataSet7TableAdapters.arabalarTableAdapter();
+            this.otoparkDataSet4 = new OtoparkOtomasyonuEnSon.otoparkDataSet4();
+            this.arabalarTableAdapter = new OtoparkOtomasyonuEnSon.otoparkDataSet4TableAdapters.arabalarTableAdapter();
             this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arabalarBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.otoparkDataSet7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.otoparkDataSet4)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -78,12 +78,12 @@
             // arabalarBindingSource
             // 
             this.arabalarBindingSource.DataMember = "arabalar";
-            this.arabalarBindingSource.DataSource = this.otoparkDataSet7;
+            this.arabalarBindingSource.DataSource = this.otoparkDataSet4;
             // 
-            // otoparkDataSet7
+            // otoparkDataSet4
             // 
-            this.otoparkDataSet7.DataSetName = "otoparkDataSet7";
-            this.otoparkDataSet7.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.otoparkDataSet4.DataSetName = "otoparkDataSet4";
+            this.otoparkDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // arabalarTableAdapter
             // 
@@ -113,16 +113,16 @@
             this.Load += new System.EventHandler(this.FormNoAdmin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.arabalarBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.otoparkDataSet7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.otoparkDataSet4)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
         private System.Windows.Forms.DataGridView dataGridView1;
-        private otoparkDataSet7 otoparkDataSet7;
+        private otoparkDataSet4 otoparkDataSet4;
         private System.Windows.Forms.BindingSource arabalarBindingSource;
-        private otoparkDataSet7TableAdapters.arabalarTableAdapter arabalarTableAdapter;
+        private otoparkDataSet4TableAdapters.arabalarTableAdapter arabalarTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn plakaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn telefonnoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn girissaatiDataGridViewTextBoxColumn;

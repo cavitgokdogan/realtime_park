@@ -14,7 +14,7 @@ namespace OtoparkOtomasyonuEnSon
         {
             // Bu kod satırı 'otoparkDataSet7.arabalar' tablosuna veri yükler.
             // Bunu gerektiği şekilde taşıyabilir, veya kaldırabilirsiniz.
-            this.arabalarTableAdapter.Fill(this.otoparkDataSet7.arabalar);
+            this.arabalarTableAdapter.Fill(this.otoparkDataSet4.arabalar);
         }
 
         private void button1_Click(object sender, EventArgs e)
