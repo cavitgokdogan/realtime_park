@@ -28,13 +28,6 @@ namespace OtoparkOtomasyonuEnSon
             //Kayıtlar Sayfasına Geçiş
         }
 
-
-        private void loginPageButton_Click(object sender, EventArgs e)
-        {
-            FormGirisYap form1 = new FormGirisYap();
-            this.Hide();
-            form1.ShowDialog();
-        }
         private void automaticExitButton_Click(object sender, EventArgs e)
         {
             // Start a new process
