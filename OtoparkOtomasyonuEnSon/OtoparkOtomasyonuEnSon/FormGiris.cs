@@ -118,6 +118,39 @@ namespace OtoparkOtomasyonuEnSon
         private void PicOtomatikGiris_Click(object sender, EventArgs e) => OtomatikGiris();
         #endregion
 
+        #region Otomatik Çıkış Özelliği
+        private void OtomatikCikis()
+        {
+            // Start a new process
+            var process = new Process
+            {
+                StartInfo = new ProcessStartInfo
+                {
+                    FileName = "python",
+                    // Replace with your python script path
+                    Arguments = "..\\..\\..\\..\\plaka_tanima\\cam_plaka.py",
+                    UseShellExecute = false,
+                    RedirectStandardOutput = true,
+                    CreateNoWindow = true,
+                    WorkingDirectory = AppDomain.CurrentDomain.BaseDirectory
+                }
+            };
+            process.Start();
+
+            // Read the python script output
+            while (!process.StandardOutput.EndOfStream)
+            {
+                var line = process.StandardOutput.ReadLine();
+                if (!string.IsNullOrEmpty(line))
+                {
+                    string detectedText = line;
+                    MessageBox.Show(detectedText);
+
+                }
+            }
+        }
+
+        #endregion
         #region Eyecandy Sağlayan Metotlar ve Olaylar
         private void HoverOldu(Control kontrol) => kontrol.BackColor = Color.FromArgb(63, 28, 158);
 
