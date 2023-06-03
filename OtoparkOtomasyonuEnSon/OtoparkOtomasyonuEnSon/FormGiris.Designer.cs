@@ -41,17 +41,17 @@ namespace OtoparkOtomasyonuEnSon
             this.@__label2 = new System.Windows.Forms.Label();
             this.@__label1 = new System.Windows.Forms.Label();
             this.@__groupBox2 = new System.Windows.Forms.GroupBox();
-            this.picOtomatikGiris = new System.Windows.Forms.PictureBox();
-            this.@__label3 = new System.Windows.Forms.Label();
-            this.pnlOtomatikGiris = new System.Windows.Forms.Panel();
-            this.lblOtomatikGiris = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlManuelGiris = new System.Windows.Forms.Panel();
             this.lblManuelGiris = new System.Windows.Forms.Label();
             this.picManuelGiris = new System.Windows.Forms.PictureBox();
             this.pnlOtomatikCikis = new System.Windows.Forms.Panel();
             this.lblOtomatikCikis = new System.Windows.Forms.Label();
             this.picOtomatikCikis = new System.Windows.Forms.PictureBox();
+            this.@__pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.@__label3 = new System.Windows.Forms.Label();
+            this.pnlOtomatikGiris = new System.Windows.Forms.Panel();
+            this.lblOtomatikGiris = new System.Windows.Forms.Label();
+            this.picOtomatikGiris = new System.Windows.Forms.PictureBox();
             this.pnlCikisYap.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picCikisYap)).BeginInit();
             this.statusStrip.SuspendLayout();
@@ -59,13 +59,13 @@ namespace OtoparkOtomasyonuEnSon
             this.pnlFiyatTarifesi.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picFiyatTarifesi)).BeginInit();
             this.@__groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picOtomatikGiris)).BeginInit();
-            this.pnlOtomatikGiris.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlManuelGiris.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picManuelGiris)).BeginInit();
             this.pnlOtomatikCikis.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picOtomatikCikis)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.@__pictureBox1)).BeginInit();
+            this.pnlOtomatikGiris.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picOtomatikGiris)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlCikisYap
@@ -207,7 +207,7 @@ namespace OtoparkOtomasyonuEnSon
             // 
             this.@__groupBox2.Controls.Add(this.pnlManuelGiris);
             this.@__groupBox2.Controls.Add(this.pnlOtomatikCikis);
-            this.@__groupBox2.Controls.Add(this.picOtomatikGiris);
+            this.@__groupBox2.Controls.Add(this.@__pictureBox1);
             this.@__groupBox2.Controls.Add(this.@__label3);
             this.@__groupBox2.Controls.Add(this.pnlOtomatikGiris);
             this.@__groupBox2.Location = new System.Drawing.Point(12, 94);
@@ -215,57 +215,6 @@ namespace OtoparkOtomasyonuEnSon
             this.@__groupBox2.Size = new System.Drawing.Size(776, 82);
             this.@__groupBox2.TabIndex = 10;
             this.@__groupBox2.TabStop = false;
-            // 
-            // picOtomatikGiris
-            // 
-            this.picOtomatikGiris.Image = global::OtoparkOtomasyonuEnSon.Properties.Resources.icon_car;
-            this.picOtomatikGiris.Location = new System.Drawing.Point(6, 18);
-            this.picOtomatikGiris.Name = "picOtomatikGiris";
-            this.picOtomatikGiris.Size = new System.Drawing.Size(50, 50);
-            this.picOtomatikGiris.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picOtomatikGiris.TabIndex = 2;
-            this.picOtomatikGiris.TabStop = false;
-            // 
-            // __label3
-            // 
-            this.@__label3.AutoSize = true;
-            this.@__label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.@__label3.ForeColor = System.Drawing.Color.White;
-            this.@__label3.Location = new System.Drawing.Point(643, 15);
-            this.@__label3.Name = "__label3";
-            this.@__label3.Size = new System.Drawing.Size(127, 24);
-            this.@__label3.TabIndex = 12;
-            this.@__label3.Text = "Araç Yönetimi";
-            // 
-            // pnlOtomatikGiris
-            // 
-            this.pnlOtomatikGiris.Controls.Add(this.lblOtomatikGiris);
-            this.pnlOtomatikGiris.Controls.Add(this.pictureBox1);
-            this.pnlOtomatikGiris.Location = new System.Drawing.Point(68, 15);
-            this.pnlOtomatikGiris.Name = "pnlOtomatikGiris";
-            this.pnlOtomatikGiris.Size = new System.Drawing.Size(164, 56);
-            this.pnlOtomatikGiris.TabIndex = 9;
-            // 
-            // lblOtomatikGiris
-            // 
-            this.lblOtomatikGiris.AutoSize = true;
-            this.lblOtomatikGiris.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblOtomatikGiris.ForeColor = System.Drawing.Color.White;
-            this.lblOtomatikGiris.Location = new System.Drawing.Point(59, 18);
-            this.lblOtomatikGiris.Name = "lblOtomatikGiris";
-            this.lblOtomatikGiris.Size = new System.Drawing.Size(104, 18);
-            this.lblOtomatikGiris.TabIndex = 1;
-            this.lblOtomatikGiris.Text = "Otomatik Giriş";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::OtoparkOtomasyonuEnSon.Properties.Resources.icon_otocar;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // pnlManuelGiris
             // 
@@ -327,6 +276,63 @@ namespace OtoparkOtomasyonuEnSon
             this.picOtomatikCikis.TabIndex = 0;
             this.picOtomatikCikis.TabStop = false;
             // 
+            // __pictureBox1
+            // 
+            this.@__pictureBox1.Image = global::OtoparkOtomasyonuEnSon.Properties.Resources.icon_car;
+            this.@__pictureBox1.Location = new System.Drawing.Point(6, 18);
+            this.@__pictureBox1.Name = "__pictureBox1";
+            this.@__pictureBox1.Size = new System.Drawing.Size(50, 50);
+            this.@__pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.@__pictureBox1.TabIndex = 2;
+            this.@__pictureBox1.TabStop = false;
+            // 
+            // __label3
+            // 
+            this.@__label3.AutoSize = true;
+            this.@__label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.@__label3.ForeColor = System.Drawing.Color.White;
+            this.@__label3.Location = new System.Drawing.Point(643, 15);
+            this.@__label3.Name = "__label3";
+            this.@__label3.Size = new System.Drawing.Size(127, 24);
+            this.@__label3.TabIndex = 12;
+            this.@__label3.Text = "Araç Yönetimi";
+            // 
+            // pnlOtomatikGiris
+            // 
+            this.pnlOtomatikGiris.Controls.Add(this.lblOtomatikGiris);
+            this.pnlOtomatikGiris.Controls.Add(this.picOtomatikGiris);
+            this.pnlOtomatikGiris.Location = new System.Drawing.Point(68, 15);
+            this.pnlOtomatikGiris.Name = "pnlOtomatikGiris";
+            this.pnlOtomatikGiris.Size = new System.Drawing.Size(164, 56);
+            this.pnlOtomatikGiris.TabIndex = 9;
+            this.pnlOtomatikGiris.MouseEnter += new System.EventHandler(this.PnlOtomatikGiris_MouseEnter);
+            this.pnlOtomatikGiris.MouseLeave += new System.EventHandler(this.PnlOtomatikGiris_MouseLeave);
+            // 
+            // lblOtomatikGiris
+            // 
+            this.lblOtomatikGiris.AutoSize = true;
+            this.lblOtomatikGiris.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblOtomatikGiris.ForeColor = System.Drawing.Color.White;
+            this.lblOtomatikGiris.Location = new System.Drawing.Point(59, 18);
+            this.lblOtomatikGiris.Name = "lblOtomatikGiris";
+            this.lblOtomatikGiris.Size = new System.Drawing.Size(104, 18);
+            this.lblOtomatikGiris.TabIndex = 1;
+            this.lblOtomatikGiris.Text = "Otomatik Giriş";
+            this.lblOtomatikGiris.MouseEnter += new System.EventHandler(this.LblOtomatikGiris_MouseEnter);
+            this.lblOtomatikGiris.MouseLeave += new System.EventHandler(this.LblOtomatikGiris_MouseLeave);
+            // 
+            // picOtomatikGiris
+            // 
+            this.picOtomatikGiris.Image = global::OtoparkOtomasyonuEnSon.Properties.Resources.icon_otocar;
+            this.picOtomatikGiris.Location = new System.Drawing.Point(3, 3);
+            this.picOtomatikGiris.Name = "picOtomatikGiris";
+            this.picOtomatikGiris.Size = new System.Drawing.Size(50, 50);
+            this.picOtomatikGiris.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picOtomatikGiris.TabIndex = 0;
+            this.picOtomatikGiris.TabStop = false;
+            this.picOtomatikGiris.MouseEnter += new System.EventHandler(this.PicOtomatikGiris_MouseEnter);
+            this.picOtomatikGiris.MouseLeave += new System.EventHandler(this.PicOtomatikGiris_MouseLeave);
+            // 
             // FormGiris
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -354,16 +360,16 @@ namespace OtoparkOtomasyonuEnSon
             ((System.ComponentModel.ISupportInitialize)(this.picFiyatTarifesi)).EndInit();
             this.@__groupBox2.ResumeLayout(false);
             this.@__groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picOtomatikGiris)).EndInit();
-            this.pnlOtomatikGiris.ResumeLayout(false);
-            this.pnlOtomatikGiris.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnlManuelGiris.ResumeLayout(false);
             this.pnlManuelGiris.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picManuelGiris)).EndInit();
             this.pnlOtomatikCikis.ResumeLayout(false);
             this.pnlOtomatikCikis.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picOtomatikCikis)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.@__pictureBox1)).EndInit();
+            this.pnlOtomatikGiris.ResumeLayout(false);
+            this.pnlOtomatikGiris.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picOtomatikGiris)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -386,9 +392,9 @@ namespace OtoparkOtomasyonuEnSon
         private System.Windows.Forms.GroupBox __groupBox2;
         private System.Windows.Forms.Panel pnlOtomatikGiris;
         private System.Windows.Forms.Label lblOtomatikGiris;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label __label3;
         private System.Windows.Forms.PictureBox picOtomatikGiris;
+        private System.Windows.Forms.Label __label3;
+        private System.Windows.Forms.PictureBox __pictureBox1;
         private System.Windows.Forms.Panel pnlManuelGiris;
         private System.Windows.Forms.Label lblManuelGiris;
         private System.Windows.Forms.PictureBox picManuelGiris;
