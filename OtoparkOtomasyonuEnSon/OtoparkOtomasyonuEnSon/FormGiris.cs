@@ -158,6 +158,8 @@ namespace OtoparkOtomasyonuEnSon
         }
 
         private void PnlOtomatikGiris_Click(object sender, EventArgs e) => OtomatikGiris();
+
+        private void LblOtomatikGiris_Click(object sender, EventArgs e) => OtomatikGiris();
         #endregion
 
         #region Eyecandy Sağlayan Metotlar ve Olaylar
