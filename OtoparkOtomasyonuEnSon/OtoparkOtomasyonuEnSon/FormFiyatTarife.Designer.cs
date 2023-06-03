@@ -3,7 +3,7 @@ using System;
 
 namespace OtoparkOtomasyonuEnSon
 {
-    partial class FiyatTarifeForm
+    partial class FormFiyatTarife
     {
         /// <summary>
         /// Required designer variable.
@@ -31,7 +31,7 @@ namespace OtoparkOtomasyonuEnSon
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FiyatTarifeForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormFiyatTarife));
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
