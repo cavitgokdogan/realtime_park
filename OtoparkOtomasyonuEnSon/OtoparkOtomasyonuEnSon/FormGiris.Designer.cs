@@ -28,13 +28,15 @@ namespace OtoparkOtomasyonuEnSon
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormGiris));
             this.pnlCikisYap = new System.Windows.Forms.Panel();
             this.lblCikisYap = new System.Windows.Forms.Label();
             this.picCikisYap = new System.Windows.Forms.PictureBox();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
-            this.stripSaat = new System.Windows.Forms.ToolStripStatusLabel();
             this.stripKullanici = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.stripSaat = new System.Windows.Forms.ToolStripStatusLabel();
             this.@__groupBox1 = new System.Windows.Forms.GroupBox();
             this.pnlFiyatTarifesi = new System.Windows.Forms.Panel();
             this.lblFiyatTarifesi = new System.Windows.Forms.Label();
@@ -53,7 +55,7 @@ namespace OtoparkOtomasyonuEnSon
             this.pnlOtomatikGiris = new System.Windows.Forms.Panel();
             this.lblOtomatikGiris = new System.Windows.Forms.Label();
             this.picOtomatikGiris = new System.Windows.Forms.PictureBox();
-            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.timer = new System.Windows.Forms.Timer(this.components);
             this.pnlCikisYap.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picCikisYap)).BeginInit();
             this.statusStrip.SuspendLayout();
@@ -123,6 +125,21 @@ namespace OtoparkOtomasyonuEnSon
             this.statusStrip.SizingGrip = false;
             this.statusStrip.TabIndex = 8;
             // 
+            // stripKullanici
+            // 
+            this.stripKullanici.ForeColor = System.Drawing.Color.White;
+            this.stripKullanici.Image = global::OtoparkOtomasyonuEnSon.Properties.Resources.icon_admin;
+            this.stripKullanici.Name = "stripKullanici";
+            this.stripKullanici.Size = new System.Drawing.Size(69, 24);
+            this.stripKullanici.Text = "Admin";
+            this.stripKullanici.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(632, 24);
+            this.toolStripStatusLabel1.Spring = true;
+            // 
             // stripSaat
             // 
             this.stripSaat.BackColor = System.Drawing.Color.Transparent;
@@ -132,15 +149,6 @@ namespace OtoparkOtomasyonuEnSon
             this.stripSaat.Name = "stripSaat";
             this.stripSaat.Size = new System.Drawing.Size(84, 24);
             this.stripSaat.Text = "Saat: 12.00";
-            // 
-            // stripKullanici
-            // 
-            this.stripKullanici.ForeColor = System.Drawing.Color.White;
-            this.stripKullanici.Image = global::OtoparkOtomasyonuEnSon.Properties.Resources.icon_admin;
-            this.stripKullanici.Name = "stripKullanici";
-            this.stripKullanici.Size = new System.Drawing.Size(69, 24);
-            this.stripKullanici.Text = "Admin";
-            this.stripKullanici.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             // 
             // __groupBox1
             // 
@@ -366,11 +374,10 @@ namespace OtoparkOtomasyonuEnSon
             this.picOtomatikGiris.MouseEnter += new System.EventHandler(this.PicOtomatikGiris_MouseEnter);
             this.picOtomatikGiris.MouseLeave += new System.EventHandler(this.PicOtomatikGiris_MouseLeave);
             // 
-            // toolStripStatusLabel1
+            // timer
             // 
-            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(632, 24);
-            this.toolStripStatusLabel1.Spring = true;
+            this.timer.Interval = 60000;
+            this.timer.Tick += new System.EventHandler(this.Timer_Tick);
             // 
             // FormGiris
             // 
@@ -387,6 +394,7 @@ namespace OtoparkOtomasyonuEnSon
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormGiris";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormGiris_FormClosed);
+            this.Load += new System.EventHandler(this.FormGiris_Load);
             this.pnlCikisYap.ResumeLayout(false);
             this.pnlCikisYap.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picCikisYap)).EndInit();
@@ -442,5 +450,6 @@ namespace OtoparkOtomasyonuEnSon
         private System.Windows.Forms.PictureBox picOtomatikCikis;
         private System.Windows.Forms.ToolStripStatusLabel stripKullanici;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+        private System.Windows.Forms.Timer timer;
     }
 }
