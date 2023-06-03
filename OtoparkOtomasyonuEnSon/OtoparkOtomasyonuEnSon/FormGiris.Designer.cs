@@ -224,6 +224,7 @@ namespace OtoparkOtomasyonuEnSon
             this.pnlManuelGiris.Name = "pnlManuelGiris";
             this.pnlManuelGiris.Size = new System.Drawing.Size(164, 56);
             this.pnlManuelGiris.TabIndex = 10;
+            this.pnlManuelGiris.Click += new System.EventHandler(this.PnlManuelGiris_Click);
             this.pnlManuelGiris.MouseEnter += new System.EventHandler(this.PnlManuelGiris_MouseEnter);
             this.pnlManuelGiris.MouseLeave += new System.EventHandler(this.PnlManuelGiris_MouseLeave);
             // 
@@ -237,6 +238,7 @@ namespace OtoparkOtomasyonuEnSon
             this.lblManuelGiris.Size = new System.Drawing.Size(91, 18);
             this.lblManuelGiris.TabIndex = 1;
             this.lblManuelGiris.Text = "Manuel Giriş";
+            this.lblManuelGiris.Click += new System.EventHandler(this.LblManuelGiris_Click);
             this.lblManuelGiris.MouseEnter += new System.EventHandler(this.LblManuelGiris_MouseEnter);
             this.lblManuelGiris.MouseLeave += new System.EventHandler(this.LblManuelGiris_MouseLeave);
             // 
@@ -249,6 +251,7 @@ namespace OtoparkOtomasyonuEnSon
             this.picManuelGiris.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picManuelGiris.TabIndex = 0;
             this.picManuelGiris.TabStop = false;
+            this.picManuelGiris.Click += new System.EventHandler(this.PicManuelGiris_Click);
             this.picManuelGiris.MouseEnter += new System.EventHandler(this.PicManuelGiris_MouseEnter);
             this.picManuelGiris.MouseLeave += new System.EventHandler(this.PicManuelGiris_MouseLeave);
             // 
