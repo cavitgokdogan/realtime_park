@@ -28,13 +28,6 @@ namespace OtoparkOtomasyonuEnSon
             //Kayıtlar Sayfasına Geçiş
         }
 
-        private void costManagerButton_Click(object sender, EventArgs e)
-        {
-            FormFiyatTarife fiyatTarifeForm = new FormFiyatTarife();
-            this.Hide();
-            fiyatTarifeForm.ShowDialog();
-        }
-
         #region Çıkışla Alakalı Metot ve Olaylar
         private void FormGiris_FormClosed(object sender, FormClosedEventArgs e) => Program.mainForm.Show();
 
