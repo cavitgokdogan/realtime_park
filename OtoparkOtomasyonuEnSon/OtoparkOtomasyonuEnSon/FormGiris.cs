@@ -1,4 +1,8 @@
-﻿using System;
+﻿/*
+ *          Ferit Yiğit BALABAN - 032190002
+ */
+
+using System;
 using System.Windows.Forms;
 using System.Diagnostics;
 using System.Data.SqlClient;
@@ -161,6 +165,14 @@ namespace OtoparkOtomasyonuEnSon
 
         private void PanCikisYap_MouseLeave(object sender, EventArgs e) => HoverBitti(pnlCikisYap);
 
+        private void LblCikisYap_MouseEnter(object sender, EventArgs e) => HoverOldu(pnlCikisYap);
+
+        private void LblCikisYap_MouseLeave(object sender, EventArgs e) => HoverBitti(pnlCikisYap);
+
+        private void PicCikisYap_MouseEnter(object sender, EventArgs e) => HoverOldu(pnlCikisYap);
+
+        private void PicCikisYap_MouseLeave(object sender, EventArgs e) => HoverBitti(pnlCikisYap);
+
         private void LblFiyatTarifesi_MouseEnter(object sender, EventArgs e) => HoverOldu(pnlFiyatTarifesi);
 
         private void LblFiyatTarifesi_MouseLeave(object sender, EventArgs e) => HoverBitti(pnlFiyatTarifesi);
@@ -173,25 +185,5 @@ namespace OtoparkOtomasyonuEnSon
 
         private void PnlFiyatTarifesi_MouseLeave(object sender, EventArgs e) => HoverBitti(pnlFiyatTarifesi);
         #endregion
-
-        private void LblCikisYap_MouseEnter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void LblCikisYap_MouseLeave(object sender, EventArgs e)
-        {
-
-        }
-
-        private void PicCikisYap_MouseEnter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void PicCikisYap_MouseLeave(object sender, EventArgs e)
-        {
-
-        }
     }
 }
