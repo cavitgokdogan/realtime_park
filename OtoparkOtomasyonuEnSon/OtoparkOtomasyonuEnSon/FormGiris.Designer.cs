@@ -30,44 +30,47 @@ namespace OtoparkOtomasyonuEnSon
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormGiris));
             this.panCikisYap = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblCikisYap = new System.Windows.Forms.Label();
+            this.picCikisYap = new System.Windows.Forms.PictureBox();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.stripSaat = new System.Windows.Forms.ToolStripStatusLabel();
             this.panCikisYap.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picCikisYap)).BeginInit();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // panCikisYap
             // 
-            this.panCikisYap.Controls.Add(this.label1);
-            this.panCikisYap.Controls.Add(this.pictureBox1);
+            this.panCikisYap.Controls.Add(this.lblCikisYap);
+            this.panCikisYap.Controls.Add(this.picCikisYap);
             this.panCikisYap.Location = new System.Drawing.Point(12, 12);
             this.panCikisYap.Name = "panCikisYap";
             this.panCikisYap.Size = new System.Drawing.Size(133, 56);
             this.panCikisYap.TabIndex = 7;
+            this.panCikisYap.Paint += new System.Windows.Forms.PaintEventHandler(this.PanCikisYap_Paint);
             // 
-            // pictureBox1
+            // lblCikisYap
             // 
-            this.pictureBox1.Image = global::OtoparkOtomasyonuEnSon.Properties.Resources.icon_logout;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.lblCikisYap.AutoSize = true;
+            this.lblCikisYap.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblCikisYap.ForeColor = System.Drawing.Color.White;
+            this.lblCikisYap.Location = new System.Drawing.Point(59, 18);
+            this.lblCikisYap.Name = "lblCikisYap";
+            this.lblCikisYap.Size = new System.Drawing.Size(70, 18);
+            this.lblCikisYap.TabIndex = 1;
+            this.lblCikisYap.Text = "Çıkış Yap";
+            this.lblCikisYap.Click += new System.EventHandler(this.LblCikisYap_Click);
             // 
-            // label1
+            // picCikisYap
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(59, 18);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 18);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Çıkış Yap";
+            this.picCikisYap.Image = global::OtoparkOtomasyonuEnSon.Properties.Resources.icon_logout;
+            this.picCikisYap.Location = new System.Drawing.Point(3, 3);
+            this.picCikisYap.Name = "picCikisYap";
+            this.picCikisYap.Size = new System.Drawing.Size(50, 50);
+            this.picCikisYap.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picCikisYap.TabIndex = 0;
+            this.picCikisYap.TabStop = false;
+            this.picCikisYap.Click += new System.EventHandler(this.PicCikisYap_Click);
             // 
             // statusStrip
             // 
@@ -94,28 +97,31 @@ namespace OtoparkOtomasyonuEnSon
             // 
             // FormGiris
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(33)))), ((int)(((byte)(184)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.panCikisYap);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormGiris";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormGiris";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormGiris_FormClosed);
             this.panCikisYap.ResumeLayout(false);
             this.panCikisYap.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picCikisYap)).EndInit();
             this.statusStrip.ResumeLayout(false);
             this.statusStrip.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
  
         private System.Windows.Forms.Panel panCikisYap;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox picCikisYap;
+        private System.Windows.Forms.Label lblCikisYap;
         private System.Windows.Forms.StatusStrip statusStrip;
         private System.Windows.Forms.ToolStripStatusLabel stripSaat;
 
