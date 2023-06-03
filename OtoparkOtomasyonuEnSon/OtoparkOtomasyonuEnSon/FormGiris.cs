@@ -20,6 +20,17 @@ namespace OtoparkOtomasyonuEnSon
             InitializeComponent();
         }
 
+        private void FormGiris_Load(object sender, EventArgs e)
+        {
+            Timer_Tick(this, EventArgs.Empty);
+            timer.Start();
+        }
+
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            stripSaat.Text = $"{DateTime.Now:HH:mm}";
+        }
+
         private void registriesButton_Click(object sender, EventArgs e)
         {
             FormKayitlar formKayitlar = new FormKayitlar();
