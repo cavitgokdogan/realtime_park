@@ -184,6 +184,11 @@ namespace OtoparkOtomasyonuEnSon
         private void PnlFiyatTarifesi_MouseEnter(object sender, EventArgs e) => HoverOldu(pnlFiyatTarifesi);
 
         private void PnlFiyatTarifesi_MouseLeave(object sender, EventArgs e) => HoverBitti(pnlFiyatTarifesi);
+
+        private void PnlOtomatikGiris_MouseEnter(object sender, EventArgs e) => HoverOldu(pnlOtomatikGiris);
+
+        private void PnlOtomatikGiris_MouseLeave(object sender, EventArgs e) => HoverBitti(pnlOtomatikGiris);
+
         #endregion
     }
 }
