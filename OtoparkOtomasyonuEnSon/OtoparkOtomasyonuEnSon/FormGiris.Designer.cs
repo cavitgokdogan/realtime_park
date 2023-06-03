@@ -127,6 +127,8 @@ namespace OtoparkOtomasyonuEnSon
             this.pnlFiyatTarifesi.Size = new System.Drawing.Size(151, 56);
             this.pnlFiyatTarifesi.TabIndex = 8;
             this.pnlFiyatTarifesi.Click += new System.EventHandler(this.PnlFiyatTarifesi_Click);
+            this.pnlFiyatTarifesi.MouseEnter += new System.EventHandler(this.PnlFiyatTarifesi_MouseEnter);
+            this.pnlFiyatTarifesi.MouseLeave += new System.EventHandler(this.PnlFiyatTarifesi_MouseLeave);
             // 
             // lblFiyatTarifesi
             // 
@@ -139,6 +141,8 @@ namespace OtoparkOtomasyonuEnSon
             this.lblFiyatTarifesi.TabIndex = 1;
             this.lblFiyatTarifesi.Text = "Fiyat Tarifesi";
             this.lblFiyatTarifesi.Click += new System.EventHandler(this.LblFiyatTarifesi_Click);
+            this.lblFiyatTarifesi.MouseEnter += new System.EventHandler(this.LblFiyatTarifesi_MouseEnter);
+            this.lblFiyatTarifesi.MouseLeave += new System.EventHandler(this.LblFiyatTarifesi_MouseLeave);
             // 
             // picFiyatTarifesi
             // 
@@ -150,6 +154,8 @@ namespace OtoparkOtomasyonuEnSon
             this.picFiyatTarifesi.TabIndex = 0;
             this.picFiyatTarifesi.TabStop = false;
             this.picFiyatTarifesi.Click += new System.EventHandler(this.PicFiyatTarifesi_Click);
+            this.picFiyatTarifesi.MouseEnter += new System.EventHandler(this.PicFiyatTarifesi_MouseEnter);
+            this.picFiyatTarifesi.MouseLeave += new System.EventHandler(this.PicFiyatTarifesi_MouseLeave);
             // 
             // __label2
             // 
