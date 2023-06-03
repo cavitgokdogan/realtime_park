@@ -154,7 +154,9 @@ namespace OtoparkOtomasyonuEnSon
 
         private void LblOtomatikCikis_Click(object sender, EventArgs e) => OtomatikCikis();
 
+        private void PicOtomatikCikis_Click(object sender, EventArgs e) => OtomatikCikis();
         #endregion
+
         #region Manuel Giriş Özelliği
         private void FormManualAc()
         {
