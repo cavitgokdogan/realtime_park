@@ -35,11 +35,11 @@ namespace OtoparkOtomasyonuEnSon
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.stripSaat = new System.Windows.Forms.ToolStripStatusLabel();
             this.@__groupBox1 = new System.Windows.Forms.GroupBox();
-            this.@__label2 = new System.Windows.Forms.Label();
-            this.@__label1 = new System.Windows.Forms.Label();
             this.pnlFiyatTarifesi = new System.Windows.Forms.Panel();
             this.lblFiyatTarifesi = new System.Windows.Forms.Label();
             this.picFiyatTarifesi = new System.Windows.Forms.PictureBox();
+            this.@__label2 = new System.Windows.Forms.Label();
+            this.@__label1 = new System.Windows.Forms.Label();
             this.panCikisYap.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picCikisYap)).BeginInit();
             this.statusStrip.SuspendLayout();
@@ -56,7 +56,9 @@ namespace OtoparkOtomasyonuEnSon
             this.panCikisYap.Name = "panCikisYap";
             this.panCikisYap.Size = new System.Drawing.Size(133, 56);
             this.panCikisYap.TabIndex = 7;
-            this.panCikisYap.Paint += new System.Windows.Forms.PaintEventHandler(this.PanCikisYap_Paint);
+            this.panCikisYap.Click += new System.EventHandler(this.PanCikisYap_Click);
+            this.panCikisYap.MouseEnter += new System.EventHandler(this.PanCikisYap_MouseEnter);
+            this.panCikisYap.MouseLeave += new System.EventHandler(this.PanCikisYap_MouseLeave);
             // 
             // lblCikisYap
             // 
@@ -116,28 +118,6 @@ namespace OtoparkOtomasyonuEnSon
             this.@__groupBox1.TabIndex = 9;
             this.@__groupBox1.TabStop = false;
             // 
-            // __label2
-            // 
-            this.@__label2.AutoSize = true;
-            this.@__label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.@__label2.ForeColor = System.Drawing.Color.White;
-            this.@__label2.Location = new System.Drawing.Point(651, 39);
-            this.@__label2.Name = "__label2";
-            this.@__label2.Size = new System.Drawing.Size(119, 18);
-            this.@__label2.TabIndex = 11;
-            this.@__label2.Text = "versiyon 2023.01";
-            // 
-            // __label1
-            // 
-            this.@__label1.AutoSize = true;
-            this.@__label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.@__label1.ForeColor = System.Drawing.Color.White;
-            this.@__label1.Location = new System.Drawing.Point(528, 15);
-            this.@__label1.Name = "__label1";
-            this.@__label1.Size = new System.Drawing.Size(242, 24);
-            this.@__label1.TabIndex = 10;
-            this.@__label1.Text = "Otopark Otomasyon Sistemi";
-            // 
             // pnlFiyatTarifesi
             // 
             this.pnlFiyatTarifesi.Controls.Add(this.lblFiyatTarifesi);
@@ -146,7 +126,7 @@ namespace OtoparkOtomasyonuEnSon
             this.pnlFiyatTarifesi.Name = "pnlFiyatTarifesi";
             this.pnlFiyatTarifesi.Size = new System.Drawing.Size(151, 56);
             this.pnlFiyatTarifesi.TabIndex = 8;
-            this.pnlFiyatTarifesi.Paint += new System.Windows.Forms.PaintEventHandler(this.PnlFiyatTarifesi_Paint);
+            this.pnlFiyatTarifesi.Click += new System.EventHandler(this.PnlFiyatTarifesi_Click);
             // 
             // lblFiyatTarifesi
             // 
@@ -170,6 +150,28 @@ namespace OtoparkOtomasyonuEnSon
             this.picFiyatTarifesi.TabIndex = 0;
             this.picFiyatTarifesi.TabStop = false;
             this.picFiyatTarifesi.Click += new System.EventHandler(this.PicFiyatTarifesi_Click);
+            // 
+            // __label2
+            // 
+            this.@__label2.AutoSize = true;
+            this.@__label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.@__label2.ForeColor = System.Drawing.Color.White;
+            this.@__label2.Location = new System.Drawing.Point(651, 39);
+            this.@__label2.Name = "__label2";
+            this.@__label2.Size = new System.Drawing.Size(119, 18);
+            this.@__label2.TabIndex = 11;
+            this.@__label2.Text = "versiyon 2023.01";
+            // 
+            // __label1
+            // 
+            this.@__label1.AutoSize = true;
+            this.@__label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.@__label1.ForeColor = System.Drawing.Color.White;
+            this.@__label1.Location = new System.Drawing.Point(528, 15);
+            this.@__label1.Name = "__label1";
+            this.@__label1.Size = new System.Drawing.Size(242, 24);
+            this.@__label1.TabIndex = 10;
+            this.@__label1.Text = "Otopark Otomasyon Sistemi";
             // 
             // FormGiris
             // 
