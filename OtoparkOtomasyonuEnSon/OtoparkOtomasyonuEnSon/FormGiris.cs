@@ -205,6 +205,10 @@ namespace OtoparkOtomasyonuEnSon
 
         private void LblOtomatikCikis_MouseLeave(object sender, EventArgs e) => HoverBitti(pnlOtomatikCikis);
 
+        private void PicOtomatikCikis_MouseEnter(object sender, EventArgs e) => HoverOldu(pnlOtomatikCikis);
+
+        private void PicOtomatikCikis_MouseLeave(object sender, EventArgs e) => HoverBitti(pnlOtomatikCikis);
+
         #endregion
     }
 }
