@@ -151,6 +151,15 @@ namespace OtoparkOtomasyonuEnSon
         }
 
         #endregion
+        #region Manuel Giriş Özelliği
+        private void FormManualAc()
+        {
+            Hide();
+            FormManual form = new FormManual();
+            form.ShowDialog();
+        }
+
+        #endregion
         #region Eyecandy Sağlayan Metotlar ve Olaylar
         private void HoverOldu(Control kontrol) => kontrol.BackColor = Color.FromArgb(63, 28, 158);
 
