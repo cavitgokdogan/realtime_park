@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Windows.Forms;
 using System.Diagnostics;
 using System.Data.SqlClient;
@@ -153,21 +153,9 @@ namespace OtoparkOtomasyonuEnSon
         #endregion
 
         #region Eyecandy Sağlayan Metotlar ve Olaylar
-        private void HoverOldu(Control kontrol)
-        {
-            kontrol.BackColor = Color.FromArgb(63, 28, 158);
-            Font font = kontrol.Font;
-            Font font2 = new Font(font.FontFamily, font.SizeInPoints, FontStyle.Bold);
-            kontrol.Font = font2;
-        }
+        private void HoverOldu(Control kontrol) => kontrol.BackColor = Color.FromArgb(63, 28, 158);
 
-        private void HoverBitti(Control kontrol)
-        {
-            kontrol.BackColor = Color.FromArgb(74, 33, 184);
-            Font font = kontrol.Font;
-            Font font2 = new Font(font.FontFamily, font.SizeInPoints, FontStyle.Regular);
-            kontrol.Font = font2;
-        }
+        private void HoverBitti(Control kontrol) => kontrol.BackColor = Color.FromArgb(74, 33, 184);
 
         private void PanCikisYap_MouseEnter(object sender, EventArgs e) => HoverOldu(panCikisYap);
 
