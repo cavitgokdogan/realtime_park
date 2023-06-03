@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Windows.Forms;
 using System.Diagnostics;
 using System.Data.SqlClient;
@@ -121,7 +121,7 @@ namespace OtoparkOtomasyonuEnSon
 
         private void costManagerButton_Click(object sender, EventArgs e)
         {
-            FiyatTarifeForm fiyatTarifeForm = new FiyatTarifeForm();
+            FormFiyatTarife fiyatTarifeForm = new FormFiyatTarife();
             this.Hide();
             fiyatTarifeForm.ShowDialog();
         }
@@ -135,5 +135,13 @@ namespace OtoparkOtomasyonuEnSon
 
         private void PanCikisYap_Paint(object sender, PaintEventArgs e) => Close();
         #endregion
+
+        private void FormFiyatTarifeAc()
+        {
+            Hide();
+            FormFiyatTarife form = new FormFiyatTarife();
+            form.ShowDialog();
+        }
+
     }
 }
