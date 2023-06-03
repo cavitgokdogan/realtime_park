@@ -132,12 +132,11 @@ namespace OtoparkOtomasyonuEnSon
             this.stripKullanici.Name = "stripKullanici";
             this.stripKullanici.Size = new System.Drawing.Size(69, 24);
             this.stripKullanici.Text = "Admin";
-            this.stripKullanici.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             // 
             // toolStripStatusLabel1
             // 
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(632, 24);
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(601, 24);
             this.toolStripStatusLabel1.Spring = true;
             // 
             // stripSaat
