@@ -224,30 +224,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>otoparkDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="otoparkDataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>otoparkDataSet1.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="otoparkDataSet2.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>otoparkDataSet2.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="otoparkDataSet3.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>otoparkDataSet3.xsd</DependentUpon>
-    </Compile>
     <Compile Include="otoparkDataSet4.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>otoparkDataSet4.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="otoparkDataSet7.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>otoparkDataSet7.xsd</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -268,6 +248,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormNoAdmin.resx">
       <DependentUpon>FormNoAdmin.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FormSplash.resx">
       <DependentUpon>FormSplash.cs</DependentUpon>
@@ -293,39 +274,6 @@
     <None Include="otoparkDataSet.xss">
       <DependentUpon>otoparkDataSet.xsd</DependentUpon>
     </None>
-    <None Include="otoparkDataSet1.xsc">
-      <DependentUpon>otoparkDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="otoparkDataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>otoparkDataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="otoparkDataSet1.xss">
-      <DependentUpon>otoparkDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="otoparkDataSet2.xsc">
-      <DependentUpon>otoparkDataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="otoparkDataSet2.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>otoparkDataSet2.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="otoparkDataSet2.xss">
-      <DependentUpon>otoparkDataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="otoparkDataSet3.xsc">
-      <DependentUpon>otoparkDataSet3.xsd</DependentUpon>
-    </None>
-    <None Include="otoparkDataSet3.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>otoparkDataSet3.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="otoparkDataSet3.xss">
-      <DependentUpon>otoparkDataSet3.xsd</DependentUpon>
-    </None>
     <None Include="otoparkDataSet4.xsc">
       <DependentUpon>otoparkDataSet4.xsd</DependentUpon>
     </None>
@@ -336,17 +284,6 @@
     </None>
     <None Include="otoparkDataSet4.xss">
       <DependentUpon>otoparkDataSet4.xsd</DependentUpon>
-    </None>
-    <None Include="otoparkDataSet7.xsc">
-      <DependentUpon>otoparkDataSet7.xsd</DependentUpon>
-    </None>
-    <None Include="otoparkDataSet7.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>otoparkDataSet7.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="otoparkDataSet7.xss">
-      <DependentUpon>otoparkDataSet7.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

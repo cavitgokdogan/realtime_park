@@ -34,8 +34,6 @@ namespace OtoparkOtomasyonuEnSon
         {
             // DataGridView içerisine veri çekme
             this.arabalarTableAdapter1.Fill(this.otoparkDataSet4.arabalar);
-  
-
         }
 
         private void fillByToolStripButton_Click(object sender, EventArgs e)
@@ -49,12 +47,6 @@ namespace OtoparkOtomasyonuEnSon
                 System.Windows.Forms.MessageBox.Show(ex.Message);
             }
              
-        }
-
-        private void refreshButton_Click(object sender, EventArgs e)
-        {
-            this.arabalarTableAdapter1.Fill(this.otoparkDataSet4.arabalar);
-
         }
 
         private void carExitButton_Click(object sender, EventArgs e)
