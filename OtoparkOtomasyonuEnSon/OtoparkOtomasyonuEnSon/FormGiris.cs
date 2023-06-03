@@ -31,14 +31,6 @@ namespace OtoparkOtomasyonuEnSon
             stripSaat.Text = $"{DateTime.Now:HH:mm}";
         }
 
-        private void registriesButton_Click(object sender, EventArgs e)
-        {
-            FormKayitlar formKayitlar = new FormKayitlar();
-            this.Hide();
-            formKayitlar.ShowDialog();
-            //Kayıtlar Sayfasına Geçiş
-        }
-
         #region Çıkışla Alakalı Metot ve Olaylar
         private void FormGiris_FormClosed(object sender, FormClosedEventArgs e) => Program.mainForm.Show();
 
