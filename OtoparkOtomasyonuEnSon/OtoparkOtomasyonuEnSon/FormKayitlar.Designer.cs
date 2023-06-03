@@ -54,7 +54,6 @@
             this.telNoTextBox = new System.Windows.Forms.TextBox();
             this.entranceDateTextBox = new System.Windows.Forms.TextBox();
             this.arabalarBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.otoparkDataSet4 = new OtoparkOtomasyonuEnSon.otoparkDataSet4();
             this.arabalarBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.arabalarTableAdapter1 = new OtoparkOtomasyonuEnSon.otoparkDataSet4TableAdapters.arabalarTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.registryGridView)).BeginInit();
@@ -123,9 +122,6 @@
             // 
             this.arabalarBindingSource4.DataMember = "arabalar";
             this.arabalarBindingSource4.DataSource = this.otoparkDataSet4;
-            // 
-            // otoparkDataSet5
-            // 
             this.otoparkDataSet4.DataSetName = "otoparkDataSet4";
             this.otoparkDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
@@ -201,7 +197,7 @@
             this.refreshButton.TabIndex = 5;
             this.refreshButton.Text = "Kayıtları Yenile";
             this.refreshButton.UseVisualStyleBackColor = true;
-            this.refreshButton.Click += new System.EventHandler(this.refreshButton_Click);
+            this.refreshButton.Click += new System.EventHandler(this.loadRegistryForm);
             // 
             // carExitButton
             // 
