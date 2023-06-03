@@ -136,7 +136,7 @@ namespace OtoparkOtomasyonuEnSon
             // toolStripStatusLabel1
             // 
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(601, 24);
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(632, 24);
             this.toolStripStatusLabel1.Spring = true;
             // 
             // stripSaat
@@ -387,8 +387,10 @@ namespace OtoparkOtomasyonuEnSon
             this.Controls.Add(this.@__groupBox2);
             this.Controls.Add(this.@__groupBox1);
             this.Controls.Add(this.statusStrip);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
             this.Name = "FormGiris";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormGiris";
