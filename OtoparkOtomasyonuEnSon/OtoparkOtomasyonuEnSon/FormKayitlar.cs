@@ -80,5 +80,15 @@ namespace OtoparkOtomasyonuEnSon
             entranceDateTextBox.Text = registryGridView.Rows[secilen].Cells[2].Value.ToString();
             //TextBoxları DataGridViewde tıklanılan kısma eşitliyoruz (verileri oradan silmek için)
         }
+
+        private void lblCikisYap_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void registryGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
