@@ -26,10 +26,7 @@ namespace OtoparkOtomasyonuEnSon
             timer.Start();
         }
 
-        private void Timer_Tick(object sender, EventArgs e)
-        {
-            stripSaat.Text = $"{DateTime.Now:HH:mm}";
-        }
+        private void Timer_Tick(object sender, EventArgs e) => stripSaat.Text = $"{DateTime.Now:HH:mm}";
 
         #region Çıkışla Alakalı Metot ve Olaylar
         private void FormGiris_FormClosed(object sender, FormClosedEventArgs e) => Program.mainForm.Show();
