@@ -16,8 +16,15 @@ namespace OtoparkOtomasyonuEnSon
 
         private void createRegistryButton_Click(object sender, EventArgs e)
         {
+            if (numberPlateTextBox.Text.Length == 0 && telNoTextBox.Text.Length == 0)
+            {
+                MessageBox.Show("İlgili alanlar doldurulmadan kayıt yapılamaz.");
+                return;
+            }
+
+
             DateTime chosenTime = entranceDatePicker.Value;
-            
+
             try
             {
                 using (SqlConnection connection = new SqlConnection(ConnectionString))
@@ -34,6 +41,10 @@ namespace OtoparkOtomasyonuEnSon
                     }
                 }
                 MessageBox.Show("Kayıt Oluşturuldu!");
+            }
+            catch (SqlException)
+            {
+                MessageBox.Show("Aynı plaka ile çıkış yapmadan tekrar giriş yapılamaz.");
             }
             catch (Exception ex)
             {
@@ -86,7 +97,7 @@ namespace OtoparkOtomasyonuEnSon
         private void lblKayitOlustur_MouseLeave(object sender, EventArgs e) => FormGiris.HoverBitti(pnlKayitOlustur);
 
         private void picKayitOlustur_MouseEnter(object sender, EventArgs e) => FormGiris.HoverOldu(pnlKayitOlustur);
-        
+
         private void picKayitOlustur_MouseLeave(object sender, EventArgs e) => FormGiris.HoverBitti(pnlKayitOlustur);
 
         private void pnlKayitOlustur_MouseEnter(object sender, EventArgs e) => FormGiris.HoverOldu(pnlKayitOlustur);
@@ -109,6 +120,11 @@ namespace OtoparkOtomasyonuEnSon
         {
             entranceDatePicker.Format = DateTimePickerFormat.Custom;
             entranceDatePicker.CustomFormat = "MM/dd/yyyy hh:mm:ss";
+        }
+
+        private void pnlKayitOlustur_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
