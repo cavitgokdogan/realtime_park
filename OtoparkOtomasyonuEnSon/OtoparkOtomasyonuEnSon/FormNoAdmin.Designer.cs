@@ -43,12 +43,12 @@
             this.@__groupBox2 = new System.Windows.Forms.GroupBox();
             this.tablo = new System.Windows.Forms.DataGridView();
             this.timer = new System.Windows.Forms.Timer(this.components);
-            this.plakaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.telefonnoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.girissaatiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.arabalarBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.otoparkDataSet4 = new OtoparkOtomasyonuEnSon.otoparkDataSet4();
             this.arabalarTableAdapter = new OtoparkOtomasyonuEnSon.otoparkDataSet4TableAdapters.arabalarTableAdapter();
+            this.plakaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.telefonnoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.girissaatiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.statusStrip.SuspendLayout();
             this.@__groupBox1.SuspendLayout();
             this.pnlCikisYap.SuspendLayout();
@@ -219,30 +219,6 @@
             this.timer.Interval = 60000;
             this.timer.Tick += new System.EventHandler(this.Timer_Tick);
             // 
-            // plakaDataGridViewTextBoxColumn
-            // 
-            this.plakaDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.plakaDataGridViewTextBoxColumn.DataPropertyName = "plaka";
-            this.plakaDataGridViewTextBoxColumn.HeaderText = "Plaka";
-            this.plakaDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.plakaDataGridViewTextBoxColumn.Name = "plakaDataGridViewTextBoxColumn";
-            // 
-            // telefonnoDataGridViewTextBoxColumn
-            // 
-            this.telefonnoDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.telefonnoDataGridViewTextBoxColumn.DataPropertyName = "telefon_no";
-            this.telefonnoDataGridViewTextBoxColumn.HeaderText = "Telefon Numarası";
-            this.telefonnoDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.telefonnoDataGridViewTextBoxColumn.Name = "telefonnoDataGridViewTextBoxColumn";
-            // 
-            // girissaatiDataGridViewTextBoxColumn
-            // 
-            this.girissaatiDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.girissaatiDataGridViewTextBoxColumn.DataPropertyName = "giris_saati";
-            this.girissaatiDataGridViewTextBoxColumn.HeaderText = "Giriş Saati";
-            this.girissaatiDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.girissaatiDataGridViewTextBoxColumn.Name = "girissaatiDataGridViewTextBoxColumn";
-            // 
             // arabalarBindingSource
             // 
             this.arabalarBindingSource.DataMember = "arabalar";
@@ -256,6 +232,33 @@
             // arabalarTableAdapter
             // 
             this.arabalarTableAdapter.ClearBeforeFill = true;
+            // 
+            // plakaDataGridViewTextBoxColumn
+            // 
+            this.plakaDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.plakaDataGridViewTextBoxColumn.DataPropertyName = "plaka";
+            this.plakaDataGridViewTextBoxColumn.HeaderText = "Plaka";
+            this.plakaDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.plakaDataGridViewTextBoxColumn.Name = "plakaDataGridViewTextBoxColumn";
+            this.plakaDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // telefonnoDataGridViewTextBoxColumn
+            // 
+            this.telefonnoDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.telefonnoDataGridViewTextBoxColumn.DataPropertyName = "telefon_no";
+            this.telefonnoDataGridViewTextBoxColumn.HeaderText = "Telefon Numarası";
+            this.telefonnoDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.telefonnoDataGridViewTextBoxColumn.Name = "telefonnoDataGridViewTextBoxColumn";
+            this.telefonnoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // girissaatiDataGridViewTextBoxColumn
+            // 
+            this.girissaatiDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.girissaatiDataGridViewTextBoxColumn.DataPropertyName = "giris_saati";
+            this.girissaatiDataGridViewTextBoxColumn.HeaderText = "Giriş Saati";
+            this.girissaatiDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.girissaatiDataGridViewTextBoxColumn.Name = "girissaatiDataGridViewTextBoxColumn";
+            this.girissaatiDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // FormNoAdmin
             // 
@@ -304,9 +307,9 @@
         private System.Windows.Forms.PictureBox picCikisYap;
         private System.Windows.Forms.GroupBox __groupBox2;
         private System.Windows.Forms.DataGridView tablo;
+        private System.Windows.Forms.Timer timer;
         private System.Windows.Forms.DataGridViewTextBoxColumn plakaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn telefonnoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn girissaatiDataGridViewTextBoxColumn;
-        private System.Windows.Forms.Timer timer;
     }
 }
