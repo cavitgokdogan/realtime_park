@@ -38,19 +38,18 @@
             this.picCikisYap = new System.Windows.Forms.PictureBox();
             this.lblCikisYap = new System.Windows.Forms.Label();
             this.pnlCikisYap = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.entranceNow_checkBox = new System.Windows.Forms.CheckBox();
+            this.pnlKayitOlustur = new System.Windows.Forms.Panel();
+            this.lblKayitOlustur = new System.Windows.Forms.Label();
+            this.picKayitOlustur = new System.Windows.Forms.PictureBox();
+            this.pnlKayitlar = new System.Windows.Forms.Panel();
+            this.lblKayitlar = new System.Windows.Forms.Label();
+            this.picKayitlar = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picCikisYap)).BeginInit();
             this.pnlCikisYap.SuspendLayout();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.pnlKayitOlustur.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picKayitOlustur)).BeginInit();
+            this.pnlKayitlar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picKayitlar)).BeginInit();
             this.SuspendLayout();
             // 
             // numberPlateTextBox
@@ -135,6 +134,8 @@
             this.picCikisYap.TabIndex = 0;
             this.picCikisYap.TabStop = false;
             this.picCikisYap.Click += new System.EventHandler(this.goBackButton_Click);
+            this.picCikisYap.MouseEnter += new System.EventHandler(this.picCikisYap_MouseEnter);
+            this.picCikisYap.MouseLeave += new System.EventHandler(this.picCikisYap_MouseLeave);
             // 
             // lblCikisYap
             // 
@@ -149,6 +150,8 @@
             this.lblCikisYap.Text = "Geri Dön";
             this.lblCikisYap.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.lblCikisYap.Click += new System.EventHandler(this.goBackButton_Click);
+            this.lblCikisYap.MouseEnter += new System.EventHandler(this.lblCikisYap_MouseEnter);
+            this.lblCikisYap.MouseLeave += new System.EventHandler(this.lblCikisYap_MouseLeave);
             // 
             // pnlCikisYap
             // 
@@ -161,94 +164,96 @@
             this.pnlCikisYap.Size = new System.Drawing.Size(177, 69);
             this.pnlCikisYap.TabIndex = 14;
             this.pnlCikisYap.Click += new System.EventHandler(this.goBackButton_Click);
+            this.pnlCikisYap.MouseEnter += new System.EventHandler(this.pnlCikisYap_MouseEnter);
+            this.pnlCikisYap.MouseLeave += new System.EventHandler(this.pnlCikisYap_MouseLeave);
             // 
-            // panel1
+            // pnlKayitOlustur
             // 
-            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(436, 444);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(201, 69);
-            this.panel1.TabIndex = 15;
-            this.panel1.Click += new System.EventHandler(this.createRegistryButton_Click);
+            this.pnlKayitOlustur.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.pnlKayitOlustur.Controls.Add(this.lblKayitOlustur);
+            this.pnlKayitOlustur.Controls.Add(this.picKayitOlustur);
+            this.pnlKayitOlustur.Location = new System.Drawing.Point(436, 444);
+            this.pnlKayitOlustur.Margin = new System.Windows.Forms.Padding(4);
+            this.pnlKayitOlustur.Name = "pnlKayitOlustur";
+            this.pnlKayitOlustur.Size = new System.Drawing.Size(201, 69);
+            this.pnlKayitOlustur.TabIndex = 15;
+            this.pnlKayitOlustur.Click += new System.EventHandler(this.createRegistryButton_Click);
+            this.pnlKayitOlustur.MouseEnter += new System.EventHandler(this.pnlKayitOlustur_MouseEnter);
+            this.pnlKayitOlustur.MouseLeave += new System.EventHandler(this.pnlKayitOlustur_MouseLeave);
             // 
-            // label1
+            // lblKayitOlustur
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(79, 22);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(114, 24);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Kayıt Oluştur";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label1.Click += new System.EventHandler(this.createRegistryButton_Click);
+            this.lblKayitOlustur.AutoSize = true;
+            this.lblKayitOlustur.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblKayitOlustur.ForeColor = System.Drawing.Color.White;
+            this.lblKayitOlustur.Location = new System.Drawing.Point(79, 22);
+            this.lblKayitOlustur.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblKayitOlustur.Name = "lblKayitOlustur";
+            this.lblKayitOlustur.Size = new System.Drawing.Size(114, 24);
+            this.lblKayitOlustur.TabIndex = 1;
+            this.lblKayitOlustur.Text = "Kayıt Oluştur";
+            this.lblKayitOlustur.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblKayitOlustur.Click += new System.EventHandler(this.createRegistryButton_Click);
+            this.lblKayitOlustur.MouseEnter += new System.EventHandler(this.lblKayitOlustur_MouseEnter);
+            this.lblKayitOlustur.MouseLeave += new System.EventHandler(this.lblKayitOlustur_MouseLeave);
             // 
-            // pictureBox1
+            // picKayitOlustur
             // 
-            this.pictureBox1.Image = global::OtoparkOtomasyonuEnSon.Properties.Resources.icon_car;
-            this.pictureBox1.Location = new System.Drawing.Point(4, 4);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(67, 62);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.createRegistryButton_Click);
+            this.picKayitOlustur.Image = global::OtoparkOtomasyonuEnSon.Properties.Resources.icon_car;
+            this.picKayitOlustur.Location = new System.Drawing.Point(4, 4);
+            this.picKayitOlustur.Margin = new System.Windows.Forms.Padding(4);
+            this.picKayitOlustur.Name = "picKayitOlustur";
+            this.picKayitOlustur.Size = new System.Drawing.Size(67, 62);
+            this.picKayitOlustur.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picKayitOlustur.TabIndex = 0;
+            this.picKayitOlustur.TabStop = false;
+            this.picKayitOlustur.Click += new System.EventHandler(this.createRegistryButton_Click);
+            this.picKayitOlustur.MouseEnter += new System.EventHandler(this.picKayitOlustur_MouseEnter);
+            this.picKayitOlustur.MouseLeave += new System.EventHandler(this.picKayitOlustur_MouseLeave);
             // 
-            // panel2
+            // pnlKayitlar
             // 
-            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.pictureBox2);
-            this.panel2.Location = new System.Drawing.Point(755, 444);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(201, 69);
-            this.panel2.TabIndex = 16;
-            this.panel2.Click += new System.EventHandler(this.registryPageButton_Click);
+            this.pnlKayitlar.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.pnlKayitlar.Controls.Add(this.lblKayitlar);
+            this.pnlKayitlar.Controls.Add(this.picKayitlar);
+            this.pnlKayitlar.Location = new System.Drawing.Point(755, 444);
+            this.pnlKayitlar.Margin = new System.Windows.Forms.Padding(4);
+            this.pnlKayitlar.Name = "pnlKayitlar";
+            this.pnlKayitlar.Size = new System.Drawing.Size(201, 69);
+            this.pnlKayitlar.TabIndex = 16;
+            this.pnlKayitlar.Click += new System.EventHandler(this.registryPageButton_Click);
+            this.pnlKayitlar.MouseEnter += new System.EventHandler(this.pnlKayitlar_MouseEnter);
+            this.pnlKayitlar.MouseLeave += new System.EventHandler(this.pnlKayitlar_MouseLeave);
             // 
-            // label2
+            // lblKayitlar
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(79, 22);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 24);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Kayıtlar";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label2.Click += new System.EventHandler(this.registryPageButton_Click);
+            this.lblKayitlar.AutoSize = true;
+            this.lblKayitlar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblKayitlar.ForeColor = System.Drawing.Color.White;
+            this.lblKayitlar.Location = new System.Drawing.Point(79, 22);
+            this.lblKayitlar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblKayitlar.Name = "lblKayitlar";
+            this.lblKayitlar.Size = new System.Drawing.Size(69, 24);
+            this.lblKayitlar.TabIndex = 1;
+            this.lblKayitlar.Text = "Kayıtlar";
+            this.lblKayitlar.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblKayitlar.Click += new System.EventHandler(this.registryPageButton_Click);
+            this.lblKayitlar.MouseEnter += new System.EventHandler(this.lblKayitlar_MouseEnter);
+            this.lblKayitlar.MouseLeave += new System.EventHandler(this.lblKayitlar_MouseLeave);
             // 
-            // pictureBox2
+            // picKayitlar
             // 
-            this.pictureBox2.Image = global::OtoparkOtomasyonuEnSon.Properties.Resources.icon_ledger;
-            this.pictureBox2.Location = new System.Drawing.Point(4, 4);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(67, 62);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.registryPageButton_Click);
-            // 
-            // entranceNow_checkBox
-            // 
-            this.entranceNow_checkBox.AutoSize = true;
-            this.entranceNow_checkBox.ForeColor = System.Drawing.Color.White;
-            this.entranceNow_checkBox.Location = new System.Drawing.Point(720, 240);
-            this.entranceNow_checkBox.Name = "entranceNow_checkBox";
-            this.entranceNow_checkBox.Size = new System.Drawing.Size(60, 20);
-            this.entranceNow_checkBox.TabIndex = 17;
-            this.entranceNow_checkBox.Text = "Şuan";
-            this.entranceNow_checkBox.UseVisualStyleBackColor = true;
-            this.entranceNow_checkBox.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            this.picKayitlar.Image = global::OtoparkOtomasyonuEnSon.Properties.Resources.icon_ledger;
+            this.picKayitlar.Location = new System.Drawing.Point(4, 4);
+            this.picKayitlar.Margin = new System.Windows.Forms.Padding(4);
+            this.picKayitlar.Name = "picKayitlar";
+            this.picKayitlar.Size = new System.Drawing.Size(67, 62);
+            this.picKayitlar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picKayitlar.TabIndex = 0;
+            this.picKayitlar.TabStop = false;
+            this.picKayitlar.Click += new System.EventHandler(this.registryPageButton_Click);
+            this.picKayitlar.MouseEnter += new System.EventHandler(this.picKayitlar_MouseEnter);
+            this.picKayitlar.MouseLeave += new System.EventHandler(this.picKayitlar_MouseLeave);
             // 
             // FormManual
             // 
@@ -256,9 +261,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(33)))), ((int)(((byte)(184)))));
             this.ClientSize = new System.Drawing.Size(1056, 577);
-            this.Controls.Add(this.entranceNow_checkBox);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pnlKayitlar);
+            this.Controls.Add(this.pnlKayitOlustur);
             this.Controls.Add(this.pnlCikisYap);
             this.Controls.Add(this.entranceDatePicker);
             this.Controls.Add(this.entranceDateLabel);
@@ -272,15 +276,16 @@
             this.Name = "FormManual";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ManualForm";
+            this.Load += new System.EventHandler(this.FormManual_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picCikisYap)).EndInit();
             this.pnlCikisYap.ResumeLayout(false);
             this.pnlCikisYap.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.pnlKayitOlustur.ResumeLayout(false);
+            this.pnlKayitOlustur.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picKayitOlustur)).EndInit();
+            this.pnlKayitlar.ResumeLayout(false);
+            this.pnlKayitlar.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picKayitlar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -297,12 +302,11 @@
         private System.Windows.Forms.PictureBox picCikisYap;
         private System.Windows.Forms.Label lblCikisYap;
         private System.Windows.Forms.Panel pnlCikisYap;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.CheckBox entranceNow_checkBox;
+        private System.Windows.Forms.Panel pnlKayitOlustur;
+        private System.Windows.Forms.Label lblKayitOlustur;
+        private System.Windows.Forms.PictureBox picKayitOlustur;
+        private System.Windows.Forms.Panel pnlKayitlar;
+        private System.Windows.Forms.Label lblKayitlar;
+        private System.Windows.Forms.PictureBox picKayitlar;
     }
 }

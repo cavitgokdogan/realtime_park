@@ -16,16 +16,9 @@ namespace OtoparkOtomasyonuEnSon
 
         private void createRegistryButton_Click(object sender, EventArgs e)
         {
-            DateTime chosenTime;
-            if (entranceDatePicker.Enabled)
-            {
-                chosenTime = entranceDatePicker.Value;
-            } else
-            {
-                chosenTime = DateTime.Now;
-            }
+            DateTime chosenTime = entranceDatePicker.Value;
             TimeSpan chosenTimeSpan = chosenTime.TimeOfDay;
-
+            
             try
             {
                 using (SqlConnection connection = new SqlConnection(ConnectionString))
@@ -45,7 +38,7 @@ namespace OtoparkOtomasyonuEnSon
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Bağlantı Kurulamadı !\n" + ex.Message);
+                MessageBox.Show("Tarih Seçiniz !\n");
             }
         }
 
@@ -77,9 +70,46 @@ namespace OtoparkOtomasyonuEnSon
             // Date Time Picker üzerinden Alınan Verinin Tarih ve Saat Formatına Çevrilmesi
         }
 
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        private void lblCikisYap_MouseEnter(object sender, EventArgs e) => FormGiris.HoverOldu(pnlCikisYap);
+
+        private void lblCikisYap_MouseLeave(object sender, EventArgs e) => FormGiris.HoverBitti(pnlCikisYap);
+
+        private void pnlCikisYap_MouseEnter(object sender, EventArgs e) => FormGiris.HoverOldu(pnlCikisYap);
+
+        private void pnlCikisYap_MouseLeave(object sender, EventArgs e) => FormGiris.HoverBitti(pnlCikisYap);
+
+        private void picCikisYap_MouseEnter(object sender, EventArgs e) => FormGiris.HoverOldu(pnlCikisYap);
+
+        private void picCikisYap_MouseLeave(object sender, EventArgs e) => FormGiris.HoverBitti(pnlCikisYap);
+
+        private void lblKayitOlustur_MouseEnter(object sender, EventArgs e) => FormGiris.HoverOldu(pnlKayitOlustur);
+
+        private void lblKayitOlustur_MouseLeave(object sender, EventArgs e) => FormGiris.HoverBitti(pnlKayitOlustur);
+
+        private void picKayitOlustur_MouseEnter(object sender, EventArgs e) => FormGiris.HoverOldu(pnlKayitOlustur);
+        
+        private void picKayitOlustur_MouseLeave(object sender, EventArgs e) => FormGiris.HoverBitti(pnlKayitOlustur);
+
+        private void pnlKayitOlustur_MouseEnter(object sender, EventArgs e) => FormGiris.HoverOldu(pnlKayitOlustur);
+
+        private void pnlKayitOlustur_MouseLeave(object sender, EventArgs e) => FormGiris.HoverBitti(pnlKayitOlustur);
+
+        private void pnlKayitlar_MouseEnter(object sender, EventArgs e) => FormGiris.HoverOldu(pnlKayitlar);
+
+        private void pnlKayitlar_MouseLeave(object sender, EventArgs e) => FormGiris.HoverBitti(pnlKayitlar);
+
+        private void lblKayitlar_MouseEnter(object sender, EventArgs e) => FormGiris.HoverOldu(pnlKayitlar);
+
+        private void lblKayitlar_MouseLeave(object sender, EventArgs e) => FormGiris.HoverBitti(pnlKayitlar);
+
+        private void picKayitlar_MouseEnter(object sender, EventArgs e) => FormGiris.HoverOldu(pnlKayitlar);
+
+        private void picKayitlar_MouseLeave(object sender, EventArgs e) => FormGiris.HoverBitti(pnlKayitlar);
+
+        private void FormManual_Load(object sender, EventArgs e)
         {
-            entranceDatePicker.Enabled = false;
+            entranceDatePicker.Format = DateTimePickerFormat.Custom;
+            entranceDatePicker.CustomFormat = "MM/dd/yyyy hh:mm:ss";
         }
     }
 }
