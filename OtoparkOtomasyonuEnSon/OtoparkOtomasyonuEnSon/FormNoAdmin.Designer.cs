@@ -157,6 +157,7 @@ namespace OtoparkOtomasyonuEnSon
             this.lblCikisYap.Size = new System.Drawing.Size(70, 18);
             this.lblCikisYap.TabIndex = 1;
             this.lblCikisYap.Text = "Çıkış Yap";
+            this.lblCikisYap.Click += new System.EventHandler(this.lblCikisYap_Click);
             this.lblCikisYap.MouseEnter += new System.EventHandler(this.LblCikisYap_MouseEnter);
             this.lblCikisYap.MouseLeave += new System.EventHandler(this.LblCikisYap_MouseLeave);
             // 

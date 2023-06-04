@@ -81,14 +81,45 @@ namespace OtoparkOtomasyonuEnSon
             //TextBoxları DataGridViewde tıklanılan kısma eşitliyoruz (verileri oradan silmek için)
         }
 
-        private void lblCikisYap_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void registryGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
+
+        private void manualRegistry_label_MouseEnter(object sender, EventArgs e) => FormGiris.HoverOldu(pnlManuelGiris);
+
+        private void manualRegistry_label_MouseLeave(object sender, EventArgs e) => FormGiris.HoverBitti(pnlManuelGiris);
+
+        private void manualRegistry_panel_MouseEnter(object sender, EventArgs e) => FormGiris.HoverOldu(pnlManuelGiris);
+
+        private void manualRegistry_panel_MouseLeave(object sender, EventArgs e) => FormGiris.HoverBitti(pnlManuelGiris);
+
+        private void manualRegistry_pictureBox1_MouseEnter(object sender, EventArgs e) => FormGiris.HoverOldu(pnlManuelGiris);
+
+        private void manualRegistry_pictureBox1_MouseLeave(object sender, EventArgs e) => FormGiris.HoverBitti(pnlManuelGiris);
+
+        private void pnlCikisYap_MouseEnter(object sender, EventArgs e) => FormGiris.HoverOldu(pnlCikisYap);
+
+        private void pnlCikisYap_MouseLeave(object sender, EventArgs e) => FormGiris.HoverBitti(pnlCikisYap);
+
+        private void lblCikisYap_MouseEnter(object sender, EventArgs e) => FormGiris.HoverOldu(pnlCikisYap);
+
+        private void lblCikisYap_MouseLeave(object sender, EventArgs e) => FormGiris.HoverBitti(pnlCikisYap);
+
+        private void picCikisYap_MouseEnter(object sender, EventArgs e) => FormGiris.HoverOldu(pnlCikisYap);
+
+        private void picCikisYap_MouseLeave(object sender, EventArgs e) => FormGiris.HoverBitti(pnlCikisYap);
+
+        private void pnlAracCikis_MouseEnter(object sender, EventArgs e) => FormGiris.HoverOldu(pnlAracCikis);
+
+        private void pnlAracCikis_MouseLeave(object sender, EventArgs e) => FormGiris.HoverBitti(pnlAracCikis);
+
+        private void lblManuelDelete_MouseEnter(object sender, EventArgs e) => FormGiris.HoverOldu(pnlAracCikis);
+
+        private void lblManuelDelete_MouseLeave(object sender, EventArgs e) => FormGiris.HoverBitti(pnlAracCikis);
+
+        private void picManuelDelete_MouseEnter(object sender, EventArgs e) => FormGiris.HoverOldu(pnlAracCikis);
+
+        private void picManuelDelete_MouseLeave(object sender, EventArgs e) => FormGiris.HoverBitti(pnlAracCikis);
     }
 }

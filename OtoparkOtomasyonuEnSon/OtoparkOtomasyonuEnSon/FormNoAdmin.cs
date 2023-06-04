@@ -54,5 +54,10 @@ namespace OtoparkOtomasyonuEnSon
         {
 
         }
+
+        private void lblCikisYap_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
