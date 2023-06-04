@@ -69,5 +69,15 @@ namespace OtoparkOtomasyonuEnSon
 
             // Date Time Picker üzerinden Alınan Verinin Tarih ve Saat Formatına Çevrilmesi
         }
+
+        private void lblCikisYap_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
