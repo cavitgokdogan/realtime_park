@@ -181,9 +181,9 @@ namespace OtoparkOtomasyonuEnSon
         #endregion
 
         #region Eyecandy Sağlayan Metotlar ve Olaylar
-        private void HoverOldu(Control kontrol) => kontrol.BackColor = Color.FromArgb(63, 28, 158);
+        internal static void HoverOldu(Control kontrol) => kontrol.BackColor = Color.FromArgb(63, 28, 158);
 
-        private void HoverBitti(Control kontrol) => kontrol.BackColor = Color.FromArgb(74, 33, 184);
+        internal static void HoverBitti(Control kontrol) => kontrol.BackColor = Color.FromArgb(74, 33, 184);
 
         private void PanCikisYap_MouseEnter(object sender, EventArgs e) => HoverOldu(pnlCikisYap);
 
