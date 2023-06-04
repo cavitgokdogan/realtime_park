@@ -13,6 +13,7 @@ namespace OtoparkOtomasyonuEnSon
         {
             InitializeComponent();
         }
+        
         SqlConnection connection = new SqlConnection(ConnectionString);
         //Server Bağlantısı
 
