@@ -31,6 +31,11 @@ namespace OtoparkOtomasyonuEnSon
 
         private void FormFiyatTarife_Load(object sender, EventArgs e)
         {
+            yukle();
+        }
+
+        private void yukle()
+        {
             try
             {
                 connection.Open();
@@ -40,9 +45,9 @@ namespace OtoparkOtomasyonuEnSon
 
                 while (reader.Read())
                 {
-                    label1.Text = reader[0].ToString() + " TL";
-                    label2.Text = reader[1].ToString() + " TL";
-                    label3.Text = reader[2].ToString() + " TL";
+                    txtBoxBirSaat.Text = reader[0].ToString() + " TL";
+                    txtBoxSaatlik.Text = reader[1].ToString() + " TL";
+                    txtBoxGunluk.Text = reader[2].ToString() + " TL";
                 }
             }
             catch (Exception ex)
@@ -54,7 +59,6 @@ namespace OtoparkOtomasyonuEnSon
                 if (connection != null)
                     connection.Close();
             }
-            
         }
 
         private void kaydet()
@@ -66,7 +70,7 @@ namespace OtoparkOtomasyonuEnSon
                 SqlCommand command = new SqlCommand(sqlQuery, connection);
                 command.ExecuteNonQuery();
 
-                sqlQuery = "INSERT INTO dbo.fiyatlar VALUES (" + txtBoxBirSaat.Text + "," + txtBoxSaatlik.Text + "," + txtBoxGunluk.Text;
+                sqlQuery = "INSERT INTO dbo.fiyatlar VALUES (" + txtBoxBirSaat.Text + "," + txtBoxSaatlik.Text + "," + txtBoxGunluk.Text + ")";
                 command = new SqlCommand(sqlQuery, connection);
                 command.ExecuteNonQuery();
 
@@ -81,6 +85,7 @@ namespace OtoparkOtomasyonuEnSon
                 if (connection != null)
                     connection.Close();
             }
+            yukle();
         }
 
         private void pnlKaydet_Click(object sender, EventArgs e) => kaydet();
