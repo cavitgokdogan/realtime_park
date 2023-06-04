@@ -64,9 +64,9 @@ namespace OtoparkOtomasyonuEnSon
 
                 MessageBox.Show("Araç Çıkışı Yapıldı!");
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                MessageBox.Show("Bağlantı Kurulamadı !");
+                MessageBox.Show("Bağlantı Kurulamadı!" + ex.Message);
             }  
             finally
             {
@@ -125,5 +125,13 @@ namespace OtoparkOtomasyonuEnSon
         private void picManuelDelete_MouseEnter(object sender, EventArgs e) => FormGiris.HoverOldu(pnlAracCikis);
 
         private void picManuelDelete_MouseLeave(object sender, EventArgs e) => FormGiris.HoverBitti(pnlAracCikis);
+
+        private void registryGridView_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int secilen = registryGridView.SelectedCells[0].RowIndex;
+            numberPlateTextBox.Text = registryGridView.Rows[secilen].Cells[0].Value.ToString();
+            telNoTextBox.Text = registryGridView.Rows[secilen].Cells[1].Value.ToString();
+            entranceDateTextBox.Text = registryGridView.Rows[secilen].Cells[2].Value.ToString();
+        }
     }
 }
