@@ -12,9 +12,9 @@ namespace OtoparkOtomasyonuEnSon
 
         private void FormNoAdmin_Load(object sender, EventArgs e)
         {
-            // Bu kod satırı 'otoparkDataSet7.arabalar' tablosuna veri yükler.
+            // Bu kod satırı 'otoparkDataSet.arabalar' tablosuna veri yükler.
             // Bunu gerektiği şekilde taşıyabilir, veya kaldırabilirsiniz.
-            this.arabalarTableAdapter.Fill(this.otoparkDataSet4.arabalar);
+            this.arabalarTableAdapter.Fill(this.otoparkDataSet.arabalar);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -24,6 +24,11 @@ namespace OtoparkOtomasyonuEnSon
                 this.Hide();
                 form1.ShowDialog();
             }
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

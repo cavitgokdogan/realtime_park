@@ -242,6 +242,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormKayitlar.resx">
       <DependentUpon>FormKayitlar.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FormManual.resx">
       <DependentUpon>FormManual.cs</DependentUpon>

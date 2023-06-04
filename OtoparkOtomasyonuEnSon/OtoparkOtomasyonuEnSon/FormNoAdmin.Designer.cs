@@ -35,12 +35,12 @@
             this.telefonnoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.girissaatiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.arabalarBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.otoparkDataSet4 = new OtoparkOtomasyonuEnSon.otoparkDataSet4();
-            this.arabalarTableAdapter = new OtoparkOtomasyonuEnSon.otoparkDataSet4TableAdapters.arabalarTableAdapter();
+            this.otoparkDataSet = new OtoparkOtomasyonuEnSon.otoparkDataSet();
+            this.arabalarTableAdapter = new OtoparkOtomasyonuEnSon.otoparkDataSetTableAdapters.arabalarTableAdapter();
             this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arabalarBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.otoparkDataSet4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.otoparkDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -52,38 +52,47 @@
             this.telefonnoDataGridViewTextBoxColumn,
             this.girissaatiDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.arabalarBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(195, 66);
+            this.dataGridView1.Location = new System.Drawing.Point(260, 81);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(373, 305);
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.Size = new System.Drawing.Size(497, 375);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // plakaDataGridViewTextBoxColumn
             // 
             this.plakaDataGridViewTextBoxColumn.DataPropertyName = "plaka";
             this.plakaDataGridViewTextBoxColumn.HeaderText = "plaka";
+            this.plakaDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.plakaDataGridViewTextBoxColumn.Name = "plakaDataGridViewTextBoxColumn";
+            this.plakaDataGridViewTextBoxColumn.Width = 125;
             // 
             // telefonnoDataGridViewTextBoxColumn
             // 
             this.telefonnoDataGridViewTextBoxColumn.DataPropertyName = "telefon_no";
             this.telefonnoDataGridViewTextBoxColumn.HeaderText = "telefon_no";
+            this.telefonnoDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.telefonnoDataGridViewTextBoxColumn.Name = "telefonnoDataGridViewTextBoxColumn";
+            this.telefonnoDataGridViewTextBoxColumn.Width = 125;
             // 
             // girissaatiDataGridViewTextBoxColumn
             // 
             this.girissaatiDataGridViewTextBoxColumn.DataPropertyName = "giris_saati";
             this.girissaatiDataGridViewTextBoxColumn.HeaderText = "giris_saati";
+            this.girissaatiDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.girissaatiDataGridViewTextBoxColumn.Name = "girissaatiDataGridViewTextBoxColumn";
+            this.girissaatiDataGridViewTextBoxColumn.Width = 125;
             // 
             // arabalarBindingSource
             // 
             this.arabalarBindingSource.DataMember = "arabalar";
-            this.arabalarBindingSource.DataSource = this.otoparkDataSet4;
+            this.arabalarBindingSource.DataSource = this.otoparkDataSet;
             // 
-            // otoparkDataSet4
+            // otoparkDataSet
             // 
-            this.otoparkDataSet4.DataSetName = "otoparkDataSet4";
-            this.otoparkDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.otoparkDataSet.DataSetName = "otoparkDataSet";
+            this.otoparkDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // arabalarTableAdapter
             // 
@@ -91,9 +100,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(271, 405);
+            this.button1.Location = new System.Drawing.Point(361, 498);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(225, 23);
+            this.button1.Size = new System.Drawing.Size(300, 28);
             this.button1.TabIndex = 1;
             this.button1.Text = "Kullanıcı Giriş Ekranına Dön";
             this.button1.UseVisualStyleBackColor = true;
@@ -101,28 +111,29 @@
             // 
             // FormNoAdmin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormNoAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormNoAdmin";
             this.Load += new System.EventHandler(this.FormNoAdmin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.arabalarBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.otoparkDataSet4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.otoparkDataSet)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
         private System.Windows.Forms.DataGridView dataGridView1;
-        private otoparkDataSet4 otoparkDataSet4;
+        private otoparkDataSet otoparkDataSet;
         private System.Windows.Forms.BindingSource arabalarBindingSource;
-        private otoparkDataSet4TableAdapters.arabalarTableAdapter arabalarTableAdapter;
+        private otoparkDataSetTableAdapters.arabalarTableAdapter arabalarTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn plakaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn telefonnoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn girissaatiDataGridViewTextBoxColumn;
