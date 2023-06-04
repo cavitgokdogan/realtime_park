@@ -16,6 +16,7 @@ namespace OtoparkOtomasyonuEnSon
 
         private void createRegistryButton_Click(object sender, EventArgs e)
         {
+
             DateTime chosenTime = entranceDatePicker.Value;
             TimeSpan chosenTimeSpan = chosenTime.TimeOfDay;
 
@@ -70,14 +71,9 @@ namespace OtoparkOtomasyonuEnSon
             // Date Time Picker üzerinden Alınan Verinin Tarih ve Saat Formatına Çevrilmesi
         }
 
-        private void lblCikisYap_Click(object sender, EventArgs e)
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
+            entranceDatePicker.Enabled = false;
         }
     }
 }
