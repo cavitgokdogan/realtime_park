@@ -7,12 +7,13 @@ using System.Windows.Forms;
 using System.Diagnostics;
 using System.Data.SqlClient;
 using System.Drawing;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
 namespace OtoparkOtomasyonuEnSon
 {
     public partial class FormGiris : Form
     {
-
+        SqlConnection connection = new SqlConnection(ConnectionString);
         private const string ConnectionString = "Data Source=DESKTOP-UNTJT3U;Initial Catalog=otopark;Integrated Security=True";
 
         public FormGiris()
@@ -24,6 +25,8 @@ namespace OtoparkOtomasyonuEnSon
         {
             Timer_Tick(this, EventArgs.Empty);
             timer.Start();
+
+            
         }
 
         private void Timer_Tick(object sender, EventArgs e) => stripSaat.Text = $"{DateTime.Now:HH:mm}";
@@ -129,17 +132,35 @@ namespace OtoparkOtomasyonuEnSon
                 }
             };
             process.Start();
-
+            string detectedText="";
             // Read the python script output
             while (!process.StandardOutput.EndOfStream)
             {
                 var line = process.StandardOutput.ReadLine();
                 if (!string.IsNullOrEmpty(line))
                 {
-                    string detectedText = line;
+                    detectedText = line;
                     MessageBox.Show(detectedText);
 
                 }
+            }
+
+            try
+            {
+                connection.Open();
+                string sqlQuery = $"DELETE * FROM arabalar WHERE plaka={detectedText}";
+                SqlCommand command = new SqlCommand(sqlQuery, connection);
+                SqlDataReader reader = command.ExecuteReader();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Plaka sistemde mevcut değil.");
+            }
+            finally
+            {
+                if (connection != null)
+                    connection.Close();
             }
         }
 
@@ -257,5 +278,10 @@ namespace OtoparkOtomasyonuEnSon
 
         private void PicKayitlar_MouseLeave(object sender, EventArgs e) => HoverBitti(pnlKayitlar);
         #endregion
+
+        private void pnlOtomatikCikis_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
