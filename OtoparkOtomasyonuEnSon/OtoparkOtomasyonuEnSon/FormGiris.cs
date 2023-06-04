@@ -253,6 +253,9 @@ namespace OtoparkOtomasyonuEnSon
 
         private void LblKayitlar_MouseLeave(object sender, EventArgs e) => HoverBitti(pnlKayitlar);
 
+        private void PicKayitlar_MouseEnter(object sender, EventArgs e) => HoverOldu(pnlKayitlar);
+
+        private void PicKayitlar_MouseLeave(object sender, EventArgs e) => HoverBitti(pnlKayitlar);
         #endregion
     }
 }
