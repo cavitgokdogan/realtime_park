@@ -30,5 +30,11 @@ namespace OtoparkOtomasyonuEnSon
                 form1.ShowDialog();
             }
         }
+
+        #region Eyecandy
+        private void PnlCikisYap_MouseEnter(object sender, EventArgs e) => FormGiris.HoverOldu(pnlCikisYap);
+
+        private void PnlCikisYap_MouseLeave(object sender, EventArgs e) => FormGiris.HoverBitti(pnlCikisYap);
+
     }
 }
