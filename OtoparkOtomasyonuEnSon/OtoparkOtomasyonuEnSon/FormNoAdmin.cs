@@ -40,5 +40,9 @@ namespace OtoparkOtomasyonuEnSon
 
         private void LblCikisYap_MouseLeave(object sender, EventArgs e) => FormGiris.HoverBitti(pnlCikisYap);
 
+        private void PicCikisYap_MouseEnter(object sender, EventArgs e) => FormGiris.HoverOldu(pnlCikisYap);
+
+        private void PicCikisYap_MouseLeave(object sender, EventArgs e) => FormGiris.HoverBitti(pnlCikisYap);
+        #endregion
     }
 }
