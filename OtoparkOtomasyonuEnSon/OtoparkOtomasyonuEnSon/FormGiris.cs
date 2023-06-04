@@ -142,9 +142,7 @@ namespace OtoparkOtomasyonuEnSon
                     try
                     {
                         connection.Open();  //Server Bağlantısı Açıldı 
-                        SqlCommand command = new SqlCommand("DELETE FROM arabalar WHERE plaka = @selected", connection);  // Veritabanından veri silme komutu (Araç Çıkışı) 
-
-                        command.Parameters.AddWithValue("@selected", detectedText);
+                        SqlCommand command = new SqlCommand($"DELETE FROM arabalar WHERE plaka = {detectedText}", connection);  // Veritabanından veri silme komutu (Araç Çıkışı) 
                         command.ExecuteNonQuery(); // sql sorgusu çalıştırıldı 
 
                         MessageBox.Show("Ücret " + 1234 + " TL" + "\nAraç Çıkışı Yapıldı!");
