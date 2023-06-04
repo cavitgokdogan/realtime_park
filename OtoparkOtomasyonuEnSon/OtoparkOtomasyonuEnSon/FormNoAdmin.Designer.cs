@@ -42,12 +42,12 @@
             this.picCikisYap = new System.Windows.Forms.PictureBox();
             this.@__groupBox2 = new System.Windows.Forms.GroupBox();
             this.tablo = new System.Windows.Forms.DataGridView();
-            this.timer = new System.Windows.Forms.Timer(this.components);
             this.plakaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.telefonnoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.girissaatiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.arabalarBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.otoparkDataSet4 = new OtoparkOtomasyonuEnSon.otoparkDataSet4();
+            this.timer = new System.Windows.Forms.Timer(this.components);
             this.arabalarTableAdapter = new OtoparkOtomasyonuEnSon.otoparkDataSet4TableAdapters.arabalarTableAdapter();
             this.statusStrip.SuspendLayout();
             this.@__groupBox1.SuspendLayout();
@@ -67,10 +67,9 @@
             this.stripKullanici,
             this.toolStripStatusLabel1,
             this.stripSaat});
-            this.statusStrip.Location = new System.Drawing.Point(0, 523);
+            this.statusStrip.Location = new System.Drawing.Point(0, 444);
             this.statusStrip.Name = "statusStrip";
-            this.statusStrip.Padding = new System.Windows.Forms.Padding(1, 0, 19, 0);
-            this.statusStrip.Size = new System.Drawing.Size(1067, 31);
+            this.statusStrip.Size = new System.Drawing.Size(792, 25);
             this.statusStrip.TabIndex = 2;
             this.statusStrip.Text = "statusStrip1";
             // 
@@ -80,13 +79,13 @@
             this.stripKullanici.ForeColor = System.Drawing.Color.White;
             this.stripKullanici.Image = global::OtoparkOtomasyonuEnSon.Properties.Resources.icon_user;
             this.stripKullanici.Name = "stripKullanici";
-            this.stripKullanici.Size = new System.Drawing.Size(104, 25);
+            this.stripKullanici.Size = new System.Drawing.Size(85, 20);
             this.stripKullanici.Text = "Kullanıcı";
             // 
             // toolStripStatusLabel1
             // 
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(822, 25);
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(592, 20);
             this.toolStripStatusLabel1.Spring = true;
             // 
             // stripSaat
@@ -95,7 +94,7 @@
             this.stripSaat.ForeColor = System.Drawing.Color.White;
             this.stripSaat.Image = global::OtoparkOtomasyonuEnSon.Properties.Resources.icon_clock;
             this.stripSaat.Name = "stripSaat";
-            this.stripSaat.Size = new System.Drawing.Size(121, 25);
+            this.stripSaat.Size = new System.Drawing.Size(100, 20);
             this.stripSaat.Text = "Saat: 12:00";
             // 
             // __groupBox1
@@ -105,11 +104,9 @@
             this.@__groupBox1.Controls.Add(this.@__label2);
             this.@__groupBox1.Controls.Add(this.@__label1);
             this.@__groupBox1.Controls.Add(this.pnlCikisYap);
-            this.@__groupBox1.Location = new System.Drawing.Point(16, 15);
-            this.@__groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.@__groupBox1.Location = new System.Drawing.Point(12, 12);
             this.@__groupBox1.Name = "__groupBox1";
-            this.@__groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.@__groupBox1.Size = new System.Drawing.Size(1035, 94);
+            this.@__groupBox1.Size = new System.Drawing.Size(768, 76);
             this.@__groupBox1.TabIndex = 10;
             this.@__groupBox1.TabStop = false;
             // 
@@ -119,10 +116,9 @@
             this.@__label2.AutoSize = true;
             this.@__label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.@__label2.ForeColor = System.Drawing.Color.White;
-            this.@__label2.Location = new System.Drawing.Point(868, 48);
-            this.@__label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.@__label2.Location = new System.Drawing.Point(643, 39);
             this.@__label2.Name = "__label2";
-            this.@__label2.Size = new System.Drawing.Size(150, 24);
+            this.@__label2.Size = new System.Drawing.Size(119, 18);
             this.@__label2.TabIndex = 11;
             this.@__label2.Text = "versiyon 2023.01";
             this.@__label2.Click += new System.EventHandler(this.@__label2_Click);
@@ -133,10 +129,9 @@
             this.@__label1.AutoSize = true;
             this.@__label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.@__label1.ForeColor = System.Drawing.Color.White;
-            this.@__label1.Location = new System.Drawing.Point(704, 18);
-            this.@__label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.@__label1.Location = new System.Drawing.Point(520, 15);
             this.@__label1.Name = "__label1";
-            this.@__label1.Size = new System.Drawing.Size(313, 29);
+            this.@__label1.Size = new System.Drawing.Size(242, 24);
             this.@__label1.TabIndex = 10;
             this.@__label1.Text = "Otopark Otomasyon Sistemi";
             this.@__label1.Click += new System.EventHandler(this.@__label1_Click);
@@ -145,10 +140,9 @@
             // 
             this.pnlCikisYap.Controls.Add(this.lblCikisYap);
             this.pnlCikisYap.Controls.Add(this.picCikisYap);
-            this.pnlCikisYap.Location = new System.Drawing.Point(8, 15);
-            this.pnlCikisYap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlCikisYap.Location = new System.Drawing.Point(6, 12);
             this.pnlCikisYap.Name = "pnlCikisYap";
-            this.pnlCikisYap.Size = new System.Drawing.Size(177, 69);
+            this.pnlCikisYap.Size = new System.Drawing.Size(133, 56);
             this.pnlCikisYap.TabIndex = 7;
             this.pnlCikisYap.MouseEnter += new System.EventHandler(this.PnlCikisYap_MouseEnter);
             this.pnlCikisYap.MouseLeave += new System.EventHandler(this.PnlCikisYap_MouseLeave);
@@ -158,10 +152,9 @@
             this.lblCikisYap.AutoSize = true;
             this.lblCikisYap.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblCikisYap.ForeColor = System.Drawing.Color.White;
-            this.lblCikisYap.Location = new System.Drawing.Point(79, 22);
-            this.lblCikisYap.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCikisYap.Location = new System.Drawing.Point(59, 18);
             this.lblCikisYap.Name = "lblCikisYap";
-            this.lblCikisYap.Size = new System.Drawing.Size(87, 24);
+            this.lblCikisYap.Size = new System.Drawing.Size(70, 18);
             this.lblCikisYap.TabIndex = 1;
             this.lblCikisYap.Text = "Çıkış Yap";
             this.lblCikisYap.MouseEnter += new System.EventHandler(this.LblCikisYap_MouseEnter);
@@ -170,10 +163,9 @@
             // picCikisYap
             // 
             this.picCikisYap.Image = global::OtoparkOtomasyonuEnSon.Properties.Resources.icon_logout;
-            this.picCikisYap.Location = new System.Drawing.Point(4, 4);
-            this.picCikisYap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.picCikisYap.Location = new System.Drawing.Point(3, 3);
             this.picCikisYap.Name = "picCikisYap";
-            this.picCikisYap.Size = new System.Drawing.Size(67, 62);
+            this.picCikisYap.Size = new System.Drawing.Size(50, 50);
             this.picCikisYap.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picCikisYap.TabIndex = 0;
             this.picCikisYap.TabStop = false;
@@ -186,11 +178,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.@__groupBox2.Controls.Add(this.tablo);
-            this.@__groupBox2.Location = new System.Drawing.Point(16, 116);
-            this.@__groupBox2.Margin = new System.Windows.Forms.Padding(0, 4, 4, 4);
+            this.@__groupBox2.Location = new System.Drawing.Point(12, 94);
+            this.@__groupBox2.Margin = new System.Windows.Forms.Padding(0, 3, 3, 3);
             this.@__groupBox2.Name = "__groupBox2";
-            this.@__groupBox2.Padding = new System.Windows.Forms.Padding(4, 0, 4, 4);
-            this.@__groupBox2.Size = new System.Drawing.Size(1035, 404);
+            this.@__groupBox2.Padding = new System.Windows.Forms.Padding(3, 0, 3, 3);
+            this.@__groupBox2.Size = new System.Drawing.Size(768, 347);
             this.@__groupBox2.TabIndex = 11;
             this.@__groupBox2.TabStop = false;
             // 
@@ -207,17 +199,12 @@
             this.girissaatiDataGridViewTextBoxColumn});
             this.tablo.DataSource = this.arabalarBindingSource;
             this.tablo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tablo.Location = new System.Drawing.Point(4, 15);
-            this.tablo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 4);
+            this.tablo.Location = new System.Drawing.Point(3, 13);
+            this.tablo.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
             this.tablo.Name = "tablo";
             this.tablo.RowHeadersWidth = 51;
-            this.tablo.Size = new System.Drawing.Size(1027, 385);
+            this.tablo.Size = new System.Drawing.Size(762, 331);
             this.tablo.TabIndex = 1;
-            // 
-            // timer
-            // 
-            this.timer.Interval = 60000;
-            this.timer.Tick += new System.EventHandler(this.Timer_Tick);
             // 
             // plakaDataGridViewTextBoxColumn
             // 
@@ -253,21 +240,26 @@
             this.otoparkDataSet4.DataSetName = "otoparkDataSet4";
             this.otoparkDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
+            // timer
+            // 
+            this.timer.Interval = 60000;
+            this.timer.Tick += new System.EventHandler(this.Timer_Tick);
+            // 
             // arabalarTableAdapter
             // 
             this.arabalarTableAdapter.ClearBeforeFill = true;
             // 
             // FormNoAdmin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(33)))), ((int)(((byte)(184)))));
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(792, 469);
             this.Controls.Add(this.@__groupBox2);
             this.Controls.Add(this.@__groupBox1);
             this.Controls.Add(this.statusStrip);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MinimumSize = new System.Drawing.Size(800, 500);
             this.Name = "FormNoAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormNoAdmin";

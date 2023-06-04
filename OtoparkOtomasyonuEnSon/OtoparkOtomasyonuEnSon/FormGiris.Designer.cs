@@ -124,9 +124,9 @@ namespace OtoparkOtomasyonuEnSon
             this.stripKullanici,
             this.toolStripStatusLabel1,
             this.stripSaat});
-            this.statusStrip.Location = new System.Drawing.Point(0, 421);
+            this.statusStrip.Location = new System.Drawing.Point(0, 442);
             this.statusStrip.Name = "statusStrip";
-            this.statusStrip.Size = new System.Drawing.Size(800, 29);
+            this.statusStrip.Size = new System.Drawing.Size(794, 29);
             this.statusStrip.SizingGrip = false;
             this.statusStrip.TabIndex = 8;
             // 
@@ -141,7 +141,7 @@ namespace OtoparkOtomasyonuEnSon
             // toolStripStatusLabel1
             // 
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(616, 24);
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(610, 24);
             this.toolStripStatusLabel1.Spring = true;
             // 
             // stripSaat
@@ -429,7 +429,7 @@ namespace OtoparkOtomasyonuEnSon
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(33)))), ((int)(((byte)(184)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(794, 471);
             this.Controls.Add(this.@__groupBox2);
             this.Controls.Add(this.@__groupBox1);
             this.Controls.Add(this.statusStrip);
@@ -437,6 +437,7 @@ namespace OtoparkOtomasyonuEnSon
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(800, 500);
             this.Name = "FormGiris";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormGiris";

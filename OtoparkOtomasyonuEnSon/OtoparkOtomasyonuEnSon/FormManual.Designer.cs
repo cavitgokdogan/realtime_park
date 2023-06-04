@@ -57,7 +57,7 @@
             this.numberPlateTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.numberPlateTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(42)))), ((int)(((byte)(235)))));
             this.numberPlateTextBox.ForeColor = System.Drawing.Color.White;
-            this.numberPlateTextBox.Location = new System.Drawing.Point(366, 91);
+            this.numberPlateTextBox.Location = new System.Drawing.Point(362, 91);
             this.numberPlateTextBox.Name = "numberPlateTextBox";
             this.numberPlateTextBox.Size = new System.Drawing.Size(100, 20);
             this.numberPlateTextBox.TabIndex = 0;
@@ -67,7 +67,7 @@
             this.telNoTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.telNoTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(42)))), ((int)(((byte)(235)))));
             this.telNoTextBox.ForeColor = System.Drawing.Color.White;
-            this.telNoTextBox.Location = new System.Drawing.Point(366, 140);
+            this.telNoTextBox.Location = new System.Drawing.Point(362, 140);
             this.telNoTextBox.Name = "telNoTextBox";
             this.telNoTextBox.Size = new System.Drawing.Size(100, 20);
             this.telNoTextBox.TabIndex = 1;
@@ -78,7 +78,7 @@
             this.numberPlateLabel.AutoSize = true;
             this.numberPlateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.numberPlateLabel.ForeColor = System.Drawing.Color.White;
-            this.numberPlateLabel.Location = new System.Drawing.Point(293, 86);
+            this.numberPlateLabel.Location = new System.Drawing.Point(289, 86);
             this.numberPlateLabel.Name = "numberPlateLabel";
             this.numberPlateLabel.Size = new System.Drawing.Size(67, 25);
             this.numberPlateLabel.TabIndex = 3;
@@ -90,7 +90,7 @@
             this.telNoLabel.AutoSize = true;
             this.telNoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.telNoLabel.ForeColor = System.Drawing.Color.White;
-            this.telNoLabel.Location = new System.Drawing.Point(246, 134);
+            this.telNoLabel.Location = new System.Drawing.Point(242, 134);
             this.telNoLabel.Name = "telNoLabel";
             this.telNoLabel.Size = new System.Drawing.Size(114, 25);
             this.telNoLabel.TabIndex = 4;
@@ -102,7 +102,7 @@
             this.entranceDateLabel.AutoSize = true;
             this.entranceDateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.entranceDateLabel.ForeColor = System.Drawing.Color.White;
-            this.entranceDateLabel.Location = new System.Drawing.Point(253, 192);
+            this.entranceDateLabel.Location = new System.Drawing.Point(249, 192);
             this.entranceDateLabel.Name = "entranceDateLabel";
             this.entranceDateLabel.Size = new System.Drawing.Size(107, 25);
             this.entranceDateLabel.TabIndex = 5;
@@ -111,7 +111,7 @@
             // entranceDatePicker
             // 
             this.entranceDatePicker.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.entranceDatePicker.Location = new System.Drawing.Point(366, 195);
+            this.entranceDatePicker.Location = new System.Drawing.Point(362, 195);
             this.entranceDatePicker.Name = "entranceDatePicker";
             this.entranceDatePicker.Size = new System.Drawing.Size(200, 20);
             this.entranceDatePicker.TabIndex = 13;
@@ -145,7 +145,7 @@
             this.pnlCikisYap.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.pnlCikisYap.Controls.Add(this.lblCikisYap);
             this.pnlCikisYap.Controls.Add(this.picCikisYap);
-            this.pnlCikisYap.Location = new System.Drawing.Point(112, 342);
+            this.pnlCikisYap.Location = new System.Drawing.Point(108, 361);
             this.pnlCikisYap.Name = "pnlCikisYap";
             this.pnlCikisYap.Size = new System.Drawing.Size(133, 56);
             this.pnlCikisYap.TabIndex = 14;
@@ -155,7 +155,7 @@
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(331, 342);
+            this.panel1.Location = new System.Drawing.Point(327, 361);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(151, 56);
             this.panel1.TabIndex = 15;
@@ -188,7 +188,7 @@
             this.panel2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.pictureBox2);
-            this.panel2.Location = new System.Drawing.Point(570, 342);
+            this.panel2.Location = new System.Drawing.Point(566, 361);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(151, 56);
             this.panel2.TabIndex = 16;
@@ -220,7 +220,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(33)))), ((int)(((byte)(184)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(792, 469);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pnlCikisYap);
@@ -231,6 +231,7 @@
             this.Controls.Add(this.telNoTextBox);
             this.Controls.Add(this.numberPlateTextBox);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MinimumSize = new System.Drawing.Size(800, 500);
             this.Name = "FormManual";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ManualForm";
