@@ -17,7 +17,6 @@ namespace OtoparkOtomasyonuEnSon
         private void createRegistryButton_Click(object sender, EventArgs e)
         {
             DateTime chosenTime = entranceDatePicker.Value;
-            TimeSpan chosenTimeSpan = chosenTime.TimeOfDay;
             
             try
             {
@@ -30,7 +29,7 @@ namespace OtoparkOtomasyonuEnSon
                     {
                         command.Parameters.AddWithValue("@p1", numberPlateTextBox.Text);
                         command.Parameters.AddWithValue("@p2", telNoTextBox.Text);
-                        command.Parameters.AddWithValue("@p3", chosenTime.Date.ToString("yyyy-MM-dd") + " " + chosenTimeSpan);
+                        command.Parameters.AddWithValue("@p3", chosenTime);
                         command.ExecuteNonQuery();
                     }
                 }
@@ -38,7 +37,7 @@ namespace OtoparkOtomasyonuEnSon
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Tarih Seçiniz !\n");
+                MessageBox.Show("Bağlantı Sağlanamadı !\n" + ex.Message);
             }
         }
 
