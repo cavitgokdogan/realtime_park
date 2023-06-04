@@ -106,9 +106,9 @@ namespace OtoparkOtomasyonuEnSon
             this.@__groupBox1.Controls.Add(this.@__label1);
             this.@__groupBox1.Controls.Add(this.pnlCikisYap);
             this.@__groupBox1.Location = new System.Drawing.Point(16, 15);
-            this.@__groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.@__groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.@__groupBox1.Name = "__groupBox1";
-            this.@__groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.@__groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.@__groupBox1.Size = new System.Drawing.Size(750, 94);
             this.@__groupBox1.TabIndex = 10;
             this.@__groupBox1.TabStop = false;
@@ -146,10 +146,11 @@ namespace OtoparkOtomasyonuEnSon
             this.pnlCikisYap.Controls.Add(this.lblCikisYap);
             this.pnlCikisYap.Controls.Add(this.picCikisYap);
             this.pnlCikisYap.Location = new System.Drawing.Point(8, 15);
-            this.pnlCikisYap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlCikisYap.Margin = new System.Windows.Forms.Padding(4);
             this.pnlCikisYap.Name = "pnlCikisYap";
             this.pnlCikisYap.Size = new System.Drawing.Size(177, 69);
             this.pnlCikisYap.TabIndex = 7;
+            this.pnlCikisYap.Click += new System.EventHandler(this.lblCikisYap_Click);
             this.pnlCikisYap.MouseEnter += new System.EventHandler(this.PnlCikisYap_MouseEnter);
             this.pnlCikisYap.MouseLeave += new System.EventHandler(this.PnlCikisYap_MouseLeave);
             // 
@@ -172,12 +173,13 @@ namespace OtoparkOtomasyonuEnSon
             // 
             this.picCikisYap.Image = global::OtoparkOtomasyonuEnSon.Properties.Resources.icon_logout;
             this.picCikisYap.Location = new System.Drawing.Point(4, 4);
-            this.picCikisYap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.picCikisYap.Margin = new System.Windows.Forms.Padding(4);
             this.picCikisYap.Name = "picCikisYap";
             this.picCikisYap.Size = new System.Drawing.Size(67, 62);
             this.picCikisYap.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picCikisYap.TabIndex = 0;
             this.picCikisYap.TabStop = false;
+            this.picCikisYap.Click += new System.EventHandler(this.lblCikisYap_Click);
             this.picCikisYap.MouseEnter += new System.EventHandler(this.PicCikisYap_MouseEnter);
             this.picCikisYap.MouseLeave += new System.EventHandler(this.PicCikisYap_MouseLeave);
             // 
@@ -271,7 +273,7 @@ namespace OtoparkOtomasyonuEnSon
             this.Controls.Add(this.@__groupBox1);
             this.Controls.Add(this.statusStrip);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MinimumSize = new System.Drawing.Size(800, 600);
             this.Name = "FormNoAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
