@@ -94,12 +94,12 @@ namespace OtoparkOtomasyonuEnSon
             this.telefonnoDataGridViewTextBoxColumn,
             this.girissaatiDataGridViewTextBoxColumn});
             this.registryGridView.DataSource = this.arabalarBindingSource4;
-            this.registryGridView.Location = new System.Drawing.Point(257, 34);
-            this.registryGridView.Margin = new System.Windows.Forms.Padding(4);
+            this.registryGridView.Location = new System.Drawing.Point(343, 42);
+            this.registryGridView.Margin = new System.Windows.Forms.Padding(5);
             this.registryGridView.Name = "registryGridView";
             this.registryGridView.ReadOnly = true;
             this.registryGridView.RowHeadersWidth = 51;
-            this.registryGridView.Size = new System.Drawing.Size(786, 411);
+            this.registryGridView.Size = new System.Drawing.Size(1048, 627);
             this.registryGridView.TabIndex = 0;
             this.registryGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.registryGridView_CellContentClick);
             this.registryGridView.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.registryGridView_CellDoubleClick);
@@ -166,7 +166,7 @@ namespace OtoparkOtomasyonuEnSon
             this.fillByToolStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.fillByToolStrip.Location = new System.Drawing.Point(0, 0);
             this.fillByToolStrip.Name = "fillByToolStrip";
-            this.fillByToolStrip.Size = new System.Drawing.Size(1067, 31);
+            this.fillByToolStrip.Size = new System.Drawing.Size(1423, 25);
             this.fillByToolStrip.TabIndex = 4;
             this.fillByToolStrip.Text = "fillByToolStrip";
             // 
@@ -187,10 +187,10 @@ namespace OtoparkOtomasyonuEnSon
             this.numberPlateLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.numberPlateLabel.AutoSize = true;
             this.numberPlateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.numberPlateLabel.Location = new System.Drawing.Point(731, 482);
-            this.numberPlateLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.numberPlateLabel.Location = new System.Drawing.Point(21, 264);
+            this.numberPlateLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.numberPlateLabel.Name = "numberPlateLabel";
-            this.numberPlateLabel.Size = new System.Drawing.Size(85, 29);
+            this.numberPlateLabel.Size = new System.Drawing.Size(105, 36);
             this.numberPlateLabel.TabIndex = 7;
             this.numberPlateLabel.Text = "Plaka: ";
             // 
@@ -199,9 +199,10 @@ namespace OtoparkOtomasyonuEnSon
             this.telNoLabel.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.telNoLabel.AutoSize = true;
             this.telNoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.telNoLabel.Location = new System.Drawing.Point(297, 392);
+            this.telNoLabel.Location = new System.Drawing.Point(10, 159);
+            this.telNoLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.telNoLabel.Name = "telNoLabel";
-            this.telNoLabel.Size = new System.Drawing.Size(99, 29);
+            this.telNoLabel.Size = new System.Drawing.Size(119, 36);
             this.telNoLabel.TabIndex = 8;
             this.telNoLabel.Text = "Tel No: ";
             // 
@@ -210,29 +211,29 @@ namespace OtoparkOtomasyonuEnSon
             this.entranceDateLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.entranceDateLabel.AutoSize = true;
             this.entranceDateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.entranceDateLabel.Location = new System.Drawing.Point(38, 482);
-            this.entranceDateLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.entranceDateLabel.Location = new System.Drawing.Point(38, 88);
+            this.entranceDateLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.entranceDateLabel.Name = "entranceDateLabel";
-            this.entranceDateLabel.Size = new System.Drawing.Size(135, 29);
+            this.entranceDateLabel.Size = new System.Drawing.Size(168, 36);
             this.entranceDateLabel.TabIndex = 9;
             this.entranceDateLabel.Text = "Giriş Saati: ";
             // 
             // numberPlateTextBox
             // 
             this.numberPlateTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.numberPlateTextBox.Location = new System.Drawing.Point(844, 493);
-            this.numberPlateTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.numberPlateTextBox.Location = new System.Drawing.Point(171, 278);
+            this.numberPlateTextBox.Margin = new System.Windows.Forms.Padding(5);
             this.numberPlateTextBox.Name = "numberPlateTextBox";
-            this.numberPlateTextBox.Size = new System.Drawing.Size(100, 20);
+            this.numberPlateTextBox.Size = new System.Drawing.Size(132, 22);
             this.numberPlateTextBox.TabIndex = 10;
             // 
             // telNoTextBox
             // 
             this.telNoTextBox.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.telNoTextBox.Location = new System.Drawing.Point(523, 493);
-            this.telNoTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.telNoTextBox.Location = new System.Drawing.Point(171, 172);
+            this.telNoTextBox.Margin = new System.Windows.Forms.Padding(5);
             this.telNoTextBox.Name = "telNoTextBox";
-            this.telNoTextBox.Size = new System.Drawing.Size(100, 20);
+            this.telNoTextBox.Size = new System.Drawing.Size(132, 22);
             this.telNoTextBox.TabIndex = 11;
             // 
             // arabalarBindingSource2
@@ -255,10 +256,10 @@ namespace OtoparkOtomasyonuEnSon
             | System.Windows.Forms.AnchorStyles.Left)));
             this.pnlCikisYap.Controls.Add(this.lblCikisYap);
             this.pnlCikisYap.Controls.Add(this.picCikisYap);
-            this.pnlCikisYap.Location = new System.Drawing.Point(13, 74);
-            this.pnlCikisYap.Margin = new System.Windows.Forms.Padding(4);
+            this.pnlCikisYap.Location = new System.Drawing.Point(18, 343);
+            this.pnlCikisYap.Margin = new System.Windows.Forms.Padding(5);
             this.pnlCikisYap.Name = "pnlCikisYap";
-            this.pnlCikisYap.Size = new System.Drawing.Size(236, 69);
+            this.pnlCikisYap.Size = new System.Drawing.Size(315, 71);
             this.pnlCikisYap.TabIndex = 13;
             this.pnlCikisYap.Click += new System.EventHandler(this.goBackButton_Click);
             this.pnlCikisYap.MouseEnter += new System.EventHandler(this.pnlCikisYap_MouseEnter);
@@ -269,9 +270,10 @@ namespace OtoparkOtomasyonuEnSon
             this.lblCikisYap.AutoSize = true;
             this.lblCikisYap.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblCikisYap.ForeColor = System.Drawing.Color.White;
-            this.lblCikisYap.Location = new System.Drawing.Point(59, 18);
+            this.lblCikisYap.Location = new System.Drawing.Point(79, 22);
+            this.lblCikisYap.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCikisYap.Name = "lblCikisYap";
-            this.lblCikisYap.Size = new System.Drawing.Size(68, 18);
+            this.lblCikisYap.Size = new System.Drawing.Size(85, 24);
             this.lblCikisYap.TabIndex = 1;
             this.lblCikisYap.Text = "Geri Dön";
             this.lblCikisYap.Click += new System.EventHandler(this.goBackButton_Click);
@@ -281,9 +283,10 @@ namespace OtoparkOtomasyonuEnSon
             // picCikisYap
             // 
             this.picCikisYap.Image = global::OtoparkOtomasyonuEnSon.Properties.Resources.icon_logout;
-            this.picCikisYap.Location = new System.Drawing.Point(3, 3);
+            this.picCikisYap.Location = new System.Drawing.Point(4, 4);
+            this.picCikisYap.Margin = new System.Windows.Forms.Padding(4);
             this.picCikisYap.Name = "picCikisYap";
-            this.picCikisYap.Size = new System.Drawing.Size(50, 50);
+            this.picCikisYap.Size = new System.Drawing.Size(67, 62);
             this.picCikisYap.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picCikisYap.TabIndex = 0;
             this.picCikisYap.TabStop = false;
@@ -294,10 +297,10 @@ namespace OtoparkOtomasyonuEnSon
             // entranceDateTextBox
             // 
             this.entranceDateTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.entranceDateTextBox.Location = new System.Drawing.Point(214, 493);
-            this.entranceDateTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.entranceDateTextBox.Location = new System.Drawing.Point(138, 112);
+            this.entranceDateTextBox.Margin = new System.Windows.Forms.Padding(5);
             this.entranceDateTextBox.Name = "entranceDateTextBox";
-            this.entranceDateTextBox.Size = new System.Drawing.Size(132, 22);
+            this.entranceDateTextBox.Size = new System.Drawing.Size(175, 22);
             this.entranceDateTextBox.TabIndex = 12;
             // 
             // pnlManuelGiris
@@ -306,10 +309,10 @@ namespace OtoparkOtomasyonuEnSon
             | System.Windows.Forms.AnchorStyles.Left)));
             this.pnlManuelGiris.Controls.Add(this.lblManuelGiris);
             this.pnlManuelGiris.Controls.Add(this.picManuelGiris);
-            this.pnlManuelGiris.Location = new System.Drawing.Point(13, 210);
-            this.pnlManuelGiris.Margin = new System.Windows.Forms.Padding(4);
+            this.pnlManuelGiris.Location = new System.Drawing.Point(18, 443);
+            this.pnlManuelGiris.Margin = new System.Windows.Forms.Padding(5);
             this.pnlManuelGiris.Name = "pnlManuelGiris";
-            this.pnlManuelGiris.Size = new System.Drawing.Size(236, 69);
+            this.pnlManuelGiris.Size = new System.Drawing.Size(315, 85);
             this.pnlManuelGiris.TabIndex = 14;
             this.pnlManuelGiris.Click += new System.EventHandler(this.manualFormButton_Click);
             this.pnlManuelGiris.MouseEnter += new System.EventHandler(this.manualRegistry_panel_MouseEnter);
@@ -320,8 +323,8 @@ namespace OtoparkOtomasyonuEnSon
             this.lblManuelGiris.AutoSize = true;
             this.lblManuelGiris.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblManuelGiris.ForeColor = System.Drawing.Color.White;
-            this.lblManuelGiris.Location = new System.Drawing.Point(79, 22);
-            this.lblManuelGiris.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblManuelGiris.Location = new System.Drawing.Point(105, 27);
+            this.lblManuelGiris.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblManuelGiris.Name = "lblManuelGiris";
             this.lblManuelGiris.Size = new System.Drawing.Size(115, 24);
             this.lblManuelGiris.TabIndex = 1;
@@ -333,10 +336,10 @@ namespace OtoparkOtomasyonuEnSon
             // picManuelGiris
             // 
             this.picManuelGiris.Image = global::OtoparkOtomasyonuEnSon.Properties.Resources.icon_mancar;
-            this.picManuelGiris.Location = new System.Drawing.Point(4, 4);
-            this.picManuelGiris.Margin = new System.Windows.Forms.Padding(4);
+            this.picManuelGiris.Location = new System.Drawing.Point(5, 5);
+            this.picManuelGiris.Margin = new System.Windows.Forms.Padding(5);
             this.picManuelGiris.Name = "picManuelGiris";
-            this.picManuelGiris.Size = new System.Drawing.Size(67, 62);
+            this.picManuelGiris.Size = new System.Drawing.Size(89, 76);
             this.picManuelGiris.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picManuelGiris.TabIndex = 0;
             this.picManuelGiris.TabStop = false;
@@ -350,10 +353,10 @@ namespace OtoparkOtomasyonuEnSon
             | System.Windows.Forms.AnchorStyles.Left)));
             this.pnlAracCikis.Controls.Add(this.lblManuelDelete);
             this.pnlAracCikis.Controls.Add(this.picManuelDelete);
-            this.pnlAracCikis.Location = new System.Drawing.Point(13, 354);
-            this.pnlAracCikis.Margin = new System.Windows.Forms.Padding(4);
+            this.pnlAracCikis.Location = new System.Drawing.Point(18, 555);
+            this.pnlAracCikis.Margin = new System.Windows.Forms.Padding(5);
             this.pnlAracCikis.Name = "pnlAracCikis";
-            this.pnlAracCikis.Size = new System.Drawing.Size(236, 69);
+            this.pnlAracCikis.Size = new System.Drawing.Size(315, 93);
             this.pnlAracCikis.TabIndex = 15;
             this.pnlAracCikis.Click += new System.EventHandler(this.carExitButton_Click);
             this.pnlAracCikis.MouseEnter += new System.EventHandler(this.pnlAracCikis_MouseEnter);
@@ -364,8 +367,8 @@ namespace OtoparkOtomasyonuEnSon
             this.lblManuelDelete.AutoSize = true;
             this.lblManuelDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblManuelDelete.ForeColor = System.Drawing.Color.White;
-            this.lblManuelDelete.Location = new System.Drawing.Point(79, 22);
-            this.lblManuelDelete.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblManuelDelete.Location = new System.Drawing.Point(105, 27);
+            this.lblManuelDelete.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblManuelDelete.Name = "lblManuelDelete";
             this.lblManuelDelete.Size = new System.Drawing.Size(135, 24);
             this.lblManuelDelete.TabIndex = 1;
@@ -377,10 +380,10 @@ namespace OtoparkOtomasyonuEnSon
             // picManuelDelete
             // 
             this.picManuelDelete.Image = global::OtoparkOtomasyonuEnSon.Properties.Resources.icon_otolev;
-            this.picManuelDelete.Location = new System.Drawing.Point(4, 4);
-            this.picManuelDelete.Margin = new System.Windows.Forms.Padding(4);
+            this.picManuelDelete.Location = new System.Drawing.Point(5, 5);
+            this.picManuelDelete.Margin = new System.Windows.Forms.Padding(5);
             this.picManuelDelete.Name = "picManuelDelete";
-            this.picManuelDelete.Size = new System.Drawing.Size(67, 62);
+            this.picManuelDelete.Size = new System.Drawing.Size(89, 76);
             this.picManuelDelete.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picManuelDelete.TabIndex = 0;
             this.picManuelDelete.TabStop = false;
@@ -390,10 +393,10 @@ namespace OtoparkOtomasyonuEnSon
             // 
             // FormKayitlar
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(33)))), ((int)(((byte)(184)))));
-            this.ClientSize = new System.Drawing.Size(1067, 555);
+            this.ClientSize = new System.Drawing.Size(1423, 683);
             this.Controls.Add(this.pnlAracCikis);
             this.Controls.Add(this.pnlManuelGiris);
             this.Controls.Add(this.pnlCikisYap);
@@ -406,7 +409,8 @@ namespace OtoparkOtomasyonuEnSon
             this.Controls.Add(this.fillByToolStrip);
             this.Controls.Add(this.registryGridView);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MinimumSize = new System.Drawing.Size(800, 500);
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.MinimumSize = new System.Drawing.Size(1441, 730);
             this.Name = "FormKayitlar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormKayitlar";

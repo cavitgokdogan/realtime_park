@@ -64,8 +64,10 @@
             this.@__panel1.Controls.Add(this.@__pictureBox2);
             this.@__panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.@__panel1.Location = new System.Drawing.Point(0, 0);
+            this.@__panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.@__panel1.MinimumSize = new System.Drawing.Size(403, 537);
             this.@__panel1.Name = "__panel1";
-            this.@__panel1.Size = new System.Drawing.Size(302, 436);
+            this.@__panel1.Size = new System.Drawing.Size(403, 537);
             this.@__panel1.TabIndex = 0;
             // 
             // lblHata
@@ -73,9 +75,10 @@
             this.lblHata.AutoSize = true;
             this.lblHata.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblHata.ForeColor = System.Drawing.Color.White;
-            this.lblHata.Location = new System.Drawing.Point(55, 311);
+            this.lblHata.Location = new System.Drawing.Point(73, 383);
+            this.lblHata.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblHata.Name = "lblHata";
-            this.lblHata.Size = new System.Drawing.Size(192, 18);
+            this.lblHata.Size = new System.Drawing.Size(246, 24);
             this.lblHata.TabIndex = 20;
             this.lblHata.Text = "Kullanıcı adı veya şifre hatalı!";
             this.lblHata.Visible = false;
@@ -85,9 +88,10 @@
             this.@__label2.AutoSize = true;
             this.@__label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.@__label2.ForeColor = System.Drawing.Color.White;
-            this.@__label2.Location = new System.Drawing.Point(12, 177);
+            this.@__label2.Location = new System.Drawing.Point(16, 218);
+            this.@__label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.@__label2.Name = "__label2";
-            this.@__label2.Size = new System.Drawing.Size(119, 18);
+            this.@__label2.Size = new System.Drawing.Size(150, 24);
             this.@__label2.TabIndex = 19;
             this.@__label2.Text = "versiyon 2023.01";
             // 
@@ -96,9 +100,10 @@
             this.@__label1.AutoSize = true;
             this.@__label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.@__label1.ForeColor = System.Drawing.Color.White;
-            this.@__label1.Location = new System.Drawing.Point(12, 153);
+            this.@__label1.Location = new System.Drawing.Point(16, 188);
+            this.@__label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.@__label1.Name = "__label1";
-            this.@__label1.Size = new System.Drawing.Size(244, 24);
+            this.@__label1.Size = new System.Drawing.Size(313, 29);
             this.@__label1.TabIndex = 18;
             this.@__label1.Text = "Otopark Otomasyon Hizmeti";
             // 
@@ -106,9 +111,10 @@
             // 
             this.picGirisYap.BackColor = System.Drawing.Color.Transparent;
             this.picGirisYap.Image = global::OtoparkOtomasyonuEnSon.Properties.Resources.icon_arrow;
-            this.picGirisYap.Location = new System.Drawing.Point(238, 374);
+            this.picGirisYap.Location = new System.Drawing.Point(317, 460);
+            this.picGirisYap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.picGirisYap.Name = "picGirisYap";
-            this.picGirisYap.Size = new System.Drawing.Size(50, 50);
+            this.picGirisYap.Size = new System.Drawing.Size(67, 62);
             this.picGirisYap.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picGirisYap.TabIndex = 17;
             this.picGirisYap.TabStop = false;
@@ -118,9 +124,10 @@
             // 
             this.@__pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.@__pictureBox3.Image = global::OtoparkOtomasyonuEnSon.Properties.Resources.icon_pass;
-            this.@__pictureBox3.Location = new System.Drawing.Point(12, 278);
+            this.@__pictureBox3.Location = new System.Drawing.Point(16, 342);
+            this.@__pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.@__pictureBox3.Name = "__pictureBox3";
-            this.@__pictureBox3.Size = new System.Drawing.Size(24, 22);
+            this.@__pictureBox3.Size = new System.Drawing.Size(32, 27);
             this.@__pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.@__pictureBox3.TabIndex = 16;
             this.@__pictureBox3.TabStop = false;
@@ -129,9 +136,10 @@
             // 
             this.@__pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.@__pictureBox1.Image = global::OtoparkOtomasyonuEnSon.Properties.Resources.icon_user;
-            this.@__pictureBox1.Location = new System.Drawing.Point(12, 236);
+            this.@__pictureBox1.Location = new System.Drawing.Point(16, 290);
+            this.@__pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.@__pictureBox1.Name = "__pictureBox1";
-            this.@__pictureBox1.Size = new System.Drawing.Size(24, 22);
+            this.@__pictureBox1.Size = new System.Drawing.Size(32, 27);
             this.@__pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.@__pictureBox1.TabIndex = 15;
             this.@__pictureBox1.TabStop = false;
@@ -142,10 +150,11 @@
             this.txtParola.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtParola.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtParola.ForeColor = System.Drawing.Color.White;
-            this.txtParola.Location = new System.Drawing.Point(42, 278);
+            this.txtParola.Location = new System.Drawing.Point(56, 342);
+            this.txtParola.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtParola.MaxLength = 64;
             this.txtParola.Name = "txtParola";
-            this.txtParola.Size = new System.Drawing.Size(246, 22);
+            this.txtParola.Size = new System.Drawing.Size(328, 27);
             this.txtParola.TabIndex = 9;
             this.txtParola.UseSystemPasswordChar = true;
             this.txtParola.TextChanged += new System.EventHandler(this.TxtParola_TextChanged);
@@ -154,9 +163,10 @@
             // __panel3
             // 
             this.@__panel3.BackColor = System.Drawing.Color.White;
-            this.@__panel3.Location = new System.Drawing.Point(12, 306);
+            this.@__panel3.Location = new System.Drawing.Point(16, 377);
+            this.@__panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.@__panel3.Name = "__panel3";
-            this.@__panel3.Size = new System.Drawing.Size(276, 2);
+            this.@__panel3.Size = new System.Drawing.Size(368, 2);
             this.@__panel3.TabIndex = 14;
             // 
             // txtKullaniciAdi
@@ -165,10 +175,11 @@
             this.txtKullaniciAdi.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtKullaniciAdi.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtKullaniciAdi.ForeColor = System.Drawing.Color.White;
-            this.txtKullaniciAdi.Location = new System.Drawing.Point(42, 236);
+            this.txtKullaniciAdi.Location = new System.Drawing.Point(56, 290);
+            this.txtKullaniciAdi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtKullaniciAdi.MaxLength = 64;
             this.txtKullaniciAdi.Name = "txtKullaniciAdi";
-            this.txtKullaniciAdi.Size = new System.Drawing.Size(246, 22);
+            this.txtKullaniciAdi.Size = new System.Drawing.Size(328, 27);
             this.txtKullaniciAdi.TabIndex = 8;
             this.txtKullaniciAdi.TextChanged += new System.EventHandler(this.TxtKullaniciAdi_TextChanged);
             this.txtKullaniciAdi.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtKullaniciAdi_KeyPress);
@@ -176,31 +187,34 @@
             // __panel2
             // 
             this.@__panel2.BackColor = System.Drawing.Color.White;
-            this.@__panel2.Location = new System.Drawing.Point(12, 264);
+            this.@__panel2.Location = new System.Drawing.Point(16, 325);
+            this.@__panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.@__panel2.Name = "__panel2";
-            this.@__panel2.Size = new System.Drawing.Size(276, 2);
+            this.@__panel2.Size = new System.Drawing.Size(368, 2);
             this.@__panel2.TabIndex = 13;
             // 
             // __pictureBox2
             // 
             this.@__pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.@__pictureBox2.Image = global::OtoparkOtomasyonuEnSon.Properties.Resources.logo;
-            this.@__pictureBox2.Location = new System.Drawing.Point(12, 12);
+            this.@__pictureBox2.Location = new System.Drawing.Point(16, 15);
+            this.@__pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.@__pictureBox2.Name = "__pictureBox2";
-            this.@__pictureBox2.Size = new System.Drawing.Size(276, 116);
+            this.@__pictureBox2.Size = new System.Drawing.Size(368, 143);
             this.@__pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.@__pictureBox2.TabIndex = 12;
             this.@__pictureBox2.TabStop = false;
             // 
             // FormGirisYap
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(33)))), ((int)(((byte)(184)))));
-            this.ClientSize = new System.Drawing.Size(302, 436);
+            this.ClientSize = new System.Drawing.Size(403, 537);
             this.Controls.Add(this.@__panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "FormGirisYap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
