@@ -16,8 +16,14 @@ namespace OtoparkOtomasyonuEnSon
 
         private void createRegistryButton_Click(object sender, EventArgs e)
         {
-
-            DateTime chosenTime = entranceDatePicker.Value;
+            DateTime chosenTime;
+            if (entranceDatePicker.Enabled)
+            {
+                chosenTime = entranceDatePicker.Value;
+            } else
+            {
+                chosenTime = DateTime.Now;
+            }
             TimeSpan chosenTimeSpan = chosenTime.TimeOfDay;
 
             try
