@@ -26,10 +26,7 @@ namespace OtoparkOtomasyonuEnSon
             timer.Start();
         }
 
-        private void Timer_Tick(object sender, EventArgs e)
-        {
-            stripSaat.Text = $"{DateTime.Now:HH:mm}";
-        }
+        private void Timer_Tick(object sender, EventArgs e) => stripSaat.Text = $"{DateTime.Now:HH:mm}";
 
         #region Çıkışla Alakalı Metot ve Olaylar
         private void FormGiris_FormClosed(object sender, FormClosedEventArgs e) => Program.mainForm.Show();
@@ -184,9 +181,9 @@ namespace OtoparkOtomasyonuEnSon
         #endregion
 
         #region Eyecandy Sağlayan Metotlar ve Olaylar
-        private void HoverOldu(Control kontrol) => kontrol.BackColor = Color.FromArgb(63, 28, 158);
+        internal static void HoverOldu(Control kontrol) => kontrol.BackColor = Color.FromArgb(63, 28, 158);
 
-        private void HoverBitti(Control kontrol) => kontrol.BackColor = Color.FromArgb(74, 33, 184);
+        internal static void HoverBitti(Control kontrol) => kontrol.BackColor = Color.FromArgb(74, 33, 184);
 
         private void PanCikisYap_MouseEnter(object sender, EventArgs e) => HoverOldu(pnlCikisYap);
 
@@ -247,6 +244,18 @@ namespace OtoparkOtomasyonuEnSon
         private void PicManuelGiris_MouseEnter(object sender, EventArgs e) => HoverOldu(pnlManuelGiris);
 
         private void PicManuelGiris_MouseLeave(object sender, EventArgs e) => HoverBitti(pnlManuelGiris);
+
+        private void PnlKayitlar_MouseEnter(object sender, EventArgs e) => HoverOldu(pnlKayitlar);
+
+        private void PnlKayitlar_MouseLeave(object sender, EventArgs e) => HoverBitti(pnlKayitlar);
+
+        private void LblKayitlar_MouseEnter(object sender, EventArgs e) => HoverOldu(pnlKayitlar);
+
+        private void LblKayitlar_MouseLeave(object sender, EventArgs e) => HoverBitti(pnlKayitlar);
+
+        private void PicKayitlar_MouseEnter(object sender, EventArgs e) => HoverOldu(pnlKayitlar);
+
+        private void PicKayitlar_MouseLeave(object sender, EventArgs e) => HoverBitti(pnlKayitlar);
         #endregion
     }
 }

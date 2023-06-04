@@ -177,6 +177,8 @@ namespace OtoparkOtomasyonuEnSon
             this.pnlKayitlar.Size = new System.Drawing.Size(120, 56);
             this.pnlKayitlar.TabIndex = 9;
             this.pnlKayitlar.Click += new System.EventHandler(this.PnlKayitlar_Click);
+            this.pnlKayitlar.MouseEnter += new System.EventHandler(this.PnlKayitlar_MouseEnter);
+            this.pnlKayitlar.MouseLeave += new System.EventHandler(this.PnlKayitlar_MouseLeave);
             // 
             // lblKayitlar
             // 
@@ -189,6 +191,8 @@ namespace OtoparkOtomasyonuEnSon
             this.lblKayitlar.TabIndex = 1;
             this.lblKayitlar.Text = "Kayıtlar";
             this.lblKayitlar.Click += new System.EventHandler(this.LblKayitlar_Click);
+            this.lblKayitlar.MouseEnter += new System.EventHandler(this.LblKayitlar_MouseEnter);
+            this.lblKayitlar.MouseLeave += new System.EventHandler(this.LblKayitlar_MouseLeave);
             // 
             // picKayitlar
             // 
@@ -200,6 +204,8 @@ namespace OtoparkOtomasyonuEnSon
             this.picKayitlar.TabIndex = 0;
             this.picKayitlar.TabStop = false;
             this.picKayitlar.Click += new System.EventHandler(this.PicKayitlar_Click);
+            this.picKayitlar.MouseEnter += new System.EventHandler(this.PicKayitlar_MouseEnter);
+            this.picKayitlar.MouseLeave += new System.EventHandler(this.PicKayitlar_MouseLeave);
             // 
             // pnlFiyatTarifesi
             // 
