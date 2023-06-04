@@ -150,7 +150,7 @@ namespace OtoparkOtomasyonuEnSon
             this.pnlCikisYap.Name = "pnlCikisYap";
             this.pnlCikisYap.Size = new System.Drawing.Size(177, 69);
             this.pnlCikisYap.TabIndex = 7;
-            this.pnlCikisYap.Click += new System.EventHandler(this.lblCikisYap_Click);
+            this.pnlCikisYap.Click += new System.EventHandler(this.logOutButton_Click);
             this.pnlCikisYap.MouseEnter += new System.EventHandler(this.PnlCikisYap_MouseEnter);
             this.pnlCikisYap.MouseLeave += new System.EventHandler(this.PnlCikisYap_MouseLeave);
             // 
@@ -165,7 +165,7 @@ namespace OtoparkOtomasyonuEnSon
             this.lblCikisYap.Size = new System.Drawing.Size(87, 24);
             this.lblCikisYap.TabIndex = 1;
             this.lblCikisYap.Text = "Çıkış Yap";
-            this.lblCikisYap.Click += new System.EventHandler(this.lblCikisYap_Click);
+            this.lblCikisYap.Click += new System.EventHandler(this.logOutButton_Click);
             this.lblCikisYap.MouseEnter += new System.EventHandler(this.LblCikisYap_MouseEnter);
             this.lblCikisYap.MouseLeave += new System.EventHandler(this.LblCikisYap_MouseLeave);
             // 
@@ -179,7 +179,7 @@ namespace OtoparkOtomasyonuEnSon
             this.picCikisYap.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picCikisYap.TabIndex = 0;
             this.picCikisYap.TabStop = false;
-            this.picCikisYap.Click += new System.EventHandler(this.lblCikisYap_Click);
+            this.picCikisYap.Click += new System.EventHandler(this.logOutButton_Click);
             this.picCikisYap.MouseEnter += new System.EventHandler(this.PicCikisYap_MouseEnter);
             this.picCikisYap.MouseLeave += new System.EventHandler(this.PicCikisYap_MouseLeave);
             // 

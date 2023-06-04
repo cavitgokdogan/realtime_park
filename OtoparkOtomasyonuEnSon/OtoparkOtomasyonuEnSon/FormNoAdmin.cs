@@ -22,7 +22,7 @@ namespace OtoparkOtomasyonuEnSon
 
         private void Timer_Tick(object sender, EventArgs e) => stripSaat.Text = $"{DateTime.Now:HH:mm}";
 
-        private void button1_Click(object sender, EventArgs e)
+        private void logOutButton_Click(object sender, EventArgs e)
         {
             using (FormGirisYap form1 = new FormGirisYap())
             {
@@ -55,9 +55,5 @@ namespace OtoparkOtomasyonuEnSon
 
         }
 
-        private void lblCikisYap_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
