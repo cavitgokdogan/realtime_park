@@ -35,19 +35,19 @@ namespace OtoparkOtomasyonuEnSon
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.pnlCikisYap = new System.Windows.Forms.Panel();
-            this.lblCikisYap = new System.Windows.Forms.Label();
-            this.picCikisYap = new System.Windows.Forms.PictureBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pnlCikisYap.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picCikisYap)).BeginInit();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.txtBoxBirSaat = new System.Windows.Forms.TextBox();
+            this.txtBoxSaatlik = new System.Windows.Forms.TextBox();
+            this.txtBoxGunluk = new System.Windows.Forms.TextBox();
+            this.pnlGeriDon = new System.Windows.Forms.Panel();
+            this.lblGeriDon = new System.Windows.Forms.Label();
+            this.picGeriDon = new System.Windows.Forms.PictureBox();
+            this.pnlKaydet = new System.Windows.Forms.Panel();
+            this.lblKaydet = new System.Windows.Forms.Label();
+            this.picKaydet = new System.Windows.Forms.PictureBox();
+            this.pnlGeriDon.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picGeriDon)).BeginInit();
+            this.pnlKaydet.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picKaydet)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -59,7 +59,7 @@ namespace OtoparkOtomasyonuEnSon
             this.label1.Location = new System.Drawing.Point(116, 131);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(155, 26);
+            this.label1.Size = new System.Drawing.Size(191, 31);
             this.label1.TabIndex = 1;
             this.label1.Text = "1 Saat\'e Kadar";
             // 
@@ -72,7 +72,7 @@ namespace OtoparkOtomasyonuEnSon
             this.label2.Location = new System.Drawing.Point(193, 183);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(78, 26);
+            this.label2.Size = new System.Drawing.Size(96, 31);
             this.label2.TabIndex = 2;
             this.label2.Text = "Saatlik";
             // 
@@ -85,116 +85,121 @@ namespace OtoparkOtomasyonuEnSon
             this.label3.Location = new System.Drawing.Point(193, 236);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(81, 26);
+            this.label3.Size = new System.Drawing.Size(100, 31);
             this.label3.TabIndex = 3;
             this.label3.Text = "Günlük";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
-            // textBox1
+            // txtBoxBirSaat
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(42)))), ((int)(((byte)(235)))));
-            this.textBox1.ForeColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(300, 137);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(90, 20);
-            this.textBox1.TabIndex = 4;
+            this.txtBoxBirSaat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(42)))), ((int)(((byte)(235)))));
+            this.txtBoxBirSaat.ForeColor = System.Drawing.Color.White;
+            this.txtBoxBirSaat.Location = new System.Drawing.Point(305, 137);
+            this.txtBoxBirSaat.Margin = new System.Windows.Forms.Padding(2);
+            this.txtBoxBirSaat.Name = "txtBoxBirSaat";
+            this.txtBoxBirSaat.Size = new System.Drawing.Size(90, 23);
+            this.txtBoxBirSaat.TabIndex = 4;
             // 
-            // textBox2
+            // txtBoxSaatlik
             // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(42)))), ((int)(((byte)(235)))));
-            this.textBox2.ForeColor = System.Drawing.Color.White;
-            this.textBox2.Location = new System.Drawing.Point(300, 189);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(90, 20);
-            this.textBox2.TabIndex = 4;
+            this.txtBoxSaatlik.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(42)))), ((int)(((byte)(235)))));
+            this.txtBoxSaatlik.ForeColor = System.Drawing.Color.White;
+            this.txtBoxSaatlik.Location = new System.Drawing.Point(305, 189);
+            this.txtBoxSaatlik.Margin = new System.Windows.Forms.Padding(2);
+            this.txtBoxSaatlik.Name = "txtBoxSaatlik";
+            this.txtBoxSaatlik.Size = new System.Drawing.Size(90, 23);
+            this.txtBoxSaatlik.TabIndex = 4;
             // 
-            // textBox3
+            // txtBoxGunluk
             // 
-            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(42)))), ((int)(((byte)(235)))));
-            this.textBox3.ForeColor = System.Drawing.Color.White;
-            this.textBox3.Location = new System.Drawing.Point(300, 242);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(90, 20);
-            this.textBox3.TabIndex = 4;
+            this.txtBoxGunluk.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(42)))), ((int)(((byte)(235)))));
+            this.txtBoxGunluk.ForeColor = System.Drawing.Color.White;
+            this.txtBoxGunluk.Location = new System.Drawing.Point(305, 242);
+            this.txtBoxGunluk.Margin = new System.Windows.Forms.Padding(2);
+            this.txtBoxGunluk.Name = "txtBoxGunluk";
+            this.txtBoxGunluk.Size = new System.Drawing.Size(90, 23);
+            this.txtBoxGunluk.TabIndex = 4;
             // 
-            // pnlCikisYap
+            // pnlGeriDon
             // 
-            this.pnlCikisYap.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.pnlCikisYap.Controls.Add(this.lblCikisYap);
-            this.pnlCikisYap.Controls.Add(this.picCikisYap);
-            this.pnlCikisYap.Location = new System.Drawing.Point(27, 379);
-            this.pnlCikisYap.Name = "pnlCikisYap";
-            this.pnlCikisYap.Size = new System.Drawing.Size(133, 56);
-            this.pnlCikisYap.TabIndex = 15;
+            this.pnlGeriDon.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.pnlGeriDon.Controls.Add(this.lblGeriDon);
+            this.pnlGeriDon.Controls.Add(this.picGeriDon);
+            this.pnlGeriDon.Location = new System.Drawing.Point(27, 379);
+            this.pnlGeriDon.Name = "pnlGeriDon";
+            this.pnlGeriDon.Size = new System.Drawing.Size(145, 56);
+            this.pnlGeriDon.TabIndex = 15;
+            this.pnlGeriDon.Click += new System.EventHandler(this.pnlGeriDon_Click);
             // 
-            // lblCikisYap
+            // lblGeriDon
             // 
-            this.lblCikisYap.AutoSize = true;
-            this.lblCikisYap.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblCikisYap.ForeColor = System.Drawing.Color.White;
-            this.lblCikisYap.Location = new System.Drawing.Point(59, 18);
-            this.lblCikisYap.Name = "lblCikisYap";
-            this.lblCikisYap.Size = new System.Drawing.Size(68, 18);
-            this.lblCikisYap.TabIndex = 1;
-            this.lblCikisYap.Text = "Geri Dön";
-            this.lblCikisYap.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblGeriDon.AutoSize = true;
+            this.lblGeriDon.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblGeriDon.ForeColor = System.Drawing.Color.White;
+            this.lblGeriDon.Location = new System.Drawing.Point(59, 18);
+            this.lblGeriDon.Name = "lblGeriDon";
+            this.lblGeriDon.Size = new System.Drawing.Size(85, 24);
+            this.lblGeriDon.TabIndex = 1;
+            this.lblGeriDon.Text = "Geri Dön";
+            this.lblGeriDon.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblGeriDon.Click += new System.EventHandler(this.lblGeriDon_Click);
             // 
-            // picCikisYap
+            // picGeriDon
             // 
-            this.picCikisYap.Image = global::OtoparkOtomasyonuEnSon.Properties.Resources.icon_logout;
-            this.picCikisYap.Location = new System.Drawing.Point(3, 3);
-            this.picCikisYap.Name = "picCikisYap";
-            this.picCikisYap.Size = new System.Drawing.Size(50, 50);
-            this.picCikisYap.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picCikisYap.TabIndex = 0;
-            this.picCikisYap.TabStop = false;
+            this.picGeriDon.Image = global::OtoparkOtomasyonuEnSon.Properties.Resources.icon_logout;
+            this.picGeriDon.Location = new System.Drawing.Point(3, 3);
+            this.picGeriDon.Name = "picGeriDon";
+            this.picGeriDon.Size = new System.Drawing.Size(50, 50);
+            this.picGeriDon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picGeriDon.TabIndex = 0;
+            this.picGeriDon.TabStop = false;
+            this.picGeriDon.Click += new System.EventHandler(this.picGeriDon_Click);
             // 
-            // panel1
+            // pnlKaydet
             // 
-            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(423, 379);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(133, 56);
-            this.panel1.TabIndex = 16;
+            this.pnlKaydet.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.pnlKaydet.Controls.Add(this.lblKaydet);
+            this.pnlKaydet.Controls.Add(this.picKaydet);
+            this.pnlKaydet.Location = new System.Drawing.Point(423, 379);
+            this.pnlKaydet.Name = "pnlKaydet";
+            this.pnlKaydet.Size = new System.Drawing.Size(133, 56);
+            this.pnlKaydet.TabIndex = 16;
+            this.pnlKaydet.Click += new System.EventHandler(this.pnlKaydet_Click);
             // 
-            // label4
+            // lblKaydet
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(59, 18);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(53, 18);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Kaydet";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblKaydet.AutoSize = true;
+            this.lblKaydet.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblKaydet.ForeColor = System.Drawing.Color.White;
+            this.lblKaydet.Location = new System.Drawing.Point(59, 18);
+            this.lblKaydet.Name = "lblKaydet";
+            this.lblKaydet.Size = new System.Drawing.Size(67, 24);
+            this.lblKaydet.TabIndex = 1;
+            this.lblKaydet.Text = "Kaydet";
+            this.lblKaydet.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblKaydet.Click += new System.EventHandler(this.lblKaydet_Click);
             // 
-            // pictureBox1
+            // picKaydet
             // 
-            this.pictureBox1.Image = global::OtoparkOtomasyonuEnSon.Properties.Resources.icon_price;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.picKaydet.Image = global::OtoparkOtomasyonuEnSon.Properties.Resources.icon_price;
+            this.picKaydet.Location = new System.Drawing.Point(3, 3);
+            this.picKaydet.Name = "picKaydet";
+            this.picKaydet.Size = new System.Drawing.Size(50, 50);
+            this.picKaydet.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picKaydet.TabIndex = 0;
+            this.picKaydet.TabStop = false;
+            this.picKaydet.Click += new System.EventHandler(this.picKaydet_Click);
             // 
             // FormFiyatTarife
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(33)))), ((int)(((byte)(184)))));
             this.ClientSize = new System.Drawing.Size(594, 462);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.pnlCikisYap);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.pnlKaydet);
+            this.Controls.Add(this.pnlGeriDon);
+            this.Controls.Add(this.txtBoxGunluk);
+            this.Controls.Add(this.txtBoxSaatlik);
+            this.Controls.Add(this.txtBoxBirSaat);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -205,12 +210,12 @@ namespace OtoparkOtomasyonuEnSon
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FiyatTarifeForm";
             this.Load += new System.EventHandler(this.FormFiyatTarife_Load);
-            this.pnlCikisYap.ResumeLayout(false);
-            this.pnlCikisYap.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picCikisYap)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.pnlGeriDon.ResumeLayout(false);
+            this.pnlGeriDon.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picGeriDon)).EndInit();
+            this.pnlKaydet.ResumeLayout(false);
+            this.pnlKaydet.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picKaydet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -220,14 +225,14 @@ namespace OtoparkOtomasyonuEnSon
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Panel pnlCikisYap;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label lblCikisYap;
-        private System.Windows.Forms.PictureBox picCikisYap;
+        private System.Windows.Forms.TextBox txtBoxBirSaat;
+        private System.Windows.Forms.TextBox txtBoxSaatlik;
+        private System.Windows.Forms.TextBox txtBoxGunluk;
+        private System.Windows.Forms.Panel pnlGeriDon;
+        private System.Windows.Forms.Panel pnlKaydet;
+        private System.Windows.Forms.Label lblKaydet;
+        private System.Windows.Forms.PictureBox picKaydet;
+        private System.Windows.Forms.Label lblGeriDon;
+        private System.Windows.Forms.PictureBox picGeriDon;
     }
 }

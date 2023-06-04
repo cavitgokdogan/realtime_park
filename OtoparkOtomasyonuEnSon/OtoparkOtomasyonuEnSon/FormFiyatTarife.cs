@@ -22,7 +22,7 @@ namespace OtoparkOtomasyonuEnSon
             InitializeComponent();
         }
 
-        public void AnaMenuButtonClick(object sender,EventArgs e)
+        public void goBackClick()
         {
             FormGiris formGiris = new FormGiris();
             this.Hide();
@@ -57,9 +57,42 @@ namespace OtoparkOtomasyonuEnSon
             
         }
 
-        private void label3_Click(object sender, EventArgs e)
+        private void kaydet()
         {
+            try
+            {
+                connection.Open();
+                string sqlQuery = "DELETE FROM dbo.fiyatlar";
+                SqlCommand command = new SqlCommand(sqlQuery, connection);
+                command.ExecuteNonQuery();
 
+                sqlQuery = "INSERT INTO dbo.fiyatlar VALUES (" + txtBoxBirSaat.Text + "," + txtBoxSaatlik.Text + "," + txtBoxGunluk.Text;
+                command = new SqlCommand(sqlQuery, connection);
+                command.ExecuteNonQuery();
+
+                MessageBox.Show("Başarıyla Kaydedildi!");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Bağlantıda hata oluştu! " + ex.Message);
+            }
+            finally
+            {
+                if (connection != null)
+                    connection.Close();
+            }
         }
+
+        private void pnlKaydet_Click(object sender, EventArgs e) => kaydet();
+
+        private void picKaydet_Click(object sender, EventArgs e) => kaydet();
+
+        private void lblKaydet_Click(object sender, EventArgs e) => kaydet();
+
+        private void pnlGeriDon_Click(object sender, EventArgs e) => goBackClick();
+
+        private void lblGeriDon_Click(object sender, EventArgs e) => goBackClick();
+
+        private void picGeriDon_Click(object sender, EventArgs e) => goBackClick();
     }
 }
