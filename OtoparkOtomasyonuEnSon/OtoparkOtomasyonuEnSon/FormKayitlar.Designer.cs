@@ -87,12 +87,11 @@
             this.telefonnoDataGridViewTextBoxColumn,
             this.girissaatiDataGridViewTextBoxColumn});
             this.registryGridView.DataSource = this.arabalarBindingSource4;
-            this.registryGridView.Location = new System.Drawing.Point(211, 34);
-            this.registryGridView.Margin = new System.Windows.Forms.Padding(4);
+            this.registryGridView.Location = new System.Drawing.Point(158, 28);
             this.registryGridView.Name = "registryGridView";
             this.registryGridView.ReadOnly = true;
             this.registryGridView.RowHeadersWidth = 51;
-            this.registryGridView.Size = new System.Drawing.Size(832, 411);
+            this.registryGridView.Size = new System.Drawing.Size(616, 352);
             this.registryGridView.TabIndex = 0;
             this.registryGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.registryGridView_CellContentClick);
             this.registryGridView.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.registryGridView_CellDoubleClick);
@@ -156,10 +155,9 @@
             // 
             // manualFormButton
             // 
-            this.manualFormButton.Location = new System.Drawing.Point(23, 331);
-            this.manualFormButton.Margin = new System.Windows.Forms.Padding(4);
+            this.manualFormButton.Location = new System.Drawing.Point(17, 269);
             this.manualFormButton.Name = "manualFormButton";
-            this.manualFormButton.Size = new System.Drawing.Size(167, 54);
+            this.manualFormButton.Size = new System.Drawing.Size(125, 44);
             this.manualFormButton.TabIndex = 2;
             this.manualFormButton.Text = "Manuel Giriş Sayfası";
             this.manualFormButton.UseVisualStyleBackColor = true;
@@ -170,7 +168,7 @@
             this.fillByToolStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.fillByToolStrip.Location = new System.Drawing.Point(0, 0);
             this.fillByToolStrip.Name = "fillByToolStrip";
-            this.fillByToolStrip.Size = new System.Drawing.Size(1067, 25);
+            this.fillByToolStrip.Size = new System.Drawing.Size(792, 25);
             this.fillByToolStrip.TabIndex = 4;
             this.fillByToolStrip.Text = "fillByToolStrip";
             // 
@@ -188,10 +186,9 @@
             // 
             // refreshButton
             // 
-            this.refreshButton.Location = new System.Drawing.Point(23, 164);
-            this.refreshButton.Margin = new System.Windows.Forms.Padding(4);
+            this.refreshButton.Location = new System.Drawing.Point(17, 133);
             this.refreshButton.Name = "refreshButton";
-            this.refreshButton.Size = new System.Drawing.Size(167, 54);
+            this.refreshButton.Size = new System.Drawing.Size(125, 44);
             this.refreshButton.TabIndex = 5;
             this.refreshButton.Text = "Kayıtları Yenile";
             this.refreshButton.UseVisualStyleBackColor = true;
@@ -199,10 +196,9 @@
             // 
             // carExitButton
             // 
-            this.carExitButton.Location = new System.Drawing.Point(23, 250);
-            this.carExitButton.Margin = new System.Windows.Forms.Padding(4);
+            this.carExitButton.Location = new System.Drawing.Point(17, 203);
             this.carExitButton.Name = "carExitButton";
-            this.carExitButton.Size = new System.Drawing.Size(167, 54);
+            this.carExitButton.Size = new System.Drawing.Size(125, 44);
             this.carExitButton.TabIndex = 6;
             this.carExitButton.Text = "Araç Çıkış Yap";
             this.carExitButton.UseVisualStyleBackColor = true;
@@ -212,10 +208,9 @@
             // 
             this.numberPlateLabel.AutoSize = true;
             this.numberPlateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.numberPlateLabel.Location = new System.Drawing.Point(731, 497);
-            this.numberPlateLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.numberPlateLabel.Location = new System.Drawing.Point(548, 404);
             this.numberPlateLabel.Name = "numberPlateLabel";
-            this.numberPlateLabel.Size = new System.Drawing.Size(105, 36);
+            this.numberPlateLabel.Size = new System.Drawing.Size(85, 29);
             this.numberPlateLabel.TabIndex = 7;
             this.numberPlateLabel.Text = "Plaka: ";
             // 
@@ -223,10 +218,9 @@
             // 
             this.telNoLabel.AutoSize = true;
             this.telNoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.telNoLabel.Location = new System.Drawing.Point(396, 482);
-            this.telNoLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.telNoLabel.Location = new System.Drawing.Point(297, 392);
             this.telNoLabel.Name = "telNoLabel";
-            this.telNoLabel.Size = new System.Drawing.Size(119, 36);
+            this.telNoLabel.Size = new System.Drawing.Size(99, 29);
             this.telNoLabel.TabIndex = 8;
             this.telNoLabel.Text = "Tel No: ";
             // 
@@ -234,35 +228,31 @@
             // 
             this.entranceDateLabel.AutoSize = true;
             this.entranceDateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.entranceDateLabel.Location = new System.Drawing.Point(38, 466);
-            this.entranceDateLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.entranceDateLabel.Location = new System.Drawing.Point(28, 379);
             this.entranceDateLabel.Name = "entranceDateLabel";
-            this.entranceDateLabel.Size = new System.Drawing.Size(168, 36);
+            this.entranceDateLabel.Size = new System.Drawing.Size(135, 29);
             this.entranceDateLabel.TabIndex = 9;
             this.entranceDateLabel.Text = "Giriş Saati: ";
             // 
             // numberPlateTextBox
             // 
-            this.numberPlateTextBox.Location = new System.Drawing.Point(837, 509);
-            this.numberPlateTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.numberPlateTextBox.Location = new System.Drawing.Point(628, 414);
             this.numberPlateTextBox.Name = "numberPlateTextBox";
-            this.numberPlateTextBox.Size = new System.Drawing.Size(132, 22);
+            this.numberPlateTextBox.Size = new System.Drawing.Size(100, 20);
             this.numberPlateTextBox.TabIndex = 10;
             // 
             // telNoTextBox
             // 
-            this.telNoTextBox.Location = new System.Drawing.Point(521, 493);
-            this.telNoTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.telNoTextBox.Location = new System.Drawing.Point(391, 401);
             this.telNoTextBox.Name = "telNoTextBox";
-            this.telNoTextBox.Size = new System.Drawing.Size(132, 22);
+            this.telNoTextBox.Size = new System.Drawing.Size(100, 20);
             this.telNoTextBox.TabIndex = 11;
             // 
             // entranceDateTextBox
             // 
-            this.entranceDateTextBox.Location = new System.Drawing.Point(211, 477);
-            this.entranceDateTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.entranceDateTextBox.Location = new System.Drawing.Point(158, 388);
             this.entranceDateTextBox.Name = "entranceDateTextBox";
-            this.entranceDateTextBox.Size = new System.Drawing.Size(132, 22);
+            this.entranceDateTextBox.Size = new System.Drawing.Size(100, 20);
             this.entranceDateTextBox.TabIndex = 12;
             // 
             // arabalarBindingSource2
@@ -283,10 +273,9 @@
             // 
             this.pnlCikisYap.Controls.Add(this.lblCikisYap);
             this.pnlCikisYap.Controls.Add(this.picCikisYap);
-            this.pnlCikisYap.Location = new System.Drawing.Point(13, 51);
-            this.pnlCikisYap.Margin = new System.Windows.Forms.Padding(4);
+            this.pnlCikisYap.Location = new System.Drawing.Point(10, 41);
             this.pnlCikisYap.Name = "pnlCikisYap";
-            this.pnlCikisYap.Size = new System.Drawing.Size(177, 69);
+            this.pnlCikisYap.Size = new System.Drawing.Size(133, 56);
             this.pnlCikisYap.TabIndex = 13;
             // 
             // lblCikisYap
@@ -294,10 +283,9 @@
             this.lblCikisYap.AutoSize = true;
             this.lblCikisYap.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblCikisYap.ForeColor = System.Drawing.Color.White;
-            this.lblCikisYap.Location = new System.Drawing.Point(79, 22);
-            this.lblCikisYap.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCikisYap.Location = new System.Drawing.Point(59, 18);
             this.lblCikisYap.Name = "lblCikisYap";
-            this.lblCikisYap.Size = new System.Drawing.Size(85, 24);
+            this.lblCikisYap.Size = new System.Drawing.Size(68, 18);
             this.lblCikisYap.TabIndex = 1;
             this.lblCikisYap.Text = "Geri Dön";
             this.lblCikisYap.Click += new System.EventHandler(this.lblCikisYap_Click);
@@ -305,20 +293,19 @@
             // picCikisYap
             // 
             this.picCikisYap.Image = global::OtoparkOtomasyonuEnSon.Properties.Resources.icon_logout;
-            this.picCikisYap.Location = new System.Drawing.Point(4, 4);
-            this.picCikisYap.Margin = new System.Windows.Forms.Padding(4);
+            this.picCikisYap.Location = new System.Drawing.Point(3, 3);
             this.picCikisYap.Name = "picCikisYap";
-            this.picCikisYap.Size = new System.Drawing.Size(67, 62);
+            this.picCikisYap.Size = new System.Drawing.Size(50, 50);
             this.picCikisYap.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picCikisYap.TabIndex = 0;
             this.picCikisYap.TabStop = false;
             // 
             // FormKayitlar
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(33)))), ((int)(((byte)(184)))));
-            this.ClientSize = new System.Drawing.Size(1067, 555);
+            this.ClientSize = new System.Drawing.Size(792, 469);
             this.Controls.Add(this.pnlCikisYap);
             this.Controls.Add(this.entranceDateTextBox);
             this.Controls.Add(this.telNoTextBox);
@@ -332,7 +319,7 @@
             this.Controls.Add(this.manualFormButton);
             this.Controls.Add(this.registryGridView);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.MinimumSize = new System.Drawing.Size(800, 500);
             this.Name = "FormKayitlar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormKayitlar";
