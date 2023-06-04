@@ -14,6 +14,8 @@ namespace OtoparkOtomasyonuEnSon
     {
 
         private const string ConnectionString = "Data Source=DESKTOP-UNTJT3U;Initial Catalog=otopark;Integrated Security=True";
+        
+        SqlConnection connection = new SqlConnection(ConnectionString);
 
         public FormGiris()
         {
@@ -136,9 +138,26 @@ namespace OtoparkOtomasyonuEnSon
                 var line = process.StandardOutput.ReadLine();
                 if (!string.IsNullOrEmpty(line))
                 {
+                    // Store the detected text
                     string detectedText = line;
-                    MessageBox.Show(detectedText);
+                    try
+                    {
+                        connection.Open();  //Server Bağlantısı Açıldı
+                        SqlCommand command = new SqlCommand("delete from arabalar where plaka = @selected", connection);  // Veritabanından veri silme komutu (Araç Çıkışı)
 
+                        command.Parameters.AddWithValue("@selected", detectedText);
+                        command.ExecuteNonQuery(); // sql sorgusu çalıştırıldı
+
+                        MessageBox.Show("Ücret " + 1234 + " TL" + "\nAraç Çıkışı Yapıldı!");
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Bağlantı Kurulamadı!" + ex.Message);
+                    }
+                    finally
+                    {
+                        connection.Close(); // Server Bağlantısı Kapandı
+                    }
                 }
             }
         }
