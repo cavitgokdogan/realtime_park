@@ -15,7 +15,12 @@ namespace OtoparkOtomasyonuEnSon
             // Bu kod satırı 'otoparkDataSet7.arabalar' tablosuna veri yükler.
             // Bunu gerektiği şekilde taşıyabilir, veya kaldırabilirsiniz.
             this.arabalarTableAdapter.Fill(this.otoparkDataSet4.arabalar);
+            Timer_Tick(this, new EventArgs());
+            timer.Start();
+            
         }
+
+        private void Timer_Tick(object sender, EventArgs e) => stripSaat.Text = $"{DateTime.Now:HH:mm}";
 
         private void button1_Click(object sender, EventArgs e)
         {
