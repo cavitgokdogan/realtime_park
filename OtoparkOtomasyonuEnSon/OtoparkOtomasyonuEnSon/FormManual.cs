@@ -16,7 +16,7 @@ namespace OtoparkOtomasyonuEnSon
 
         private void createRegistryButton_Click(object sender, EventArgs e)
         {
-            if (numberPlateTextBox.Text.Length == 0 && telNoTextBox.Text.Length == 0)
+            if (numberPlateTextBox.Text.Length == 0 || telNoTextBox.Text.Length == 0)
             {
                 MessageBox.Show("İlgili alanlar doldurulmadan kayıt yapılamaz.");
                 return;
