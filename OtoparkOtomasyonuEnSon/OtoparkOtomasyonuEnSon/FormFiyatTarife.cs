@@ -22,7 +22,7 @@ namespace OtoparkOtomasyonuEnSon
             InitializeComponent();
         }
 
-        public void AnaMenuButtonClick(object sender,EventArgs e)
+        public void goBackClick()
         {
             FormGiris formGiris = new FormGiris();
             this.Hide();
@@ -30,6 +30,11 @@ namespace OtoparkOtomasyonuEnSon
         }
 
         private void FormFiyatTarife_Load(object sender, EventArgs e)
+        {
+            yukle();
+        }
+
+        private void yukle()
         {
             try
             {
@@ -40,9 +45,9 @@ namespace OtoparkOtomasyonuEnSon
 
                 while (reader.Read())
                 {
-                    label1.Text = reader[0].ToString() + " TL";
-                    label2.Text = reader[1].ToString() + " TL";
-                    label3.Text = reader[2].ToString() + " TL";
+                    txtBoxBirSaat.Text = reader[0].ToString();
+                    txtBoxSaatlik.Text = reader[1].ToString();
+                    txtBoxGunluk.Text = reader[2].ToString();
                 }
             }
             catch (Exception ex)
@@ -54,12 +59,69 @@ namespace OtoparkOtomasyonuEnSon
                 if (connection != null)
                     connection.Close();
             }
-            
         }
 
-        private void label3_Click(object sender, EventArgs e)
+        private void kaydet()
         {
+            try
+            {
+                connection.Open();
+                string sqlQuery = "DELETE FROM dbo.fiyatlar";
+                SqlCommand command = new SqlCommand(sqlQuery, connection);
+                command.ExecuteNonQuery();
 
+                sqlQuery = "INSERT INTO dbo.fiyatlar VALUES (" + txtBoxBirSaat.Text + "," + txtBoxSaatlik.Text + "," + txtBoxGunluk.Text + ")";
+                command = new SqlCommand(sqlQuery, connection);
+                command.ExecuteNonQuery();
+
+                MessageBox.Show("Başarıyla Kaydedildi!");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Bağlantıda hata oluştu! " + ex.Message);
+            }
+            finally
+            {
+                if (connection != null)
+                    connection.Close();
+            }
+            yukle();
         }
+
+        private void pnlKaydet_Click(object sender, EventArgs e) => kaydet();
+
+        private void picKaydet_Click(object sender, EventArgs e) => kaydet();
+
+        private void lblKaydet_Click(object sender, EventArgs e) => kaydet();
+
+        private void pnlGeriDon_Click(object sender, EventArgs e) => goBackClick();
+
+        private void lblGeriDon_Click(object sender, EventArgs e) => goBackClick();
+
+        private void picGeriDon_Click(object sender, EventArgs e) => goBackClick();
+
+        private void lblGeriDon_MouseEnter(object sender, EventArgs e) => FormGiris.HoverOldu(pnlGeriDon);
+
+        private void lblGeriDon_MouseLeave(object sender, EventArgs e) => FormGiris.HoverBitti(pnlGeriDon);
+
+        private void pnlGeriDon_MouseEnter(object sender, EventArgs e) => FormGiris.HoverOldu(pnlGeriDon);
+
+        private void pnlGeriDon_MouseLeave(object sender, EventArgs e) => FormGiris.HoverBitti(pnlGeriDon);
+ 
+        private void picGeriDon_MouseEnter(object sender, EventArgs e) => FormGiris.HoverOldu(pnlGeriDon);
+
+        private void picGeriDon_MouseLeave(object sender, EventArgs e) => FormGiris.HoverBitti(pnlGeriDon);
+
+        private void lblKaydet_MouseEnter(object sender, EventArgs e) => FormGiris.HoverOldu(pnlKaydet);
+
+        private void lblKaydet_MouseLeave(object sender, EventArgs e) => FormGiris.HoverBitti(pnlKaydet);
+
+        private void pnlKaydet_MouseEnter(object sender, EventArgs e) => FormGiris.HoverOldu(pnlKaydet);
+
+        private void pnlKaydet_MouseLeave(object sender, EventArgs e) => FormGiris.HoverBitti(pnlKaydet);
+
+        private void picKaydet_MouseEnter(object sender, EventArgs e) => FormGiris.HoverOldu(pnlKaydet);
+
+        private void picKaydet_MouseLeave(object sender, EventArgs e) => FormGiris.HoverBitti(pnlKaydet);
     }
 }

@@ -101,8 +101,8 @@ namespace OtoparkOtomasyonuEnSon
             this.registryGridView.RowHeadersWidth = 51;
             this.registryGridView.Size = new System.Drawing.Size(1048, 627);
             this.registryGridView.TabIndex = 0;
+            this.registryGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.registryGridView_CellClick);
             this.registryGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.registryGridView_CellContentClick);
-            this.registryGridView.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.registryGridView_CellDoubleClick);
             // 
             // plakaDataGridViewTextBoxColumn
             // 
