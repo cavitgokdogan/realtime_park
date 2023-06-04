@@ -365,7 +365,7 @@ namespace OtoparkOtomasyonuEnSon
             this.pnlAracCikis.Location = new System.Drawing.Point(18, 555);
             this.pnlAracCikis.Margin = new System.Windows.Forms.Padding(5);
             this.pnlAracCikis.Name = "pnlAracCikis";
-            this.pnlAracCikis.Size = new System.Drawing.Size(315, 93);
+            this.pnlAracCikis.Size = new System.Drawing.Size(315, 87);
             this.pnlAracCikis.TabIndex = 15;
             this.pnlAracCikis.Click += new System.EventHandler(this.carExitButton_Click);
             this.pnlAracCikis.MouseEnter += new System.EventHandler(this.pnlAracCikis_MouseEnter);

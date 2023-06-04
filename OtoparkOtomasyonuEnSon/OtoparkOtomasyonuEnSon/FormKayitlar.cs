@@ -56,21 +56,24 @@ namespace OtoparkOtomasyonuEnSon
             try
             {
                 connection.Open();  //Server Bağlantısı Açıldı
+                SqlCommand command = new SqlCommand("delete from arabalar where plaka = @selected", connection);  // Veritabanından veri silme komutu (Araç Çıkışı)
+
+                command.Parameters.AddWithValue("@selected", numberPlateTextBox.Text);
+                command.ExecuteNonQuery(); // sql sorgusu çalıştırıldı
+                this.arabalarTableAdapter1.Fill(this.otoparkDataSet4.arabalar);
+
+                MessageBox.Show("Araç Çıkışı Yapıldı!");
             }
             catch (Exception)
             {
                 MessageBox.Show("Bağlantı Kurulamadı !");
             }  
+            finally
+            {
+                connection.Close(); // Server Bağlantısı Kapandı
+            }
 
-            SqlCommand command = new SqlCommand("delete from arabalar where plaka = @selected", connection);  // Veritabanından veri silme komutu (Araç Çıkışı)
 
-            command.Parameters.AddWithValue("@selected",numberPlateTextBox.Text);
-            command.ExecuteNonQuery(); // sql sorgusu çalıştırıldı
-            
-            connection.Close(); // Server Bağlantısı Kapandı
-            MessageBox.Show("Araç Çıkışı Yapıldı!");
-
-            //Araç Çıkışı İçin Yazılan Kodlar
         }
 
         private void registryGridView_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
