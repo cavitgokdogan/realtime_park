@@ -76,12 +76,12 @@
             this.telefonnoDataGridViewTextBoxColumn,
             this.girissaatiDataGridViewTextBoxColumn});
             this.registryGridView.DataSource = this.logArabalarBindingSource;
-            this.registryGridView.Location = new System.Drawing.Point(197, 37);
+            this.registryGridView.Location = new System.Drawing.Point(193, 14);
             this.registryGridView.Margin = new System.Windows.Forms.Padding(5);
             this.registryGridView.Name = "registryGridView";
             this.registryGridView.ReadOnly = true;
             this.registryGridView.RowHeadersWidth = 51;
-            this.registryGridView.Size = new System.Drawing.Size(1048, 514);
+            this.registryGridView.Size = new System.Drawing.Size(807, 484);
             this.registryGridView.TabIndex = 1;
             // 
             // plakaDataGridViewTextBoxColumn
@@ -155,7 +155,7 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.pnlCikisYap.Controls.Add(this.lblCikisYap);
             this.pnlCikisYap.Controls.Add(this.picCikisYap);
-            this.pnlCikisYap.Location = new System.Drawing.Point(560, 585);
+            this.pnlCikisYap.Location = new System.Drawing.Point(444, 508);
             this.pnlCikisYap.Margin = new System.Windows.Forms.Padding(5);
             this.pnlCikisYap.Name = "pnlCikisYap";
             this.pnlCikisYap.Size = new System.Drawing.Size(318, 71);
@@ -213,10 +213,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(33)))), ((int)(((byte)(184)))));
-            this.ClientSize = new System.Drawing.Size(1423, 683);
+            this.ClientSize = new System.Drawing.Size(1182, 653);
             this.Controls.Add(this.pnlCikisYap);
             this.Controls.Add(this.registryGridView);
-            this.MaximumSize = new System.Drawing.Size(1441, 730);
+            this.MinimumSize = new System.Drawing.Size(1200, 700);
             this.Name = "FormTumKayitlar";
             this.Text = "FormTumKayitlar";
             this.Load += new System.EventHandler(this.FormTumKayitlar_Load);
