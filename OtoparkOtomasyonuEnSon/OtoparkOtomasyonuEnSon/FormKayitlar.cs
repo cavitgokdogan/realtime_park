@@ -60,10 +60,18 @@ namespace OtoparkOtomasyonuEnSon
                 SqlCommand command = new SqlCommand("delete from arabalar where plaka = @selected", connection);  // Veritabanından veri silme komutu (Araç Çıkışı)
 
                 command.Parameters.AddWithValue("@selected", numberPlateTextBox.Text);
-                command.ExecuteNonQuery(); // sql sorgusu çalıştırıldı
+                
+                if (command.ExecuteNonQuery() > 0)   // sql sorgusu çalıştırıldı
+                {
+                    MessageBox.Show("Araç Çıkışı Yapıldı!");
+                } 
+                else
+                {
+                    MessageBox.Show("Şuanda bir araç seçmediniz. Çıkışını yapmak istediğiniz araca tıklayınız.");
+                }
+
                 this.arabalarTableAdapter1.Fill(this.otoparkDataSet4.arabalar);
 
-                MessageBox.Show("Araç Çıkışı Yapıldı!");
             }
             catch (Exception ex)
             {
