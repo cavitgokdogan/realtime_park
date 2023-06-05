@@ -30,10 +30,6 @@ namespace OtoparkOtomasyonuEnSon
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormKayitlar));
-            this.registryGridView = new System.Windows.Forms.DataGridView();
-            this.plakaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.telefonnoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.girissaatiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.arabalarBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
             this.otoparkDataSet4 = new OtoparkOtomasyonuEnSon.otoparkDataSet4();
             this.arabalarBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
@@ -61,7 +57,14 @@ namespace OtoparkOtomasyonuEnSon
             this.pnlAracCikis = new System.Windows.Forms.Panel();
             this.lblManuelDelete = new System.Windows.Forms.Label();
             this.picManuelDelete = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.registryGridView)).BeginInit();
+            this.statusStrip = new System.Windows.Forms.StatusStrip();
+            this.stripKullanici = new System.Windows.Forms.ToolStripStatusLabel();
+            this.girissaatiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.telefonnoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.plakaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.registryGridView = new System.Windows.Forms.DataGridView();
+            this.stripSaat = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             ((System.ComponentModel.ISupportInitialize)(this.arabalarBindingSource4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.otoparkDataSet4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arabalarBindingSource1)).BeginInit();
@@ -76,60 +79,9 @@ namespace OtoparkOtomasyonuEnSon
             ((System.ComponentModel.ISupportInitialize)(this.picManuelGiris)).BeginInit();
             this.pnlAracCikis.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picManuelDelete)).BeginInit();
+            this.statusStrip.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.registryGridView)).BeginInit();
             this.SuspendLayout();
-            // 
-            // registryGridView
-            // 
-            this.registryGridView.AllowUserToAddRows = false;
-            this.registryGridView.AllowUserToDeleteRows = false;
-            this.registryGridView.AllowUserToOrderColumns = true;
-            this.registryGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.registryGridView.AutoGenerateColumns = false;
-            this.registryGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(42)))), ((int)(((byte)(235)))));
-            this.registryGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.registryGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.plakaDataGridViewTextBoxColumn,
-            this.telefonnoDataGridViewTextBoxColumn,
-            this.girissaatiDataGridViewTextBoxColumn});
-            this.registryGridView.DataSource = this.arabalarBindingSource4;
-            this.registryGridView.Location = new System.Drawing.Point(343, 42);
-            this.registryGridView.Margin = new System.Windows.Forms.Padding(5);
-            this.registryGridView.Name = "registryGridView";
-            this.registryGridView.ReadOnly = true;
-            this.registryGridView.RowHeadersWidth = 51;
-            this.registryGridView.Size = new System.Drawing.Size(1048, 627);
-            this.registryGridView.TabIndex = 0;
-            this.registryGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.registryGridView_CellClick);
-            this.registryGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.registryGridView_CellContentClick);
-            // 
-            // plakaDataGridViewTextBoxColumn
-            // 
-            this.plakaDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.plakaDataGridViewTextBoxColumn.DataPropertyName = "plaka";
-            this.plakaDataGridViewTextBoxColumn.HeaderText = "plaka";
-            this.plakaDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.plakaDataGridViewTextBoxColumn.Name = "plakaDataGridViewTextBoxColumn";
-            this.plakaDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // telefonnoDataGridViewTextBoxColumn
-            // 
-            this.telefonnoDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.telefonnoDataGridViewTextBoxColumn.DataPropertyName = "telefon_no";
-            this.telefonnoDataGridViewTextBoxColumn.HeaderText = "telefon_no";
-            this.telefonnoDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.telefonnoDataGridViewTextBoxColumn.Name = "telefonnoDataGridViewTextBoxColumn";
-            this.telefonnoDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // girissaatiDataGridViewTextBoxColumn
-            // 
-            this.girissaatiDataGridViewTextBoxColumn.DataPropertyName = "giris_saati";
-            this.girissaatiDataGridViewTextBoxColumn.HeaderText = "giris_saati";
-            this.girissaatiDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.girissaatiDataGridViewTextBoxColumn.Name = "girissaatiDataGridViewTextBoxColumn";
-            this.girissaatiDataGridViewTextBoxColumn.ReadOnly = true;
-            this.girissaatiDataGridViewTextBoxColumn.Width = 125;
             // 
             // arabalarBindingSource4
             // 
@@ -400,12 +352,107 @@ namespace OtoparkOtomasyonuEnSon
             this.picManuelDelete.MouseEnter += new System.EventHandler(this.picManuelDelete_MouseEnter);
             this.picManuelDelete.MouseLeave += new System.EventHandler(this.picManuelDelete_MouseLeave);
             // 
+            // statusStrip
+            // 
+            this.statusStrip.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(28)))), ((int)(((byte)(158)))));
+            this.statusStrip.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.statusStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.stripKullanici,
+            this.toolStripStatusLabel1,
+            this.stripSaat});
+            this.statusStrip.Location = new System.Drawing.Point(0, 648);
+            this.statusStrip.Name = "statusStrip";
+            this.statusStrip.Padding = new System.Windows.Forms.Padding(1, 0, 19, 0);
+            this.statusStrip.Size = new System.Drawing.Size(1423, 35);
+            this.statusStrip.SizingGrip = false;
+            this.statusStrip.TabIndex = 16;
+            // 
+            // stripKullanici
+            // 
+            this.stripKullanici.ForeColor = System.Drawing.Color.White;
+            this.stripKullanici.Image = global::OtoparkOtomasyonuEnSon.Properties.Resources.icon_admin;
+            this.stripKullanici.Name = "stripKullanici";
+            this.stripKullanici.Size = new System.Drawing.Size(87, 29);
+            this.stripKullanici.Text = "Admin";
+            // 
+            // girissaatiDataGridViewTextBoxColumn
+            // 
+            this.girissaatiDataGridViewTextBoxColumn.DataPropertyName = "giris_saati";
+            this.girissaatiDataGridViewTextBoxColumn.HeaderText = "giris_saati";
+            this.girissaatiDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.girissaatiDataGridViewTextBoxColumn.Name = "girissaatiDataGridViewTextBoxColumn";
+            this.girissaatiDataGridViewTextBoxColumn.ReadOnly = true;
+            this.girissaatiDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // telefonnoDataGridViewTextBoxColumn
+            // 
+            this.telefonnoDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.telefonnoDataGridViewTextBoxColumn.DataPropertyName = "telefon_no";
+            this.telefonnoDataGridViewTextBoxColumn.HeaderText = "telefon_no";
+            this.telefonnoDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.telefonnoDataGridViewTextBoxColumn.Name = "telefonnoDataGridViewTextBoxColumn";
+            this.telefonnoDataGridViewTextBoxColumn.ReadOnly = true;
+            //
+            // plakaDataGridViewTextBoxColumn
+            // 
+            this.plakaDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.plakaDataGridViewTextBoxColumn.DataPropertyName = "plaka";
+            this.plakaDataGridViewTextBoxColumn.HeaderText = "plaka";
+            this.plakaDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.plakaDataGridViewTextBoxColumn.Name = "plakaDataGridViewTextBoxColumn";
+            this.plakaDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // registryGridView
+            // 
+            this.registryGridView.AllowUserToAddRows = false;
+            this.registryGridView.AllowUserToDeleteRows = false;
+            this.registryGridView.AllowUserToOrderColumns = true;
+            this.registryGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.registryGridView.AutoGenerateColumns = false;
+            this.registryGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(42)))), ((int)(((byte)(235)))));
+            this.registryGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.registryGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.plakaDataGridViewTextBoxColumn,
+            this.telefonnoDataGridViewTextBoxColumn,
+            this.girissaatiDataGridViewTextBoxColumn});
+            this.registryGridView.DataSource = this.arabalarBindingSource4;
+            this.registryGridView.Location = new System.Drawing.Point(343, 42);
+            this.registryGridView.Margin = new System.Windows.Forms.Padding(5);
+            this.registryGridView.Name = "registryGridView";
+            this.registryGridView.ReadOnly = true;
+            this.registryGridView.RowHeadersWidth = 51;
+            this.registryGridView.Size = new System.Drawing.Size(1048, 601);
+            this.registryGridView.TabIndex = 0;
+            this.registryGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.registryGridView_CellClick);
+            this.registryGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.registryGridView_CellContentClick);
+            // 
+            // stripSaat
+            // 
+            this.stripSaat.BackColor = System.Drawing.Color.Transparent;
+            this.stripSaat.BorderSides = System.Windows.Forms.ToolStripStatusLabelBorderSides.Bottom;
+            this.stripSaat.BorderStyle = System.Windows.Forms.Border3DStyle.SunkenOuter;
+            this.stripSaat.ForeColor = System.Drawing.Color.White;
+            this.stripSaat.Image = global::OtoparkOtomasyonuEnSon.Properties.Resources.icon_clock;
+            this.stripSaat.Name = "stripSaat";
+            this.stripSaat.Size = new System.Drawing.Size(125, 29);
+            this.stripSaat.Text = "Saat: 12.00";
+            // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(1152, 29);
+            this.toolStripStatusLabel1.Spring = true;
+            // 
             // FormKayitlar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(33)))), ((int)(((byte)(184)))));
             this.ClientSize = new System.Drawing.Size(1423, 683);
+            this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.pnlAracCikis);
             this.Controls.Add(this.pnlManuelGiris);
             this.Controls.Add(this.pnlCikisYap);
@@ -424,7 +471,6 @@ namespace OtoparkOtomasyonuEnSon
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormKayitlar";
             this.Load += new System.EventHandler(this.loadRegistryForm);
-            ((System.ComponentModel.ISupportInitialize)(this.registryGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.arabalarBindingSource4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.otoparkDataSet4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.arabalarBindingSource1)).EndInit();
@@ -442,14 +488,15 @@ namespace OtoparkOtomasyonuEnSon
             this.pnlAracCikis.ResumeLayout(false);
             this.pnlAracCikis.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picManuelDelete)).EndInit();
+            this.statusStrip.ResumeLayout(false);
+            this.statusStrip.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.registryGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView registryGridView;
         private otoparkDataSet otoparkDataSet;
         private System.Windows.Forms.BindingSource arabalarBindingSource;
         private otoparkDataSetTableAdapters.arabalarTableAdapter arabalarTableAdapter;
@@ -470,9 +517,6 @@ namespace OtoparkOtomasyonuEnSon
         private System.Windows.Forms.Panel pnlCikisYap;
         private System.Windows.Forms.Label lblCikisYap;
         private System.Windows.Forms.PictureBox picCikisYap;
-        private System.Windows.Forms.DataGridViewTextBoxColumn plakaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn telefonnoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn girissaatiDataGridViewTextBoxColumn;
         private System.Windows.Forms.TextBox entranceDateTextBox;
         private System.Windows.Forms.Panel pnlManuelGiris;
         private System.Windows.Forms.Label lblManuelGiris;
@@ -480,5 +524,13 @@ namespace OtoparkOtomasyonuEnSon
         private System.Windows.Forms.Panel pnlAracCikis;
         private System.Windows.Forms.Label lblManuelDelete;
         private System.Windows.Forms.PictureBox picManuelDelete;
+        private System.Windows.Forms.StatusStrip statusStrip;
+        private System.Windows.Forms.ToolStripStatusLabel stripKullanici;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+        private System.Windows.Forms.ToolStripStatusLabel stripSaat;
+        private System.Windows.Forms.DataGridViewTextBoxColumn girissaatiDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn telefonnoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn plakaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridView registryGridView;
     }
 }
