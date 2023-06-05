@@ -165,26 +165,17 @@ namespace OtoparkOtomasyonuEnSon
 
         }
 
-        private void panelTumKayitlar_MouseEnter(object sender, EventArgs e) => FormGiris.HoverOldu(pnlManuelDelete);
+        private void panelTumKayitlar_MouseEnter(object sender, EventArgs e) => FormGiris.HoverOldu(pnlTumKayitlar);
 
-        private void panelTumKayitlar_MouseLeave(object sender, EventArgs e) => FormGiris.HoverBitti(pnlManuelDelete);
+        private void panelTumKayitlar_MouseLeave(object sender, EventArgs e) => FormGiris.HoverBitti(pnlTumKayitlar);
 
-        private void picTumKayitlar_MouseEnter(object sender, EventArgs e) => FormGiris.HoverOldu(pnlManuelDelete);
+        private void picTumKayitlar_MouseEnter(object sender, EventArgs e) => FormGiris.HoverOldu(pnlTumKayitlar);
 
-        private void picTumKayitlar_MouseLeave(object sender, EventArgs e) => FormGiris.HoverBitti(pnlManuelDelete);
+        private void picTumKayitlar_MouseLeave(object sender, EventArgs e) => FormGiris.HoverBitti(pnlTumKayitlar);
 
-        private void lblTumKayitlar_MouseEnter(object sender, EventArgs e) => FormGiris.HoverOldu(pnlManuelDelete);
+        private void lblTumKayitlar_MouseEnter(object sender, EventArgs e) => FormGiris.HoverOldu(pnlTumKayitlar);
 
-        private void lblTumKayitlar_MouseLeave(object sender, EventArgs e) => FormGiris.HoverBitti(pnlManuelDelete);
+        private void lblTumKayitlar_MouseLeave(object sender, EventArgs e) => FormGiris.HoverBitti(pnlTumKayitlar);
 
-        private void telNoLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
