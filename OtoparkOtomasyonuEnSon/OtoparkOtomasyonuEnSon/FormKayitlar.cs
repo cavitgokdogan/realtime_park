@@ -164,5 +164,17 @@ namespace OtoparkOtomasyonuEnSon
         {
 
         }
+
+        private void panelTumKayitlar_MouseEnter(object sender, EventArgs e) => FormGiris.HoverOldu(pnlCikisYap);
+
+        private void panelTumKayitlar_MouseLeave(object sender, EventArgs e) => FormGiris.HoverBitti(pnlCikisYap);
+
+        private void picTumKayitlar_MouseEnter(object sender, EventArgs e) => FormGiris.HoverOldu(pnlCikisYap);
+
+        private void picTumKayitlar_MouseLeave(object sender, EventArgs e) => FormGiris.HoverBitti(pnlCikisYap);
+
+        private void lblTumKayitlar_MouseEnter(object sender, EventArgs e) => FormGiris.HoverOldu(pnlCikisYap);
+
+        private void lblTumKayitlar_MouseLeave(object sender, EventArgs e) => FormGiris.HoverBitti(pnlCikisYap);
     }
 }
