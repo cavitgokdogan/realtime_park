@@ -31,6 +31,7 @@ namespace OtoparkOtomasyonuEnSon
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormFiyatTarife));
             this.lblBirSaat = new System.Windows.Forms.Label();
             this.lblSaatlik = new System.Windows.Forms.Label();
@@ -47,10 +48,16 @@ namespace OtoparkOtomasyonuEnSon
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.statusStrip = new System.Windows.Forms.StatusStrip();
+            this.stripKullanici = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.stripSaat = new System.Windows.Forms.ToolStripStatusLabel();
+            this.timer = new System.Windows.Forms.Timer(this.components);
             this.pnlGeriDon.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picGeriDon)).BeginInit();
             this.pnlKaydet.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picKaydet)).BeginInit();
+            this.statusStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblBirSaat
@@ -60,7 +67,7 @@ namespace OtoparkOtomasyonuEnSon
             this.lblBirSaat.BackColor = System.Drawing.Color.Transparent;
             this.lblBirSaat.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.lblBirSaat.ForeColor = System.Drawing.Color.White;
-            this.lblBirSaat.Location = new System.Drawing.Point(96, 132);
+            this.lblBirSaat.Location = new System.Drawing.Point(78, 132);
             this.lblBirSaat.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblBirSaat.Name = "lblBirSaat";
             this.lblBirSaat.Size = new System.Drawing.Size(191, 31);
@@ -88,7 +95,7 @@ namespace OtoparkOtomasyonuEnSon
             this.lblGunluk.BackColor = System.Drawing.Color.Transparent;
             this.lblGunluk.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.lblGunluk.ForeColor = System.Drawing.Color.White;
-            this.lblGunluk.Location = new System.Drawing.Point(173, 237);
+            this.lblGunluk.Location = new System.Drawing.Point(169, 237);
             this.lblGunluk.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblGunluk.Name = "lblGunluk";
             this.lblGunluk.Size = new System.Drawing.Size(100, 31);
@@ -100,7 +107,7 @@ namespace OtoparkOtomasyonuEnSon
             this.txtBoxBirSaat.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtBoxBirSaat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(42)))), ((int)(((byte)(235)))));
             this.txtBoxBirSaat.ForeColor = System.Drawing.Color.White;
-            this.txtBoxBirSaat.Location = new System.Drawing.Point(285, 138);
+            this.txtBoxBirSaat.Location = new System.Drawing.Point(285, 137);
             this.txtBoxBirSaat.Margin = new System.Windows.Forms.Padding(2);
             this.txtBoxBirSaat.Name = "txtBoxBirSaat";
             this.txtBoxBirSaat.Size = new System.Drawing.Size(90, 23);
@@ -122,7 +129,7 @@ namespace OtoparkOtomasyonuEnSon
             this.txtBoxGunluk.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtBoxGunluk.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(42)))), ((int)(((byte)(235)))));
             this.txtBoxGunluk.ForeColor = System.Drawing.Color.White;
-            this.txtBoxGunluk.Location = new System.Drawing.Point(285, 243);
+            this.txtBoxGunluk.Location = new System.Drawing.Point(285, 242);
             this.txtBoxGunluk.Margin = new System.Windows.Forms.Padding(2);
             this.txtBoxGunluk.Name = "txtBoxGunluk";
             this.txtBoxGunluk.Size = new System.Drawing.Size(90, 23);
@@ -133,7 +140,7 @@ namespace OtoparkOtomasyonuEnSon
             this.pnlGeriDon.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.pnlGeriDon.Controls.Add(this.lblGeriDon);
             this.pnlGeriDon.Controls.Add(this.picGeriDon);
-            this.pnlGeriDon.Location = new System.Drawing.Point(27, 379);
+            this.pnlGeriDon.Location = new System.Drawing.Point(28, 354);
             this.pnlGeriDon.Name = "pnlGeriDon";
             this.pnlGeriDon.Size = new System.Drawing.Size(145, 56);
             this.pnlGeriDon.TabIndex = 15;
@@ -174,7 +181,7 @@ namespace OtoparkOtomasyonuEnSon
             this.pnlKaydet.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.pnlKaydet.Controls.Add(this.lblKaydet);
             this.pnlKaydet.Controls.Add(this.picKaydet);
-            this.pnlKaydet.Location = new System.Drawing.Point(423, 379);
+            this.pnlKaydet.Location = new System.Drawing.Point(424, 354);
             this.pnlKaydet.Name = "pnlKaydet";
             this.pnlKaydet.Size = new System.Drawing.Size(133, 56);
             this.pnlKaydet.TabIndex = 16;
@@ -217,7 +224,7 @@ namespace OtoparkOtomasyonuEnSon
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(388, 132);
+            this.label1.Location = new System.Drawing.Point(388, 133);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(46, 31);
@@ -231,7 +238,7 @@ namespace OtoparkOtomasyonuEnSon
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(388, 184);
+            this.label2.Location = new System.Drawing.Point(388, 187);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(46, 31);
@@ -252,12 +259,59 @@ namespace OtoparkOtomasyonuEnSon
             this.label3.TabIndex = 1;
             this.label3.Text = "TL";
             // 
+            // statusStrip
+            // 
+            this.statusStrip.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(28)))), ((int)(((byte)(158)))));
+            this.statusStrip.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.statusStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.stripKullanici,
+            this.toolStripStatusLabel1,
+            this.stripSaat});
+            this.statusStrip.Location = new System.Drawing.Point(0, 427);
+            this.statusStrip.Name = "statusStrip";
+            this.statusStrip.Padding = new System.Windows.Forms.Padding(1, 0, 19, 0);
+            this.statusStrip.Size = new System.Drawing.Size(594, 35);
+            this.statusStrip.SizingGrip = false;
+            this.statusStrip.TabIndex = 17;
+            // 
+            // stripKullanici
+            // 
+            this.stripKullanici.ForeColor = System.Drawing.Color.White;
+            this.stripKullanici.Image = global::OtoparkOtomasyonuEnSon.Properties.Resources.icon_admin;
+            this.stripKullanici.Name = "stripKullanici";
+            this.stripKullanici.Size = new System.Drawing.Size(87, 29);
+            this.stripKullanici.Text = "Admin";
+            // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(362, 29);
+            this.toolStripStatusLabel1.Spring = true;
+            // 
+            // stripSaat
+            // 
+            this.stripSaat.BackColor = System.Drawing.Color.Transparent;
+            this.stripSaat.BorderSides = System.Windows.Forms.ToolStripStatusLabelBorderSides.Bottom;
+            this.stripSaat.BorderStyle = System.Windows.Forms.Border3DStyle.SunkenOuter;
+            this.stripSaat.ForeColor = System.Drawing.Color.White;
+            this.stripSaat.Image = global::OtoparkOtomasyonuEnSon.Properties.Resources.icon_clock;
+            this.stripSaat.Name = "stripSaat";
+            this.stripSaat.Size = new System.Drawing.Size(125, 29);
+            this.stripSaat.Text = "Saat: 12.00";
+            // 
+            // timer
+            // 
+            this.timer.Interval = 60000;
+            this.timer.Tick += new System.EventHandler(this.Timer_Tick);
+            // 
             // FormFiyatTarife
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(33)))), ((int)(((byte)(184)))));
             this.ClientSize = new System.Drawing.Size(594, 462);
+            this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.pnlKaydet);
             this.Controls.Add(this.pnlGeriDon);
             this.Controls.Add(this.txtBoxGunluk);
@@ -282,6 +336,8 @@ namespace OtoparkOtomasyonuEnSon
             this.pnlKaydet.ResumeLayout(false);
             this.pnlKaydet.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picKaydet)).EndInit();
+            this.statusStrip.ResumeLayout(false);
+            this.statusStrip.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -303,5 +359,10 @@ namespace OtoparkOtomasyonuEnSon
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.StatusStrip statusStrip;
+        private System.Windows.Forms.ToolStripStatusLabel stripKullanici;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+        private System.Windows.Forms.ToolStripStatusLabel stripSaat;
+        private System.Windows.Forms.Timer timer;
     }
 }

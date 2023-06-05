@@ -13,6 +13,8 @@ namespace OtoparkOtomasyonuEnSon
         {
             InitializeComponent();
             this.Text = "OtoOto";
+            timer_Tick(this, new EventArgs());
+            timer.Start();
         }
 
         private void createRegistryButton_Click(object sender, EventArgs e)
@@ -127,5 +129,7 @@ namespace OtoparkOtomasyonuEnSon
         {
 
         }
+
+        private void timer_Tick(object sender, EventArgs e) => stripSaat.Text = $"{DateTime.Now:HH:mm}";
     }
 }

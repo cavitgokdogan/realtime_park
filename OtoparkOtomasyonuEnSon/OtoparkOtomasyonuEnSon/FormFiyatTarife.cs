@@ -33,6 +33,8 @@ namespace OtoparkOtomasyonuEnSon
         private void FormFiyatTarife_Load(object sender, EventArgs e)
         {
             yukle();
+            Timer_Tick(this, new EventArgs());
+            timer.Start();
         }
 
         private void yukle()
@@ -124,5 +126,7 @@ namespace OtoparkOtomasyonuEnSon
         private void picKaydet_MouseEnter(object sender, EventArgs e) => FormGiris.HoverOldu(pnlKaydet);
 
         private void picKaydet_MouseLeave(object sender, EventArgs e) => FormGiris.HoverBitti(pnlKaydet);
+
+        private void Timer_Tick(object sender, EventArgs e) => stripSaat.Text = $"{DateTime.Now:HH:mm}";
     }
 }
