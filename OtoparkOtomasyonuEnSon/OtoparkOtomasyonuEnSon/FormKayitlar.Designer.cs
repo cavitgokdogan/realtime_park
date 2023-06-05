@@ -52,7 +52,7 @@ namespace OtoparkOtomasyonuEnSon
             this.pnlManuelGiris = new System.Windows.Forms.Panel();
             this.lblManuelGiris = new System.Windows.Forms.Label();
             this.picManuelGiris = new System.Windows.Forms.PictureBox();
-            this.pnlTumKayitlar = new System.Windows.Forms.Panel();
+            this.pnlManuelDelete = new System.Windows.Forms.Panel();
             this.lblManuelDelete = new System.Windows.Forms.Label();
             this.picManuelDelete = new System.Windows.Forms.PictureBox();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
@@ -82,7 +82,7 @@ namespace OtoparkOtomasyonuEnSon
             ((System.ComponentModel.ISupportInitialize)(this.picCikisYap)).BeginInit();
             this.pnlManuelGiris.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picManuelGiris)).BeginInit();
-            this.pnlTumKayitlar.SuspendLayout();
+            this.pnlManuelDelete.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picManuelDelete)).BeginInit();
             this.statusStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.registryGridView)).BeginInit();
@@ -298,20 +298,20 @@ namespace OtoparkOtomasyonuEnSon
             this.picManuelGiris.MouseEnter += new System.EventHandler(this.manualRegistry_pictureBox1_MouseEnter);
             this.picManuelGiris.MouseLeave += new System.EventHandler(this.manualRegistry_pictureBox1_MouseLeave);
             // 
-            // pnlTumKayitlar
+            // pnlManuelDelete
             // 
-            this.pnlTumKayitlar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.pnlManuelDelete.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.pnlTumKayitlar.Controls.Add(this.lblManuelDelete);
-            this.pnlTumKayitlar.Controls.Add(this.picManuelDelete);
-            this.pnlTumKayitlar.Location = new System.Drawing.Point(14, 468);
-            this.pnlTumKayitlar.Margin = new System.Windows.Forms.Padding(5);
-            this.pnlTumKayitlar.Name = "pnlTumKayitlar";
-            this.pnlTumKayitlar.Size = new System.Drawing.Size(318, 87);
-            this.pnlTumKayitlar.TabIndex = 15;
-            this.pnlTumKayitlar.Click += new System.EventHandler(this.carExitButton_Click);
-            this.pnlTumKayitlar.MouseEnter += new System.EventHandler(this.pnlAracCikis_MouseEnter);
-            this.pnlTumKayitlar.MouseLeave += new System.EventHandler(this.pnlAracCikis_MouseLeave);
+            this.pnlManuelDelete.Controls.Add(this.lblManuelDelete);
+            this.pnlManuelDelete.Controls.Add(this.picManuelDelete);
+            this.pnlManuelDelete.Location = new System.Drawing.Point(14, 468);
+            this.pnlManuelDelete.Margin = new System.Windows.Forms.Padding(5);
+            this.pnlManuelDelete.Name = "pnlManuelDelete";
+            this.pnlManuelDelete.Size = new System.Drawing.Size(318, 87);
+            this.pnlManuelDelete.TabIndex = 15;
+            this.pnlManuelDelete.Click += new System.EventHandler(this.carExitButton_Click);
+            this.pnlManuelDelete.MouseEnter += new System.EventHandler(this.pnlAracCikis_MouseEnter);
+            this.pnlManuelDelete.MouseLeave += new System.EventHandler(this.pnlAracCikis_MouseLeave);
             // 
             // lblManuelDelete
             // 
@@ -532,7 +532,7 @@ namespace OtoparkOtomasyonuEnSon
             this.ClientSize = new System.Drawing.Size(1423, 683);
             this.Controls.Add(this.panelTumKayitlar);
             this.Controls.Add(this.statusStrip);
-            this.Controls.Add(this.pnlTumKayitlar);
+            this.Controls.Add(this.pnlManuelDelete);
             this.Controls.Add(this.pnlManuelGiris);
             this.Controls.Add(this.pnlCikisYap);
             this.Controls.Add(this.entranceDateTextBox);
@@ -565,8 +565,8 @@ namespace OtoparkOtomasyonuEnSon
             this.pnlManuelGiris.ResumeLayout(false);
             this.pnlManuelGiris.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picManuelGiris)).EndInit();
-            this.pnlTumKayitlar.ResumeLayout(false);
-            this.pnlTumKayitlar.PerformLayout();
+            this.pnlManuelDelete.ResumeLayout(false);
+            this.pnlManuelDelete.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picManuelDelete)).EndInit();
             this.statusStrip.ResumeLayout(false);
             this.statusStrip.PerformLayout();
@@ -602,7 +602,7 @@ namespace OtoparkOtomasyonuEnSon
         private System.Windows.Forms.Panel pnlManuelGiris;
         private System.Windows.Forms.Label lblManuelGiris;
         private System.Windows.Forms.PictureBox picManuelGiris;
-        private System.Windows.Forms.Panel pnlTumKayitlar;
+        private System.Windows.Forms.Panel pnlManuelDelete;
         private System.Windows.Forms.Label lblManuelDelete;
         private System.Windows.Forms.PictureBox picManuelDelete;
         private System.Windows.Forms.StatusStrip statusStrip;
