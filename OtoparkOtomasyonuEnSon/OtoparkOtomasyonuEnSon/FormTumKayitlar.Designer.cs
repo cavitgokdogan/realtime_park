@@ -82,13 +82,14 @@
             this.telefonnoDataGridViewTextBoxColumn,
             this.girissaatiDataGridViewTextBoxColumn});
             this.registryGridView.DataSource = this.logArabalarBindingSource;
-            this.registryGridView.Location = new System.Drawing.Point(193, 14);
+            this.registryGridView.Location = new System.Drawing.Point(201, 14);
             this.registryGridView.Margin = new System.Windows.Forms.Padding(5);
             this.registryGridView.Name = "registryGridView";
             this.registryGridView.ReadOnly = true;
             this.registryGridView.RowHeadersWidth = 51;
             this.registryGridView.Size = new System.Drawing.Size(807, 484);
             this.registryGridView.TabIndex = 1;
+            this.registryGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.registryGridView_CellContentClick);
             // 
             // plakaDataGridViewTextBoxColumn
             // 
@@ -171,7 +172,7 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.pnlCikisYap.Controls.Add(this.lblCikisYap);
             this.pnlCikisYap.Controls.Add(this.picCikisYap);
-            this.pnlCikisYap.Location = new System.Drawing.Point(444, 521);
+            this.pnlCikisYap.Location = new System.Drawing.Point(468, 518);
             this.pnlCikisYap.Margin = new System.Windows.Forms.Padding(5);
             this.pnlCikisYap.Name = "pnlCikisYap";
             this.pnlCikisYap.Size = new System.Drawing.Size(318, 71);

@@ -57,5 +57,9 @@ namespace OtoparkOtomasyonuEnSon
 
         private void Timer_Tick(object sender, EventArgs e) => stripSaat.Text = $"{DateTime.Now:HH:mm}";
 
+        private void registryGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
