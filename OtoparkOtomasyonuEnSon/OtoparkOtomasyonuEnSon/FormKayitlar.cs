@@ -127,17 +127,17 @@ namespace OtoparkOtomasyonuEnSon
 
         private void picCikisYap_MouseLeave(object sender, EventArgs e) => FormGiris.HoverBitti(pnlCikisYap);
 
-        private void pnlAracCikis_MouseEnter(object sender, EventArgs e) => FormGiris.HoverOldu(pnlAracCikis);
+        private void pnlAracCikis_MouseEnter(object sender, EventArgs e) => FormGiris.HoverOldu(pnlTumKayitlar);
 
-        private void pnlAracCikis_MouseLeave(object sender, EventArgs e) => FormGiris.HoverBitti(pnlAracCikis);
+        private void pnlAracCikis_MouseLeave(object sender, EventArgs e) => FormGiris.HoverBitti(pnlTumKayitlar);
 
-        private void lblManuelDelete_MouseEnter(object sender, EventArgs e) => FormGiris.HoverOldu(pnlAracCikis);
+        private void lblManuelDelete_MouseEnter(object sender, EventArgs e) => FormGiris.HoverOldu(pnlTumKayitlar);
 
-        private void lblManuelDelete_MouseLeave(object sender, EventArgs e) => FormGiris.HoverBitti(pnlAracCikis);
+        private void lblManuelDelete_MouseLeave(object sender, EventArgs e) => FormGiris.HoverBitti(pnlTumKayitlar);
 
-        private void picManuelDelete_MouseEnter(object sender, EventArgs e) => FormGiris.HoverOldu(pnlAracCikis);
+        private void picManuelDelete_MouseEnter(object sender, EventArgs e) => FormGiris.HoverOldu(pnlTumKayitlar);
 
-        private void picManuelDelete_MouseLeave(object sender, EventArgs e) => FormGiris.HoverBitti(pnlAracCikis);
+        private void picManuelDelete_MouseLeave(object sender, EventArgs e) => FormGiris.HoverBitti(pnlTumKayitlar);
 
         private void registryGridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -145,6 +145,24 @@ namespace OtoparkOtomasyonuEnSon
             numberPlateTextBox.Text = registryGridView.Rows[secilen].Cells[0].Value.ToString();
             telNoTextBox.Text = registryGridView.Rows[secilen].Cells[1].Value.ToString();
             entranceDateTextBox.Text = registryGridView.Rows[secilen].Cells[2].Value.ToString();
+        }
+
+        private void tumKayitlar_Click(object sender, EventArgs e)
+        {
+
+            FormTumKayitlar formTumKayitlar = new FormTumKayitlar();
+            this.Hide();
+            formTumKayitlar.ShowDialog();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pnlCikisYap_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

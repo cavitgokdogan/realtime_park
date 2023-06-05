@@ -53,7 +53,7 @@ namespace OtoparkOtomasyonuEnSon
             this.pnlManuelGiris = new System.Windows.Forms.Panel();
             this.lblManuelGiris = new System.Windows.Forms.Label();
             this.picManuelGiris = new System.Windows.Forms.PictureBox();
-            this.pnlAracCikis = new System.Windows.Forms.Panel();
+            this.pnlTumKayitlar = new System.Windows.Forms.Panel();
             this.lblManuelDelete = new System.Windows.Forms.Label();
             this.picManuelDelete = new System.Windows.Forms.PictureBox();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
@@ -65,6 +65,9 @@ namespace OtoparkOtomasyonuEnSon
             this.plakaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.registryGridView = new System.Windows.Forms.DataGridView();
             this.timer = new System.Windows.Forms.Timer(this.components);
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.arabalarBindingSource4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.otoparkDataSet4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arabalarBindingSource1)).BeginInit();
@@ -77,10 +80,12 @@ namespace OtoparkOtomasyonuEnSon
             ((System.ComponentModel.ISupportInitialize)(this.picCikisYap)).BeginInit();
             this.pnlManuelGiris.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picManuelGiris)).BeginInit();
-            this.pnlAracCikis.SuspendLayout();
+            this.pnlTumKayitlar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picManuelDelete)).BeginInit();
             this.statusStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.registryGridView)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // arabalarBindingSource4
@@ -206,12 +211,13 @@ namespace OtoparkOtomasyonuEnSon
             | System.Windows.Forms.AnchorStyles.Left)));
             this.pnlCikisYap.Controls.Add(this.lblCikisYap);
             this.pnlCikisYap.Controls.Add(this.picCikisYap);
-            this.pnlCikisYap.Location = new System.Drawing.Point(15, 344);
+            this.pnlCikisYap.Location = new System.Drawing.Point(15, 298);
             this.pnlCikisYap.Margin = new System.Windows.Forms.Padding(5);
             this.pnlCikisYap.Name = "pnlCikisYap";
             this.pnlCikisYap.Size = new System.Drawing.Size(318, 71);
             this.pnlCikisYap.TabIndex = 13;
             this.pnlCikisYap.Click += new System.EventHandler(this.goBackButton_Click);
+            this.pnlCikisYap.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlCikisYap_Paint);
             this.pnlCikisYap.MouseEnter += new System.EventHandler(this.pnlCikisYap_MouseEnter);
             this.pnlCikisYap.MouseLeave += new System.EventHandler(this.pnlCikisYap_MouseLeave);
             // 
@@ -261,7 +267,7 @@ namespace OtoparkOtomasyonuEnSon
             | System.Windows.Forms.AnchorStyles.Left)));
             this.pnlManuelGiris.Controls.Add(this.lblManuelGiris);
             this.pnlManuelGiris.Controls.Add(this.picManuelGiris);
-            this.pnlManuelGiris.Location = new System.Drawing.Point(18, 443);
+            this.pnlManuelGiris.Location = new System.Drawing.Point(14, 373);
             this.pnlManuelGiris.Margin = new System.Windows.Forms.Padding(5);
             this.pnlManuelGiris.Name = "pnlManuelGiris";
             this.pnlManuelGiris.Size = new System.Drawing.Size(315, 85);
@@ -299,20 +305,20 @@ namespace OtoparkOtomasyonuEnSon
             this.picManuelGiris.MouseEnter += new System.EventHandler(this.manualRegistry_pictureBox1_MouseEnter);
             this.picManuelGiris.MouseLeave += new System.EventHandler(this.manualRegistry_pictureBox1_MouseLeave);
             // 
-            // pnlAracCikis
+            // pnlTumKayitlar
             // 
-            this.pnlAracCikis.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.pnlTumKayitlar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.pnlAracCikis.Controls.Add(this.lblManuelDelete);
-            this.pnlAracCikis.Controls.Add(this.picManuelDelete);
-            this.pnlAracCikis.Location = new System.Drawing.Point(15, 556);
-            this.pnlAracCikis.Margin = new System.Windows.Forms.Padding(5);
-            this.pnlAracCikis.Name = "pnlAracCikis";
-            this.pnlAracCikis.Size = new System.Drawing.Size(318, 87);
-            this.pnlAracCikis.TabIndex = 15;
-            this.pnlAracCikis.Click += new System.EventHandler(this.carExitButton_Click);
-            this.pnlAracCikis.MouseEnter += new System.EventHandler(this.pnlAracCikis_MouseEnter);
-            this.pnlAracCikis.MouseLeave += new System.EventHandler(this.pnlAracCikis_MouseLeave);
+            this.pnlTumKayitlar.Controls.Add(this.lblManuelDelete);
+            this.pnlTumKayitlar.Controls.Add(this.picManuelDelete);
+            this.pnlTumKayitlar.Location = new System.Drawing.Point(14, 468);
+            this.pnlTumKayitlar.Margin = new System.Windows.Forms.Padding(5);
+            this.pnlTumKayitlar.Name = "pnlTumKayitlar";
+            this.pnlTumKayitlar.Size = new System.Drawing.Size(318, 87);
+            this.pnlTumKayitlar.TabIndex = 15;
+            this.pnlTumKayitlar.Click += new System.EventHandler(this.carExitButton_Click);
+            this.pnlTumKayitlar.MouseEnter += new System.EventHandler(this.pnlAracCikis_MouseEnter);
+            this.pnlTumKayitlar.MouseLeave += new System.EventHandler(this.pnlAracCikis_MouseLeave);
             // 
             // lblManuelDelete
             // 
@@ -442,14 +448,54 @@ namespace OtoparkOtomasyonuEnSon
             this.timer.Interval = 60000;
             this.timer.Tick += new System.EventHandler(this.Timer_Tick);
             // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Location = new System.Drawing.Point(15, 559);
+            this.panel1.Margin = new System.Windows.Forms.Padding(5);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(318, 87);
+            this.panel1.TabIndex = 16;
+            this.panel1.Click += new System.EventHandler(this.tumKayitlar_Click);
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(105, 27);
+            this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(113, 24);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Tüm Kayitlar";
+            this.label1.Click += new System.EventHandler(this.tumKayitlar_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::OtoparkOtomasyonuEnSon.Properties.Resources.icon_ledger;
+            this.pictureBox1.Location = new System.Drawing.Point(5, 5);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(5);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(89, 76);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.tumKayitlar_Click);
+            // 
             // FormKayitlar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(33)))), ((int)(((byte)(184)))));
             this.ClientSize = new System.Drawing.Size(1423, 683);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.statusStrip);
-            this.Controls.Add(this.pnlAracCikis);
+            this.Controls.Add(this.pnlTumKayitlar);
             this.Controls.Add(this.pnlManuelGiris);
             this.Controls.Add(this.pnlCikisYap);
             this.Controls.Add(this.entranceDateTextBox);
@@ -480,12 +526,15 @@ namespace OtoparkOtomasyonuEnSon
             this.pnlManuelGiris.ResumeLayout(false);
             this.pnlManuelGiris.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picManuelGiris)).EndInit();
-            this.pnlAracCikis.ResumeLayout(false);
-            this.pnlAracCikis.PerformLayout();
+            this.pnlTumKayitlar.ResumeLayout(false);
+            this.pnlTumKayitlar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picManuelDelete)).EndInit();
             this.statusStrip.ResumeLayout(false);
             this.statusStrip.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.registryGridView)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -515,7 +564,7 @@ namespace OtoparkOtomasyonuEnSon
         private System.Windows.Forms.Panel pnlManuelGiris;
         private System.Windows.Forms.Label lblManuelGiris;
         private System.Windows.Forms.PictureBox picManuelGiris;
-        private System.Windows.Forms.Panel pnlAracCikis;
+        private System.Windows.Forms.Panel pnlTumKayitlar;
         private System.Windows.Forms.Label lblManuelDelete;
         private System.Windows.Forms.PictureBox picManuelDelete;
         private System.Windows.Forms.StatusStrip statusStrip;
@@ -527,5 +576,8 @@ namespace OtoparkOtomasyonuEnSon
         private System.Windows.Forms.DataGridViewTextBoxColumn plakaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridView registryGridView;
         private System.Windows.Forms.Timer timer;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
