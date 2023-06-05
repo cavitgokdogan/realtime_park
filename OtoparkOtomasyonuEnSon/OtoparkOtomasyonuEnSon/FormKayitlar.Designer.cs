@@ -65,6 +65,7 @@ namespace OtoparkOtomasyonuEnSon
             this.registryGridView = new System.Windows.Forms.DataGridView();
             this.stripSaat = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.timer = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.arabalarBindingSource4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.otoparkDataSet4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arabalarBindingSource1)).BeginInit();
@@ -394,6 +395,11 @@ namespace OtoparkOtomasyonuEnSon
             this.telefonnoDataGridViewTextBoxColumn.Name = "telefonnoDataGridViewTextBoxColumn";
             this.telefonnoDataGridViewTextBoxColumn.ReadOnly = true;
             //
+            // timer
+            //
+            this.timer.Interval = 60000;
+            this.timer.Tick += new System.EventHandler(this.Timer_Tick);
+            // 
             // plakaDataGridViewTextBoxColumn
             // 
             this.plakaDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
@@ -532,5 +538,6 @@ namespace OtoparkOtomasyonuEnSon
         private System.Windows.Forms.DataGridViewTextBoxColumn telefonnoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn plakaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridView registryGridView;
+        private System.Windows.Forms.Timer timer;
     }
 }

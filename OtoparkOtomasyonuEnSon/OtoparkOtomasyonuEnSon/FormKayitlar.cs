@@ -36,7 +36,11 @@ namespace OtoparkOtomasyonuEnSon
         {
             // DataGridView içerisine veri çekme
             this.arabalarTableAdapter1.Fill(this.otoparkDataSet4.arabalar);
+            Timer_Tick(this, new EventArgs());
+            timer.Start();
         }
+
+        private void Timer_Tick(object sender, EventArgs e) => stripSaat.Text = $"{DateTime.Now:HH:mm}";
 
         private void fillByToolStripButton_Click(object sender, EventArgs e)
         {
