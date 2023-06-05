@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,6 +16,8 @@ namespace OtoparkOtomasyonuEnSon
         {
             InitializeComponent();
             this.Text = "OtoOto";
+            Timer_Tick(this, new EventArgs());
+            timer.Start();
         }
 
         private void FormTumKayitlar_Load(object sender, EventArgs e)
@@ -33,7 +35,6 @@ namespace OtoparkOtomasyonuEnSon
         {
 
         }
-
 
         private void picCikisYap_Click(object sender, EventArgs e)
         {
@@ -53,5 +54,8 @@ namespace OtoparkOtomasyonuEnSon
         private void pnlCikisYap_MouseEnter(object sender, EventArgs e) => FormGiris.HoverOldu(pnlCikisYap);
 
         private void pnlCikisYap_MouseLeave(object sender, EventArgs e) => FormGiris.HoverBitti(pnlCikisYap);
+
+        private void Timer_Tick(object sender, EventArgs e) => stripSaat.Text = $"{DateTime.Now:HH:mm}";
+
     }
 }

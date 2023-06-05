@@ -255,6 +255,10 @@
             this.stripSaat.Size = new System.Drawing.Size(125, 29);
             this.stripSaat.Text = "Saat: 12.00";
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.Timer_Tick);
+            // 
             // FormTumKayitlar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
