@@ -1,4 +1,4 @@
-﻿/*
+/*
  *          Ferit Yiğit BALABAN - 032190002
  */
 
@@ -30,7 +30,14 @@ namespace OtoparkOtomasyonuEnSon
         private void Timer_Tick(object sender, EventArgs e) => stripSaat.Text = $"{DateTime.Now:HH:mm}";
 
         #region Çıkışla Alakalı Metot ve Olaylar
-        private void FormGiris_FormClosed(object sender, FormClosedEventArgs e) => Program.mainForm.Show();
+        private void FormGiris_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            using (FormGirisYap form1 = new FormGirisYap())
+            {
+                this.Hide();
+                form1.ShowDialog();
+            }
+        }
 
         private void LblCikisYap_Click(object sender, EventArgs e) => Close();
 
