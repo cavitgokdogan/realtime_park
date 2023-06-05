@@ -12,7 +12,7 @@ namespace OtoparkOtomasyonuEnSon
         public FormKayitlar()
         {
             InitializeComponent();
-            this.Text = "OtoOto";
+            Text = "OtoOto";
         }
 
         SqlConnection connection = new SqlConnection(ConnectionString);
@@ -21,21 +21,21 @@ namespace OtoparkOtomasyonuEnSon
         private void manualFormButton_Click(object sender, EventArgs e)
         {
             FormManual formManuel = new FormManual();
-            this.Hide();
+            Hide();
             formManuel.ShowDialog();
         }
 
         private void goBackButton_Click(object sender, EventArgs e)
         {
             FormGiris formGiris = new FormGiris();
-            this.Hide();
+            Hide();
             formGiris.ShowDialog();
         }
 
         private void loadRegistryForm(object sender, EventArgs e)
         {
             // DataGridView içerisine veri çekme
-            this.arabalarTableAdapter1.Fill(this.otoparkDataSet4.arabalar);
+            arabalarTableAdapter1.Fill(this.otoparkDataSet4.arabalar);
             Timer_Tick(this, new EventArgs());
             timer.Start();
         }
@@ -46,11 +46,11 @@ namespace OtoparkOtomasyonuEnSon
         {
             try
             {
-                this.arabalarTableAdapter.FillBy(this.otoparkDataSet.arabalar);
+                arabalarTableAdapter.FillBy(otoparkDataSet.arabalar);
             }
             catch (System.Exception ex)
             {
-                System.Windows.Forms.MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.Message);
             }
              
         }
@@ -74,7 +74,7 @@ namespace OtoparkOtomasyonuEnSon
                     MessageBox.Show("Şuanda bir araç seçmediniz. Çıkışını yapmak istediğiniz araca tıklayınız.");
                 }
 
-                this.arabalarTableAdapter1.Fill(this.otoparkDataSet4.arabalar);
+                arabalarTableAdapter1.Fill(otoparkDataSet4.arabalar);
 
             }
             catch (Exception ex)
@@ -138,7 +138,7 @@ namespace OtoparkOtomasyonuEnSon
         {
 
             FormTumKayitlar formTumKayitlar = new FormTumKayitlar();
-            this.Hide();
+            Hide();
             formTumKayitlar.ShowDialog();
         }
 
