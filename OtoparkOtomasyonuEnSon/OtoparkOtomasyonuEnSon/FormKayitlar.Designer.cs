@@ -36,7 +36,6 @@ namespace OtoparkOtomasyonuEnSon
             this.otoparkDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.otoparkDataSet = new OtoparkOtomasyonuEnSon.otoparkDataSet();
             this.arabalarBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.fillByToolStrip = new System.Windows.Forms.ToolStrip();
             this.fillByToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.arabalarTableAdapter = new OtoparkOtomasyonuEnSon.otoparkDataSetTableAdapters.arabalarTableAdapter();
             this.numberPlateLabel = new System.Windows.Forms.Label();
@@ -59,12 +58,12 @@ namespace OtoparkOtomasyonuEnSon
             this.picManuelDelete = new System.Windows.Forms.PictureBox();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.stripKullanici = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.stripSaat = new System.Windows.Forms.ToolStripStatusLabel();
             this.girissaatiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.telefonnoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.plakaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.registryGridView = new System.Windows.Forms.DataGridView();
-            this.stripSaat = new System.Windows.Forms.ToolStripStatusLabel();
-            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.timer = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.arabalarBindingSource4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.otoparkDataSet4)).BeginInit();
@@ -114,15 +113,6 @@ namespace OtoparkOtomasyonuEnSon
             this.arabalarBindingSource.DataMember = "arabalar";
             this.arabalarBindingSource.DataSource = this.otoparkDataSet;
             // 
-            // fillByToolStrip
-            // 
-            this.fillByToolStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.fillByToolStrip.Location = new System.Drawing.Point(0, 0);
-            this.fillByToolStrip.Name = "fillByToolStrip";
-            this.fillByToolStrip.Size = new System.Drawing.Size(1423, 25);
-            this.fillByToolStrip.TabIndex = 4;
-            this.fillByToolStrip.Text = "fillByToolStrip";
-            // 
             // fillByToolStripButton
             // 
             this.fillByToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
@@ -154,7 +144,7 @@ namespace OtoparkOtomasyonuEnSon
             this.telNoLabel.AutoSize = true;
             this.telNoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.telNoLabel.ForeColor = System.Drawing.Color.White;
-            this.telNoLabel.Location = new System.Drawing.Point(17, 158);
+            this.telNoLabel.Location = new System.Drawing.Point(17, 150);
             this.telNoLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.telNoLabel.Name = "telNoLabel";
             this.telNoLabel.Size = new System.Drawing.Size(119, 36);
@@ -167,7 +157,7 @@ namespace OtoparkOtomasyonuEnSon
             this.entranceDateLabel.AutoSize = true;
             this.entranceDateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.entranceDateLabel.ForeColor = System.Drawing.Color.White;
-            this.entranceDateLabel.Location = new System.Drawing.Point(17, 87);
+            this.entranceDateLabel.Location = new System.Drawing.Point(17, 68);
             this.entranceDateLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.entranceDateLabel.Name = "entranceDateLabel";
             this.entranceDateLabel.Size = new System.Drawing.Size(168, 36);
@@ -190,7 +180,7 @@ namespace OtoparkOtomasyonuEnSon
             this.telNoTextBox.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.telNoTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(42)))), ((int)(((byte)(235)))));
             this.telNoTextBox.ForeColor = System.Drawing.Color.White;
-            this.telNoTextBox.Location = new System.Drawing.Point(198, 169);
+            this.telNoTextBox.Location = new System.Drawing.Point(198, 161);
             this.telNoTextBox.Margin = new System.Windows.Forms.Padding(5);
             this.telNoTextBox.Name = "telNoTextBox";
             this.telNoTextBox.Size = new System.Drawing.Size(132, 22);
@@ -216,10 +206,10 @@ namespace OtoparkOtomasyonuEnSon
             | System.Windows.Forms.AnchorStyles.Left)));
             this.pnlCikisYap.Controls.Add(this.lblCikisYap);
             this.pnlCikisYap.Controls.Add(this.picCikisYap);
-            this.pnlCikisYap.Location = new System.Drawing.Point(18, 343);
+            this.pnlCikisYap.Location = new System.Drawing.Point(15, 344);
             this.pnlCikisYap.Margin = new System.Windows.Forms.Padding(5);
             this.pnlCikisYap.Name = "pnlCikisYap";
-            this.pnlCikisYap.Size = new System.Drawing.Size(315, 71);
+            this.pnlCikisYap.Size = new System.Drawing.Size(318, 71);
             this.pnlCikisYap.TabIndex = 13;
             this.pnlCikisYap.Click += new System.EventHandler(this.goBackButton_Click);
             this.pnlCikisYap.MouseEnter += new System.EventHandler(this.pnlCikisYap_MouseEnter);
@@ -259,7 +249,7 @@ namespace OtoparkOtomasyonuEnSon
             this.entranceDateTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.entranceDateTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(42)))), ((int)(((byte)(235)))));
             this.entranceDateTextBox.ForeColor = System.Drawing.Color.White;
-            this.entranceDateTextBox.Location = new System.Drawing.Point(198, 96);
+            this.entranceDateTextBox.Location = new System.Drawing.Point(198, 77);
             this.entranceDateTextBox.Margin = new System.Windows.Forms.Padding(5);
             this.entranceDateTextBox.Name = "entranceDateTextBox";
             this.entranceDateTextBox.Size = new System.Drawing.Size(132, 22);
@@ -315,10 +305,10 @@ namespace OtoparkOtomasyonuEnSon
             | System.Windows.Forms.AnchorStyles.Left)));
             this.pnlAracCikis.Controls.Add(this.lblManuelDelete);
             this.pnlAracCikis.Controls.Add(this.picManuelDelete);
-            this.pnlAracCikis.Location = new System.Drawing.Point(18, 555);
+            this.pnlAracCikis.Location = new System.Drawing.Point(15, 556);
             this.pnlAracCikis.Margin = new System.Windows.Forms.Padding(5);
             this.pnlAracCikis.Name = "pnlAracCikis";
-            this.pnlAracCikis.Size = new System.Drawing.Size(315, 87);
+            this.pnlAracCikis.Size = new System.Drawing.Size(318, 87);
             this.pnlAracCikis.TabIndex = 15;
             this.pnlAracCikis.Click += new System.EventHandler(this.carExitButton_Click);
             this.pnlAracCikis.MouseEnter += new System.EventHandler(this.pnlAracCikis_MouseEnter);
@@ -377,6 +367,23 @@ namespace OtoparkOtomasyonuEnSon
             this.stripKullanici.Size = new System.Drawing.Size(87, 29);
             this.stripKullanici.Text = "Admin";
             // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(1191, 29);
+            this.toolStripStatusLabel1.Spring = true;
+            // 
+            // stripSaat
+            // 
+            this.stripSaat.BackColor = System.Drawing.Color.Transparent;
+            this.stripSaat.BorderSides = System.Windows.Forms.ToolStripStatusLabelBorderSides.Bottom;
+            this.stripSaat.BorderStyle = System.Windows.Forms.Border3DStyle.SunkenOuter;
+            this.stripSaat.ForeColor = System.Drawing.Color.White;
+            this.stripSaat.Image = global::OtoparkOtomasyonuEnSon.Properties.Resources.icon_clock;
+            this.stripSaat.Name = "stripSaat";
+            this.stripSaat.Size = new System.Drawing.Size(125, 29);
+            this.stripSaat.Text = "Saat: 12.00";
+            // 
             // girissaatiDataGridViewTextBoxColumn
             // 
             this.girissaatiDataGridViewTextBoxColumn.DataPropertyName = "giris_saati";
@@ -394,11 +401,6 @@ namespace OtoparkOtomasyonuEnSon
             this.telefonnoDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.telefonnoDataGridViewTextBoxColumn.Name = "telefonnoDataGridViewTextBoxColumn";
             this.telefonnoDataGridViewTextBoxColumn.ReadOnly = true;
-            //
-            // timer
-            //
-            this.timer.Interval = 60000;
-            this.timer.Tick += new System.EventHandler(this.Timer_Tick);
             // 
             // plakaDataGridViewTextBoxColumn
             // 
@@ -425,32 +427,20 @@ namespace OtoparkOtomasyonuEnSon
             this.telefonnoDataGridViewTextBoxColumn,
             this.girissaatiDataGridViewTextBoxColumn});
             this.registryGridView.DataSource = this.arabalarBindingSource4;
-            this.registryGridView.Location = new System.Drawing.Point(343, 42);
+            this.registryGridView.Location = new System.Drawing.Point(343, 14);
             this.registryGridView.Margin = new System.Windows.Forms.Padding(5);
             this.registryGridView.Name = "registryGridView";
             this.registryGridView.ReadOnly = true;
             this.registryGridView.RowHeadersWidth = 51;
-            this.registryGridView.Size = new System.Drawing.Size(1048, 601);
+            this.registryGridView.Size = new System.Drawing.Size(1048, 629);
             this.registryGridView.TabIndex = 0;
             this.registryGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.registryGridView_CellClick);
             this.registryGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.registryGridView_CellContentClick);
             // 
-            // stripSaat
+            // timer
             // 
-            this.stripSaat.BackColor = System.Drawing.Color.Transparent;
-            this.stripSaat.BorderSides = System.Windows.Forms.ToolStripStatusLabelBorderSides.Bottom;
-            this.stripSaat.BorderStyle = System.Windows.Forms.Border3DStyle.SunkenOuter;
-            this.stripSaat.ForeColor = System.Drawing.Color.White;
-            this.stripSaat.Image = global::OtoparkOtomasyonuEnSon.Properties.Resources.icon_clock;
-            this.stripSaat.Name = "stripSaat";
-            this.stripSaat.Size = new System.Drawing.Size(125, 29);
-            this.stripSaat.Text = "Saat: 12.00";
-            // 
-            // toolStripStatusLabel1
-            // 
-            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(1152, 29);
-            this.toolStripStatusLabel1.Spring = true;
+            this.timer.Interval = 60000;
+            this.timer.Tick += new System.EventHandler(this.Timer_Tick);
             // 
             // FormKayitlar
             // 
@@ -468,7 +458,6 @@ namespace OtoparkOtomasyonuEnSon
             this.Controls.Add(this.entranceDateLabel);
             this.Controls.Add(this.telNoLabel);
             this.Controls.Add(this.numberPlateLabel);
-            this.Controls.Add(this.fillByToolStrip);
             this.Controls.Add(this.registryGridView);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -506,7 +495,6 @@ namespace OtoparkOtomasyonuEnSon
         private otoparkDataSet otoparkDataSet;
         private System.Windows.Forms.BindingSource arabalarBindingSource;
         private otoparkDataSetTableAdapters.arabalarTableAdapter arabalarTableAdapter;
-        private System.Windows.Forms.ToolStrip fillByToolStrip;
         private System.Windows.Forms.ToolStripButton fillByToolStripButton;
         private System.Windows.Forms.BindingSource arabalarBindingSource1;
         private System.Windows.Forms.BindingSource otoparkDataSetBindingSource;
