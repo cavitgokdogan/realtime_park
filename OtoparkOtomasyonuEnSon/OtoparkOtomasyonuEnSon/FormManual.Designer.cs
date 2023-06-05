@@ -65,7 +65,7 @@
             this.numberPlateTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(42)))), ((int)(((byte)(235)))));
             this.numberPlateTextBox.ForeColor = System.Drawing.Color.White;
             this.numberPlateTextBox.Location = new System.Drawing.Point(515, 126);
-            this.numberPlateTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numberPlateTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.numberPlateTextBox.Name = "numberPlateTextBox";
             this.numberPlateTextBox.Size = new System.Drawing.Size(132, 22);
             this.numberPlateTextBox.TabIndex = 0;
@@ -76,7 +76,7 @@
             this.telNoTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(42)))), ((int)(((byte)(235)))));
             this.telNoTextBox.ForeColor = System.Drawing.Color.White;
             this.telNoTextBox.Location = new System.Drawing.Point(527, 182);
-            this.telNoTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.telNoTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.telNoTextBox.Name = "telNoTextBox";
             this.telNoTextBox.Size = new System.Drawing.Size(132, 22);
             this.telNoTextBox.TabIndex = 1;
@@ -124,17 +124,19 @@
             // 
             this.entranceDatePicker.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.entranceDatePicker.Location = new System.Drawing.Point(437, 239);
-            this.entranceDatePicker.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.entranceDatePicker.Margin = new System.Windows.Forms.Padding(4);
+            this.entranceDatePicker.MaxDate = new System.DateTime(2023, 6, 5, 0, 0, 0, 0);
             this.entranceDatePicker.Name = "entranceDatePicker";
             this.entranceDatePicker.Size = new System.Drawing.Size(265, 22);
             this.entranceDatePicker.TabIndex = 13;
+            this.entranceDatePicker.Value = new System.DateTime(2023, 6, 5, 0, 0, 0, 0);
             this.entranceDatePicker.ValueChanged += new System.EventHandler(this.entranceDate_ValueChanged);
             // 
             // picCikisYap
             // 
             this.picCikisYap.Image = global::OtoparkOtomasyonuEnSon.Properties.Resources.icon_logout;
             this.picCikisYap.Location = new System.Drawing.Point(4, 4);
-            this.picCikisYap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.picCikisYap.Margin = new System.Windows.Forms.Padding(4);
             this.picCikisYap.Name = "picCikisYap";
             this.picCikisYap.Size = new System.Drawing.Size(67, 62);
             this.picCikisYap.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -166,7 +168,7 @@
             this.pnlCikisYap.Controls.Add(this.lblCikisYap);
             this.pnlCikisYap.Controls.Add(this.picCikisYap);
             this.pnlCikisYap.Location = new System.Drawing.Point(144, 444);
-            this.pnlCikisYap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlCikisYap.Margin = new System.Windows.Forms.Padding(4);
             this.pnlCikisYap.Name = "pnlCikisYap";
             this.pnlCikisYap.Size = new System.Drawing.Size(177, 69);
             this.pnlCikisYap.TabIndex = 14;
@@ -180,7 +182,7 @@
             this.pnlKayitOlustur.Controls.Add(this.lblKayitOlustur);
             this.pnlKayitOlustur.Controls.Add(this.picKayitOlustur);
             this.pnlKayitOlustur.Location = new System.Drawing.Point(436, 444);
-            this.pnlKayitOlustur.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlKayitOlustur.Margin = new System.Windows.Forms.Padding(4);
             this.pnlKayitOlustur.Name = "pnlKayitOlustur";
             this.pnlKayitOlustur.Size = new System.Drawing.Size(201, 69);
             this.pnlKayitOlustur.TabIndex = 15;
@@ -209,7 +211,7 @@
             // 
             this.picKayitOlustur.Image = global::OtoparkOtomasyonuEnSon.Properties.Resources.icon_car;
             this.picKayitOlustur.Location = new System.Drawing.Point(4, 4);
-            this.picKayitOlustur.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.picKayitOlustur.Margin = new System.Windows.Forms.Padding(4);
             this.picKayitOlustur.Name = "picKayitOlustur";
             this.picKayitOlustur.Size = new System.Drawing.Size(67, 62);
             this.picKayitOlustur.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -225,7 +227,7 @@
             this.pnlKayitlar.Controls.Add(this.lblKayitlar);
             this.pnlKayitlar.Controls.Add(this.picKayitlar);
             this.pnlKayitlar.Location = new System.Drawing.Point(755, 444);
-            this.pnlKayitlar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlKayitlar.Margin = new System.Windows.Forms.Padding(4);
             this.pnlKayitlar.Name = "pnlKayitlar";
             this.pnlKayitlar.Size = new System.Drawing.Size(201, 69);
             this.pnlKayitlar.TabIndex = 16;
@@ -253,7 +255,7 @@
             // 
             this.picKayitlar.Image = global::OtoparkOtomasyonuEnSon.Properties.Resources.icon_ledger;
             this.picKayitlar.Location = new System.Drawing.Point(4, 4);
-            this.picKayitlar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.picKayitlar.Margin = new System.Windows.Forms.Padding(4);
             this.picKayitlar.Name = "picKayitlar";
             this.picKayitlar.Size = new System.Drawing.Size(67, 62);
             this.picKayitlar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -326,7 +328,7 @@
             this.Controls.Add(this.telNoTextBox);
             this.Controls.Add(this.numberPlateTextBox);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MinimumSize = new System.Drawing.Size(797, 596);
             this.Name = "FormManual";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
