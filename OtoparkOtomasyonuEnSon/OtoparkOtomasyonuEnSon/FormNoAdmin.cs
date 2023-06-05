@@ -8,6 +8,7 @@ namespace OtoparkOtomasyonuEnSon
         public FormNoAdmin()
         {
             InitializeComponent();
+            this.Text = "OtoOto";
         }
 
         private void FormNoAdmin_Load(object sender, EventArgs e)

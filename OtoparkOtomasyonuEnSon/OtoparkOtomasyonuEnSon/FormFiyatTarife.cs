@@ -20,6 +20,7 @@ namespace OtoparkOtomasyonuEnSon
         public FormFiyatTarife()
         {
             InitializeComponent();
+            this.Text = "OtoOto";
         }
 
         public void goBackClick()

@@ -12,6 +12,7 @@ namespace OtoparkOtomasyonuEnSon
         public FormManual()
         {
             InitializeComponent();
+            this.Text = "OtoOto";
         }
 
         private void createRegistryButton_Click(object sender, EventArgs e)

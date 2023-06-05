@@ -1,4 +1,4 @@
-/*
+﻿/*
  *          Ferit Yiğit BALABAN - 032190002
  */
 
@@ -25,6 +25,7 @@ namespace OtoparkOtomasyonuEnSon
         {
             Timer_Tick(this, EventArgs.Empty);
             timer.Start();
+            this.Text = "OtoOto";
         }
 
         private void Timer_Tick(object sender, EventArgs e) => stripSaat.Text = $"{DateTime.Now:HH:mm}";

@@ -12,8 +12,9 @@ namespace OtoparkOtomasyonuEnSon
         public FormKayitlar()
         {
             InitializeComponent();
+            this.Text = "OtoOto";
         }
-        
+
         SqlConnection connection = new SqlConnection(ConnectionString);
         //Server Bağlantısı
 

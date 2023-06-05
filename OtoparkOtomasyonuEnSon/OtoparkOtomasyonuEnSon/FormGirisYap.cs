@@ -8,6 +8,7 @@ namespace OtoparkOtomasyonuEnSon
         public FormGirisYap()
         {
             InitializeComponent();
+            this.Text = "OtoOto";
         }
 
         private void PicGirisYap_Click(object sender, EventArgs e)
