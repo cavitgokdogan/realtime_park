@@ -139,6 +139,7 @@ namespace OtoparkOtomasyonuEnSon
                 {
                     string detectedText = line;
                     MessageBox.Show(detectedText);
+                    detectedText = detectedText.Trim();
                     try
                     {
                         connection.Open();  //Server Bağlantısı Açıldı 
