@@ -21,11 +21,36 @@ namespace OtoparkOtomasyonuEnSon
             InitializeComponent();
         }
 
+        float birSaat, saatlik, gunluk;
         private void FormGiris_Load(object sender, EventArgs e)
         {
             Timer_Tick(this, EventArgs.Empty);
             timer.Start();
             this.Text = "OtoOto";
+
+            try
+            {
+                connection.Open();
+                string sqlQuery = "SELECT * FROM dbo.fiyatlar";
+                SqlCommand command = new SqlCommand(sqlQuery, connection);
+                SqlDataReader reader = command.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    birSaat = float.Parse(reader[0].ToString());
+                    saatlik = float.Parse(reader[1].ToString());
+                    gunluk = float.Parse(reader[2].ToString());
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Fiyatları çekerken hata oluştu!\n\n" + ex.Message);
+            }
+            finally
+            {
+                if (connection != null)
+                    connection.Close();
+            }
         }
 
         private void Timer_Tick(object sender, EventArgs e) => stripSaat.Text = $"{DateTime.Now:HH:mm}";
