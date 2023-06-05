@@ -47,6 +47,11 @@
             this.tumKayitlar = new OtoparkOtomasyonuEnSon.tumKayitlar();
             this.logArabalarBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.logArabalarTableAdapter = new OtoparkOtomasyonuEnSon.tumKayitlarTableAdapters.logArabalarTableAdapter();
+            this.statusStrip = new System.Windows.Forms.StatusStrip();
+            this.stripKullanici = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.stripSaat = new System.Windows.Forms.ToolStripStatusLabel();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.registryGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arabalarBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.otoparkDataSet4BindingSource)).BeginInit();
@@ -58,6 +63,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.picCikisYap)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tumKayitlar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logArabalarBindingSource)).BeginInit();
+            this.statusStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // registryGridView
@@ -208,12 +214,54 @@
             // 
             this.logArabalarTableAdapter.ClearBeforeFill = true;
             // 
+            // statusStrip
+            // 
+            this.statusStrip.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(28)))), ((int)(((byte)(158)))));
+            this.statusStrip.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.statusStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.stripKullanici,
+            this.toolStripStatusLabel1,
+            this.stripSaat});
+            this.statusStrip.Location = new System.Drawing.Point(0, 618);
+            this.statusStrip.Name = "statusStrip";
+            this.statusStrip.Padding = new System.Windows.Forms.Padding(1, 0, 19, 0);
+            this.statusStrip.Size = new System.Drawing.Size(1182, 35);
+            this.statusStrip.SizingGrip = false;
+            this.statusStrip.TabIndex = 17;
+            // 
+            // stripKullanici
+            // 
+            this.stripKullanici.ForeColor = System.Drawing.Color.White;
+            this.stripKullanici.Image = global::OtoparkOtomasyonuEnSon.Properties.Resources.icon_admin;
+            this.stripKullanici.Name = "stripKullanici";
+            this.stripKullanici.Size = new System.Drawing.Size(87, 29);
+            this.stripKullanici.Text = "Admin";
+            // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(950, 29);
+            this.toolStripStatusLabel1.Spring = true;
+            // 
+            // stripSaat
+            // 
+            this.stripSaat.BackColor = System.Drawing.Color.Transparent;
+            this.stripSaat.BorderSides = System.Windows.Forms.ToolStripStatusLabelBorderSides.Bottom;
+            this.stripSaat.BorderStyle = System.Windows.Forms.Border3DStyle.SunkenOuter;
+            this.stripSaat.ForeColor = System.Drawing.Color.White;
+            this.stripSaat.Image = global::OtoparkOtomasyonuEnSon.Properties.Resources.icon_clock;
+            this.stripSaat.Name = "stripSaat";
+            this.stripSaat.Size = new System.Drawing.Size(125, 29);
+            this.stripSaat.Text = "Saat: 12.00";
+            // 
             // FormTumKayitlar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(33)))), ((int)(((byte)(184)))));
             this.ClientSize = new System.Drawing.Size(1182, 653);
+            this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.pnlCikisYap);
             this.Controls.Add(this.registryGridView);
             this.MinimumSize = new System.Drawing.Size(1200, 700);
@@ -232,7 +280,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.picCikisYap)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tumKayitlar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.logArabalarBindingSource)).EndInit();
+            this.statusStrip.ResumeLayout(false);
+            this.statusStrip.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -256,5 +307,10 @@
         private tumKayitlar tumKayitlar;
         private System.Windows.Forms.BindingSource logArabalarBindingSource;
         private tumKayitlarTableAdapters.logArabalarTableAdapter logArabalarTableAdapter;
+        private System.Windows.Forms.StatusStrip statusStrip;
+        private System.Windows.Forms.ToolStripStatusLabel stripKullanici;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+        private System.Windows.Forms.ToolStripStatusLabel stripSaat;
+        private System.Windows.Forms.Timer timer1;
     }
 }
