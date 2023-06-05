@@ -30,29 +30,34 @@
         {
             this.components = new System.ComponentModel.Container();
             this.registryGridView = new System.Windows.Forms.DataGridView();
-            this.otoparkDataSet4 = new OtoparkOtomasyonuEnSon.otoparkDataSet4();
+            this.plakaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.telefonnoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.girissaatiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.arabalarBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.otoparkDataSet4BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.otoparkDataSet4 = new OtoparkOtomasyonuEnSon.otoparkDataSet4();
             this.arabalarBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.arabalarTableAdapter = new OtoparkOtomasyonuEnSon.otoparkDataSet4TableAdapters.arabalarTableAdapter();
             this.otoparkDataSet = new OtoparkOtomasyonuEnSon.otoparkDataSet();
             this.arabalarBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.arabalarTableAdapter1 = new OtoparkOtomasyonuEnSon.otoparkDataSetTableAdapters.arabalarTableAdapter();
-            this.arabalarBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.plakaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.telefonnoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.girissaatiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnlCikisYap = new System.Windows.Forms.Panel();
             this.lblCikisYap = new System.Windows.Forms.Label();
             this.picCikisYap = new System.Windows.Forms.PictureBox();
+            this.tumKayitlar = new OtoparkOtomasyonuEnSon.tumKayitlar();
+            this.logArabalarBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.logArabalarTableAdapter = new OtoparkOtomasyonuEnSon.tumKayitlarTableAdapters.logArabalarTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.registryGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.otoparkDataSet4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.arabalarBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.otoparkDataSet4BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.otoparkDataSet4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arabalarBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.otoparkDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arabalarBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.arabalarBindingSource2)).BeginInit();
             this.pnlCikisYap.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picCikisYap)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tumKayitlar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logArabalarBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // registryGridView
@@ -70,7 +75,7 @@
             this.plakaDataGridViewTextBoxColumn,
             this.telefonnoDataGridViewTextBoxColumn,
             this.girissaatiDataGridViewTextBoxColumn});
-            this.registryGridView.DataSource = this.arabalarBindingSource2;
+            this.registryGridView.DataSource = this.logArabalarBindingSource;
             this.registryGridView.Location = new System.Drawing.Point(197, 37);
             this.registryGridView.Margin = new System.Windows.Forms.Padding(5);
             this.registryGridView.Name = "registryGridView";
@@ -78,44 +83,6 @@
             this.registryGridView.RowHeadersWidth = 51;
             this.registryGridView.Size = new System.Drawing.Size(1048, 514);
             this.registryGridView.TabIndex = 1;
-            // 
-            // otoparkDataSet4
-            // 
-            this.otoparkDataSet4.DataSetName = "otoparkDataSet4";
-            this.otoparkDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // otoparkDataSet4BindingSource
-            // 
-            this.otoparkDataSet4BindingSource.DataSource = this.otoparkDataSet4;
-            this.otoparkDataSet4BindingSource.Position = 0;
-            // 
-            // arabalarBindingSource
-            // 
-            this.arabalarBindingSource.DataMember = "arabalar";
-            this.arabalarBindingSource.DataSource = this.otoparkDataSet4;
-            // 
-            // arabalarTableAdapter
-            // 
-            this.arabalarTableAdapter.ClearBeforeFill = true;
-            // 
-            // otoparkDataSet
-            // 
-            this.otoparkDataSet.DataSetName = "otoparkDataSet";
-            this.otoparkDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // arabalarBindingSource1
-            // 
-            this.arabalarBindingSource1.DataMember = "arabalar";
-            this.arabalarBindingSource1.DataSource = this.otoparkDataSet;
-            // 
-            // arabalarTableAdapter1
-            // 
-            this.arabalarTableAdapter1.ClearBeforeFill = true;
-            // 
-            // arabalarBindingSource2
-            // 
-            this.arabalarBindingSource2.DataMember = "arabalar";
-            this.arabalarBindingSource2.DataSource = this.otoparkDataSet4BindingSource;
             // 
             // plakaDataGridViewTextBoxColumn
             // 
@@ -143,6 +110,44 @@
             this.girissaatiDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.girissaatiDataGridViewTextBoxColumn.Name = "girissaatiDataGridViewTextBoxColumn";
             this.girissaatiDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // arabalarBindingSource2
+            // 
+            this.arabalarBindingSource2.DataMember = "arabalar";
+            this.arabalarBindingSource2.DataSource = this.otoparkDataSet4BindingSource;
+            // 
+            // otoparkDataSet4BindingSource
+            // 
+            this.otoparkDataSet4BindingSource.DataSource = this.otoparkDataSet4;
+            this.otoparkDataSet4BindingSource.Position = 0;
+            // 
+            // otoparkDataSet4
+            // 
+            this.otoparkDataSet4.DataSetName = "otoparkDataSet4";
+            this.otoparkDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // arabalarBindingSource
+            // 
+            this.arabalarBindingSource.DataMember = "arabalar";
+            this.arabalarBindingSource.DataSource = this.otoparkDataSet4;
+            // 
+            // arabalarTableAdapter
+            // 
+            this.arabalarTableAdapter.ClearBeforeFill = true;
+            // 
+            // otoparkDataSet
+            // 
+            this.otoparkDataSet.DataSetName = "otoparkDataSet";
+            this.otoparkDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // arabalarBindingSource1
+            // 
+            this.arabalarBindingSource1.DataMember = "arabalar";
+            this.arabalarBindingSource1.DataSource = this.otoparkDataSet;
+            // 
+            // arabalarTableAdapter1
+            // 
+            this.arabalarTableAdapter1.ClearBeforeFill = true;
             // 
             // pnlCikisYap
             // 
@@ -189,6 +194,20 @@
             this.picCikisYap.MouseEnter += new System.EventHandler(this.picCikisYap_MouseEnter);
             this.picCikisYap.MouseLeave += new System.EventHandler(this.picCikisYap_MouseLeave);
             // 
+            // tumKayitlar
+            // 
+            this.tumKayitlar.DataSetName = "tumKayitlar";
+            this.tumKayitlar.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // logArabalarBindingSource
+            // 
+            this.logArabalarBindingSource.DataMember = "logArabalar";
+            this.logArabalarBindingSource.DataSource = this.tumKayitlar;
+            // 
+            // logArabalarTableAdapter
+            // 
+            this.logArabalarTableAdapter.ClearBeforeFill = true;
+            // 
             // FormTumKayitlar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -202,15 +221,17 @@
             this.Text = "FormTumKayitlar";
             this.Load += new System.EventHandler(this.FormTumKayitlar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.registryGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.otoparkDataSet4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.arabalarBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.otoparkDataSet4BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.otoparkDataSet4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.arabalarBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.otoparkDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.arabalarBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.arabalarBindingSource2)).EndInit();
             this.pnlCikisYap.ResumeLayout(false);
             this.pnlCikisYap.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picCikisYap)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tumKayitlar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logArabalarBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -232,5 +253,8 @@
         private System.Windows.Forms.Panel pnlCikisYap;
         private System.Windows.Forms.Label lblCikisYap;
         private System.Windows.Forms.PictureBox picCikisYap;
+        private tumKayitlar tumKayitlar;
+        private System.Windows.Forms.BindingSource logArabalarBindingSource;
+        private tumKayitlarTableAdapters.logArabalarTableAdapter logArabalarTableAdapter;
     }
 }

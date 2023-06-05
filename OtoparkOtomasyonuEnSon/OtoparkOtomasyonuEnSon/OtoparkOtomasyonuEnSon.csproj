@@ -230,6 +230,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>otoparkDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="otoparkDataSet4.cs">
+      <DependentUpon>otoparkDataSet4.xsd</DependentUpon>
+    </Compile>
     <Compile Include="otoparkDataSet4.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -237,6 +240,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="tumKayitlar.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tumKayitlar.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FormFiyatTarife.resx">
       <DependentUpon>FormFiyatTarife.cs</DependentUpon>
     </EmbeddedResource>
@@ -304,6 +312,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="tumKayitlar.xsc">
+      <DependentUpon>tumKayitlar.xsd</DependentUpon>
+    </None>
+    <None Include="tumKayitlar.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tumKayitlar.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tumKayitlar.xss">
+      <DependentUpon>tumKayitlar.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

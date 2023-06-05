@@ -42,7 +42,6 @@ namespace OtoparkOtomasyonuEnSon
             this.telNoLabel = new System.Windows.Forms.Label();
             this.entranceDateLabel = new System.Windows.Forms.Label();
             this.numberPlateTextBox = new System.Windows.Forms.TextBox();
-            this.telNoTextBox = new System.Windows.Forms.TextBox();
             this.arabalarBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.arabalarBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.arabalarTableAdapter1 = new OtoparkOtomasyonuEnSon.otoparkDataSet4TableAdapters.arabalarTableAdapter();
@@ -68,6 +67,7 @@ namespace OtoparkOtomasyonuEnSon
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.telNoTextBox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.arabalarBindingSource4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.otoparkDataSet4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arabalarBindingSource1)).BeginInit();
@@ -179,17 +179,6 @@ namespace OtoparkOtomasyonuEnSon
             this.numberPlateTextBox.Name = "numberPlateTextBox";
             this.numberPlateTextBox.Size = new System.Drawing.Size(132, 22);
             this.numberPlateTextBox.TabIndex = 10;
-            // 
-            // telNoTextBox
-            // 
-            this.telNoTextBox.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.telNoTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(42)))), ((int)(((byte)(235)))));
-            this.telNoTextBox.ForeColor = System.Drawing.Color.White;
-            this.telNoTextBox.Location = new System.Drawing.Point(198, 161);
-            this.telNoTextBox.Margin = new System.Windows.Forms.Padding(5);
-            this.telNoTextBox.Name = "telNoTextBox";
-            this.telNoTextBox.Size = new System.Drawing.Size(132, 22);
-            this.telNoTextBox.TabIndex = 11;
             // 
             // arabalarBindingSource2
             // 
@@ -487,6 +476,17 @@ namespace OtoparkOtomasyonuEnSon
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.tumKayitlar_Click);
             // 
+            // telNoTextBox
+            // 
+            this.telNoTextBox.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.telNoTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(42)))), ((int)(((byte)(235)))));
+            this.telNoTextBox.ForeColor = System.Drawing.Color.White;
+            this.telNoTextBox.Location = new System.Drawing.Point(198, 161);
+            this.telNoTextBox.Margin = new System.Windows.Forms.Padding(5);
+            this.telNoTextBox.Name = "telNoTextBox";
+            this.telNoTextBox.Size = new System.Drawing.Size(132, 22);
+            this.telNoTextBox.TabIndex = 11;
+            // 
             // FormKayitlar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -551,7 +551,6 @@ namespace OtoparkOtomasyonuEnSon
         private System.Windows.Forms.Label telNoLabel;
         private System.Windows.Forms.Label entranceDateLabel;
         private System.Windows.Forms.TextBox numberPlateTextBox;
-        private System.Windows.Forms.TextBox telNoTextBox;
         private System.Windows.Forms.BindingSource arabalarBindingSource2;
         private otoparkDataSet4 otoparkDataSet4;
         private System.Windows.Forms.BindingSource arabalarBindingSource3;
@@ -579,5 +578,6 @@ namespace OtoparkOtomasyonuEnSon
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox telNoTextBox;
     }
 }

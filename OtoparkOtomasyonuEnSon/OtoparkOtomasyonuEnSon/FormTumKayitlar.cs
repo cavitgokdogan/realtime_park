@@ -19,6 +19,8 @@ namespace OtoparkOtomasyonuEnSon
 
         private void FormTumKayitlar_Load(object sender, EventArgs e)
         {
+            // TODO: Bu kod satırı 'tumKayitlar.logArabalar' tablosuna veri yükler. Bunu gerektiği şekilde taşıyabilir, veya kaldırabilirsiniz.
+            this.logArabalarTableAdapter.Fill(this.tumKayitlar.logArabalar);
             // TODO: Bu kod satırı 'otoparkDataSet.arabalar' tablosuna veri yükler. Bunu gerektiği şekilde taşıyabilir, veya kaldırabilirsiniz.
             this.arabalarTableAdapter1.Fill(this.otoparkDataSet.arabalar);
             // TODO: Bu kod satırı 'otoparkDataSet4.arabalar' tablosuna veri yükler. Bunu gerektiği şekilde taşıyabilir, veya kaldırabilirsiniz.
