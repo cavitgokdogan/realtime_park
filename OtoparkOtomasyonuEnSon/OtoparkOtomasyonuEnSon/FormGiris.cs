@@ -88,7 +88,7 @@ namespace OtoparkOtomasyonuEnSon
                 if (!string.IsNullOrEmpty(line))
                 {
                     // Store the detected text
-                    string detectedText = line;
+                    string detectedText = line.Replace(" ", "");
                     MessageBox.Show(detectedText + " plakalı cihaz kaydedildi");
                     try
                     {
@@ -98,7 +98,7 @@ namespace OtoparkOtomasyonuEnSon
                             string insertArabalar = "insert into dbo.arabalar (plaka, telefon_no,giris_saati) values (@p1,@p2,@p3)";
                             using (SqlCommand command = new SqlCommand(insertArabalar, connection))
                             {
-                                command.Parameters.AddWithValue("@p1", detectedText.Replace(" ", ""));
+                                command.Parameters.AddWithValue("@p1", detectedText);
                                 command.Parameters.AddWithValue("@p2", "-");
                                 command.Parameters.AddWithValue("@p3", DateTime.Now);
                                 command.ExecuteNonQuery();
@@ -145,15 +145,19 @@ namespace OtoparkOtomasyonuEnSon
                 var line = process.StandardOutput.ReadLine();
                 if (!string.IsNullOrEmpty(line))
                 {
-                    string detectedText = line;
-                    MessageBox.Show(detectedText);
+                    string detectedText = line.Replace(" ", "");
                     try
                     {
                         connection.Open();  //Server Bağlantısı Açıldı 
-                        SqlCommand command = new SqlCommand($"DELETE FROM arabalar WHERE plaka = {detectedText.Replace(" ", "")}", connection);  // Veritabanından veri silme komutu (Araç Çıkışı) 
-                        command.ExecuteNonQuery(); // sql sorgusu çalıştırıldı 
+                        SqlCommand command = new SqlCommand($"DELETE FROM dbo.arabalar WHERE plaka='{detectedText}'" , connection);  // Veritabanından veri silme komutu (Araç Çıkışı) 
+                        if (command.ExecuteNonQuery() > 0)  {   // sql sorgusu çalıştırıldı 
+                            MessageBox.Show("Ücret " + 1234 + " TL" + "\nAraç Çıkışı Yapıldı!");
+                        }
+                        else
+                        {
+                            MessageBox.Show($"{detectedText} plakalı araç şuanda içeride olmamalı!");
+                        }
 
-                        MessageBox.Show("Ücret " + 1234 + " TL" + "\nAraç Çıkışı Yapıldı!");
                     }
                     catch (Exception ex)
                     {
