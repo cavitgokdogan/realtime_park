@@ -89,19 +89,6 @@ namespace OtoparkOtomasyonuEnSon
 
         }
 
-        private void registryGridView_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
-        {
-            int secilen = registryGridView.SelectedCells[0].RowIndex;
-            numberPlateTextBox.Text = registryGridView.Rows[secilen].Cells[0].Value.ToString();
-            telNoTextBox.Text = registryGridView.Rows[secilen].Cells[1].Value.ToString();
-            entranceDateTextBox.Text = registryGridView.Rows[secilen].Cells[2].Value.ToString();
-            //TextBoxları DataGridViewde tıklanılan kısma eşitliyoruz (verileri oradan silmek için)
-        }
-
-        private void registryGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
 
         private void manualRegistry_label_MouseEnter(object sender, EventArgs e) => FormGiris.HoverOldu(pnlManuelGiris);
 
