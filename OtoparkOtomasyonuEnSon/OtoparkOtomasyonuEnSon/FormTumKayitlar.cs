@@ -17,7 +17,7 @@ namespace OtoparkOtomasyonuEnSon
             InitializeComponent();
             this.Text = "OtoOto";
             Timer_Tick(this, new EventArgs());
-            timer.Start();
+            timer1.Start();
         }
 
         private void FormTumKayitlar_Load(object sender, EventArgs e)
