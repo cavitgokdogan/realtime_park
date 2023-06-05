@@ -33,6 +33,8 @@
             this.plakaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.telefonnoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.girissaatiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.logArabalarBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tumKayitlar = new OtoparkOtomasyonuEnSon.tumKayitlar();
             this.arabalarBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.otoparkDataSet4BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.otoparkDataSet4 = new OtoparkOtomasyonuEnSon.otoparkDataSet4();
@@ -44,8 +46,6 @@
             this.pnlCikisYap = new System.Windows.Forms.Panel();
             this.lblCikisYap = new System.Windows.Forms.Label();
             this.picCikisYap = new System.Windows.Forms.PictureBox();
-            this.tumKayitlar = new OtoparkOtomasyonuEnSon.tumKayitlar();
-            this.logArabalarBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.logArabalarTableAdapter = new OtoparkOtomasyonuEnSon.tumKayitlarTableAdapters.logArabalarTableAdapter();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.stripKullanici = new System.Windows.Forms.ToolStripStatusLabel();
@@ -53,6 +53,8 @@
             this.stripSaat = new System.Windows.Forms.ToolStripStatusLabel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.registryGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logArabalarBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tumKayitlar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arabalarBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.otoparkDataSet4BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.otoparkDataSet4)).BeginInit();
@@ -61,8 +63,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.arabalarBindingSource1)).BeginInit();
             this.pnlCikisYap.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picCikisYap)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tumKayitlar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.logArabalarBindingSource)).BeginInit();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -117,6 +117,16 @@
             this.girissaatiDataGridViewTextBoxColumn.Name = "girissaatiDataGridViewTextBoxColumn";
             this.girissaatiDataGridViewTextBoxColumn.ReadOnly = true;
             // 
+            // logArabalarBindingSource
+            // 
+            this.logArabalarBindingSource.DataMember = "logArabalar";
+            this.logArabalarBindingSource.DataSource = this.tumKayitlar;
+            // 
+            // tumKayitlar
+            // 
+            this.tumKayitlar.DataSetName = "tumKayitlar";
+            this.tumKayitlar.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // arabalarBindingSource2
             // 
             this.arabalarBindingSource2.DataMember = "arabalar";
@@ -161,7 +171,7 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.pnlCikisYap.Controls.Add(this.lblCikisYap);
             this.pnlCikisYap.Controls.Add(this.picCikisYap);
-            this.pnlCikisYap.Location = new System.Drawing.Point(444, 508);
+            this.pnlCikisYap.Location = new System.Drawing.Point(444, 521);
             this.pnlCikisYap.Margin = new System.Windows.Forms.Padding(5);
             this.pnlCikisYap.Name = "pnlCikisYap";
             this.pnlCikisYap.Size = new System.Drawing.Size(318, 71);
@@ -199,16 +209,6 @@
             this.picCikisYap.Click += new System.EventHandler(this.picCikisYap_Click);
             this.picCikisYap.MouseEnter += new System.EventHandler(this.picCikisYap_MouseEnter);
             this.picCikisYap.MouseLeave += new System.EventHandler(this.picCikisYap_MouseLeave);
-            // 
-            // tumKayitlar
-            // 
-            this.tumKayitlar.DataSetName = "tumKayitlar";
-            this.tumKayitlar.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // logArabalarBindingSource
-            // 
-            this.logArabalarBindingSource.DataMember = "logArabalar";
-            this.logArabalarBindingSource.DataSource = this.tumKayitlar;
             // 
             // logArabalarTableAdapter
             // 
@@ -273,6 +273,8 @@
             this.Text = "FormTumKayitlar";
             this.Load += new System.EventHandler(this.FormTumKayitlar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.registryGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logArabalarBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tumKayitlar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.arabalarBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.otoparkDataSet4BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.otoparkDataSet4)).EndInit();
@@ -282,8 +284,6 @@
             this.pnlCikisYap.ResumeLayout(false);
             this.pnlCikisYap.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picCikisYap)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tumKayitlar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.logArabalarBindingSource)).EndInit();
             this.statusStrip.ResumeLayout(false);
             this.statusStrip.PerformLayout();
             this.ResumeLayout(false);
