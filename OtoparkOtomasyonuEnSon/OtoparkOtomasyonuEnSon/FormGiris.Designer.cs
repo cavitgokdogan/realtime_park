@@ -82,11 +82,11 @@ namespace OtoparkOtomasyonuEnSon
             this.pnlCikisYap.Controls.Add(this.lblCikisYap);
             this.pnlCikisYap.Controls.Add(this.picCikisYap);
             this.pnlCikisYap.Location = new System.Drawing.Point(8, 15);
-            this.pnlCikisYap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlCikisYap.Margin = new System.Windows.Forms.Padding(4);
             this.pnlCikisYap.Name = "pnlCikisYap";
             this.pnlCikisYap.Size = new System.Drawing.Size(177, 69);
             this.pnlCikisYap.TabIndex = 7;
-            this.pnlCikisYap.Click += new System.EventHandler(this.PnlFiyatTarifesi_MouseLeave);
+            this.pnlCikisYap.Click += new System.EventHandler(this.PanCikisYap_Click);
             this.pnlCikisYap.MouseEnter += new System.EventHandler(this.PanCikisYap_MouseEnter);
             this.pnlCikisYap.MouseLeave += new System.EventHandler(this.PanCikisYap_MouseLeave);
             // 
@@ -109,7 +109,7 @@ namespace OtoparkOtomasyonuEnSon
             // 
             this.picCikisYap.Image = global::OtoparkOtomasyonuEnSon.Properties.Resources.icon_logout;
             this.picCikisYap.Location = new System.Drawing.Point(4, 4);
-            this.picCikisYap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.picCikisYap.Margin = new System.Windows.Forms.Padding(4);
             this.picCikisYap.Name = "picCikisYap";
             this.picCikisYap.Size = new System.Drawing.Size(67, 62);
             this.picCikisYap.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -168,9 +168,9 @@ namespace OtoparkOtomasyonuEnSon
             this.@__groupBox1.Controls.Add(this.@__label1);
             this.@__groupBox1.Controls.Add(this.pnlCikisYap);
             this.@__groupBox1.Location = new System.Drawing.Point(16, 15);
-            this.@__groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.@__groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.@__groupBox1.Name = "__groupBox1";
-            this.@__groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.@__groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.@__groupBox1.Size = new System.Drawing.Size(1035, 94);
             this.@__groupBox1.TabIndex = 9;
             this.@__groupBox1.TabStop = false;
@@ -180,7 +180,7 @@ namespace OtoparkOtomasyonuEnSon
             this.pnlKayitlar.Controls.Add(this.lblKayitlar);
             this.pnlKayitlar.Controls.Add(this.picKayitlar);
             this.pnlKayitlar.Location = new System.Drawing.Point(403, 15);
-            this.pnlKayitlar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlKayitlar.Margin = new System.Windows.Forms.Padding(4);
             this.pnlKayitlar.Name = "pnlKayitlar";
             this.pnlKayitlar.Size = new System.Drawing.Size(160, 69);
             this.pnlKayitlar.TabIndex = 9;
@@ -207,7 +207,7 @@ namespace OtoparkOtomasyonuEnSon
             // 
             this.picKayitlar.Image = global::OtoparkOtomasyonuEnSon.Properties.Resources.icon_ledger;
             this.picKayitlar.Location = new System.Drawing.Point(4, 4);
-            this.picKayitlar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.picKayitlar.Margin = new System.Windows.Forms.Padding(4);
             this.picKayitlar.Name = "picKayitlar";
             this.picKayitlar.Size = new System.Drawing.Size(67, 62);
             this.picKayitlar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -222,7 +222,7 @@ namespace OtoparkOtomasyonuEnSon
             this.pnlFiyatTarifesi.Controls.Add(this.lblFiyatTarifesi);
             this.pnlFiyatTarifesi.Controls.Add(this.picFiyatTarifesi);
             this.pnlFiyatTarifesi.Location = new System.Drawing.Point(193, 15);
-            this.pnlFiyatTarifesi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlFiyatTarifesi.Margin = new System.Windows.Forms.Padding(4);
             this.pnlFiyatTarifesi.Name = "pnlFiyatTarifesi";
             this.pnlFiyatTarifesi.Size = new System.Drawing.Size(201, 69);
             this.pnlFiyatTarifesi.TabIndex = 8;
@@ -249,7 +249,7 @@ namespace OtoparkOtomasyonuEnSon
             // 
             this.picFiyatTarifesi.Image = global::OtoparkOtomasyonuEnSon.Properties.Resources.icon_price;
             this.picFiyatTarifesi.Location = new System.Drawing.Point(4, 4);
-            this.picFiyatTarifesi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.picFiyatTarifesi.Margin = new System.Windows.Forms.Padding(4);
             this.picFiyatTarifesi.Name = "picFiyatTarifesi";
             this.picFiyatTarifesi.Size = new System.Drawing.Size(67, 62);
             this.picFiyatTarifesi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -291,9 +291,9 @@ namespace OtoparkOtomasyonuEnSon
             this.@__groupBox2.Controls.Add(this.@__label3);
             this.@__groupBox2.Controls.Add(this.pnlOtomatikGiris);
             this.@__groupBox2.Location = new System.Drawing.Point(16, 116);
-            this.@__groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.@__groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.@__groupBox2.Name = "__groupBox2";
-            this.@__groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.@__groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.@__groupBox2.Size = new System.Drawing.Size(1035, 101);
             this.@__groupBox2.TabIndex = 10;
             this.@__groupBox2.TabStop = false;
@@ -303,7 +303,7 @@ namespace OtoparkOtomasyonuEnSon
             this.pnlManuelGiris.Controls.Add(this.lblManuelGiris);
             this.pnlManuelGiris.Controls.Add(this.picManuelGiris);
             this.pnlManuelGiris.Location = new System.Drawing.Point(552, 18);
-            this.pnlManuelGiris.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlManuelGiris.Margin = new System.Windows.Forms.Padding(4);
             this.pnlManuelGiris.Name = "pnlManuelGiris";
             this.pnlManuelGiris.Size = new System.Drawing.Size(219, 69);
             this.pnlManuelGiris.TabIndex = 10;
@@ -330,7 +330,7 @@ namespace OtoparkOtomasyonuEnSon
             // 
             this.picManuelGiris.Image = global::OtoparkOtomasyonuEnSon.Properties.Resources.icon_mancar;
             this.picManuelGiris.Location = new System.Drawing.Point(4, 4);
-            this.picManuelGiris.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.picManuelGiris.Margin = new System.Windows.Forms.Padding(4);
             this.picManuelGiris.Name = "picManuelGiris";
             this.picManuelGiris.Size = new System.Drawing.Size(67, 62);
             this.picManuelGiris.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -345,7 +345,7 @@ namespace OtoparkOtomasyonuEnSon
             this.pnlOtomatikCikis.Controls.Add(this.lblOtomatikCikis);
             this.pnlOtomatikCikis.Controls.Add(this.picOtomatikCikis);
             this.pnlOtomatikCikis.Location = new System.Drawing.Point(317, 18);
-            this.pnlOtomatikCikis.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlOtomatikCikis.Margin = new System.Windows.Forms.Padding(4);
             this.pnlOtomatikCikis.Name = "pnlOtomatikCikis";
             this.pnlOtomatikCikis.Size = new System.Drawing.Size(227, 69);
             this.pnlOtomatikCikis.TabIndex = 11;
@@ -372,7 +372,7 @@ namespace OtoparkOtomasyonuEnSon
             // 
             this.picOtomatikCikis.Image = global::OtoparkOtomasyonuEnSon.Properties.Resources.icon_otolev;
             this.picOtomatikCikis.Location = new System.Drawing.Point(4, 4);
-            this.picOtomatikCikis.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.picOtomatikCikis.Margin = new System.Windows.Forms.Padding(4);
             this.picOtomatikCikis.Name = "picOtomatikCikis";
             this.picOtomatikCikis.Size = new System.Drawing.Size(67, 62);
             this.picOtomatikCikis.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -386,7 +386,7 @@ namespace OtoparkOtomasyonuEnSon
             // 
             this.@__pictureBox1.Image = global::OtoparkOtomasyonuEnSon.Properties.Resources.icon_car;
             this.@__pictureBox1.Location = new System.Drawing.Point(8, 22);
-            this.@__pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.@__pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.@__pictureBox1.Name = "__pictureBox1";
             this.@__pictureBox1.Size = new System.Drawing.Size(67, 62);
             this.@__pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -410,7 +410,7 @@ namespace OtoparkOtomasyonuEnSon
             this.pnlOtomatikGiris.Controls.Add(this.lblOtomatikGiris);
             this.pnlOtomatikGiris.Controls.Add(this.picOtomatikGiris);
             this.pnlOtomatikGiris.Location = new System.Drawing.Point(91, 18);
-            this.pnlOtomatikGiris.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlOtomatikGiris.Margin = new System.Windows.Forms.Padding(4);
             this.pnlOtomatikGiris.Name = "pnlOtomatikGiris";
             this.pnlOtomatikGiris.Size = new System.Drawing.Size(219, 69);
             this.pnlOtomatikGiris.TabIndex = 9;
@@ -437,7 +437,7 @@ namespace OtoparkOtomasyonuEnSon
             // 
             this.picOtomatikGiris.Image = global::OtoparkOtomasyonuEnSon.Properties.Resources.icon_otocar;
             this.picOtomatikGiris.Location = new System.Drawing.Point(4, 4);
-            this.picOtomatikGiris.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.picOtomatikGiris.Margin = new System.Windows.Forms.Padding(4);
             this.picOtomatikGiris.Name = "picOtomatikGiris";
             this.picOtomatikGiris.Size = new System.Drawing.Size(67, 62);
             this.picOtomatikGiris.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -463,7 +463,7 @@ namespace OtoparkOtomasyonuEnSon
             this.Controls.Add(this.statusStrip);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.MaximizeBox = false;
             this.MinimumSize = new System.Drawing.Size(1077, 627);
             this.Name = "FormGiris";

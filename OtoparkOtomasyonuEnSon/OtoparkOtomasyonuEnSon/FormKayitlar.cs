@@ -12,8 +12,9 @@ namespace OtoparkOtomasyonuEnSon
         public FormKayitlar()
         {
             InitializeComponent();
+            this.Text = "OtoOto";
         }
-        
+
         SqlConnection connection = new SqlConnection(ConnectionString);
         //Server Bağlantısı
 
@@ -35,7 +36,11 @@ namespace OtoparkOtomasyonuEnSon
         {
             // DataGridView içerisine veri çekme
             this.arabalarTableAdapter1.Fill(this.otoparkDataSet4.arabalar);
+            Timer_Tick(this, new EventArgs());
+            timer.Start();
         }
+
+        private void Timer_Tick(object sender, EventArgs e) => stripSaat.Text = $"{DateTime.Now:HH:mm}";
 
         private void fillByToolStripButton_Click(object sender, EventArgs e)
         {
@@ -59,10 +64,18 @@ namespace OtoparkOtomasyonuEnSon
                 SqlCommand command = new SqlCommand("delete from arabalar where plaka = @selected", connection);  // Veritabanından veri silme komutu (Araç Çıkışı)
 
                 command.Parameters.AddWithValue("@selected", numberPlateTextBox.Text);
-                command.ExecuteNonQuery(); // sql sorgusu çalıştırıldı
+                
+                if (command.ExecuteNonQuery() > 0)   // sql sorgusu çalıştırıldı
+                {
+                    MessageBox.Show("Araç Çıkışı Yapıldı!");
+                } 
+                else
+                {
+                    MessageBox.Show("Şuanda bir araç seçmediniz. Çıkışını yapmak istediğiniz araca tıklayınız.");
+                }
+
                 this.arabalarTableAdapter1.Fill(this.otoparkDataSet4.arabalar);
 
-                MessageBox.Show("Araç Çıkışı Yapıldı!");
             }
             catch (Exception ex)
             {

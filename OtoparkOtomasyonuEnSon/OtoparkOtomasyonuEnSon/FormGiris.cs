@@ -25,12 +25,20 @@ namespace OtoparkOtomasyonuEnSon
         {
             Timer_Tick(this, EventArgs.Empty);
             timer.Start();
+            this.Text = "OtoOto";
         }
 
         private void Timer_Tick(object sender, EventArgs e) => stripSaat.Text = $"{DateTime.Now:HH:mm}";
 
         #region Çıkışla Alakalı Metot ve Olaylar
-        private void FormGiris_FormClosed(object sender, FormClosedEventArgs e) => Program.mainForm.Show();
+        private void FormGiris_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            using (FormGirisYap form1 = new FormGirisYap())
+            {
+                this.Hide();
+                form1.ShowDialog();
+            }
+        }
 
         private void LblCikisYap_Click(object sender, EventArgs e) => Close();
 
@@ -80,7 +88,7 @@ namespace OtoparkOtomasyonuEnSon
                 if (!string.IsNullOrEmpty(line))
                 {
                     // Store the detected text
-                    string detectedText = line;
+                    string detectedText = line.Replace(" ", "");
                     MessageBox.Show(detectedText + " plakalı cihaz kaydedildi");
                     try
                     {
@@ -137,16 +145,19 @@ namespace OtoparkOtomasyonuEnSon
                 var line = process.StandardOutput.ReadLine();
                 if (!string.IsNullOrEmpty(line))
                 {
-                    string detectedText = line;
-                    MessageBox.Show(detectedText);
-                    detectedText = detectedText.Trim();
+                    string detectedText = line.Replace(" ", "");
                     try
                     {
                         connection.Open();  //Server Bağlantısı Açıldı 
-                        SqlCommand command = new SqlCommand($"DELETE FROM arabalar WHERE plaka = {detectedText}", connection);  // Veritabanından veri silme komutu (Araç Çıkışı) 
-                        command.ExecuteNonQuery(); // sql sorgusu çalıştırıldı 
+                        SqlCommand command = new SqlCommand($"DELETE FROM dbo.arabalar WHERE plaka='{detectedText}'" , connection);  // Veritabanından veri silme komutu (Araç Çıkışı) 
+                        if (command.ExecuteNonQuery() > 0)  {   // sql sorgusu çalıştırıldı 
+                            MessageBox.Show("Ücret " + 1234 + " TL" + "\nAraç Çıkışı Yapıldı!");
+                        }
+                        else
+                        {
+                            MessageBox.Show($"{detectedText} plakalı araç şuanda içeride olmamalı!");
+                        }
 
-                        MessageBox.Show("Ücret " + 1234 + " TL" + "\nAraç Çıkışı Yapıldı!");
                     }
                     catch (Exception ex)
                     {

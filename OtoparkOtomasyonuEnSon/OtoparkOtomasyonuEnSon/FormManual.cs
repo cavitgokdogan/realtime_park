@@ -12,6 +12,9 @@ namespace OtoparkOtomasyonuEnSon
         public FormManual()
         {
             InitializeComponent();
+            this.Text = "OtoOto";
+            timer_Tick(this, new EventArgs());
+            timer.Start();
         }
 
         private void createRegistryButton_Click(object sender, EventArgs e)
@@ -34,7 +37,7 @@ namespace OtoparkOtomasyonuEnSon
                     string insertArabalar = "insert into dbo.arabalar (plaka, telefon_no,giris_saati) values (@p1,@p2,@p3)";
                     using (SqlCommand command = new SqlCommand(insertArabalar, connection))
                     {
-                        command.Parameters.AddWithValue("@p1", numberPlateTextBox.Text);
+                        command.Parameters.AddWithValue("@p1", numberPlateTextBox.Text.Replace(" ", ""));
                         command.Parameters.AddWithValue("@p2", telNoTextBox.Text);
                         command.Parameters.AddWithValue("@p3", chosenTime);
                         command.ExecuteNonQuery();
@@ -126,5 +129,7 @@ namespace OtoparkOtomasyonuEnSon
         {
 
         }
+
+        private void timer_Tick(object sender, EventArgs e) => stripSaat.Text = $"{DateTime.Now:HH:mm}";
     }
 }
