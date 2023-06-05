@@ -35,7 +35,7 @@ namespace OtoparkOtomasyonuEnSon
                     string insertArabalar = "insert into dbo.arabalar (plaka, telefon_no,giris_saati) values (@p1,@p2,@p3)";
                     using (SqlCommand command = new SqlCommand(insertArabalar, connection))
                     {
-                        command.Parameters.AddWithValue("@p1", numberPlateTextBox.Text);
+                        command.Parameters.AddWithValue("@p1", numberPlateTextBox.Text.Replace(" ", ""));
                         command.Parameters.AddWithValue("@p2", telNoTextBox.Text);
                         command.Parameters.AddWithValue("@p3", chosenTime);
                         command.ExecuteNonQuery();
