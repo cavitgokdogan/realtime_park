@@ -74,7 +74,8 @@ namespace OtoparkOtomasyonuEnSon
                 command = new SqlCommand("delete from arabalar where plaka = @selected", connection);  // Veritabanından veri silme komutu (Araç Çıkışı)
                 command.Parameters.AddWithValue("@selected", numberPlateTextBox.Text);
 
-                MessageBox.Show(giris_saati.ToString());
+                TimeSpan harcananVakit = DateTime.Now - giris_saati;
+                int harcananSaat = harcananVakit.Minutes / 60;
 
                 if (command.ExecuteNonQuery() > 0)   // sql sorgusu çalıştırıldı
                 {
