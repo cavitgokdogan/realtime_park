@@ -182,7 +182,7 @@ namespace OtoparkOtomasyonuEnSon
                         SqlDataReader reader = command.ExecuteReader();
                         if (!reader.Read())
                         {
-                            throw new Exception($"{detectedText} plakalı araç şuanda içeride olmamalı!");
+                            throw new Exception($"{detectedText} plakalı araç şuanda içeride değil!");
                         }
                         giris_saati = DateTime.Parse(reader[0].ToString());
                         reader.Close();
