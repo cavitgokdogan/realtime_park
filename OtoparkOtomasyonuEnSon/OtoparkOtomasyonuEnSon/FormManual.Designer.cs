@@ -61,7 +61,7 @@
             // 
             // numberPlateTextBox
             // 
-            this.numberPlateTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.numberPlateTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.numberPlateTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(42)))), ((int)(((byte)(235)))));
             this.numberPlateTextBox.ForeColor = System.Drawing.Color.White;
             this.numberPlateTextBox.Location = new System.Drawing.Point(515, 126);
@@ -72,7 +72,7 @@
             // 
             // telNoTextBox
             // 
-            this.telNoTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.telNoTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.telNoTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(42)))), ((int)(((byte)(235)))));
             this.telNoTextBox.ForeColor = System.Drawing.Color.White;
             this.telNoTextBox.Location = new System.Drawing.Point(527, 182);
@@ -83,7 +83,7 @@
             // 
             // numberPlateLabel
             // 
-            this.numberPlateLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.numberPlateLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.numberPlateLabel.AutoSize = true;
             this.numberPlateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.numberPlateLabel.ForeColor = System.Drawing.Color.White;
@@ -96,7 +96,7 @@
             // 
             // telNoLabel
             // 
-            this.telNoLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.telNoLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.telNoLabel.AutoSize = true;
             this.telNoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.telNoLabel.ForeColor = System.Drawing.Color.White;
@@ -109,7 +109,7 @@
             // 
             // entranceDateLabel
             // 
-            this.entranceDateLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.entranceDateLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.entranceDateLabel.AutoSize = true;
             this.entranceDateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.entranceDateLabel.ForeColor = System.Drawing.Color.White;
@@ -122,7 +122,7 @@
             // 
             // entranceDatePicker
             // 
-            this.entranceDatePicker.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.entranceDatePicker.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.entranceDatePicker.Location = new System.Drawing.Point(437, 239);
             this.entranceDatePicker.Margin = new System.Windows.Forms.Padding(4);
             this.entranceDatePicker.MaxDate = new System.DateTime(2023, 6, 6, 0, 0, 0, 0);
