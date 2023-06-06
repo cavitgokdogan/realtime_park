@@ -426,7 +426,7 @@ namespace OtoparkOtomasyonuEnSon
             this.registryGridView.Name = "registryGridView";
             this.registryGridView.ReadOnly = true;
             this.registryGridView.RowHeadersWidth = 51;
-            this.registryGridView.Size = new System.Drawing.Size(1048, 539);
+            this.registryGridView.Size = new System.Drawing.Size(1067, 539);
             this.registryGridView.TabIndex = 0;
             this.registryGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.registryGridView_CellClick);
             // 
@@ -501,7 +501,7 @@ namespace OtoparkOtomasyonuEnSon
             this.@__groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.@__groupBox1.Name = "__groupBox1";
             this.@__groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.@__groupBox1.Size = new System.Drawing.Size(1376, 97);
+            this.@__groupBox1.Size = new System.Drawing.Size(1395, 97);
             this.@__groupBox1.TabIndex = 21;
             this.@__groupBox1.TabStop = false;
             this.@__groupBox1.Enter += new System.EventHandler(this.@__groupBox1_Enter);
@@ -512,7 +512,7 @@ namespace OtoparkOtomasyonuEnSon
             this.@__label2.AutoSize = true;
             this.@__label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.@__label2.ForeColor = System.Drawing.Color.White;
-            this.@__label2.Location = new System.Drawing.Point(1218, 53);
+            this.@__label2.Location = new System.Drawing.Point(1237, 53);
             this.@__label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.@__label2.Name = "__label2";
             this.@__label2.Size = new System.Drawing.Size(150, 24);
@@ -525,7 +525,7 @@ namespace OtoparkOtomasyonuEnSon
             this.@__label1.AutoSize = true;
             this.@__label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.@__label1.ForeColor = System.Drawing.Color.White;
-            this.@__label1.Location = new System.Drawing.Point(1055, 24);
+            this.@__label1.Location = new System.Drawing.Point(1074, 24);
             this.@__label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.@__label1.Name = "__label1";
             this.@__label1.Size = new System.Drawing.Size(313, 29);
