@@ -53,11 +53,15 @@ namespace OtoparkOtomasyonuEnSon
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.stripSaat = new System.Windows.Forms.ToolStripStatusLabel();
             this.timer = new System.Windows.Forms.Timer(this.components);
+            this.@__groupBox1 = new System.Windows.Forms.GroupBox();
+            this.@__label2 = new System.Windows.Forms.Label();
+            this.@__label1 = new System.Windows.Forms.Label();
             this.pnlGeriDon.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picGeriDon)).BeginInit();
             this.pnlKaydet.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picKaydet)).BeginInit();
             this.statusStrip.SuspendLayout();
+            this.@__groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblBirSaat
@@ -140,7 +144,7 @@ namespace OtoparkOtomasyonuEnSon
             this.pnlGeriDon.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.pnlGeriDon.Controls.Add(this.lblGeriDon);
             this.pnlGeriDon.Controls.Add(this.picGeriDon);
-            this.pnlGeriDon.Location = new System.Drawing.Point(28, 354);
+            this.pnlGeriDon.Location = new System.Drawing.Point(7, 14);
             this.pnlGeriDon.Name = "pnlGeriDon";
             this.pnlGeriDon.Size = new System.Drawing.Size(145, 56);
             this.pnlGeriDon.TabIndex = 15;
@@ -181,7 +185,7 @@ namespace OtoparkOtomasyonuEnSon
             this.pnlKaydet.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.pnlKaydet.Controls.Add(this.lblKaydet);
             this.pnlKaydet.Controls.Add(this.picKaydet);
-            this.pnlKaydet.Location = new System.Drawing.Point(424, 354);
+            this.pnlKaydet.Location = new System.Drawing.Point(223, 316);
             this.pnlKaydet.Name = "pnlKaydet";
             this.pnlKaydet.Size = new System.Drawing.Size(133, 56);
             this.pnlKaydet.TabIndex = 16;
@@ -305,15 +309,52 @@ namespace OtoparkOtomasyonuEnSon
             this.timer.Interval = 60000;
             this.timer.Tick += new System.EventHandler(this.Timer_Tick);
             // 
+            // __groupBox1
+            // 
+            this.@__groupBox1.Controls.Add(this.@__label2);
+            this.@__groupBox1.Controls.Add(this.@__label1);
+            this.@__groupBox1.Controls.Add(this.pnlGeriDon);
+            this.@__groupBox1.Location = new System.Drawing.Point(13, 13);
+            this.@__groupBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.@__groupBox1.Name = "__groupBox1";
+            this.@__groupBox1.Padding = new System.Windows.Forms.Padding(4);
+            this.@__groupBox1.Size = new System.Drawing.Size(568, 77);
+            this.@__groupBox1.TabIndex = 20;
+            this.@__groupBox1.TabStop = false;
+            // 
+            // __label2
+            // 
+            this.@__label2.AutoSize = true;
+            this.@__label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.@__label2.ForeColor = System.Drawing.Color.White;
+            this.@__label2.Location = new System.Drawing.Point(410, 43);
+            this.@__label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.@__label2.Name = "__label2";
+            this.@__label2.Size = new System.Drawing.Size(150, 24);
+            this.@__label2.TabIndex = 11;
+            this.@__label2.Text = "versiyon 2023.01";
+            // 
+            // __label1
+            // 
+            this.@__label1.AutoSize = true;
+            this.@__label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.@__label1.ForeColor = System.Drawing.Color.White;
+            this.@__label1.Location = new System.Drawing.Point(247, 14);
+            this.@__label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.@__label1.Name = "__label1";
+            this.@__label1.Size = new System.Drawing.Size(313, 29);
+            this.@__label1.TabIndex = 10;
+            this.@__label1.Text = "Otopark Otomasyon Sistemi";
+            // 
             // FormFiyatTarife
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(33)))), ((int)(((byte)(184)))));
             this.ClientSize = new System.Drawing.Size(594, 462);
+            this.Controls.Add(this.@__groupBox1);
             this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.pnlKaydet);
-            this.Controls.Add(this.pnlGeriDon);
             this.Controls.Add(this.txtBoxGunluk);
             this.Controls.Add(this.txtBoxSaatlik);
             this.Controls.Add(this.txtBoxBirSaat);
@@ -338,6 +379,8 @@ namespace OtoparkOtomasyonuEnSon
             ((System.ComponentModel.ISupportInitialize)(this.picKaydet)).EndInit();
             this.statusStrip.ResumeLayout(false);
             this.statusStrip.PerformLayout();
+            this.@__groupBox1.ResumeLayout(false);
+            this.@__groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -364,5 +407,8 @@ namespace OtoparkOtomasyonuEnSon
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.ToolStripStatusLabel stripSaat;
         private System.Windows.Forms.Timer timer;
+        private System.Windows.Forms.GroupBox __groupBox1;
+        private System.Windows.Forms.Label __label2;
+        private System.Windows.Forms.Label __label1;
     }
 }
