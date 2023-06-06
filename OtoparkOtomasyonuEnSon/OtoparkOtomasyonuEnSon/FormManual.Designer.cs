@@ -125,7 +125,7 @@
             this.entranceDatePicker.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.entranceDatePicker.Location = new System.Drawing.Point(437, 239);
             this.entranceDatePicker.Margin = new System.Windows.Forms.Padding(4);
-            this.entranceDatePicker.MaxDate = new System.DateTime(2023, 6, 5, 0, 0, 0, 0);
+            this.entranceDatePicker.MaxDate = new System.DateTime(2023, 6, 6, 0, 0, 0, 0);
             this.entranceDatePicker.Name = "entranceDatePicker";
             this.entranceDatePicker.Size = new System.Drawing.Size(265, 22);
             this.entranceDatePicker.TabIndex = 13;

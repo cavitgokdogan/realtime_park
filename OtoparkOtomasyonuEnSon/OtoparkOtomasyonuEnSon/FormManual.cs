@@ -15,6 +15,8 @@ namespace OtoparkOtomasyonuEnSon
             this.Text = "OtoOto";
             timer_Tick(this, new EventArgs());
             timer.Start();
+            entranceDatePicker.MaxDate = DateTime.Now;
+            entranceDatePicker.Value = DateTime.Now;
         }
 
         private void createRegistryButton_Click(object sender, EventArgs e)
