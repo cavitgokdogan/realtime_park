@@ -329,7 +329,7 @@ namespace OtoparkOtomasyonuEnSon
             this.@__label2.AutoSize = true;
             this.@__label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.@__label2.ForeColor = System.Drawing.Color.White;
-            this.@__label2.Location = new System.Drawing.Point(410, 43);
+            this.@__label2.Location = new System.Drawing.Point(440, 43);
             this.@__label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.@__label2.Name = "__label2";
             this.@__label2.Size = new System.Drawing.Size(150, 24);
@@ -342,7 +342,7 @@ namespace OtoparkOtomasyonuEnSon
             this.@__label1.AutoSize = true;
             this.@__label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.@__label1.ForeColor = System.Drawing.Color.White;
-            this.@__label1.Location = new System.Drawing.Point(247, 14);
+            this.@__label1.Location = new System.Drawing.Point(316, 14);
             this.@__label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.@__label1.Name = "__label1";
             this.@__label1.Size = new System.Drawing.Size(313, 29);
