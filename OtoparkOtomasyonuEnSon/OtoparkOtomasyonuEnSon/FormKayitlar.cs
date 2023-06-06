@@ -106,10 +106,15 @@ namespace OtoparkOtomasyonuEnSon
                     command.Parameters.AddWithValue("@selected", numberPlateTextBox.Text);
 
                     TimeSpan harcananVakit = DateTime.Now - giris_saati;
-                    int harcananGun = harcananVakit.Days;
-                    int harcananSaat = (harcananVakit.Hours) % 24;
-
-                    float fiyat = birSaat + harcananGun * gunluk + saatlik * harcananSaat;
+                    float fiyat;
+                    if (harcananVakit.Days > 0)
+                    {
+                        fiyat = harcananVakit.Days * gunluk;
+                    }
+                    else
+                    {
+                        fiyat = birSaat + harcananVakit.Hours * saatlik;
+                    }
 
                     if (command.ExecuteNonQuery() > 0)   // sql sorgusu çalıştırıldı
                     {
