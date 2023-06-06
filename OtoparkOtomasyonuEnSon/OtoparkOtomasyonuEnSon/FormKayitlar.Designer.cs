@@ -508,6 +508,7 @@ namespace OtoparkOtomasyonuEnSon
             this.@__groupBox1.Size = new System.Drawing.Size(1376, 97);
             this.@__groupBox1.TabIndex = 21;
             this.@__groupBox1.TabStop = false;
+            this.@__groupBox1.Enter += new System.EventHandler(this.@__groupBox1_Enter);
             // 
             // __label2
             // 

@@ -171,7 +171,7 @@
             this.pnlCikisYap.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.pnlCikisYap.Controls.Add(this.lblCikisYap);
             this.pnlCikisYap.Controls.Add(this.picCikisYap);
-            this.pnlCikisYap.Location = new System.Drawing.Point(110, 15);
+            this.pnlCikisYap.Location = new System.Drawing.Point(8, 15);
             this.pnlCikisYap.Margin = new System.Windows.Forms.Padding(4);
             this.pnlCikisYap.Name = "pnlCikisYap";
             this.pnlCikisYap.Size = new System.Drawing.Size(177, 69);
@@ -185,7 +185,7 @@
             this.pnlKayitlar.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.pnlKayitlar.Controls.Add(this.lblKayitlar);
             this.pnlKayitlar.Controls.Add(this.picKayitlar);
-            this.pnlKayitlar.Location = new System.Drawing.Point(380, 15);
+            this.pnlKayitlar.Location = new System.Drawing.Point(347, 15);
             this.pnlKayitlar.Margin = new System.Windows.Forms.Padding(4);
             this.pnlKayitlar.Name = "pnlKayitlar";
             this.pnlKayitlar.Size = new System.Drawing.Size(201, 69);
