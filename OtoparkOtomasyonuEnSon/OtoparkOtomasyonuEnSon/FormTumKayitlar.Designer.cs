@@ -52,6 +52,9 @@
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.stripSaat = new System.Windows.Forms.ToolStripStatusLabel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.@__groupBox1 = new System.Windows.Forms.GroupBox();
+            this.@__label2 = new System.Windows.Forms.Label();
+            this.@__label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.registryGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logArabalarBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tumKayitlar)).BeginInit();
@@ -64,6 +67,7 @@
             this.pnlCikisYap.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picCikisYap)).BeginInit();
             this.statusStrip.SuspendLayout();
+            this.@__groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // registryGridView
@@ -82,12 +86,12 @@
             this.telefonnoDataGridViewTextBoxColumn,
             this.girissaatiDataGridViewTextBoxColumn});
             this.registryGridView.DataSource = this.logArabalarBindingSource;
-            this.registryGridView.Location = new System.Drawing.Point(201, 14);
+            this.registryGridView.Location = new System.Drawing.Point(13, 119);
             this.registryGridView.Margin = new System.Windows.Forms.Padding(5);
             this.registryGridView.Name = "registryGridView";
             this.registryGridView.ReadOnly = true;
             this.registryGridView.RowHeadersWidth = 51;
-            this.registryGridView.Size = new System.Drawing.Size(807, 484);
+            this.registryGridView.Size = new System.Drawing.Size(1155, 478);
             this.registryGridView.TabIndex = 1;
             this.registryGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.registryGridView_CellContentClick);
             // 
@@ -172,7 +176,7 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.pnlCikisYap.Controls.Add(this.lblCikisYap);
             this.pnlCikisYap.Controls.Add(this.picCikisYap);
-            this.pnlCikisYap.Location = new System.Drawing.Point(468, 518);
+            this.pnlCikisYap.Location = new System.Drawing.Point(9, 17);
             this.pnlCikisYap.Margin = new System.Windows.Forms.Padding(5);
             this.pnlCikisYap.Name = "pnlCikisYap";
             this.pnlCikisYap.Size = new System.Drawing.Size(318, 71);
@@ -260,14 +264,51 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.Timer_Tick);
             // 
+            // __groupBox1
+            // 
+            this.@__groupBox1.Controls.Add(this.@__label2);
+            this.@__groupBox1.Controls.Add(this.@__label1);
+            this.@__groupBox1.Controls.Add(this.pnlCikisYap);
+            this.@__groupBox1.Location = new System.Drawing.Point(13, 13);
+            this.@__groupBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.@__groupBox1.Name = "__groupBox1";
+            this.@__groupBox1.Padding = new System.Windows.Forms.Padding(4);
+            this.@__groupBox1.Size = new System.Drawing.Size(1156, 97);
+            this.@__groupBox1.TabIndex = 22;
+            this.@__groupBox1.TabStop = false;
+            // 
+            // __label2
+            // 
+            this.@__label2.AutoSize = true;
+            this.@__label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.@__label2.ForeColor = System.Drawing.Color.White;
+            this.@__label2.Location = new System.Drawing.Point(990, 52);
+            this.@__label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.@__label2.Name = "__label2";
+            this.@__label2.Size = new System.Drawing.Size(150, 24);
+            this.@__label2.TabIndex = 11;
+            this.@__label2.Text = "versiyon 2023.01";
+            // 
+            // __label1
+            // 
+            this.@__label1.AutoSize = true;
+            this.@__label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.@__label1.ForeColor = System.Drawing.Color.White;
+            this.@__label1.Location = new System.Drawing.Point(827, 23);
+            this.@__label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.@__label1.Name = "__label1";
+            this.@__label1.Size = new System.Drawing.Size(313, 29);
+            this.@__label1.TabIndex = 10;
+            this.@__label1.Text = "Otopark Otomasyon Sistemi";
+            // 
             // FormTumKayitlar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(33)))), ((int)(((byte)(184)))));
             this.ClientSize = new System.Drawing.Size(1182, 653);
+            this.Controls.Add(this.@__groupBox1);
             this.Controls.Add(this.statusStrip);
-            this.Controls.Add(this.pnlCikisYap);
             this.Controls.Add(this.registryGridView);
             this.MinimumSize = new System.Drawing.Size(1200, 700);
             this.Name = "FormTumKayitlar";
@@ -287,6 +328,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.picCikisYap)).EndInit();
             this.statusStrip.ResumeLayout(false);
             this.statusStrip.PerformLayout();
+            this.@__groupBox1.ResumeLayout(false);
+            this.@__groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -317,5 +360,8 @@
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.ToolStripStatusLabel stripSaat;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.GroupBox __groupBox1;
+        private System.Windows.Forms.Label __label2;
+        private System.Windows.Forms.Label __label1;
     }
 }
