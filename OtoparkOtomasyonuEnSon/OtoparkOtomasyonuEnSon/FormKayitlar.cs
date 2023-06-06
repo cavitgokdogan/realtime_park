@@ -102,11 +102,13 @@ namespace OtoparkOtomasyonuEnSon
                 command.Parameters.AddWithValue("@selected", numberPlateTextBox.Text);
 
                 TimeSpan harcananVakit = DateTime.Now - giris_saati;
-                int harcananSaat = harcananVakit.Minutes / 60;
+                int harcananSaat = harcananVakit.Hours + 1;
+
+                float fiyat = birSaat + ((harcananSaat - 1) % 24) * saatlik + (harcananSaat - 1 / 24) * gunluk;
 
                 if (command.ExecuteNonQuery() > 0)   // sql sorgusu çalıştırıldı
                 {
-                    MessageBox.Show("Araç Çıkışı Yapıldı!");
+                    MessageBox.Show($"Ücretiniz {fiyat} TL. Araç Çıkışı Yapıldı.");
                 } 
                 else
                 {
@@ -114,7 +116,6 @@ namespace OtoparkOtomasyonuEnSon
                 }
 
                 arabalarTableAdapter1.Fill(otoparkDataSet4.arabalar);
-
             }
             catch (Exception ex)
             {
