@@ -498,6 +498,8 @@ namespace OtoparkOtomasyonuEnSon
             // 
             // __groupBox1
             // 
+            this.@__groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.@__groupBox1.Controls.Add(this.@__label2);
             this.@__groupBox1.Controls.Add(this.@__label1);
             this.@__groupBox1.Controls.Add(this.pnlCikisYap);
