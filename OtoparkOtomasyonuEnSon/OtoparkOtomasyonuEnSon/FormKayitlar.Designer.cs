@@ -251,8 +251,7 @@ namespace OtoparkOtomasyonuEnSon
             // 
             // pnlManuelGiris
             // 
-            this.pnlManuelGiris.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.pnlManuelGiris.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.pnlManuelGiris.Controls.Add(this.lblManuelGiris);
             this.pnlManuelGiris.Controls.Add(this.picManuelGiris);
             this.pnlManuelGiris.Location = new System.Drawing.Point(10, 313);
@@ -295,8 +294,7 @@ namespace OtoparkOtomasyonuEnSon
             // 
             // pnlManuelDelete
             // 
-            this.pnlManuelDelete.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.pnlManuelDelete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.pnlManuelDelete.Controls.Add(this.lblManuelDelete);
             this.pnlManuelDelete.Controls.Add(this.picManuelDelete);
             this.pnlManuelDelete.Location = new System.Drawing.Point(10, 416);
@@ -437,8 +435,7 @@ namespace OtoparkOtomasyonuEnSon
             // 
             // pnlTumKayitlar
             // 
-            this.pnlTumKayitlar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.pnlTumKayitlar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.pnlTumKayitlar.Controls.Add(this.lblTumKayitlar);
             this.pnlTumKayitlar.Controls.Add(this.picTumKayitlar);
             this.pnlTumKayitlar.Location = new System.Drawing.Point(10, 520);
