@@ -84,53 +84,57 @@ namespace OtoparkOtomasyonuEnSon
 
         private void carExitButton_Click(object sender, EventArgs e)
         {
-
-            try
+            if (numberPlateTextBox.Text.Length > 0)
             {
-                connection.Open();  //Server Bağlantısı Açıldı
+                try
+                {
+                    connection.Open();  //Server Bağlantısı Açıldı
 
-                DateTime giris_saati;
+                    DateTime giris_saati;
                 
-                SqlCommand command;
-                command = new SqlCommand($"select giris_saati from arabalar where plaka = '{numberPlateTextBox.Text}'", connection);
-                SqlDataReader reader = command.ExecuteReader();
-                if (!reader.Read())
-                {
-                    throw new Exception($"{numberPlateTextBox.Text} plakalı araç şuanda içeride olmamalı!");
+                    SqlCommand command;
+                    command = new SqlCommand($"select giris_saati from arabalar where plaka = '{numberPlateTextBox.Text}'", connection);
+                    SqlDataReader reader = command.ExecuteReader();
+                    if (!reader.Read())
+                    {
+                        throw new Exception($"{numberPlateTextBox.Text} plakalı araç şuanda içeride olmamalı!");
+                    }
+                    giris_saati = DateTime.Parse(reader[0].ToString());
+                    reader.Close();
+
+                    command = new SqlCommand("delete from arabalar where plaka = @selected", connection);  // Veritabanından veri silme komutu (Araç Çıkışı)
+                    command.Parameters.AddWithValue("@selected", numberPlateTextBox.Text);
+
+                    TimeSpan harcananVakit = DateTime.Now - giris_saati;
+                    int harcananGun = harcananVakit.Days;
+                    int harcananSaat = (harcananVakit.Hours) % 24;
+
+                    float fiyat = birSaat + harcananGun * gunluk + saatlik * harcananSaat;
+
+                    if (command.ExecuteNonQuery() > 0)   // sql sorgusu çalıştırıldı
+                    {
+                        MessageBox.Show($"Ücretiniz {fiyat} TL. {numberPlateTextBox.Text} plakalı araç çıkışı yapıldı.");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Şuanda bir araç seçmediniz. Çıkışını yapmak istediğiniz araca tıklayınız.");
+                    }
+
+                    arabalarTableAdapter1.Fill(otoparkDataSet4.arabalar);
                 }
-                giris_saati = DateTime.Parse(reader[0].ToString());
-                reader.Close();
-
-                command = new SqlCommand("delete from arabalar where plaka = @selected", connection);  // Veritabanından veri silme komutu (Araç Çıkışı)
-                command.Parameters.AddWithValue("@selected", numberPlateTextBox.Text);
-
-                TimeSpan harcananVakit = DateTime.Now - giris_saati;
-                int harcananGun = harcananVakit.Days;
-                int harcananSaat = (harcananVakit.Hours) % 24;
-
-                float fiyat = birSaat + harcananGun * gunluk + saatlik * harcananSaat;
-
-                if (command.ExecuteNonQuery() > 0)   // sql sorgusu çalıştırıldı
+                catch (Exception ex)
                 {
-                    MessageBox.Show($"Ücretiniz {fiyat} TL. {numberPlateTextBox.Text} plakalı araç çıkışı yapıldı.");
-                }
-                else
+                    MessageBox.Show("Bağlantı Kurulamadı!" + ex.Message);
+                }  
+                finally
                 {
-                    MessageBox.Show("Şuanda bir araç seçmediniz. Çıkışını yapmak istediğiniz araca tıklayınız.");
+                    connection.Close(); // Server Bağlantısı Kapandı
                 }
-
-                arabalarTableAdapter1.Fill(otoparkDataSet4.arabalar);
             }
-            catch (Exception ex)
+            else
             {
-                MessageBox.Show("Bağlantı Kurulamadı!" + ex.Message);
-            }  
-            finally
-            {
-                connection.Close(); // Server Bağlantısı Kapandı
+                MessageBox.Show("Bir plaka seçiniz veya yazınız!");
             }
-
-
         }
 
 
