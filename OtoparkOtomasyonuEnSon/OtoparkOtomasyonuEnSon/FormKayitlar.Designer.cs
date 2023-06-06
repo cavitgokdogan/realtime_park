@@ -136,7 +136,6 @@ namespace OtoparkOtomasyonuEnSon
             // 
             // numberPlateLabel
             // 
-            this.numberPlateLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.numberPlateLabel.AutoSize = true;
             this.numberPlateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.numberPlateLabel.ForeColor = System.Drawing.Color.White;
@@ -149,7 +148,6 @@ namespace OtoparkOtomasyonuEnSon
             // 
             // telNoLabel
             // 
-            this.telNoLabel.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.telNoLabel.AutoSize = true;
             this.telNoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.telNoLabel.ForeColor = System.Drawing.Color.White;
@@ -162,7 +160,6 @@ namespace OtoparkOtomasyonuEnSon
             // 
             // entranceDateLabel
             // 
-            this.entranceDateLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.entranceDateLabel.AutoSize = true;
             this.entranceDateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.entranceDateLabel.ForeColor = System.Drawing.Color.White;
@@ -175,7 +172,6 @@ namespace OtoparkOtomasyonuEnSon
             // 
             // numberPlateTextBox
             // 
-            this.numberPlateTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.numberPlateTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(42)))), ((int)(((byte)(235)))));
             this.numberPlateTextBox.ForeColor = System.Drawing.Color.White;
             this.numberPlateTextBox.Location = new System.Drawing.Point(199, 137);
@@ -244,7 +240,6 @@ namespace OtoparkOtomasyonuEnSon
             // 
             // entranceDateTextBox
             // 
-            this.entranceDateTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.entranceDateTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(42)))), ((int)(((byte)(235)))));
             this.entranceDateTextBox.Enabled = false;
             this.entranceDateTextBox.ForeColor = System.Drawing.Color.White;
@@ -486,7 +481,6 @@ namespace OtoparkOtomasyonuEnSon
             // 
             // telNoTextBox
             // 
-            this.telNoTextBox.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.telNoTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(42)))), ((int)(((byte)(235)))));
             this.telNoTextBox.Enabled = false;
             this.telNoTextBox.ForeColor = System.Drawing.Color.White;
