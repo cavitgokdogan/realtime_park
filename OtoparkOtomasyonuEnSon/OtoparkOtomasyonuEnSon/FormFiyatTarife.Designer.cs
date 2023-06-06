@@ -67,7 +67,7 @@ namespace OtoparkOtomasyonuEnSon
             this.lblBirSaat.BackColor = System.Drawing.Color.Transparent;
             this.lblBirSaat.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.lblBirSaat.ForeColor = System.Drawing.Color.White;
-            this.lblBirSaat.Location = new System.Drawing.Point(78, 132);
+            this.lblBirSaat.Location = new System.Drawing.Point(109, 133);
             this.lblBirSaat.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblBirSaat.Name = "lblBirSaat";
             this.lblBirSaat.Size = new System.Drawing.Size(191, 31);

@@ -194,7 +194,7 @@ namespace OtoparkOtomasyonuEnSon
                         float fiyat;
                         if (harcananVakit.Days > 0)
                         {
-                            fiyat = harcananVakit.Days * gunluk;
+                            fiyat = (harcananVakit.Days + 1) * gunluk;
                         }
                         else
                         {
@@ -207,7 +207,7 @@ namespace OtoparkOtomasyonuEnSon
                         }
                         else
                         {
-                            MessageBox.Show($"{detectedText} plakalı araç şuanda içeride olmamalı!");
+                            MessageBox.Show($"{detectedText} plakalı araç şuanda içeride değil!");
                         }
                     }
                     catch (Exception ex)

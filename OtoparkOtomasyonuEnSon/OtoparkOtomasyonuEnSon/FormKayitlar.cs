@@ -97,7 +97,7 @@ namespace OtoparkOtomasyonuEnSon
                     SqlDataReader reader = command.ExecuteReader();
                     if (!reader.Read())
                     {
-                        throw new Exception($"{numberPlateTextBox.Text} plakalı araç şuanda içeride olmamalı!");
+                        throw new Exception($"{numberPlateTextBox.Text} plakalı araç şuanda içeride değil!");
                     }
                     giris_saati = DateTime.Parse(reader[0].ToString());
                     reader.Close();
@@ -109,7 +109,7 @@ namespace OtoparkOtomasyonuEnSon
                     float fiyat;
                     if (harcananVakit.Days > 0)
                     {
-                        fiyat = harcananVakit.Days * gunluk;
+                        fiyat = (harcananVakit.Days + 1) * gunluk;
                     }
                     else
                     {
@@ -129,7 +129,7 @@ namespace OtoparkOtomasyonuEnSon
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Bağlantı Kurulamadı!" + ex.Message);
+                    MessageBox.Show("Bağlantı Kurulamadı! " + ex.Message);
                 }  
                 finally
                 {
