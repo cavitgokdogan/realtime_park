@@ -62,18 +62,20 @@ namespace OtoparkOtomasyonuEnSon
             {
                 connection.Open();  //Server Bağlantısı Açıldı
 
+                DateTime giris_saati;
+
                 SqlCommand command;
                 command = new SqlCommand($"select giris_saati from arabalar where plaka = '{numberPlateTextBox.Text}'", connection);
                 SqlDataReader reader = command.ExecuteReader();
-                while (reader.Read())
-                {
-                    MessageBox.Show(reader[0].ToString());
-                }
+                reader.Read();
+                giris_saati = DateTime.Parse(reader[0].ToString());
                 reader.Close();
 
                 command = new SqlCommand("delete from arabalar where plaka = @selected", connection);  // Veritabanından veri silme komutu (Araç Çıkışı)
                 command.Parameters.AddWithValue("@selected", numberPlateTextBox.Text);
-                
+
+                MessageBox.Show(giris_saati.ToString());
+
                 if (command.ExecuteNonQuery() > 0)   // sql sorgusu çalıştırıldı
                 {
                     MessageBox.Show("Araç Çıkışı Yapıldı!");
