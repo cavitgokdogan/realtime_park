@@ -124,7 +124,7 @@ namespace OtoparkOtomasyonuEnSon
         private void FormManual_Load(object sender, EventArgs e)
         {
             entranceDatePicker.Format = DateTimePickerFormat.Custom;
-            entranceDatePicker.CustomFormat = "MM/dd/yyyy hh:mm:ss";
+            entranceDatePicker.CustomFormat = "dd/MM/yyyy hh:mm:ss";
             
         }
 
