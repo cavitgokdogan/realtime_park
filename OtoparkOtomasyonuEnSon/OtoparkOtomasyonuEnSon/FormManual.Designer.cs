@@ -181,8 +181,7 @@
             // 
             // pnlKayitlar
             // 
-            this.pnlKayitlar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlKayitlar.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pnlKayitlar.Controls.Add(this.lblKayitlar);
             this.pnlKayitlar.Controls.Add(this.picKayitlar);
             this.pnlKayitlar.Location = new System.Drawing.Point(407, 15);
