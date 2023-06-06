@@ -141,7 +141,6 @@ namespace OtoparkOtomasyonuEnSon
             // 
             // pnlGeriDon
             // 
-            this.pnlGeriDon.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.pnlGeriDon.Controls.Add(this.lblGeriDon);
             this.pnlGeriDon.Controls.Add(this.picGeriDon);
             this.pnlGeriDon.Location = new System.Drawing.Point(7, 14);
