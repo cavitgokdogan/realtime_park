@@ -132,7 +132,7 @@ namespace OtoparkOtomasyonuEnSon
                     }
                     catch (Exception ex)
                     {
-                        MessageBox.Show("Bağlantı Kurulamadı !\n" + ex.Message);
+                        MessageBox.Show("Bu araba zaten içeride!\n");
                     }
                 }
             }
@@ -331,6 +331,11 @@ namespace OtoparkOtomasyonuEnSon
         private void LblKayitlar_MouseEnter(object sender, EventArgs e) => HoverOldu(pnlKayitlar);
 
         private void LblKayitlar_MouseLeave(object sender, EventArgs e) => HoverBitti(pnlKayitlar);
+
+        private void pnlOtomatikGiris_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
 
         private void PicKayitlar_MouseEnter(object sender, EventArgs e) => HoverOldu(pnlKayitlar);
 

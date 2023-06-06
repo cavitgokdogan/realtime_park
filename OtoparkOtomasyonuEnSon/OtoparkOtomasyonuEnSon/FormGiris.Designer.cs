@@ -415,6 +415,7 @@ namespace OtoparkOtomasyonuEnSon
             this.pnlOtomatikGiris.Size = new System.Drawing.Size(219, 69);
             this.pnlOtomatikGiris.TabIndex = 9;
             this.pnlOtomatikGiris.Click += new System.EventHandler(this.PnlOtomatikGiris_Click);
+            this.pnlOtomatikGiris.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlOtomatikGiris_Paint);
             this.pnlOtomatikGiris.MouseEnter += new System.EventHandler(this.PnlOtomatikGiris_MouseEnter);
             this.pnlOtomatikGiris.MouseLeave += new System.EventHandler(this.PnlOtomatikGiris_MouseLeave);
             // 
