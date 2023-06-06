@@ -79,7 +79,7 @@
             this.telNoTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.telNoTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(42)))), ((int)(((byte)(235)))));
             this.telNoTextBox.ForeColor = System.Drawing.Color.White;
-            this.telNoTextBox.Location = new System.Drawing.Point(518, 276);
+            this.telNoTextBox.Location = new System.Drawing.Point(506, 276);
             this.telNoTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.telNoTextBox.Name = "telNoTextBox";
             this.telNoTextBox.Size = new System.Drawing.Size(132, 22);
