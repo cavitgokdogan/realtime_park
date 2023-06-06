@@ -174,7 +174,7 @@ namespace OtoparkOtomasyonuEnSon
             // 
             this.numberPlateTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(42)))), ((int)(((byte)(235)))));
             this.numberPlateTextBox.ForeColor = System.Drawing.Color.White;
-            this.numberPlateTextBox.Location = new System.Drawing.Point(199, 137);
+            this.numberPlateTextBox.Location = new System.Drawing.Point(177, 138);
             this.numberPlateTextBox.Margin = new System.Windows.Forms.Padding(5);
             this.numberPlateTextBox.Name = "numberPlateTextBox";
             this.numberPlateTextBox.Size = new System.Drawing.Size(132, 22);
@@ -243,7 +243,7 @@ namespace OtoparkOtomasyonuEnSon
             this.entranceDateTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(42)))), ((int)(((byte)(235)))));
             this.entranceDateTextBox.Enabled = false;
             this.entranceDateTextBox.ForeColor = System.Drawing.Color.White;
-            this.entranceDateTextBox.Location = new System.Drawing.Point(199, 246);
+            this.entranceDateTextBox.Location = new System.Drawing.Point(177, 246);
             this.entranceDateTextBox.Margin = new System.Windows.Forms.Padding(5);
             this.entranceDateTextBox.Name = "entranceDateTextBox";
             this.entranceDateTextBox.Size = new System.Drawing.Size(132, 22);
@@ -484,7 +484,7 @@ namespace OtoparkOtomasyonuEnSon
             this.telNoTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(42)))), ((int)(((byte)(235)))));
             this.telNoTextBox.Enabled = false;
             this.telNoTextBox.ForeColor = System.Drawing.Color.White;
-            this.telNoTextBox.Location = new System.Drawing.Point(199, 191);
+            this.telNoTextBox.Location = new System.Drawing.Point(177, 192);
             this.telNoTextBox.Margin = new System.Windows.Forms.Padding(5);
             this.telNoTextBox.Name = "telNoTextBox";
             this.telNoTextBox.Size = new System.Drawing.Size(132, 22);
@@ -512,7 +512,7 @@ namespace OtoparkOtomasyonuEnSon
             this.@__label2.AutoSize = true;
             this.@__label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.@__label2.ForeColor = System.Drawing.Color.White;
-            this.@__label2.Location = new System.Drawing.Point(1237, 53);
+            this.@__label2.Location = new System.Drawing.Point(1222, 53);
             this.@__label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.@__label2.Name = "__label2";
             this.@__label2.Size = new System.Drawing.Size(150, 24);
@@ -525,7 +525,7 @@ namespace OtoparkOtomasyonuEnSon
             this.@__label1.AutoSize = true;
             this.@__label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.@__label1.ForeColor = System.Drawing.Color.White;
-            this.@__label1.Location = new System.Drawing.Point(1074, 24);
+            this.@__label1.Location = new System.Drawing.Point(1059, 24);
             this.@__label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.@__label1.Name = "__label1";
             this.@__label1.Size = new System.Drawing.Size(313, 29);
