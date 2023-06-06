@@ -121,7 +121,6 @@ namespace OtoparkOtomasyonuEnSon
 
         private void picKayitlar_MouseLeave(object sender, EventArgs e) => FormGiris.HoverBitti(pnlKayitlar);
 
-        float birSaat, saatlik, gunluk;
         private void FormManual_Load(object sender, EventArgs e)
         {
             entranceDatePicker.Format = DateTimePickerFormat.Custom;

@@ -31,13 +31,40 @@ namespace OtoparkOtomasyonuEnSon
             Hide();
             formGiris.ShowDialog();
         }
-
+        
+        float birSaat, saatlik, gunluk;
         private void loadRegistryForm(object sender, EventArgs e)
         {
             // DataGridView içerisine veri çekme
             arabalarTableAdapter1.Fill(this.otoparkDataSet4.arabalar);
             Timer_Tick(this, new EventArgs());
             timer.Start();
+            using (SqlConnection connection = new SqlConnection(ConnectionString))
+            {
+                try
+                {
+                    connection.Open();
+                    string sqlQuery = "SELECT * FROM dbo.fiyatlar";
+                    SqlCommand command = new SqlCommand(sqlQuery, connection);
+                    SqlDataReader reader = command.ExecuteReader();
+
+                    while (reader.Read())
+                    {
+                        birSaat = float.Parse(reader[0].ToString());
+                        saatlik = float.Parse(reader[1].ToString());
+                        gunluk = float.Parse(reader[2].ToString());
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Fiyatları çekerken hata oluştu!\n\n" + ex.Message);
+                }
+                finally
+                {
+                    if (connection != null)
+                        connection.Close();
+                }
+            }
         }
 
         private void Timer_Tick(object sender, EventArgs e) => stripSaat.Text = $"{DateTime.Now:HH:mm}";
