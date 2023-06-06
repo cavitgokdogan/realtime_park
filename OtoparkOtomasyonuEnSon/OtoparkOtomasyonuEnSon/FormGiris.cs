@@ -191,13 +191,14 @@ namespace OtoparkOtomasyonuEnSon
                         command.Parameters.AddWithValue("@selected", detectedText);
 
                         TimeSpan harcananVakit = DateTime.Now - giris_saati;
-                        int harcananSaat = harcananVakit.Hours + 1;
+                        int harcananGun = harcananVakit.Days;
+                        int harcananSaat = (harcananVakit.Hours) % 24;
 
-                        float fiyat = birSaat + ((harcananSaat - 1) % 24) * saatlik + (harcananSaat - 1 / 24) * gunluk;
+                        float fiyat = birSaat + harcananGun * gunluk + saatlik * harcananSaat;
 
                         if (command.ExecuteNonQuery() > 0)   // sql sorgusu çalıştırıldı
                         {
-                            MessageBox.Show($"Ücretiniz {fiyat} TL. Araç Çıkışı Yapıldı.");
+                            MessageBox.Show($"Ücretiniz {fiyat} TL. {detectedText} plakalı araç çıkışı yapıldı.");
                         }
                         else
                         {
