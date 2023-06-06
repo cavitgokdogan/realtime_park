@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormTumKayitlar));
             this.registryGridView = new System.Windows.Forms.DataGridView();
             this.plakaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.telefonnoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -314,6 +315,7 @@
             this.Controls.Add(this.@__groupBox1);
             this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.registryGridView);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(1200, 700);
             this.Name = "FormTumKayitlar";
             this.Text = "FormTumKayitlar";
