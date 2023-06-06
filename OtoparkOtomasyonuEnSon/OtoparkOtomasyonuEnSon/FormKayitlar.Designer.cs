@@ -208,7 +208,6 @@ namespace OtoparkOtomasyonuEnSon
             this.pnlCikisYap.Size = new System.Drawing.Size(318, 71);
             this.pnlCikisYap.TabIndex = 13;
             this.pnlCikisYap.Click += new System.EventHandler(this.goBackButton_Click);
-            this.pnlCikisYap.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlCikisYap_Paint);
             this.pnlCikisYap.MouseEnter += new System.EventHandler(this.pnlCikisYap_MouseEnter);
             this.pnlCikisYap.MouseLeave += new System.EventHandler(this.pnlCikisYap_MouseLeave);
             // 
@@ -451,7 +450,6 @@ namespace OtoparkOtomasyonuEnSon
             this.pnlTumKayitlar.Size = new System.Drawing.Size(318, 87);
             this.pnlTumKayitlar.TabIndex = 16;
             this.pnlTumKayitlar.Click += new System.EventHandler(this.tumKayitlar_Click);
-            this.pnlTumKayitlar.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             this.pnlTumKayitlar.MouseEnter += new System.EventHandler(this.panelTumKayitlar_MouseEnter);
             this.pnlTumKayitlar.MouseLeave += new System.EventHandler(this.panelTumKayitlar_MouseLeave);
             // 

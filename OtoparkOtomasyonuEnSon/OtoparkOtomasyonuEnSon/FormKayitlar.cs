@@ -90,11 +90,14 @@ namespace OtoparkOtomasyonuEnSon
                 connection.Open();  //Server Bağlantısı Açıldı
 
                 DateTime giris_saati;
-
+                
                 SqlCommand command;
                 command = new SqlCommand($"select giris_saati from arabalar where plaka = '{numberPlateTextBox.Text}'", connection);
                 SqlDataReader reader = command.ExecuteReader();
-                reader.Read();
+                if (!reader.Read())
+                {
+                    throw new Exception($"{numberPlateTextBox.Text} plakalı araç şuanda içeride olmamalı!");
+                }
                 giris_saati = DateTime.Parse(reader[0].ToString());
                 reader.Close();
 
@@ -102,14 +105,15 @@ namespace OtoparkOtomasyonuEnSon
                 command.Parameters.AddWithValue("@selected", numberPlateTextBox.Text);
 
                 TimeSpan harcananVakit = DateTime.Now - giris_saati;
-                int harcananSaat = harcananVakit.Hours + 1;
+                int harcananGun = harcananVakit.Days;
+                int harcananSaat = (harcananVakit.Hours) % 24;
 
-                float fiyat = birSaat + ((harcananSaat - 1) % 24) * saatlik + (harcananSaat - 1 / 24) * gunluk;
+                float fiyat = birSaat + harcananGun * gunluk + saatlik * harcananSaat;
 
                 if (command.ExecuteNonQuery() > 0)   // sql sorgusu çalıştırıldı
                 {
-                    MessageBox.Show($"Ücretiniz {fiyat} TL. Araç Çıkışı Yapıldı.");
-                } 
+                    MessageBox.Show($"Ücretiniz {fiyat} TL. {numberPlateTextBox.Text} plakalı araç çıkışı yapıldı.");
+                }
                 else
                 {
                     MessageBox.Show("Şuanda bir araç seçmediniz. Çıkışını yapmak istediğiniz araca tıklayınız.");
@@ -180,16 +184,6 @@ namespace OtoparkOtomasyonuEnSon
             FormTumKayitlar formTumKayitlar = new FormTumKayitlar();
             Hide();
             formTumKayitlar.ShowDialog();
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void pnlCikisYap_Paint(object sender, PaintEventArgs e)
-        {
-
         }
 
         private void panelTumKayitlar_MouseEnter(object sender, EventArgs e) => FormGiris.HoverOldu(pnlTumKayitlar);
