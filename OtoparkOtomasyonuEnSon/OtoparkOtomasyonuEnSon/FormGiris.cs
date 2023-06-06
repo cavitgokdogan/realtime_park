@@ -173,16 +173,33 @@ namespace OtoparkOtomasyonuEnSon
                     string detectedText = line.Replace(" ", "");
                     try
                     {
-                        connection.Open();  //Server Bağlantısı Açıldı 
-                        SqlCommand command = new SqlCommand($"DELETE FROM dbo.arabalar WHERE plaka='{detectedText}'" , connection);  // Veritabanından veri silme komutu (Araç Çıkışı) 
-                        if (command.ExecuteNonQuery() > 0)  {   // sql sorgusu çalıştırıldı 
-                            MessageBox.Show("Ücret " + 1234 + " TL" + "\nAraç Çıkışı Yapıldı!");
+                        connection.Open();  //Server Bağlantısı Açıldı
+
+                        DateTime giris_saati;
+
+                        SqlCommand command;
+                        command = new SqlCommand($"select giris_saati from arabalar where plaka = '{detectedText}'", connection);
+                        SqlDataReader reader = command.ExecuteReader();
+                        reader.Read();
+                        giris_saati = DateTime.Parse(reader[0].ToString());
+                        reader.Close();
+
+                        command = new SqlCommand("delete from arabalar where plaka = @selected", connection);  // Veritabanından veri silme komutu (Araç Çıkışı)
+                        command.Parameters.AddWithValue("@selected", detectedText);
+
+                        TimeSpan harcananVakit = DateTime.Now - giris_saati;
+                        int harcananSaat = harcananVakit.Hours + 1;
+
+                        float fiyat = birSaat + ((harcananSaat - 1) % 24) * saatlik + (harcananSaat - 1 / 24) * gunluk;
+
+                        if (command.ExecuteNonQuery() > 0)   // sql sorgusu çalıştırıldı
+                        {
+                            MessageBox.Show($"Ücretiniz {fiyat} TL. Araç Çıkışı Yapıldı.");
                         }
                         else
                         {
                             MessageBox.Show($"{detectedText} plakalı araç şuanda içeride olmamalı!");
                         }
-
                     }
                     catch (Exception ex)
                     {
