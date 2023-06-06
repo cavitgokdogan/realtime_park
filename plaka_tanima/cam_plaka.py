@@ -71,7 +71,7 @@ while(True):
         print(text)
         break
     
-    cv2.imshow("WebCam", cropped)
+    cv2.imshow("WebCam", new_img)
 
     if cv2.waitKey(10) & 0xFF == ord('q'):
         break
