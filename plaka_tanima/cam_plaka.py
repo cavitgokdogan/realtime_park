@@ -2,8 +2,6 @@ import cv2
 import numpy as np
 import pytesseract
 import imutils
-import pypyodbc
-import datetime
 
 vid_cam = cv2.VideoCapture(0)
 
