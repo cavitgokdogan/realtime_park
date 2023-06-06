@@ -176,11 +176,14 @@ namespace OtoparkOtomasyonuEnSon
                         connection.Open();  //Server Bağlantısı Açıldı
 
                         DateTime giris_saati;
-
+                        
                         SqlCommand command;
                         command = new SqlCommand($"select giris_saati from arabalar where plaka = '{detectedText}'", connection);
                         SqlDataReader reader = command.ExecuteReader();
-                        reader.Read();
+                        if (!reader.Read())
+                        {
+                            throw new Exception($"{detectedText} plakalı araç şuanda içeride olmamalı!");
+                        }
                         giris_saati = DateTime.Parse(reader[0].ToString());
                         reader.Close();
 
@@ -203,7 +206,7 @@ namespace OtoparkOtomasyonuEnSon
                     }
                     catch (Exception ex)
                     {
-                        MessageBox.Show("Bağlantı Kurulamadı!" + ex.Message);
+                        MessageBox.Show("Bağlantı Kurulamadı! " + ex.Message);
                     }
                     finally
                     {
